@@ -107,9 +107,37 @@
       </div>
       <button class="btn btn-gold search-submit" type="submit">Search</button>
     </form>
-    <p><em>Demo note: this search submits to your live eXp site — on a production build it would stay on-site.</em></p>
+    <p><em>Demo note: results come from your live eXp site — on a production build the search would be fully native to the page.</em></p>
+    <div id="search-results" hidden>
+      <p class="results-bar"><strong>Results from your live listings feed</strong> · <a id="results-newtab" href="#" target="_blank" rel="noopener">open full results in a new tab ↗</a></p>
+      <iframe id="results-frame" title="Live listing search results from carriebilleaud.exprealty.com" loading="lazy"></iframe>
+      <p id="results-fallback" hidden><em>Your eXp site declined to load inside another page (a common security setting) — use the "open full results" link above instead. A production build of this site would run its own on-page search.</em></p>
+    </div>
   </div>
 </section>
+<script>
+(function(){
+  var form = document.querySelector('.search-form');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var params = new URLSearchParams(new FormData(form));
+    var url = 'https://carriebilleaud.exprealty.com/index.php?' + params.toString() + '#rslt';
+    var panel = document.getElementById('search-results');
+    var frame = document.getElementById('results-frame');
+    var tab = document.getElementById('results-newtab');
+    tab.href = url;
+    frame.src = url;
+    panel.hidden = false;
+    var fb = document.getElementById('results-fallback');
+    fb.hidden = true;
+    // If the frame is blocked, we can't reliably detect it cross-origin;
+    // show the fallback hint after load either way on small heights.
+    frame.addEventListener('error', function(){ fb.hidden = false; }, {once:true});
+    panel.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+})();
+</script>
 
 <div class="trust-strip">
   <div class="wrap">
