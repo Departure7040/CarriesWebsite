@@ -22,6 +22,7 @@ Determine how Carrie can generate more organic real estate leads from:
 | `/reports/` | Client-facing and internal audit reports |
 | `/backlog/` | Prioritized SEO task backlog (CSV) |
 | `/content/` | Page briefs, review templates, GBP posts, social repurposing |
+| `/site/` | Client-facing static site: demo homepage + audit presentation (noindex by design; see `site/SERVING.md`) |
 
 ## Evidence standard
 Every claim in reports is tagged with one of:

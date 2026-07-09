@@ -38,8 +38,11 @@ adequate model.
 - [x] WF04 — Competitor gap analysis (competitor_researcher)
 - [x] WF05 — AI search visibility (ai_search_visibility_agent)
 - [x] WF06 — Content & conversion plan (content_strategy_agent + conversion_tracking_agent)
-- [ ] WF07 — Final synthesis + QA (Fable + qa_fact_checker)
-- [ ] Push all work to https://github.com/Departure7040/CarriesWebsite.git
+- [x] WF07 — Final synthesis + QA (Fable + qa_fact_checker)
+- [x] Push all work to https://github.com/Departure7040/CarriesWebsite.git
+- [x] EXTRA — WF04b SERP patterns & reuse research (client-requested)
+- [x] EXTRA — GBP correction: profile EXISTS (185 reviews, 5.0) — client-verified 2026-07-08
+- [x] EXTRA — Client-facing audit/demo site built in /site (9 pages, noindex, self-hosted via Cloudflare tunnel)
 
 ## Contradiction handling
 Known conflicts to resolve with evidence (never guess):
