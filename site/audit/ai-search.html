@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AI Search Visibility Plan — Carrie Billeaud</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header"><div class="wrap nav">
+  <strong>Carrie Billeaud <span style="color:var(--gold)">·</span> SEO Audit</strong>
+  <nav><a href="index.html">← Audit overview</a><a href="../">Demo homepage</a></nav>
+</div></header>
+
+<main>
+
+<section class="section">
+  <div class="wrap">
+    <p class="kicker">Finding 5 · AI search visibility</p>
+    <h1>Can ChatGPT and Google AI find you? Right now, no.</h1>
+    <p>AI search visibility isn't a separate discipline with its own tricks — it's the downstream result of three things done well: <strong>entity clarity</strong> (every surface agrees on who Carrie is), <strong>authority</strong> (independent, verifiable signals she's real and good at her job), and <strong>useful, crawlable content</strong> (pages a machine can actually read and quote). Google's AI Overviews pull from the same crawled, indexed pages as classic Search. ChatGPT-style assistants run their own live fetches and cross-check whatever they can reach. Both converge on the same requirement, and right now Carrie's site fails the first gate: it's not crawlable by most of them at all.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="scorecard">
+  <div class="wrap">
+    <p class="kicker">Current State</p>
+    <h2>Scorecard</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Entity consistency</h3>
+        <p class="score score-bad">Poor, one corroborating signal</p>
+        <p>3 phones, 5 addresses, 3 emails across profiles. The GBP's phone and address corroborate one existing variant each — a positive data point, but it doesn't resolve the rest. <span class="tag verified">Verified</span></p>
+      </div>
+      <div class="card">
+        <h3>Crawlability to AI bots</h3>
+        <p class="score score-bad">Blocked, site-wide</p>
+        <p>A duplicate rule in robots.txt disallows every crawler not explicitly named — GPTBot, PerplexityBot, ClaudeBot, Google-Extended and others are shut out entirely. <span class="tag verified">Verified</span></p>
+      </div>
+      <div class="card">
+        <h3>Structured data</h3>
+        <p class="score score-bad">Absent</p>
+        <p>No JSON-LD anywhere on the site — no Person, RealEstateAgent, or FAQ schema found on any page checked. <span class="tag verified">Verified</span></p>
+      </div>
+      <div class="card">
+        <h3>Authority signals</h3>
+        <p class="score score-ok">Strong on Google/Zillow, thin elsewhere</p>
+        <p>185 Google reviews at 5.0 and 29 Zillow reviews at 5.0 are real, verifiable strengths. Realtor.com (2) and Homes.com (0) are thin by comparison. <span class="tag verified">Verified</span></p>
+      </div>
+      <div class="card">
+        <h3>Contactability</h3>
+        <p class="score score-warn">Confused, with corroboration</p>
+        <p>A visitor or an AI system trying to answer "how do I reach Carrie" still gets three phone numbers and three emails depending on the source. The GBP now independently corroborates one phone and one address variant, which strengthens the case for those specific values once Carrie confirms a canonical set. <span class="tag verified">Verified</span></p>
+      </div>
+      <div class="card">
+        <h3>Owned-site entity content</h3>
+        <p class="score score-bad">Missing, not just weak</p>
+        <p>The one page meant to answer "who is Carrie Billeaud" has no bio at all — it goes straight from a header to a lead form. <span class="tag verified">Verified</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="robots-blocker">
+  <div class="wrap">
+    <p class="kicker">The Gating Issue</p>
+    <h2>Nothing else here matters until this is fixed</h2>
+    <div class="finding">
+      <h3>robots.txt blocks the entire site from most AI crawlers</h3>
+      <p><strong>What:</strong> The site's robots.txt contains a duplicate "all crawlers" rule, and the second, more restrictive one wins under how search engines merge same-named rules. Only Googlebot, Bingbot, and a handful of other explicitly named bots get through — GPTBot, PerplexityBot, ClaudeBot, Google-Extended and others are disallowed from the entire site. <span class="tag verified">Verified</span></p>
+      <p><strong>Why it matters:</strong> No amount of good bio content or schema markup matters if the bots doing the reading are blocked from fetching the site at all. This is the single highest-priority technical fix in the whole engagement.</p>
+      <p><strong>Who can fix it:</strong> Template-level, controlled by the BoldTrail platform. <span class="tag fix-ticket">eXp support ticket</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="five-questions">
+  <div class="wrap">
+    <p class="kicker">Fixing This</p>
+    <h2>The 5 questions an AI must answer before it will cite her</h2>
+    <div class="finding">
+      <h3>1. WHO is she?</h3>
+      <p><strong>Current state:</strong> Her name appears as "Carrie Billeaud," "Carrie Billeaud Team," "Carrie Billeaud-Realtor EXP Realty," and now also the decorated GBP variant, depending on platform. <span class="tag verified">Verified</span></p>
+      <p><strong>Fix:</strong> Standardize on "Carrie Billeaud" as the individual entity name everywhere, and write one canonical bio (300–500 words) that gets republished, consistently, on every profile — starting with the currently-empty eXp "About Carrie" section.</p>
+    </div>
+    <div class="finding">
+      <h3>2. WHERE does she serve?</h3>
+      <p><strong>Current state:</strong> The service-area list is already consistent across sources — this is a formatting gap, not a data gap. <span class="tag verified">Verified</span></p>
+      <p><strong>Fix:</strong> State it as one plain sentence near the top of the bio ("Carrie serves buyers and sellers across Lafayette and the greater Acadiana region, including Youngsville, Broussard, Carencro...") — plain sentences get quoted by generative systems; bare sidebar lists don't.</p>
+    </div>
+    <div class="finding">
+      <h3>3. WHAT does she specialize in?</h3>
+      <p><strong>Current state:</strong> Specialty lists vary in length and content across platforms — 4 on Realtor.com, 5 on Homes.com/eXp, 6 on Zillow, 10 on Zillow Team. <span class="tag verified">Verified</span></p>
+      <p><strong>Fix:</strong> Collapse into one true, canonical short list and use it everywhere. A shorter, consistent list reads as more authoritative to an AI system than a longer, inconsistent one. <span class="tag confirm">Verify with Carrie</span></p>
+    </div>
+    <div class="finding">
+      <h3>4. WHY is she credible?</h3>
+      <p><strong>Current state:</strong> The strongest verified credibility signal is the Google Business Profile — 185 reviews, 5.0★ — with Zillow's 29 reviews, 5.0★ as a strong secondary. <span class="tag verified">Verified</span> Production figures (174 closed sales, $44.6M volume, 11 years' experience, ICON Agent multiplier) are self-reported and currently unverified.</p>
+      <p><strong>Fix:</strong> Anchor every credibility claim on the Google and Zillow review numbers, which are independently checkable. Hold every unverified production figure out of new copy and schema until Carrie confirms it — publishing a number an AI system can't corroborate elsewhere recreates the exact consistency problem this plan is trying to fix. <span class="tag confirm">Verify with Carrie</span></p>
+    </div>
+    <div class="finding">
+      <h3>5. HOW to contact her?</h3>
+      <p><strong>Current state:</strong> Three phone numbers and three addresses are in circulation. The Google Business Profile now corroborates the primary phone (337-258-5379, matching 6 of 8 sources) and one address variant — real progress, but not a full resolution. <span class="tag verified">Verified</span></p>
+      <p><strong>Fix:</strong> Carrie picks one canonical phone, email, and address; every owned and controllable profile — including the GBP once manager access is granted — gets updated to match. <span class="tag confirm">Verify with Carrie</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="expectations">
+  <div class="wrap">
+    <p class="kicker">Realistic Expectations</p>
+    <h2>This is months, not days</h2>
+    <p>No one — including this audit — can guarantee inclusion in any specific AI Overview, ChatGPT answer, or Knowledge Panel. Google's crawl-to-reindex cycle for a site this size typically takes weeks after a fix like the robots.txt correction; schema additions take further time to be parsed and trusted; and third-party platforms each run their own re-indexing schedule. AI answer engines built on top of these systems inherit those delays, plus their own crawl cycles, some of which aren't publicly documented and can't be sped up. The honest framing: these fixes remove the barriers currently preventing visibility and put real, verifiable, differentiated content in front of the systems that decide who gets cited. They don't purchase a guaranteed outcome — and anyone promising a specific citation or ranking on a specific timeline isn't being straight with you.</p>
+    <p style="margin-top:1rem">Full sequencing: <a href="roadmap.html">see the 30/60/90 roadmap →</a></p>
+  </div>
+</section>
+
+<section class="section section-alt" id="audit-pages">
+  <div class="wrap">
+    <p class="kicker">Full Audit</p>
+    <nav class="audit-nav">
+      <a href="presence.html">Public Presence</a>
+      <a href="website.html">Website Technical</a>
+      <a href="local-seo.html">Local SEO &amp; GBP</a>
+      <a href="competitors.html">Competitor Gap</a>
+      <a href="ai-search.html">AI Search Visibility</a>
+      <a href="roadmap.html">30/60/90 Roadmap</a>
+      <a href="../">← Demo Homepage</a>
+    </nav>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Carrie Billeaud, REALTOR® · eXp Realty · Lafayette, Louisiana · <a href="tel:3372585379">337-258-5379</a></p>
+  <p>SEO &amp; lead-generation audit prepared by Brook DuBose, July 2026. Evidence basis: findings checked against live public sources on 2026-07-08. Items marked "verify with Carrie" are never used in client-facing marketing until confirmed.</p>
+</div></footer>
+</body></html>
