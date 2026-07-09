@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Website Technical Audit — Carrie Billeaud</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header"><div class="wrap nav">
+  <strong>Carrie Billeaud <span style="color:var(--gold)">·</span> SEO Audit</strong>
+  <nav><a href="index.html">← Audit overview</a><a href="../">Demo homepage</a></nav>
+</div></header>
+
+<main>
+
+<section class="section">
+  <div class="wrap">
+    <p class="kicker">Finding 2 · Your website</p>
+    <h1>Your site is telling search engines to go away.</h1>
+    <p>Carrie's site (<code>carriebilleaud.exprealty.com</code>) is a standard eXp/BoldTrail agent template. It renders fine for Google — Googlebot executes JavaScript, so this isn't a hard block — but six sitewide, template-level issues are quietly working against it. Each one below states what's wrong, why it matters, and who can fix it.</p>
+    <p><span class="tag fix-direct">Fix directly</span> means Carrie (or we) can change it today, no vendor involved. <span class="tag fix-ticket">eXp support ticket</span> means it's controlled by the BoldTrail platform and requires a request to eXp/BoldTrail technical support — we've drafted the ticket language for each one.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="findings">
+  <div class="wrap">
+
+    <div class="finding">
+      <h3>1. Your robots.txt tells most AI tools to stay out</h3>
+      <p><strong>What:</strong> The site's robots.txt file has two separate rules for "all crawlers." The second one simply says "block everything." Search engines combine same-named rules, so any crawler eXp didn't specifically name gets blocked from the entire site. Googlebot, Bing, and a handful of other named bots are explicitly allowed — but ChatGPT's crawler (GPTBot), Perplexity's crawler, Claude's crawler, Apple's crawler, and several others are not named anywhere in the file, so they're shut out sitewide.</p>
+      <p><strong>Why it matters:</strong> More people are researching agents through AI chat tools, not just typing into Google. Being invisible to those crawlers means the site can't be cited or summarized by them, no matter how good the content is.</p>
+      <p><strong>Who can fix it:</strong> robots.txt is served by the BoldTrail platform, not editable from the agent dashboard. <span class="tag fix-ticket">eXp support ticket</span> <span class="tag verified">Verified</span></p>
+    </div>
+
+    <div class="finding">
+      <h3>2. Your pages point search engines to a different website</h3>
+      <p><strong>What:</strong> Every page checked — the agent profile, blog posts — has a "canonical" tag (the signal that tells Google "this is the official URL for this content") pointing to the corporate site, <code>exprealty.com</code>, instead of Carrie's own <code>carriebilleaud.exprealty.com</code>. The homepage has no canonical tag at all.</p>
+      <p><strong>Why it matters:</strong> This actively tells Google that Carrie's branded domain isn't the authoritative version of its own content, which limits how well her own site can rank — even for pages she's proud of and wants found.</p>
+      <p><strong>Who can fix it:</strong> Template-level setting controlled by the platform. <span class="tag fix-ticket">eXp support ticket</span> <span class="tag verified">Verified</span></p>
+    </div>
+
+    <div class="finding">
+      <h3>3. Some pages tell Google two contradictory things at once</h3>
+      <p><strong>What:</strong> The agent profile page and blog posts each carry two conflicting robots instructions in the same page: one in the page's static code says "index this," a second one — injected later, alongside the site's security/verification widget — says "don't index this."</p>
+      <p><strong>Why it matters:</strong> When Google finds conflicting instructions on the same page, it follows the more restrictive one. Pages meant to be found can quietly get excluded from search results, without any obvious warning.</p>
+      <p><strong>Who can fix it:</strong> Comes from the platform's bot-verification widget. <span class="tag fix-ticket">eXp support ticket</span> — in the meantime, actual indexing status can be checked in Google Search Console. <span class="tag verified">Verified</span></p>
+    </div>
+
+    <div class="finding">
+      <h3>4. The page about you has no "about you"</h3>
+      <p><strong>What:</strong> The agent profile page has a section header, "About Carrie" — and then nothing. It goes straight from that header to a lead-capture form. No background, no years of experience, no specialties, no credentials.</p>
+      <p><strong>Why it matters:</strong> This is the one page built to answer "who is Carrie Billeaud" for both a search engine and a real visitor. Without a bio, there's nothing there to build trust, and nothing for Google to read to understand who she is — this is the single highest-leverage content fix on the entire site.</p>
+      <p><strong>Who can fix it:</strong> This is an editable field in the agent's own BoldTrail/kvCORE dashboard. <span class="tag fix-direct">Fix directly</span> <span class="tag verified">Verified</span></p>
+    </div>
+
+    <div class="finding">
+      <h3>5. Search engines can't formally confirm who you are</h3>
+      <p><strong>What:</strong> None of the site's pages carry structured data ("schema") — the markup that formally tells Google "this is a real estate agent, this is her business, this is a blog post." No agent, business, or article schema was found anywhere on the site.</p>
+      <p><strong>Why it matters:</strong> Without it, Google has to infer basic facts about Carrie from unstructured text alone — a weaker signal — and the site misses out on the richer search results (like knowledge-panel eligibility) that schema helps unlock.</p>
+      <p><strong>Who can fix it:</strong> Sitewide template gap across the BoldTrail platform; no agent-side workaround exists. <span class="tag fix-ticket">eXp support ticket</span> <span class="tag verified">Verified</span></p>
+    </div>
+
+    <div class="finding">
+      <h3>6. Your homepage title and description are identical</h3>
+      <p><strong>What:</strong> The homepage's title tag and its meta description — two fields meant to say two different things — contain the exact same 130+ character sentence, word for word.</p>
+      <p><strong>Why it matters:</strong> Search engines will likely rewrite the search snippet themselves since the description adds no new information, and the over-length, duplicated text wastes a chance to control how the page is described in results.</p>
+      <p><strong>Who can fix it:</strong> Editable in the site's own settings. <span class="tag fix-direct">Fix directly</span> <span class="tag verified">Verified</span></p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="next">
+  <div class="wrap">
+    <p class="kicker">Fixing This</p>
+    <h2>What's next</h2>
+    <p>Two of these six fixes (the bio and the homepage title/description) can be done directly, this week, at no cost. The other four need a support ticket filed with eXp/BoldTrail — we've drafted the ticket language for each one so it's a short request, not a research project. See the full sequencing: <a href="roadmap.html">30/60/90 roadmap →</a></p>
+  </div>
+</section>
+
+<section class="section section-alt" id="audit-pages">
+  <div class="wrap">
+    <p class="kicker">Full Audit</p>
+    <nav class="audit-nav">
+      <a href="presence.html">Public Presence</a>
+      <a href="website.html">Website Technical</a>
+      <a href="local-seo.html">Local SEO &amp; GBP</a>
+      <a href="competitors.html">Competitor Gap</a>
+      <a href="ai-search.html">AI Search Visibility</a>
+      <a href="roadmap.html">30/60/90 Roadmap</a>
+      <a href="../">← Demo Homepage</a>
+    </nav>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Carrie Billeaud, REALTOR® · eXp Realty · Lafayette, Louisiana · <a href="tel:3372585379">337-258-5379</a></p>
+  <p>SEO &amp; lead-generation audit prepared by Brook DuBose, July 2026. Evidence basis: findings checked against live public sources on 2026-07-08. Items marked "verify with Carrie" are never used in client-facing marketing until confirmed.</p>
+</div></footer>
+</body></html>
