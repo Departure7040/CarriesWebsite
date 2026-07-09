@@ -66,35 +66,35 @@ Note: review counts are drawn from different platforms per agent (Zillow, Experi
 
 | Dimension | Carrie's Current State | Winner Benchmark | Gap | Priority |
 |-----------|----------------------|------------------|-----|----------|
-| **Review Count** | 29 Zillow / 2 Realtor.com / 0 Homes.com / 0 Google `[verified — per 01/02]` | 100+ (Sean: 353, Stephen: 79, Nah: 97) | **CRITICAL** | **1** |
+| **Review Count** | **185 Google (5.0★) / 29 Zillow / 2 Realtor.com / 0 Homes.com** `[verified — per 01/02, corrected 2026-07-08]` | Sean: 353 (Zillow), Stephen: 79 (Experience.com), Nah: 97 (FastExpert) — **note: none of these are Google counts; we have no competitor Google review data** `[inferred — gap, not a measured comparison]` | **MODERATE** — Google is now Carrie's strongest platform and likely rivals or beats competitors on Google specifically, though we can't confirm without their Google counts; the real gap is Realtor.com/Homes.com | **2** |
 | **Platform Consolidation** | eXp Realty profile + Instagram only | Zillow, Realtor.com, Homes.com, BirdEye, Experience.com + directories | **CRITICAL** | **1** |
 | **Dedicated Website** | None (relying on eXp Realty + Instagram) | Dedicated domain (e.g., therealjessicabroussard.com, topagent337.com, lafayettehomepros.com) | **HIGH** | **2** |
 | **Area-Specific Landing Pages** | None | Youngsville, Broussard, Acadiana pages (Jessica, Robbie) | **HIGH** | **2** |
 | **Content Depth** | Instagram only | Guides (buyer/seller), market tips, service area info | **HIGH** | **2** |
 | **Team/Branding** | Individual branding (eXp Realty affiliate) | Named team (Sean's "Lafayette's Realtor", Nah's "Dream Team", Keaty "team" structure) | **MEDIUM** | **3** |
 | **Social Media Presence** | Instagram only | Multi-channel: Instagram, TikTok, Facebook, YouTube (emerging) | **MEDIUM** | **3** |
-| **Rating (where visible)** | [TBD] | 4.95–5.0 across platforms | TBD | — |
+| **Rating (where visible)** | 5.0 Google, 5.0 Zillow `[verified]` | 4.95–5.0 across platforms | On par | — |
 
-**Key Insight:** Carrie appears in directory searches but lacks the review volume, content depth, and dedicated web presence of top 3–4 competitors. Primary gap is *discoverability* (no dedicated site → lower organic rank) and *social proof* (low review count relative to top performers). `[inferred]`
+**Key Insight:** Carrie appears in directory searches and now shows a strong 185-review, 5.0-rated Google Business Profile `[verified, corrected 2026-07-08]`, but lacks the content depth and dedicated web presence of top 3–4 competitors, and her review strength on Google hasn't spread to Realtor.com/Homes.com. Primary gap is *discoverability* (no dedicated site → lower organic rank, and the GBP's decorated name may itself be hurting how easily it's found — see `01_public_presence_inventory.md`) and *review concentration* (strong on Google/Zillow, thin on Realtor.com/Homes.com) rather than an overall absence of social proof. `[inferred]`
 
 ---
 
 ## How to Beat Them: Prioritized Action Plan
 
-### **Phase 1: Build Review Volume & Platform Consolidation (Months 1–2)**
-**Why:** Review volume is the single biggest differentiator. Top performers have 80–353 reviews across consolidated platforms.
+### **Phase 1: Protect Google, Build Volume Elsewhere & Platform Consolidation (Months 1–2)**
+**Why:** Review volume is the single biggest differentiator, and Carrie already leads on it in one place — 185 Google reviews at 5.0. Top performers have 79–353 reviews on various platforms; the work now is protecting/extending the Google lead and closing the gap on Realtor.com/Homes.com, not starting review-building from zero.
 
 1. **Claim & Optimize Profiles:**
+   - Google Business Profile: **Exists — 185 reviews, 5.0 rating** `[corrected 2026-07-08]`. Obtain manager access, fix the keyword/area-decorated business name (policy risk, see `02_local_seo_audit.md`), replace the fbclid-tracked website link with a clean UTM link
    - Zillow: Verify Carrie Billeaud profile(s); add professional photo, full bio, service area tags
    - Realtor.com: Ensure profile is claimed and filled (years of experience, specializations, transaction data)
    - Homes.com: Create agent profile if missing; add transaction history and testimonials
    - BirdEye / Experience.com: Claim profiles if available (secondary platforms but visible to local seekers)
-   - Google Business Profile: Verify and optimize (local pack visibility)
 
 2. **Request Reviews Systematically:**
    - Launch post-transaction review request campaign (email, text, in-person)
    - Target: sustained pace of 2–4 new reviews/month (≈6–12 in 90 days), consistent with `02_local_seo_audit.md`'s guidance — a burst of 20–30 reviews in 90 days risks looking unnatural to platform spam detection and is not recommended `[best-practice]`
-   - Focus on Zillow (most visible in local searches) and Google (local pack)
+   - Focus on Realtor.com and Homes.com (the real review gaps) while keeping steady asks flowing to Google (maintain the 185-review lead) and Zillow
    - Response: Within 48 hrs to top reviewers; show engagement
 
 3. **Content Quick-Wins:**
@@ -185,10 +185,10 @@ Note: review counts are drawn from different platforms per agent (Zillow, Experi
 
 ## Summary
 
-**Current Position:** Carrie appeared low or absent in the organic queries we sampled `[inferred, low confidence — SERPs vary by location/personalization; see SERP Approximation Caveat above; source_log.csv notes this as a low-confidence inference, not a measured rank]`. Low SERP visibility, taken together with the platform gaps documented above, suggests low review count, no dedicated site, and limited content presence are the likely contributing factors.
+**Current Position:** Carrie appeared low or absent in the organic queries we sampled `[inferred, low confidence — SERPs vary by location/personalization; see SERP Approximation Caveat above; source_log.csv notes this as a low-confidence inference, not a measured rank]`. This is notable given she has a strong, 185-review Google Business Profile `[verified, corrected 2026-07-08]` — low SERP visibility despite a strong GBP suggests no dedicated site and limited content presence are the likely contributing factors, and possibly that the GBP's decorated name is hurting how confidently it matches search queries (see `01_public_presence_inventory.md` discoverability note).
 
 **Biggest Opportunities:**
-1. **Review volume** (sustained growth toward 80–100 over 6+ months, at a pace consistent with `02_local_seo_audit.md` → competitive baseline)
+1. **Protect and extend the Google review lead** (185 reviews / 5.0 — fix the name-policy risk, keep the momentum going) while building Realtor.com and Homes.com toward a more competitive baseline, at a pace consistent with `02_local_seo_audit.md`
 2. **Dedicated website** (with area pages) → competitors with this combination consistently outrank agents without it; no specific position gain can be guaranteed
 3. **Multi-channel social** (TikTok + expanded Instagram + Facebook) → lead generation + brand awareness
 

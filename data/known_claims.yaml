@@ -50,3 +50,13 @@ claims:
     claim: "Handles rentals / investment property"
     source: "Profile specialties"
     status: unverified
+  - id: gbp_exists
+    claim: "A Google Business Profile exists for Carrie Billeaud, with 185 reviews at a 5.0 rating, address 3 Flagg Place, 4 building b suite b, Lafayette, LA 70508, and phone (337) 258-5379"
+    source: "Client-supplied share link (https://share.google/kcBY0AQWmnVjNLAy4), verified live 2026-07-08"
+    status: verified
+    note: "Corrects prior audit conclusion of 'No GBP exists' (WF01 search sweep, 2026-07-08). See qa_notes.md addendum for the errata."
+  - id: gbp_name_policy
+    claim: "The GBP business name as shown, 'Carrie Billeaud Realtor | Acadiana & Surrounding Area | eXp Realty', is keyword/area-decorated and likely violates Google's real-world-name policy, risking suspension or a forced edit"
+    source: "Direct observation of live GBP knowledge panel, 2026-07-08"
+    status: verified
+    note: "[verified] observation of what the name field currently shows; [best-practice] the policy-violation risk assessment. Fix carefully: discuss with Carrie first, change only the name in one pass, document before/after."

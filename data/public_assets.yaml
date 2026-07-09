@@ -185,12 +185,23 @@ assets:
       service_areas: "Lafayette"
       data_source: "commercial real estate platform"
   - name: Google Business Profile
-    url: null
+    url: "https://share.google/kcBY0AQWmnVjNLAy4"
     type: gbp
-    status: not_found
+    status: checked
     findings:
-      result: "NOT FOUND"
-      search_queries_used: "3 different searches; no results"
-      note: "Google Business Profile does not appear to exist for Carrie Billeaud; not found in any search results"
-      recommendation: "PRIORITY - Client should create GBP to capture local search traffic and provide canonical business information"
+      result: "EXISTS — verified live 2026-07-08 via client-supplied share link (Brook); knowledge panel kgmid /g/11s57kl156"
+      business_name_as_shown: "Carrie Billeaud Realtor | Acadiana & Surrounding Area | eXp Realty"
+      category: "Real estate agent"
+      rating: "5.0"
+      reviews: "185"
+      address: "3 Flagg Place, 4 building b suite b, Lafayette, LA 70508"
+      address_match: "Matches Nextdoor address variant (asset conflict #2)"
+      phone: "(337) 258-5379"
+      phone_match: "Matches the 6-source primary phone"
+      website_link: "https://carriebilleaud.exprealty.com/?fbclid=IwAR1..."
+      website_link_issue: "Carries a Facebook fbclid tracking artifact instead of a clean UTM-tagged link; replace with utm_source=google&utm_medium=organic&utm_campaign=gbp"
+      name_policy_concern: "[verified observation] Name is keyword/area-decorated ('| Acadiana & Surrounding Area | eXp Realty'); [best-practice] this likely violates Google's real-world-name policy and risks suspension or a forced edit — fix carefully, one change at a time, document before/after; discuss approach with Carrie first"
+      discoverability_note: "Our own recon (3 search-query variants) failed to surface this profile despite it existing live; name decoration may be hurting match quality for 'Carrie Billeaud realtor' queries — worth investigating, and also an internal process lesson (absence of search evidence is not evidence of absence)"
+      source: "Client-supplied share link, verified via live knowledge panel fetch"
       confidence: "high"
+    date_checked: "2026-07-08"

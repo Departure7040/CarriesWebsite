@@ -11,10 +11,10 @@ NAP data (phone numbers, addresses, emails **as displayed** on each source) is g
 
 ## Executive Summary
 
-Carrie Billeaud maintains a moderately strong public presence across major real estate platforms and social media, with strong bio quality and reviews on Zillow (29 reviews, 5.0★ `[verified]`; see Per-Source Findings for tag provenance). However, significant issues exist:
+Carrie Billeaud maintains a moderately strong public presence across major real estate platforms and social media, and her strongest asset is her **Google Business Profile: 185 reviews at a 5.0 rating** `[verified]` — see `## Errata (2026-07-08)` for a correction to this report's original conclusion. She also has strong bio quality and reviews on Zillow (29 reviews, 5.0★ `[verified]`; see Per-Source Findings for tag provenance). However, significant issues exist:
 
-1. **Critical NAP inconsistencies** across address and phone fields
-2. **No Google Business Profile** (major opportunity missed)
+1. **GBP name-policy risk + discoverability gap** — the profile's business name is keyword/area-decorated, which risks a Google policy action, and our own search sweeps failed to find the profile despite it existing live
+2. **Critical NAP inconsistencies** across address and phone fields
 3. **Email variations** across platforms (gmail vs exprealty domain)
 4. **Soft primary website** with weak bio and generic messaging
 5. **Blocked platforms** (LinkedIn, Facebook, Instagram) limit full visibility assessment
@@ -215,16 +215,23 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
 
 ---
 
-### Tier 4: Missing/Not Found
+### Tier 1.5: Google Business Profile (corrected 2026-07-08 — see Errata)
 
 #### Google Business Profile
-- **Status:** NOT FOUND
-- **Search Queries Used:**
-  - "Carrie Billeaud" "Google Business Profile" Lafayette Louisiana realtor
-  - Carrie Billeaud Lafayette Louisiana Google Maps rating reviews
-  - (3 total search attempts)
-- **Result:** **Zero search results for GBP or Maps listing**
-- **Assessment:** **[verified]** No GBP exists; this is a **critical gap**. Google Local/Maps search is primary discovery channel for local real estate services.
+- **Status:** ✓ Checked — EXISTS
+- **URL:** https://share.google/kcBY0AQWmnVjNLAy4 (share link → live Google knowledge panel; kgmid `/g/11s57kl156`)
+- **Source:** Provided by client (Brook); verified live 2026-07-08.
+- **Data Found:**
+  - Business name as shown: **"Carrie Billeaud Realtor | Acadiana & Surrounding Area | eXp Realty"** [verified]
+  - Category: **Real estate agent** [verified]
+  - Rating: **5.0** [verified]
+  - Reviews: **185** [verified] — this is Carrie's single strongest public asset; more Google reviews than any competitor's *Google* review count captured in this audit (competitor counts we have are platform-specific — Sean Hettich's 353 are Zillow, not Google — see `04_competitor_gap_analysis.md`)
+  - Address: **3 Flagg Place, 4 building b suite b, Lafayette, LA 70508** [verified] — matches the Nextdoor address variant (known conflict #2)
+  - Phone: **(337) 258-5379** [verified] — matches the 6-source primary phone
+  - Website link: **https://carriebilleaud.exprealty.com/?fbclid=IwAR1...** [verified] — carries a Facebook `fbclid` tracking artifact instead of a clean UTM-tagged link
+- **Assessment:** **[verified]** GBP exists and is strong on reviews/rating, but has two fixable issues: (1) `[verified observation]` the business name is keyword/area-decorated ("| Acadiana & Surrounding Area | eXp Realty"), which `[best-practice]` likely violates Google's real-world-name policy and risks suspension or a forced edit — this should be fixed carefully (discuss with Carrie first, change only the name in one pass, document before/after); (2) the website link needs the fbclid artifact replaced with a clean UTM link (`utm_source=google&utm_medium=organic&utm_campaign=gbp`). The address corroborates the Nextdoor variant, which is relevant to (but does not decide) the canonical-NAP question. Separately, our own search sweep (see original assessment below) failed to surface this profile despite it existing live — a discoverability finding worth investigating (the name decoration may hurt match quality for "Carrie Billeaud realtor" queries) and an internal process lesson: absence of search evidence is not evidence of absence.
+
+**Original (incorrect) assessment, retained for the record:** *"Search Queries Used: 'Carrie Billeaud' 'Google Business Profile' Lafayette Louisiana realtor; Carrie Billeaud Lafayette Louisiana Google Maps rating reviews; 3 total search attempts. Result: Zero search results for GBP or Maps listing. Assessment: No GBP exists; this is a critical gap."* This was wrong — see `## Errata (2026-07-08)` below.
 
 ---
 
@@ -353,15 +360,15 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 
 | Source | Review Count | Rating | Notes |
 |--------|--------------|--------|-------|
-| Zillow Individual | **29** | **5.0★** | Highest volume; perfect score [verified] |
+| **Google (GBP)** | **185** | **5.0★** | **Strongest asset — highest review count of any platform in this inventory [verified]** |
+| Zillow Individual | **29** | **5.0★** | Second-strongest; perfect score [verified] |
 | Zillow Team | – | 5.0★ | Team aggregate |
 | Realtor.com | 2 | – | Low volume |
 | Homes.com | 0 | – | No ratings shown |
 | Nextdoor | 6 faves | – | Local engagement |
 | LoopNet | – | – | No ratings |
-| Zillow Team | – | 5.0★ | Perfect score |
 
-**Gaps:** Limited review presence on Homes.com (high production claims, zero reviews = credibility gap). Nextdoor local presence modest (6 faves).
+**Gaps:** The "review gap" is no longer about Google (185 reviews, 5.0★ is now Carrie's leading platform) — it's about spreading reviews to Realtor.com (2), Homes.com (0), and reinforcing Zillow (29), and protecting the Google lead she already has. Nextdoor local presence modest (6 faves).
 
 ---
 
@@ -369,10 +376,10 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 
 ### Top 5 Priority Gaps
 
-1. **No Google Business Profile [CRITICAL]**
-   - Status: NOT FOUND
-   - Impact: Missing primary local search channel; potential revenue loss
-   - Action: Create GBP immediately; use canonical address [client-confirm]; optimize with photos, service areas, reviews
+1. **GBP name-policy risk + protect/optimize the existing profile [CRITICAL]**
+   - Status: GBP EXISTS (185 reviews, 5.0 rating) — corrected 2026-07-08, see Errata
+   - Impact: Strongest public asset, but the keyword/area-decorated business name risks a Google policy action (suspension or forced edit); website link has a tracking artifact instead of a clean UTM link; profile wasn't discoverable via our own search sweeps
+   - Action: Obtain manager access; fix the business name carefully (discuss with Carrie, change only the name in one pass, document before/after) `[client-confirm]`; replace the fbclid website link with a clean UTM link; complete categories/services/photos/Q&A/posts
    - Timeline: Week 1
 
 2. **Weak Primary Website Bio**
@@ -425,6 +432,12 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 - Current Issue: Weak bio; generic messaging
 - Improvement Path: Update bio, credentials, production stats; ensure NAP matches canonical version
 
+**Strongest Authority Asset:** Google Business Profile (https://share.google/kcBY0AQWmnVjNLAy4)
+- Status: 185 reviews; 5.0★; highest-authority local entity source
+- Strength: Largest review count in this inventory; corroborates the Nextdoor address variant
+- Risk: Keyword/area-decorated business name (policy risk); website link carries a tracking artifact
+- Use For: Protect and optimize first — fix name policy issue, clean the website link, complete categories/services/photos/Q&A — before pursuing new-platform review growth elsewhere
+
 **Secondary Canonical:** https://www.zillow.com/profile/carriebilleaud
 - Status: 29 verified reviews; 5.0★; high authority platform
 - Strength: Real social proof; detailed professional bio
@@ -456,24 +469,34 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 | LinkedIn | Social | ✗ Blocked | – | – | – | – | – | Strong (snippet) |
 | Facebook | Social | ✗ Blocked | 337-258-5379 | – | carriebilleaud@gmail.com | – | 5,550 likes | Strong (snippet) |
 | Instagram | Social | ✗ Unsupported | – | – | – | – | – | No data |
-| GBP | Local | ✗ Not Found | – | – | – | – | – | – |
+| GBP | Local | ✓ Checked | (337) 258-5379 | 3 Flagg Place, Lafayette | – | 5.0★ | 185 | Strong (name policy risk) |
 
 ---
 
 ## Conclusion
 
-Carrie Billeaud has established a **moderately strong** public presence across major real estate platforms, with particular strength on Zillow (29★ reviews) and detailed self-reported credentials on Homes.com/Realtor.com (`[client-confirm]` — unverified as fact). However, critical gaps exist:
+Carrie Billeaud has established a **moderately strong** public presence across major real estate platforms, and her Google Business Profile — 185 reviews, 5.0★ — is her single strongest asset (see Errata below for the correction to this report's original "no GBP" conclusion). She also has strength on Zillow (29★ reviews) and detailed self-reported credentials on Homes.com/Realtor.com (`[client-confirm]` — unverified as fact). However, critical gaps remain:
 
-1. **Missing Google Business Profile** — Highest priority; immediate action required
-2. **NAP inconsistencies** — Address and phone conflicts across platforms require standardization
+1. **GBP name-policy risk + discoverability gap** — the business name is keyword/area-decorated (policy risk), and our own search sweeps failed to surface the profile despite it existing live
+2. **NAP inconsistencies** — Address and phone conflicts across platforms require standardization; the GBP address corroborates one existing variant (Nextdoor)
 3. **Weak owned website bio** — Primary channel lacks professional depth
 4. **Blocked social verification** — Cannot fully audit LinkedIn, Facebook, Instagram
 
-**Recommendation:** Prioritize GBP creation, NAP standardization, and website bio update in Week 1. Secondary focus: Generate reviews on Homes.com/Realtor.com; verify credential claims (2x vs. 3x ICON); audit Instagram presence.
+**Recommendation:** Prioritize obtaining GBP manager access, fixing the name-policy risk (carefully, with Carrie's input), cleaning the website link, and completing NAP standardization and website bio update in Week 1. Secondary focus: Generate reviews on Homes.com/Realtor.com; verify credential claims (2x vs. 3x ICON); audit Instagram presence.
 
 ---
 
-**Report Generated:** 2026-07-08  
-**Data Sources:** 12 public profiles (11 fetched; 1 search only)  
-**Confidence:** High (8 verified sources); Medium (2 conflict areas); Low (3 blocked sources)  
-**Methodology:** Firecrawl scrape + web search + data extraction JSON
+## Errata (2026-07-08)
+
+This report originally concluded, in the Google Business Profile section: **"No GBP exists; this is a critical gap"** — based on three search queries returning zero results. **This was wrong.** Carrie's Google Business Profile exists and is live: 185 reviews, 5.0 rating, verified via a share link the client (Brook) supplied and confirmed against the live Google knowledge panel on 2026-07-08 (`https://share.google/kcBY0AQWmnVjNLAy4`, kgmid `/g/11s57kl156`).
+
+The corrected findings are reflected throughout this report (Per-Source Findings, Executive Summary, Critical Gaps, Review & Rating Summary, Canonical URL Recommendation, Summary Table, Conclusion). Full field-level facts are in `data/public_assets.yaml` and `data/nap_consistency_matrix.csv`.
+
+**Lesson:** absence of search evidence is not evidence of absence. Our search sweep (3 query variants) failing to surface a live, active, high-review-count profile is itself a discoverability finding worth investigating (the profile's keyword/area-decorated name may be hurting match quality), but it should never have been reported as "does not exist" without exhausting other verification paths (e.g., asking the client directly) first. This correction was applied across `data/public_assets.yaml`, `data/nap_consistency_matrix.csv`, `data/source_log.csv`, `data/known_claims.yaml`, and all downstream reports; see `reports/qa_notes.md` for the dated addendum.
+
+---
+
+**Report Generated:** 2026-07-08 (corrected 2026-07-08)
+**Data Sources:** 12 public profiles (12 fetched; 1 initially search-only later corrected via client-supplied source)
+**Confidence:** High (9 verified sources); Medium (2 conflict areas); Low (3 blocked sources)
+**Methodology:** Firecrawl scrape + web search + data extraction JSON + client-supplied verification
