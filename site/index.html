@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Carrie Billeaud · Lafayette LA Realtor — Demo Concept</title>
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"RealEstateAgent",
 "name":"Carrie Billeaud, Realtor","telephone":"+1-337-258-5379",
@@ -16,7 +16,10 @@
 "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"185"},
 "sameAs":["https://www.zillow.com/profile/carriebilleaud","https://www.realtor.com/realestateagents/567985a6bb954c0100686dd4","https://www.homes.com/real-estate-agents/carrie-billeaud/pf5j8yv/","https://www.facebook.com/carriebilleaud/","https://www.instagram.com/carriebilleaud_realtor/"]}
 </script>
-<!-- NOTE for the pitch: address is omitted until Carrie confirms the canonical one. -->
+<!-- NOTE for the pitch: address is omitted until Carrie confirms the canonical one.
+     PRODUCTION NOTE: aggregateRating is fine on this private noindex demo because the rated reviews
+     are visible on the page; before any indexable launch, validate against Google review-snippet rules
+     (markup must match visible, clearly-sourced review content) or remove it. -->
 </head>
 <body id="top">
 <div class="demo-banner">Demo concept — part of your SEO audit. <a href="audit/">See the analysis →</a></div>
@@ -106,6 +109,7 @@
         </select>
       </div>
       <button class="btn btn-gold search-submit" type="submit">Search</button>
+      <a class="btn search-external" href="https://carriebilleaud.exprealty.com/index.php?advanced=1&amp;rtype=map#rslt" target="_blank" rel="noopener">Open full eXp search &#8599;</a>
     </form>
     <p><em>Demo note: results come from your live eXp site — on a production build the search would be fully native to the page.</em></p>
     <div id="search-results" hidden>
@@ -187,7 +191,7 @@
     <h2>Acadiana, community by community</h2>
     <div class="card-grid">
       <div class="card"><h3>Lafayette</h3><p>The hub of Acadiana — established neighborhoods alongside newer construction close to work, schools and downtown.</p></div>
-      <div class="card"><h3>Youngsville</h3><p>One of the fastest-growing cities in the region, with steady new-construction activity for buyers who want a brand-new home.</p></div>
+      <div class="card"><h3>Youngsville</h3><p>A fast-growing Acadiana community with steady new-construction activity for buyers who want a brand-new home.</p></div>
       <div class="card"><h3>Broussard</h3><p>An easy commute into Lafayette paired with well-established, family-friendly neighborhoods.</p></div>
       <div class="card"><h3>Carencro</h3><p>A quieter, more rural feel just north of Lafayette for buyers who want more space.</p></div>
       <div class="card"><h3>Scott</h3><p>Known for its central location and small-town character just west of Lafayette.</p></div>
@@ -264,7 +268,7 @@
         </tbody>
       </table>
     </div>
-    <p><em>Sample dates — live version syncs with your calendar/MLS.</em></p>
+    <p><strong>Demo placeholders below.</strong> Live open houses would come from your MLS/calendar data.</p>
     <p style="margin-top:1rem">Want a heads-up when the next one is scheduled? <a class="btn btn-gold" href="#contact">Get open house alerts</a></p>
   </div>
 </section>
@@ -296,30 +300,32 @@
   <div class="wrap">
     <p class="kicker">Trusted Partners</p>
     <h2>The local pros Carrie trusts</h2>
-    <p>A good Realtor's rolodex is half the value. These are the lenders and local vendors you already recommend — brought onto the page itself instead of living in a PDF, so clients (and search engines) can actually find them.</p>
-    <h3 style="margin:1.25rem 0 .75rem">Preferred lenders</h3>
-    <div class="card-grid">
-      <div class="card"><h3>Scott Dailey</h3><p>Executive Mortgage</p><p><a href="tel:3373567774">337-356-7774</a></p></div>
-      <div class="card"><h3>Tara Gaspar</h3><p>Preferred Lending Solutions</p><p><a href="tel:3378521446">337-852-1446</a></p></div>
-      <div class="card"><h3>Corey Burgess</h3><p>Central Mortgage Services</p><p><a href="tel:2148860912">214-886-0912</a></p></div>
-      <div class="card"><h3>Caroline Arceneaux</h3><p>Guaranteed Rate</p><p><a href="tel:9852649242">985-264-9242</a></p></div>
-    </div>
-    <h3 style="margin:1.5rem 0 .75rem">Trusted vendors</h3>
+    <p>A good Realtor&rsquo;s rolodex is half the value. These are the lenders and local vendors you already recommend &mdash; brought onto the page itself instead of living in a PDF, so clients (and search engines) can actually find them.</p>
+    <h3 class="partners-subhead">Preferred lenders</h3>
     <div class="card-grid vendors-grid">
-      <div class="card"><h3>Title &amp; Attorney</h3><p>Angela Lalande · 337-446-0790</p></div>
-      <div class="card"><h3>Insurance</h3><p>Chase Desormeaux, State Farm · 337-232-7359</p></div>
-      <div class="card"><h3>Construction</h3><p>Stevens Construction · 337-412-4632</p></div>
-      <div class="card"><h3>Roofing</h3><p>Pelican Roofing · 337-703-4515</p></div>
-      <div class="card"><h3>Plumbing</h3><p>CJ's Plumbing · 337-234-9769</p></div>
-      <div class="card"><h3>Electrician</h3><p>Affordable Electric · 337-889-0047</p></div>
-      <div class="card"><h3>Pest Control</h3><p>J&amp;J Exterminating · 337-234-2847</p></div>
-      <div class="card"><h3>Moving</h3><p>Two Men and a Truck · 337-366-8056</p></div>
-      <div class="card"><h3>Landscaping</h3><p>Doucet's Lawncare &amp; Landscaping · 337-654-5274</p></div>
-      <div class="card"><h3>Interior Design</h3><p>Posh Exclusive Interiors · 337-261-3344</p></div>
-      <div class="card"><h3>Handyman</h3><p>Matthew Guillot · 337-552-5770</p></div>
-      <div class="card"><h3>Cleaning &amp; Flooring</h3><p>Ashley Wiggins · 337-591-6073 · Rusty Faul · 337-303-9904</p></div>
+      <div class="card vendor-card lender-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M6 10v8M12 10v8M18 10v8M4 18h16"/><path d="M10 21h4"/></svg></span><div><p class="vendor-cat">Preferred lender</p><p class="vendor-line"><strong>Scott Dailey</strong> &mdash; Executive Mortgage</p><p class="vendor-line"><a href="tel:3373567774">337-356-7774</a> &middot; <a href="mailto:scott@emlending.com">email</a></p></div></div>
+      <div class="card vendor-card lender-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M6 10v8M12 10v8M18 10v8M4 18h16"/><path d="M10 21h4"/></svg></span><div><p class="vendor-cat">Preferred lender</p><p class="vendor-line"><strong>Tara Gaspar</strong> &mdash; Preferred Lending Solutions</p><p class="vendor-line"><a href="tel:3378521446">337-852-1446</a> &middot; <a href="mailto:tara@donedealnow.com">email</a></p></div></div>
+      <div class="card vendor-card lender-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M6 10v8M12 10v8M18 10v8M4 18h16"/><path d="M10 21h4"/></svg></span><div><p class="vendor-cat">Preferred lender</p><p class="vendor-line"><strong>Corey Burgess</strong> &mdash; Central Mortgage Services</p><p class="vendor-line"><a href="tel:2148860912">214-886-0912</a> &middot; <a href="mailto:corey@centralmortgageservices.com">email</a></p></div></div>
+      <div class="card vendor-card lender-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M6 10v8M12 10v8M18 10v8M4 18h16"/><path d="M10 21h4"/></svg></span><div><p class="vendor-cat">Preferred lender</p><p class="vendor-line"><strong>Caroline Arceneaux</strong> &mdash; Guaranteed Rate</p><p class="vendor-line"><a href="tel:9852649242">985-264-9242</a> &middot; <a href="mailto:caroline.arceneaux@guaranteedrate.com">email</a></p></div></div>
     </div>
-    <p style="margin-top:1rem"><em>Sourced from your current Preferred Lenders page and your Trusted Vendors PDF (verified 2026-07-08) — shown here as an on-page, crawlable section. Contacts should be re-confirmed with you before a production launch.</em></p>
+    <h3 class="partners-subhead">Trusted vendors</h3>
+    <div class="card-grid vendors-grid">
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span><div><p class="vendor-cat">Title &amp; Attorney</p><p class="vendor-line"><strong>Angela Lalande</strong></p><p class="vendor-line"><a href="tel:3374460790">337-446-0790</a> &middot; <a href="https://lalandetitle.com" target="_blank" rel="noopener">lalandetitle.com</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></span><div><p class="vendor-cat">Insurance</p><p class="vendor-line"><strong>Chase Desormeaux</strong> &mdash; State Farm</p><p class="vendor-line"><a href="tel:3372327359">337-232-7359</a> &middot; <a href="https://chasedesormeaux.com" target="_blank" rel="noopener">chasedesormeaux.com</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l6-6"/><path d="M9 7l8 8 3-3-8-8-3 3z"/></svg></span><div><p class="vendor-cat">Construction</p><p class="vendor-line"><strong>Stevens Construction</strong> &middot; <a href="tel:3374124632">337-412-4632</a></p><p class="vendor-line"><strong>Rusty Faul</strong> &middot; <a href="tel:3373039904">337-303-9904</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></span><div><p class="vendor-cat">Roofing</p><p class="vendor-line"><strong>Pelican Roofing</strong></p><p class="vendor-line"><a href="tel:3377034515">337-703-4515</a> &middot; <a href="https://pelicanroof.com" target="_blank" rel="noopener">pelicanroof.com</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg></span><div><p class="vendor-cat">Plumbing</p><p class="vendor-line"><strong>CJ&rsquo;s Plumbing</strong></p><p class="vendor-line"><a href="tel:3372349769">337-234-9769</a> &middot; <a href="https://cjsplumbingandrepair.com" target="_blank" rel="noopener">cjsplumbingandrepair.com</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></span><div><p class="vendor-cat">Electrician</p><p class="vendor-line"><strong>Affordable Electric</strong> &mdash; Derek</p><p class="vendor-line"><a href="tel:3378890047">337-889-0047</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="5"/><path d="M9 8L7 5M15 8l2-3M7 13H4M20 13h-3M8 17l-2 3M16 17l2 3"/></svg></span><div><p class="vendor-cat">Pest Control</p><p class="vendor-line"><strong>J&amp;J Exterminating</strong></p><p class="vendor-line"><a href="tel:3372342847">337-234-2847</a> &middot; <a href="https://jjext.com" target="_blank" rel="noopener">jjext.com</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="11" height="7" rx="1"/><path d="M13 10h4l3 3v2h-7z"/><circle cx="6" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></span><div><p class="vendor-cat">Moving</p><p class="vendor-line"><strong>Two Men and a Truck</strong></p><p class="vendor-line"><a href="tel:3373668056">337-366-8056</a> &middot; <a href="https://twomenandatruck.com" target="_blank" rel="noopener">twomenandatruck.com</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z"/><path d="M5 19c4-4 7-7 10-10"/></svg></span><div><p class="vendor-cat">Landscaping</p><p class="vendor-line"><strong>Doucet&rsquo;s Lawncare &amp; Landscaping</strong></p><p class="vendor-line"><a href="tel:3376545274">337-654-5274</a> &middot; <a href="https://doucetsllc.com" target="_blank" rel="noopener">doucetsllc.com</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/><path d="M4 12v6M20 12v6M4 15h16"/></svg></span><div><p class="vendor-cat">Interior Design</p><p class="vendor-line"><strong>Posh Exclusive Interiors</strong></p><p class="vendor-line"><a href="tel:3372613344">337-261-3344</a> &middot; <a href="https://poshinteriors.com" target="_blank" rel="noopener">poshinteriors.com</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6a4 4 0 1 0-4 4L4 16l4 4 6-6a4 4 0 0 0 4-4z"/></svg></span><div><p class="vendor-cat">Handyman</p><p class="vendor-line"><strong>Matthew Guillot</strong> &middot; <a href="tel:3375525770">337-552-5770</a></p><p class="vendor-line"><strong>Travis Phillips</strong> &middot; <a href="tel:3373031533">337-303-1533</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="12" height="4" rx="1"/><path d="M16 6h4v5h-8v3"/><path d="M12 14v6"/></svg></span><div><p class="vendor-cat">Painting</p><p class="vendor-line"><strong>B &amp; G Solutions</strong> &middot; <a href="tel:3375525770">337-552-5770</a></p><p class="vendor-line"><strong>Bobby Celestine</strong> &middot; <a href="tel:3372309200">337-230-9200</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l1.5 4L18 9.5 13.5 11 12 15l-1.5-4L6 9.5 10.5 8z"/><path d="M18 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span><div><p class="vendor-cat">Cleaning</p><p class="vendor-line"><strong>Ashley Wiggins</strong> &middot; <a href="tel:3375916073">337-591-6073</a></p><p class="vendor-line"><strong>Mayra Ramos</strong> &middot; <a href="tel:3373035616">337-303-5616</a></p></div></div>
+      <div class="card vendor-card"><span class="vendor-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 12h16M12 4v16"/></svg></span><div><p class="vendor-cat">Flooring</p><p class="vendor-line"><strong>Rusty Faul</strong> &mdash; Cacoon Enterprises</p><p class="vendor-line"><a href="tel:3373039904">337-303-9904</a></p></div></div>
+    </div>
+    <p style="margin-top:1rem"><em>Sourced from your current Preferred Lenders page and your Trusted Vendors PDF (verified 2026-07-08) &mdash; shown here as an on-page, crawlable section. Contacts should be re-confirmed with you before a production launch.</em></p>
   </div>
 </section>
 
@@ -329,7 +335,7 @@
     <h2>Common questions</h2>
     <details>
       <summary>Does it cost anything to work with a buyer's agent?</summary>
-      <p>In most transactions, the seller pays the commission that's split with the buyer's agent, so there's typically no out-of-pocket cost to you as a buyer. Exact terms depend on the listing and any buyer-agency agreement you sign, so it's worth asking upfront on any specific home.</p>
+      <p>Buyer-agent compensation depends on the listing, the offer terms, and your buyer-agency agreement. Carrie will walk through the options upfront so you understand what, if anything, you may be responsible for before you tour homes.</p>
     </details>
     <details>
       <summary>How fast do homes sell in Lafayette?</summary>

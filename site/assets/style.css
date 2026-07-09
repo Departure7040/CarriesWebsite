@@ -86,3 +86,13 @@ details p{margin-top:.6rem}
 .listing-card h3,.listing-card p{padding:0 1.25rem}
 .listing-card h3{margin-top:.9rem}
 .listing-card p:last-child{padding-bottom:1.1rem}
+
+.partners-subhead{margin:1.75rem 0 .9rem;font-size:1.15rem;color:var(--teal-dark)}
+.vendors-grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.vendor-card{flex-direction:row;display:flex;gap:.9rem;align-items:flex-start;padding:1.1rem 1.2rem}
+.vendor-icon{flex:0 0 auto;width:44px;height:44px;border-radius:50%;background:var(--cream);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--teal)}
+.vendor-cat{text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:700;color:var(--gold);margin-bottom:.15rem}
+.vendor-line{font-size:.92rem;line-height:1.45}
+.vendor-line a{color:var(--teal)}
+.lender-card{border-left:3px solid var(--gold)}
+.search-external{margin-left:.5rem}

@@ -41,9 +41,9 @@ Errata for the full correction.*
    manager access.** The name shows as "Carrie Billeaud Realtor | Acadiana &
    Surrounding Area | eXp Realty" — Google requires the real-world name used
    on your signage/stationery, and a decorated name like this risks
-   suspension or a forced edit. It also may be why our own searches for the
-   profile came back empty even though it's live and strong — worth fixing
-   carefully (one change at a time, documented). The website link on the
+   suspension or a forced edit — unless that exact name is the real-world
+   business name you use consistently on signage, cards, and official
+   materials. Worth fixing carefully (one change at a time, documented). The website link on the
    profile also has a Facebook tracking artifact instead of a clean link.
 2. **Inconsistent identity.** 3 phone numbers, 5 addresses, 3 emails across
    your profiles. Google and AI tools can't tell which is really you, so they
