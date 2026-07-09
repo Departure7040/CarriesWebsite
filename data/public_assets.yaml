@@ -155,6 +155,50 @@ assets:
       confidence: "low"
       data_source: "none - access blocked"
       action_needed: "Consider manual review or alternative scraping method"
+  - name: Facebook (BUSINESS page — separate from primary Facebook)
+    url: https://www.facebook.com/carriebilleaudrealty
+    type: social
+    status: blocked
+    findings:
+      note: "SEPARATE page from https://www.facebook.com/carriebilleaud (5,550 likes, already audited). Discovered 2026-07-08 second pass: Carrie's TikTok video descriptions (e.g. video 7451802974244048174) and an Instagram giveaway post (instagram.com/p/DUbbywokkar/) both link to this URL and label it 'my Facebook Page' / 'Carrie Billeaud' — i.e. this is the page she is actively promoting to new audiences, not the larger legacy page."
+      followers: "~2,500 (client-observed 2026-07-08; not independently verifiable — page blocked to scrapers)"
+      corroborating_evidence: "Also cross-posted by lender partner Aimee Power / Approved Mortgage Now in joint giveaway posts (e.g. facebook.com/approvedmortgagenow/posts/1366535455479770), which link both facebook.com/carriebilleaudrealty and facebook.com/aimeepowerloans as the two entry-qualifying pages."
+      likes: "UNKNOWN — BLOCKED; no search snippet surfaced like count, category, or phone for this page directly"
+      category: "UNKNOWN — BLOCKED"
+      phone: "UNKNOWN — BLOCKED"
+      bio_quality: "unknown"
+      confidence: "low"
+      data_source: "cross-referenced from TikTok/Instagram/lender-partner search snippets only; firecrawl does not support scraping facebook.com (same limitation as the primary FB page)"
+      action_needed: "Resolve with Carrie: which Facebook page is canonical/primary — see reports/09_questions_for_client.md"
+    date_checked: "2026-07-08"
+  - name: TikTok
+    url: https://www.tiktok.com/@carriebilleaud_realtor
+    type: social
+    status: blocked
+    findings:
+      note: "Discovered/confirmed 2026-07-08 second pass. Was listed as a social link on the Homes.com profile (see that entry above) but missed in the first-pass inventory — errata noted in qa_notes.md."
+      followers: "311 [snippet]"
+      likes: "701 [snippet]"
+      bio_snippet: "Realtor | Mom of 4 Real life. Real estate. Real growth."
+      content_observed: "Listing videos, eXp event/party content (e.g. Christmas party 2024), lender co-marketing/giveaway collabs with Aimee Power (Approved Mortgage Now)"
+      firecrawl_scrape_attempted: true
+      firecrawl_scrape_result: "BLOCKED — 'we do not support this site' (same category as Instagram)"
+      bio_quality: "unknown beyond snippet"
+      confidence: "medium — specific follower/like counts came from a direct search-result snippet of the profile itself, not a cross-reference"
+      data_source: "search snippet only; scrape unsupported"
+    date_checked: "2026-07-08"
+  - name: Threads
+    url: https://www.threads.net/@carriebilleaud_realtor
+    type: social
+    status: blocked
+    findings:
+      note: "Discovered 2026-07-08 second pass, linked from Carrie's own TikTok video descriptions (e.g. video 7457698219020143914: 'Threads: https://www.threads.net/@carriebilleaud_realtor')."
+      domain_discrepancy: "Live content for this handle resolves under threads.com (e.g. threads.com/@carriebilleaud_realtor/post/DWIL_G2jEj-/...), not threads.net; threads.net likely redirects post-rebrand. Recorded as-linked by Carrie (threads.net) with the resolving domain noted."
+      content_observed_snippet: "Post snippet: 'ENDING THE WEEK WITH A PENDING LISTING... CARRIE BILLEAUD, Realtor 337-258-5379 carriebilleaud@gmail.com exp REALTY' — phone/email match primary NAP"
+      bio_quality: "unknown"
+      confidence: "low — existence verified via one post snippet only, not a profile-level fetch"
+      data_source: "search snippet only"
+    date_checked: "2026-07-08"
   - name: Nextdoor
     url: https://nextdoor.com/pages/carrie-billeaud-realtor-exp-realty-lafayette-la/
     type: local_profile

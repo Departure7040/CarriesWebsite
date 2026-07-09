@@ -48,7 +48,10 @@ Errata for the full correction.*
 2. **Inconsistent identity.** 3 phone numbers, 5 addresses, 3 emails across
    your profiles. Google and AI tools can't tell which is really you, so they
    trust all of it less. (Your GBP address matches one existing variant —
-   relevant to, but not deciding, which one is canonical.)
+   relevant to, but not deciding, which one is canonical.) It even extends to
+   Facebook: you have two separate pages — the large one (5,550 likes) and a
+   business page your TikTok/Instagram actively link to — and it's not clear
+   which one is meant to be primary.
 3. **Your website blocks AI crawlers.** A technical misconfiguration on the
    eXp-hosted site blocks ChatGPT, Perplexity, and similar tools from reading
    it. Fixable via an eXp support ticket.
@@ -95,7 +98,7 @@ Errata for the full correction.*
 1. Grant (or arrange) manager access to your existing Google Business Profile
    so we can fix the name-policy risk and clean up the listing.
 2. The canonical business name, phone, address, email — one of each.
-3. Answers to the short list in `09_questions_for_client.md` (15 questions, ~10 minutes).
+3. Answers to the short list in `09_questions_for_client.md` (16 questions, ~10 minutes).
 4. Access (or eXp support contact) for: website bio editing, GA4, Search Console.
 5. Sign-off on which production stats we may use publicly (sales volume, years,
    ICON status) — we won't publish any of them until you confirm.

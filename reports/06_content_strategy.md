@@ -56,6 +56,10 @@ Each of the 7 pages is designed to be a source document, not a dead end:
 - **GBP posts** (once the Google Business Profile is created — see `09_questions_for_client.md` Q1): pull one FAQ answer or one H2 section per week as a short GBP update, always linking back to the relevant page.
 - **Social (Instagram/Facebook/TikTok/Nextdoor/YouTube):** every page's FAQ section and H2 breakdown is written to be choppable into short-form scripts and captions. See `content/social_repurposing_ideas.md` for the full repurposing map — each page brief above should be treated as the source script for 3–5 pieces of social content, not a one-and-done web page.
 
+## Existing Social Strength to Fold In (added 2026-07-08, second pass)
+
+Two things surfaced verifying a client-flagged Facebook page are worth building into the repurposing pipeline rather than treated as new work. First, **TikTok (`@carriebilleaud_realtor`) is already active** — 701 likes/311 followers per a search snippet, with listing videos and eXp event content already being posted — so it should be added as a standing repurposing target alongside Instagram/Facebook/Nextdoor/YouTube in `content/social_repurposing_ideas.md`, not launched from zero. Second, **her co-marketing relationship with lender Aimee Power (Approved Mortgage Now)** — cross-posted giveaway campaigns that drive entries to both partners' pages — is a legitimate, already-working local cross-promotion channel `[verified — visible in live cross-posted content]`; it's worth deliberately scheduling more of these joint giveaways/posts rather than treating this partnership as incidental. Both items are `[client-confirm]` before scaling up (confirm the partnership terms and cadence with Carrie), but neither requires new infrastructure — they extend what's already working.
+
 ## Measurement via Search Console
 
 Once Google Search Console access is confirmed (open item, `09_questions_for_client.md` Q2):

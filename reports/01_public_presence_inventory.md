@@ -1,7 +1,7 @@
 # Public Presence Inventory: Carrie Billeaud, Realtor
 **Date:** 2026-07-08  
 **Agent:** Carrie Billeaud, eXp Realty, Lafayette LA  
-**Scope:** 12 public profiles across platforms, websites, social media, and local directories
+**Scope:** 15 public profiles across platforms, websites, social media, and local directories (12 first pass + 3 added 2026-07-08 second pass — see Addendum)
 
 **Tagging key:** `[verified]` = we directly fetched the source and confirmed a specific fact **appears on it as shown** (e.g., "this page displays phone number X," "this page displays the words '46 families helped'"). This is an observation about what a source page states, **not** a determination that the underlying fact is true. `[inferred]` = a reasonable conclusion drawn from available data, not independently confirmed. `[client-confirm]` = requires a decision or fact-check from Carrie before it can be used or published, especially anything touching her career history, production stats, or credentials — per `data/known_claims.yaml`, none of these are independently verifiable from public web sources alone. `[best-practice]` = general SEO/industry guidance, not specific to Carrie's data.
 
@@ -215,6 +215,33 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
 
 ---
 
+#### Facebook — BUSINESS Page (second pass discovery, separate from primary Facebook above)
+- **Status:** ✗ Blocked by firecrawl
+- **URL:** https://www.facebook.com/carriebilleaudrealty
+- **Fetched:** No direct snippet; existence confirmed only by cross-reference
+- **Data Available (from search):** Carrie's own TikTok video descriptions and an Instagram giveaway post (instagram.com/p/DUbbywokkar/) link to this URL and call it "my Facebook Page" / "Carrie Billeaud." It is also cross-posted by lender partner Aimee Power / Approved Mortgage Now in joint giveaway posts. No search snippet surfaced this page's own likes, category, or phone number directly.
+- **Assessment:** **[verified]** that this page exists and that Carrie actively promotes it as *the* Facebook page in her current content (TikTok/Instagram). **[inferred, low confidence]** for everything else — likes/category/phone are unknown. This is a **separate page** from `https://www.facebook.com/carriebilleaud` (5,550 likes, audited above) — see Addendum below for the implication.
+
+---
+
+#### TikTok Profile (second pass discovery — see also Errata note)
+- **Status:** ✗ Blocked by firecrawl (scrape attempted, unsupported)
+- **URL:** https://www.tiktok.com/@carriebilleaud_realtor
+- **Fetched:** Search snippet only
+- **Data Available (from search):** **701 likes, 311 followers**; bio "Realtor | Mom of 4 Real life. Real estate. Real growth." Content observed via video-description snippets: listing videos, eXp event content (Christmas party 2024), and lender co-marketing/giveaway collabs with Aimee Power (Approved Mortgage Now).
+- **Assessment:** **[inferred, medium confidence]** Active, small-but-real following; confidence is medium rather than low because the follower/like counts came from a direct snippet of the profile itself, not a cross-reference. **Errata:** this profile was listed in the Homes.com "social_links" field found during the first pass but was not separately inventoried at the time — see `qa_notes.md` addendum.
+
+---
+
+#### Threads Profile (second pass discovery)
+- **Status:** ✗ Not independently verifiable — single post snippet only
+- **URL:** https://www.threads.net/@carriebilleaud_realtor (as linked in Carrie's TikTok descriptions; live content resolves at threads.com, likely a post-rebrand domain redirect)
+- **Fetched:** One post snippet only
+- **Data Available (from search):** Post text: "ENDING THE WEEK WITH A PENDING LISTING... CARRIE BILLEAUD, Realtor 337-258-5379 carriebilleaud@gmail.com exp REALTY" — phone/email match the 6-source primary NAP.
+- **Assessment:** **[inferred, low confidence]** Existence and NAP-consistency of the one visible post are the only confirmed facts; no profile-level data (follower count, bio) available.
+
+---
+
 ### Tier 1.5: Google Business Profile (corrected 2026-07-08 — see Errata)
 
 #### Google Business Profile
@@ -406,6 +433,12 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
    - Action: [client-confirm] correct multiplier; standardize all profiles
    - Timeline: Week 1
 
+6. **Split Facebook Presence (NEW — 2026-07-08 second pass)**
+   - Status: Audience is on `/carriebilleaud` (5,550 likes); active promotion (TikTok, Instagram) points at `/carriebilleaudrealty`, a separate BUSINESS page with ~2,500 followers (client-observed 2026-07-08) vs 5,550 likes on the older page
+   - Impact: Diluted social equity; unclear which page a new follower or ad click lands on; unresolved which is canonical
+   - Action: [client-confirm] which page is primary — consolidate, or crosslink both and designate one primary going forward
+   - Timeline: Week 1-2
+
 ---
 
 ## Social Media Presence Assessment
@@ -414,14 +447,16 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 |----------|--------|------------|--------------|
 | Zillow | ✓ Active | 29 reviews; 5★ | Excellent |
 | Realtor.com | ✓ Active | 2 reviews | Moderate |
-| Facebook | ✓ Active | 5,550 likes; 142 discussing | High (blocked from full view) |
+| Facebook (primary, /carriebilleaud) | ✓ Active | 5,550 likes; 142 discussing | High (blocked from full view) |
+| Facebook (BUSINESS page, /carriebilleaudrealty) | ✓ Active — this is the one Carrie currently promotes | ~2,500 followers (client-observed) | Low-medium (page blocked; count from client observation 2026-07-08) |
 | LinkedIn | ✓ Active | Unknown (blocked) | Medium (snippet only) |
 | Instagram | ✓ Active | Unknown | No data (not supported) |
 | Nextdoor | ✓ Active | 6 faves | Good |
-| TikTok | Likely (referenced) | Unknown | No data |
+| TikTok | ✓ Active (confirmed 2nd pass) | 701 likes; 311 followers | Medium (snippet only, scrape unsupported) |
+| Threads | ✓ Active (confirmed 2nd pass) | Unknown | Low (single post snippet only) |
 | YouTube | Likely (referenced) | Unknown | No data |
 
-**Assessment:** Multi-platform presence evident but inconsistent detail; major platforms (Facebook, Instagram, LinkedIn) blocked from verification.
+**Assessment:** Multi-platform presence evident but inconsistent detail; major platforms (Facebook — both pages, Instagram, LinkedIn) blocked from verification. TikTok and Threads confirmed active in the second pass (see Addendum).
 
 ---
 
@@ -470,6 +505,9 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 | Facebook | Social | ✗ Blocked | 337-258-5379 | – | carriebilleaud@gmail.com | – | 5,550 likes | Strong (snippet) |
 | Instagram | Social | ✗ Unsupported | – | – | – | – | – | No data |
 | GBP | Local | ✓ Checked | (337) 258-5379 | 3 Flagg Place, Lafayette | – | 5.0★ | 185 | Strong (name policy risk) |
+| Facebook (BUSINESS, /carriebilleaudrealty) | Social | ✗ Blocked (cross-ref only) | – | – | – | – | – | ~2,500 followers (client-observed 2026-07-08) |
+| TikTok | Social | ✗ Blocked (snippet only) | – | – | – | – | 701 likes/311 followers | Short bio, active content |
+| Threads | Social | ✗ Blocked (1 post snippet) | 337-258-5379 (in one post) | – | carriebilleaud@gmail.com (in one post) | – | – | Unknown |
 
 ---
 
@@ -496,7 +534,23 @@ The corrected findings are reflected throughout this report (Per-Source Findings
 
 ---
 
-**Report Generated:** 2026-07-08 (corrected 2026-07-08)
-**Data Sources:** 12 public profiles (12 fetched; 1 initially search-only later corrected via client-supplied source)
-**Confidence:** High (9 verified sources); Medium (2 conflict areas); Low (3 blocked sources)
+## Addendum (2026-07-08, second pass)
+
+Carrie flagged a second Facebook page; verifying it surfaced three more items. All are reflected in `data/public_assets.yaml`, `data/nap_consistency_matrix.csv`, and `data/source_log.csv`.
+
+**1. Facebook presence is split across two pages.** `https://www.facebook.com/carriebilleaud` (5,550 likes, audited above) is the larger, established page. `https://www.facebook.com/carriebilleaudrealty` is a **separate BUSINESS page** that Carrie's current content actively promotes — her TikTok video descriptions and an Instagram giveaway post both link to it and call it "my Facebook Page" (sources: `tiktok.com/@carriebilleaud_realtor/video/7451802974244048174`, `instagram.com/p/DUbbywokkar/`). Facebook is not scrapeable by firecrawl (same limitation as the primary page), so the business page's own likes/category/phone are **BLOCKED** — everything we know about it comes from cross-referencing snippets, confidence low. **Implication:** audience is on one page, active promotion points at the other. Which is canonical is a new open question for Carrie — see `reports/09_questions_for_client.md`.
+
+**2. TikTok (`@carriebilleaud_realtor`) is active and was under-inventoried.** It shows 701 likes / 311 followers per a direct search snippet (scrape attempted, blocked — same "unsupported site" response as Instagram). Content includes listing videos, eXp event content, and lender co-marketing giveaways. This profile was already visible in the Homes.com "social_links" field captured in the first pass but wasn't separately inventoried as its own asset — see `qa_notes.md` for the errata note.
+
+**3. Threads (`@carriebilleaud_realtor`) exists**, linked from Carrie's TikTok descriptions. Confirmed via a single live post snippet only (phone/email in that post match the primary NAP); no profile-level data (followers, bio) is available. Confidence low.
+
+**4. Cross-promotion with lender Aimee Power (Approved Mortgage Now).** Giveaway campaigns are cross-posted on both the TikTok/Instagram/business-Facebook side and on Approved Mortgage Now's Facebook (e.g. `facebook.com/approvedmortgagenow/posts/1366535455479770`), with each partner's page linked as a joint entry requirement. This is a legitimate, already-working local co-marketing channel — see `reports/06_content_strategy.md` for how it folds into the content plan.
+
+None of the above changes the Critical Gaps ranking materially, except adding the split-Facebook question as gap #6 (see Critical Gaps & Recommendations above) and confirming TikTok/Threads as real, if thinly-documented, channels in the Social Media Presence Assessment table above.
+
+---
+
+**Report Generated:** 2026-07-08 (corrected 2026-07-08; addendum added 2026-07-08 second pass)
+**Data Sources:** 15 public profiles (12 fetched in first pass + 1 client-supplied correction; 3 added in second pass — 2 blocked/cross-reference-only, 1 snippet-only)
+**Confidence:** High (9 verified sources); Medium (2 conflict areas + TikTok); Low (5 blocked/snippet-only sources, including both new Facebook business page and Threads)
 **Methodology:** Firecrawl scrape + web search + data extraction JSON + client-supplied verification
