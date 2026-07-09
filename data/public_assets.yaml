@@ -40,60 +40,157 @@ assets:
   - name: Primary website (eXp)
     url: https://carriebilleaud.exprealty.com
     type: website
-    status: not_checked
-    findings: {}
+    status: checked
+    findings:
+      phone: "337-258-5379"
+      address: "110 Marais Avenue, Youngsville, LA 70592"
+      service_areas: "20 cities (Abbeville, Arnaudville, Breaux Bridge, Broussard, Carencro, Duson, Erath, Esther, Eunice, Kaplan, Lafayette, Maurice, New Iberia, Opelousas, Parks, Rayne, Scott, St. Martinville, Sunset, Youngsville)"
+      specialties: "Single Family, Multi-Family, Commercial, Land, Rentals"
+      bio_quality: "weak"
+      bio_note: "Generic customer testimonial only; lacks professional detail"
+      reviews: "0"
+      rating: "0"
+      link_to_primary: "yes"
   - name: eXp agent profile page
     url: https://carriebilleaud.exprealty.com/agents.php
     type: website
-    status: not_checked
-    findings: {}
+    status: checked
+    findings:
+      phone: "337-258-5379"
+      specialties: "Residential Real Estate, First-Time Home Buyers, Investment Properties, Luxury Homes, Relocation Services"
+      bio_quality: "weak"
+      bio_note: "Generic template bio; no professional detail"
+      link_to_primary: "yes"
   - name: Zillow profile
     url: https://www.zillow.com/profile/carriebilleaud
     type: platform_profile
-    status: not_checked
-    findings: {}
+    status: checked
+    findings:
+      phone: "337-258-5379"
+      email: "carriebilleaud@gmail.com"
+      address: "1318 Camellia Blvd. Ste 222, Lafayette, LA 70508"
+      years_experience: "11"
+      reviews: "29"
+      rating: "5.0"
+      bio_quality: "strong"
+      bio_note: "Detailed professional bio; business degree from UL Lafayette; investment expertise"
+      specialties: "Buyer's Agent, Listing Agent, Staging, Property Management, Investment Properties, Rentals"
+      link_to_primary: "yes"
   - name: Zillow team profile
     url: https://www.zillow.com/profile/carriebilleaudteam
     type: platform_profile
-    status: not_checked
-    findings: {}
+    status: checked
+    findings:
+      phone: "337-258-5379"
+      email: "carrie.billeaud@exprealty.com"
+      address: "91 Settlers Trace Blvd Bldg1, Lafayette, LA 70508"
+      team_members: "4 (Carrie, Jake, Blake, Arrow)"
+      rating: "5.0"
+      bio_quality: "strong"
+      bio_note: "Describes team as top-producing agents brokered by eXp Realty"
+      specialties: "Buyer's Agent, Listing Agent, Staging, First Time Homebuyers, Investment Properties, Rentals, Military/Veterans, Luxury Homes, New Construction, Lot/Land"
+      service_areas: "7 cities (Broussard, Maurice, Rayne, New Iberia, Lafayette, Ville Platte, Youngsville)"
+      link_to_primary: "yes"
   - name: Realtor.com profile
     url: https://www.realtor.com/realestateagents/567985a6bb954c0100686dd4
     type: platform_profile
-    status: not_checked
-    findings: {}
+    status: checked
+    findings:
+      phone: "337-258-5379"
+      address: "1720 Kaliste Saloom Ste B 2, Lafayette, LA 70508"
+      brokerage: "EXP Realty LLC"
+      license: "0995689513"
+      reviews: "2"
+      rating: "0"
+      bio_quality: "strong"
+      bio_note: "Mentions business degree from UL Lafayette; analytical ability; investment expertise; team with father"
+      specialties: "First time home buyers, Sellers, Buyer's agent, Seller's agent"
+      service_areas: "7 cities (Broussard, Carencro, Lafayette, Maurice, Milton, Scott, Youngsville)"
+      link_to_primary: "yes"
   - name: Homes.com profile
     url: https://www.homes.com/real-estate-agents/carrie-billeaud/pf5j8yv/
     type: platform_profile
-    status: not_checked
-    findings: {}
+    status: checked
+    findings:
+      phone_conflict: "(337) 341-8976"
+      phone_note: "CONFLICTS with primary phone; Homes.com is only source for this number"
+      license: "09956895"
+      brokerage: "EXP Realty LLC"
+      bio_quality: "strong"
+      bio_note: "Icon Agent; Certified Mentor; 46 families helped; $10.5M volume; ranked #45/1900 realtors"
+      credentials: "Louisiana Realtor License, Acadiana top producer, Certified Mentor, ICON Agent"
+      specialties: "Residential Real Estate, Investment Properties, First-Time Home Buyers, Luxury Homes, Relocation"
+      service_areas: "16 cities listed"
+      reviews: "0"
+      rating: "0"
+      social_links: "Facebook, Instagram, TikTok, LinkedIn"
+      link_to_primary: "yes"
   - name: LinkedIn
     url: https://www.linkedin.com/in/carrie-billeaud-921ab6a1
     type: social
-    status: not_checked
-    findings: {}
+    status: blocked
+    findings:
+      bio_quality: "strong"
+      bio_note: "BLOCKED by firecrawl; search snippet shows: top-producing Realtor and Icon Agent with Exp Realty; member Realtor Association of Acadiana; certified mentor"
+      confidence: "low"
+      data_source: "search snippet only"
   - name: Facebook
     url: https://www.facebook.com/carriebilleaud/
     type: social
-    status: not_checked
-    findings: {}
+    status: blocked
+    findings:
+      phone: "337-258-5379"
+      email: "carriebilleaud@gmail.com"
+      bio_quality: "strong"
+      bio_note: "BLOCKED by firecrawl; search shows: 5550 likes; 142 discussing; 3x ICON Agent (Zillow shows 2x, Facebook shows 3x); Acadiana Realtor Lafayette Luxury & Lifestyle"
+      confidence: "low"
+      data_source: "search snippet only; discrepancy in ICON claims (2x vs 3x)"
+      social_engagement: "high (5550 likes)"
   - name: Instagram
     url: https://www.instagram.com/carriebilleaud_realtor/
     type: social
-    status: not_checked
-    findings: {}
+    status: not_found
+    findings:
+      note: "NOT SUPPORTED by firecrawl scraping; marked as unsupported site"
+      confidence: "low"
+      data_source: "none - access blocked"
+      action_needed: "Consider manual review or alternative scraping method"
   - name: Nextdoor
     url: https://nextdoor.com/pages/carrie-billeaud-realtor-exp-realty-lafayette-la/
     type: local_profile
-    status: not_checked
-    findings: {}
+    status: checked
+    findings:
+      phone: "337-258-5379"
+      email_alternate: "southerncollectivegroup.info@gmail.com"
+      address: "3 Flagg Place Building B, Suite B-4, Lafayette, LA 70508"
+      ratings: "6 faves"
+      bio_quality: "strong"
+      bio_note: "2x ICON Agent; top producer; certified mentor; home stager; mentions 4 children"
+      credentials: "2x ICON Agent, eXp Realty"
+      social_links: "Facebook (bit.ly/3GfBUNF), Instagram (bit.ly/3X4lqxR), YouTube (bit.ly/3WZfq9n), LinkedIn (bit.ly/3O4PhSt)"
+      website_link: "carriebilleaud.exprealty.com"
+      address_match: "Matches known conflict address #2 from asset file"
   - name: LoopNet broker profile
     url: https://www.loopnet.com/commercial-real-estate-brokers/profile/carrie-billeaud/bh92wrcb
     type: platform_profile
-    status: not_checked
-    findings: {}
+    status: checked
+    findings:
+      phone_conflict: "(337) 522-7554"
+      phone_note: "KNOWN CONFLICT from asset file; only LoopNet source for this number"
+      address: "Lafayette, LA 70508"
+      brokerage: "eXp Realty"
+      bio_quality: "strong"
+      bio_note: "Icon Agent; Acadiana top producer; certified mentor; investment portfolio with rentals; 46 families; $10.5M volume; ranked #45/1900"
+      credentials: "ICON Agent, Acadiana top producer, Certified Mentor at EXP"
+      service_areas: "Lafayette"
+      data_source: "commercial real estate platform"
   - name: Google Business Profile
-    url: null   # NOT YET FOUND — WF01 must search; if absent, top client request
+    url: null
     type: gbp
-    status: not_checked
-    findings: {}
+    status: not_found
+    findings:
+      result: "NOT FOUND"
+      search_queries_used: "3 different searches; no results"
+      note: "Google Business Profile does not appear to exist for Carrie Billeaud; not found in any search results"
+      recommendation: "PRIORITY - Client should create GBP to capture local search traffic and provide canonical business information"
+      confidence: "high"
