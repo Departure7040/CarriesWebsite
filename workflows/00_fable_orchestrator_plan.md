@@ -34,10 +34,10 @@ adequate model.
 - [x] Known public assets populated from provided URLs
 - [x] WF01 — Public presence recon (public_presence_researcher)
 - [x] WF02 — Website crawl & technical SEO (technical_seo_auditor)
-- [ ] WF03 — Local SEO / GBP audit (local_seo_analyst)
+- [x] WF03 — Local SEO / GBP audit (local_seo_analyst)
 - [x] WF04 — Competitor gap analysis (competitor_researcher)
-- [ ] WF05 — AI search visibility (ai_search_visibility_agent)
-- [ ] WF06 — Content & conversion plan (content_strategy_agent + conversion_tracking_agent)
+- [x] WF05 — AI search visibility (ai_search_visibility_agent)
+- [x] WF06 — Content & conversion plan (content_strategy_agent + conversion_tracking_agent)
 - [ ] WF07 — Final synthesis + QA (Fable + qa_fact_checker)
 - [ ] Push all work to https://github.com/Departure7040/CarriesWebsite.git
 
