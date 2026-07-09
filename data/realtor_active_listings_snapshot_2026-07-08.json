@@ -1,0 +1,230 @@
+{
+ "data": {
+  "home_search": {
+   "count": 10,
+   "total": 10,
+   "results": [
+    {
+     "property_id": "8075596386",
+     "listing_id": "2997080326",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": "3.5",
+      "beds": 4,
+      "sqft": 3918
+     },
+     "location": {
+      "address": {
+       "postal_code": "70592",
+       "city": "Youngsville",
+       "line": "204 Ivy Cottage Dr"
+      }
+     },
+     "list_price": 1510000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/4190b26daafa4f680c818d0d97c0544cl-m2263656830rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/204-Ivy-Cottage-Dr_Youngsville_LA_70592_M80755-96386"
+    },
+    {
+     "property_id": "8632476620",
+     "listing_id": "2996795898",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": "2.5+",
+      "beds": 3,
+      "sqft": 3800
+     },
+     "location": {
+      "address": {
+       "postal_code": "70582",
+       "city": "Saint Martinville",
+       "line": "1006 Carla Dr"
+      }
+     },
+     "list_price": 665000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/e6b3bc7734931f3ca7fcdfea0b11d808l-m3746976775rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/1006-Carla-Dr_St-Martinvlle_LA_70582_M86324-76620"
+    },
+    {
+     "property_id": "7694915948",
+     "listing_id": "2997621216",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": "5.5+",
+      "beds": 5,
+      "sqft": 6800
+     },
+     "location": {
+      "address": {
+       "postal_code": "70508",
+       "city": "Lafayette",
+       "line": "101 Rio Ridge Dr"
+      }
+     },
+     "list_price": 3400000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/facf743d36f272e6458e67cb67e5f3fal-m2306833070rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/101-Rio-Ridge-Dr_Lafayette_LA_70508_M76949-15948"
+    },
+    {
+     "property_id": "9899439141",
+     "listing_id": "2993340529",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": null,
+      "beds": null,
+      "sqft": null
+     },
+     "location": {
+      "address": {
+       "postal_code": "70543",
+       "city": "Iota",
+       "line": "1049 Gravot Rd"
+      }
+     },
+     "list_price": 175000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/7294b775dddcac58f3c3abd866d2913fl-m2089682569rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/1049-Gravot-Rd_Iota_LA_70543_M98994-39141"
+    },
+    {
+     "property_id": "7479659854",
+     "listing_id": "2995402656",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": "2.5",
+      "beds": 5,
+      "sqft": 2625
+     },
+     "location": {
+      "address": {
+       "postal_code": "70592",
+       "city": "Youngsville",
+       "line": "110 Marais Ave"
+      }
+     },
+     "list_price": 330000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/73138feaef48970977c21ede71aacda9l-m2893424991rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/110-Marais-Ave_Youngsville_LA_70592_M74796-59854"
+    },
+    {
+     "property_id": "7662225341",
+     "listing_id": "2997574549",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": "2.5",
+      "beds": 4,
+      "sqft": 2410
+     },
+     "location": {
+      "address": {
+       "postal_code": "70506",
+       "city": "Lafayette",
+       "line": "117 Pericles St"
+      }
+     },
+     "list_price": 315000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/36a57f472100b760b1cdbc707c13bfc4l-m773619384rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/117-Pericles-St_Lafayette_LA_70506_M76622-25341"
+    },
+    {
+     "property_id": "9954031916",
+     "listing_id": "2990754350",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": "3",
+      "beds": 4,
+      "sqft": 2250
+     },
+     "location": {
+      "address": {
+       "postal_code": "70592",
+       "city": "Youngsville",
+       "line": "107 Cypress Lake Dr"
+      }
+     },
+     "list_price": 510750,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/f709848a081ff0e30c0727ac5b43e69dl-m601087885rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/107-Cypress-Lake-Dr_Youngsville_LA_70592_M99540-31916"
+    },
+    {
+     "property_id": "9120711979",
+     "listing_id": "2992412600",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": null,
+      "beds": null,
+      "sqft": null
+     },
+     "location": {
+      "address": {
+       "postal_code": "70592",
+       "city": "Youngsville",
+       "line": "1600 Blk Guillot Rd"
+      }
+     },
+     "list_price": 600000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/ae08f8364111f486414a739cf4e8dc90l-m2827130895rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/1600-Blk-Guillot-Rd_Youngsville_LA_70592_M91207-11979"
+    },
+    {
+     "property_id": "9850788743",
+     "listing_id": "2997304052",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": "2",
+      "beds": 4,
+      "sqft": 2202
+     },
+     "location": {
+      "address": {
+       "postal_code": "70592",
+       "city": "Youngsville",
+       "line": "205 Queenstown Ave"
+      }
+     },
+     "list_price": 465000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/90b14e80781f771a87d5b847decb3361l-m1395995409rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/205-Queenstown-Ave_Youngsville_LA_70592_M98507-88743"
+    },
+    {
+     "property_id": "7271166353",
+     "listing_id": "2993340524",
+     "status": "for_sale",
+     "description": {
+      "baths_consolidated": "2.5",
+      "beds": 3,
+      "sqft": 1557
+     },
+     "location": {
+      "address": {
+       "postal_code": "70506",
+       "city": "Lafayette",
+       "line": "128 St Germaine Cir"
+      }
+     },
+     "list_price": 220000,
+     "primary_photo": {
+      "href": "https://ap.rdcpix.com/57d3c87f6dc7ec0fc378812fc684cb97l-m4288992637rd-w960_h720.jpg"
+     },
+     "href": "https://www.realtor.com/realestateandhomes-detail/128-Saint-Germaine-St_Lafayette_LA_70506_M72711-66353"
+    }
+   ]
+  }
+ }
+}
