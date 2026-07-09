@@ -402,7 +402,7 @@
         + '<h3>'+money(r.list_price)+'</h3>'
         + '<p><strong>'+esc(adr.line||'')+'</strong>, '+esc(adr.city||'')+'</p>'
         + '<p>'+(specs.join(' · ')||'Land / lot')+'</p>'
-        + '<p><a href="#contact" class="ask-home" data-addr="'+esc(adr.line||'')+', '+esc(adr.city||'')+'" data-price="">Ask about this home</a> · <a href="'+esc(r.href||'')+'" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>'
+        + '<p><a href="#contact" class="ask-home" data-addr="'+esc(adr.line||'')+', '+esc(adr.city||'')+'" data-price="'+money(r.list_price)+'">Ask about this home</a> · <a href="'+esc(r.href||'')+'" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>'
         + '</div>';
     }).join('');
     var note=document.getElementById('listings-note');
