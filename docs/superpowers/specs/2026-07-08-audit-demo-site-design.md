@@ -40,7 +40,11 @@ site/
    styled HTML). Pricing (08) and client questions (09) intentionally excluded.
 4. **Only verified facts** on the demo homepage; obviously-sample copy marked
    as placeholder. Unverified metrics appear only on audit pages, tagged.
-5. **No photos we don't have rights to** — CSS/SVG placeholders.
+5. **Images**: use Carrie's own photos from her public profiles (eXp site
+   headshot first choice; Instagram/Facebook as fallback sources), stored
+   locally in `site/assets/img/`. Acceptable because the demo is noindex,
+   private-audience, and shown to Carrie herself (Brook's call, 2026-07-08).
+   CSS/SVG placeholders only where no usable photo is retrievable.
 
 ## Error handling / testing
 Static site: check pages render, links resolve, HTML validates roughly, and

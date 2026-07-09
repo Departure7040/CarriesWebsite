@@ -14,7 +14,7 @@
 - EVERY page `<head>` must contain: `<meta name="robots" content="noindex, nofollow">` and `<meta name="viewport" content="width=device-width, initial-scale=1">`.
 - `site/robots.txt` must be exactly: `User-agent: *` / `Disallow: /`.
 - Demo homepage may state as fact ONLY verified data: name "Carrie Billeaud", Realtor, eXp Realty, Lafayette LA; phone 337-258-5379; service areas Lafayette, Youngsville, Broussard, Carencro, Scott, Maurice, Milton; Zillow 29 reviews · 5.0; specialties (first-time buyers, sellers, residential, investment). Unverified metrics (11 years, 174 sales, $44.6M, ICON Agent, 50+ families) must NOT appear on the homepage; on audit pages they appear only with `[client-confirm]` tags.
-- No external requests: no CDN fonts/scripts/images. System font stack. Images are inline SVG or CSS only.
+- No external requests at page-load time: no CDN fonts/scripts/hotlinked images. System font stack. Images: Carrie's own photos downloaded from her public profiles into `site/assets/img/` (see Task 2 Step 0); inline SVG/CSS placeholders where none retrievable.
 - Copy tone: direct, friendly, practical; no hype, no guaranteed rankings.
 - Palette/type (used consistently): `--ink:#1a2332; --teal:#0f5c5a; --teal-dark:#0b4442; --gold:#c9a24b; --cream:#faf7f2; --paper:#ffffff; --rule:#e3ded4; --ok:#2e7d32; --warn:#b26a00; --bad:#b3261e;` Headings `font-family: Georgia, 'Times New Roman', serif`; body `font-family: system-ui, Segoe UI, Roboto, sans-serif`.
 - Evidence tags render as pills via classes `.tag.verified` (green), `.tag.inferred` (amber), `.tag.confirm` (red-outline, label "verify with Carrie"), `.tag.practice` (teal-outline, label "best practice").
@@ -161,6 +161,8 @@ search. Do not remove those before showing Google anything.
 <div class="sticky-call"><a href="tel:3372585379">📞 Call Carrie — 337-258-5379</a></div>
 </body></html>
 ```
+
+- [ ] **Step 0: Source images.** Create `site/assets/img/`. Get Carrie's headshot + up to 2 supporting photos from her own public profiles: fetch https://carriebilleaud.exprealty.com and https://carriebilleaud.exprealty.com/agents.php (site 403s plain curl — use firecrawl_scrape or WebFetch to find `<img>` URLs, then download the image files with a browser User-Agent, e.g. `curl -A "Mozilla/5.0" -o site/assets/img/carrie-headshot.jpg <url>`). Fallback sources: her Zillow profile photo, Facebook page profile photo. Optimize nothing fancy — just confirm each file is a real image (`file` output or size > 5KB) and under ~400KB. If nothing retrievable, use the SVG placeholder pattern and note it in the commit message. Use headshot in hero/about; alt text like "Carrie Billeaud, Realtor in Lafayette LA".
 
 - [ ] **Step 1: Build sections in `<main>`** (each `.section` with `.wrap`):
   1. **Hero** (`.hero`): kicker "Lafayette · Youngsville · Broussard · Acadiana"; H1 "Buy or sell with a Lafayette Realtor who knows Acadiana street by street."; subline naming first-time buyers + sellers; CTAs `.btn-gold` tel: link + `.btn` "Get a free home valuation" → `#contact`.

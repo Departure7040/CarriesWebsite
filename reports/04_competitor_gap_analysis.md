@@ -2,6 +2,8 @@
 **Date:** 2026-07-08  
 **Methodology:** Web search across 11 target queries; directory page analysis (Zillow, Realtor.com, Homes.com)
 
+**Tagging key:** `[verified]` = confirmed via direct fetch of a live source · `[inferred]` = reasonable conclusion from available data, not independently confirmed · `[client-confirm]` = requires a decision or fact from Carrie before it can be used · `[best-practice]` = Google/industry guidance applied generically, not specific to Carrie's data.
+
 ---
 
 ## Method & Limitations
@@ -24,32 +26,33 @@
 
 ## Top Recurring Competitors (5–8 agents across all queries)
 
-| Rank | Agent/Team | Primary URL | Platform(s) | Zillow Reviews | Rating | Key Strength(s) | Service Area |
+| Rank | Agent/Team | Primary URL | Platform(s) | Review Count (platform varies) | Rating | Key Strength(s) | Service Area |
 |------|-----------|------------|-----------|---------|--------|-----------------|--------------|
-| 1 | Sean Hettich | topagent337.com | Real Broker LLC, Zillow, Yelp | 353 | 5.0 | Highest review volume; dedicated personal brand; strong social media | Lafayette, Youngsville, Broussard, Acadiana |
-| 2 | Jessica Broussard | therealjessicabroussard.com | Real Broker LLC, Zillow, BirdEye | 6* | 5.0 | Dedicated site with buyer/seller guides; active TikTok/Instagram; Top 1% claim; $105M+ sales | Lafayette, Denham Springs, Acadiana |
-| 3 | Stephen Hundley | Real Broker LLC profile | Real Broker LLC, Zillow, Experience.com | 79 (Experience) | 4.95 | Multi-platform presence; strong Instagram (@soldbystephen); 79 verified reviews | Lafayette, Youngsville, Broussard |
-| 4 | Robbie Breaux & Team | lafayettehomepros.com | Real Broker LLC | [moderate–high] | [TBD] | Dedicated team site; area-specific landing pages (Youngsville, Broussard, Rayne); first-time buyer content | Lafayette, Youngsville, Broussard, Rayne |
-| 5 | Keaty Real Estate | keatyrealestate.com | Keaty Real Estate LLC | [high] | [TBD] | Established team; multiple visible agents on Homes.com with closed sale data; "Louisiana's most innovative" positioning | Lafayette, Covington |
-| 6 | Nah Senpeng ("The Dream Team") | nahsenpeng1.kw.com | Keller Williams Realty Acadiana | 97 | [4.5–5.0 inferred] | #1 ranked on FastExpert; 17 years experience; active Instagram | Lafayette, Acadiana |
+| 1 | Sean Hettich | topagent337.com | Real Broker LLC, Zillow, Yelp | 353 (Zillow) `[verified]` | 5.0 | Highest review volume; dedicated personal brand; strong social media | Lafayette, Youngsville, Broussard, Acadiana |
+| 2 | Jessica Broussard | therealjessicabroussard.com | Real Broker LLC, Zillow, BirdEye | 6* (Zillow) `[verified]` | 5.0 | Dedicated site with buyer/seller guides; active TikTok/Instagram; Top 1% claim; $105M+ sales (self-reported, unverified) | Lafayette, Denham Springs, Acadiana |
+| 3 | Stephen Hundley | Real Broker LLC profile | Real Broker LLC, Zillow, Experience.com | 79 (Experience.com, not Zillow) `[verified]` | 4.95 | Multi-platform presence; strong Instagram (@soldbystephen); 79 verified reviews | Lafayette, Youngsville, Broussard |
+| 4 | Robbie Breaux & Team | lafayettehomepros.com | Real Broker LLC | [moderate–high] `[inferred]` | [TBD] | Dedicated team site; area-specific landing pages (Youngsville, Broussard, Rayne); first-time buyer content | Lafayette, Youngsville, Broussard, Rayne |
+| 5 | Keaty Real Estate | keatyrealestate.com | Keaty Real Estate LLC | [high] `[inferred]` | [TBD] | Established team; multiple visible agents on Homes.com with closed sale data; "Louisiana's most innovative" positioning (self-reported, unverified) | Lafayette, Covington |
+| 6 | Nah Senpeng ("The Dream Team") | nahsenpeng1.kw.com | Keller Williams Realty Acadiana | 97 (FastExpert, not Zillow) `[verified]` | [4.5–5.0 inferred] | #1 ranked on FastExpert; 17 years experience; active Instagram | Lafayette, Acadiana |
 
 *Jessica Broussard's Zillow profile shows 6 reviews but older data; primary presence is dedicated site and social media.
+Note: review counts are drawn from different platforms per agent (Zillow, Experience.com, FastExpert) and are not directly comparable to each other or to Carrie's 29 Zillow reviews without noting the source platform.
 
 ---
 
 ## Common Traits of Winners
 
 ### 1. **Review Volume & Recency (100+ across platforms)**
-- **Sean Hettich:** 353 Zillow reviews (5.0★); Yelp presence
-- **Stephen Hundley:** 79 Experience.com reviews (4.95★); multiple platforms
-- **Nah Senpeng:** 97 FastExpert reviews; Zillow profile active
-- **Implication:** High-volume reviews (100+) signal market trust; consolidation across platforms (Zillow, Realtor.com, BirdEye, Experience.com) amplifies credibility
+- **Sean Hettich:** 353 Zillow reviews (5.0★); Yelp presence `[verified]`
+- **Stephen Hundley:** 79 Experience.com reviews (4.95★); multiple platforms `[verified]`
+- **Nah Senpeng:** 97 FastExpert reviews; Zillow profile active `[verified]`
+- **Implication:** High-volume reviews (100+) signal market trust; consolidation across platforms (Zillow, Realtor.com, BirdEye, Experience.com) amplifies credibility `[inferred]`
 
 ### 2. **Dedicated Local Landing Pages & Team Branding**
-- **Jessica Broussard:** Dedicated site (therealjessicabroussard.com) + guides + social
-- **Robbie Breaux:** Team site (lafayettehomepros.com) + area-specific pages (/youngsville, /broussard)
-- **Keaty Real Estate:** keatyrealestate.com + team structure visible on Homes.com
-- **Implication:** Agents with standalone domains and area-specific pages rank higher for local + geographic modifiers; team branding (with agent photos/bios) enhances platform profiles
+- **Jessica Broussard:** Dedicated site (therealjessicabroussard.com) + guides + social `[verified]`
+- **Robbie Breaux:** Team site (lafayettehomepros.com) + area-specific pages (/youngsville, /broussard) `[verified]`
+- **Keaty Real Estate:** keatyrealestate.com + team structure visible on Homes.com `[verified]`
+- **Implication:** Agents with standalone domains and area-specific pages rank higher for local + geographic modifiers; team branding (with agent photos/bios) enhances platform profiles `[inferred]`
 
 ### 3. **Multi-Channel Social & Content Strategy**
 - **Sean Hettich:** Instagram, Facebook, Yelp, personal branding site
@@ -63,7 +66,7 @@
 
 | Dimension | Carrie's Current State | Winner Benchmark | Gap | Priority |
 |-----------|----------------------|------------------|-----|----------|
-| **Review Count** | [TBD — low visibility in SERPs] | 100+ (Sean: 353, Stephen: 79, Nah: 97) | **CRITICAL** | **1** |
+| **Review Count** | 29 Zillow / 2 Realtor.com / 0 Homes.com / 0 Google `[verified — per 01/02]` | 100+ (Sean: 353, Stephen: 79, Nah: 97) | **CRITICAL** | **1** |
 | **Platform Consolidation** | eXp Realty profile + Instagram only | Zillow, Realtor.com, Homes.com, BirdEye, Experience.com + directories | **CRITICAL** | **1** |
 | **Dedicated Website** | None (relying on eXp Realty + Instagram) | Dedicated domain (e.g., therealjessicabroussard.com, topagent337.com, lafayettehomepros.com) | **HIGH** | **2** |
 | **Area-Specific Landing Pages** | None | Youngsville, Broussard, Acadiana pages (Jessica, Robbie) | **HIGH** | **2** |
@@ -72,7 +75,7 @@
 | **Social Media Presence** | Instagram only | Multi-channel: Instagram, TikTok, Facebook, YouTube (emerging) | **MEDIUM** | **3** |
 | **Rating (where visible)** | [TBD] | 4.95–5.0 across platforms | TBD | — |
 
-**Key Insight:** Carrie appears in directory searches but lacks the review volume, content depth, and dedicated web presence of top 3–4 competitors. Primary gap is *discoverability* (no dedicated site → lower organic rank) and *social proof* (low/invisible review count).
+**Key Insight:** Carrie appears in directory searches but lacks the review volume, content depth, and dedicated web presence of top 3–4 competitors. Primary gap is *discoverability* (no dedicated site → lower organic rank) and *social proof* (low review count relative to top performers). `[inferred]`
 
 ---
 
@@ -90,7 +93,7 @@
 
 2. **Request Reviews Systematically:**
    - Launch post-transaction review request campaign (email, text, in-person)
-   - Target: 20–30 new reviews in 90 days to reach ~50+ (competitive baseline)
+   - Target: sustained pace of 2–4 new reviews/month (≈6–12 in 90 days), consistent with `02_local_seo_audit.md`'s guidance — a burst of 20–30 reviews in 90 days risks looking unnatural to platform spam detection and is not recommended `[best-practice]`
    - Focus on Zillow (most visible in local searches) and Google (local pack)
    - Response: Within 48 hrs to top reviewers; show engagement
 
@@ -100,7 +103,7 @@
    - Repurpose across platforms (Reels → TikTok → YouTube Shorts)
 
 ### **Phase 2: Dedicated Website & Local Landing Pages (Months 2–3)**
-**Why:** Dedicated domain + area pages improve organic rank by 2–3 positions; top competitors all have this.
+**Why:** Competitors with dedicated domains and area-specific pages consistently outrank agents without them for these queries `[inferred — pattern observed across Jessica Broussard, Robbie Breaux, Sean Hettich]`. The magnitude of improvement varies by competitive density and content quality; no specific position gain can be promised.
 
 1. **Build Standalone Presence (Short-term, Low Cost):**
    - Option A: **Sub-domain under eXp Realty** (carriebilleaud-realty.exprealty.com) — mirrors competitors using platform-hosted sites
@@ -140,7 +143,7 @@
 ---
 
 ## Ethical Guardrails
-- **Do NOT:** Buy fake reviews, scrape competitor content, engage in negative SEO, misrepresent credentials
+- **Do NOT:** Buy fake reviews, scrape competitor content, engage in negative SEO, misrepresent credentials, promise specific ranking positions or timelines
 - **Do:** Encourage genuine reviews; cite real transaction data; claim credentials honestly
 - **Differentiation Strategy:** Focus on content quality (Carrie's local knowledge, specialized markets) rather than review quantity; "Fewer, Authentic Reviews" > "Many, Fake Reviews"
 
@@ -182,17 +185,15 @@
 
 ## Summary
 
-**Current Position:** Carrie is visible in directory searches but ranks #8–10 in most organic queries; low SERP visibility suggests low review count, no dedicated site, and limited content presence.
+**Current Position:** Carrie appeared low or absent in the organic queries we sampled `[inferred, low confidence — SERPs vary by location/personalization; see SERP Approximation Caveat above; source_log.csv notes this as a low-confidence inference, not a measured rank]`. Low SERP visibility, taken together with the platform gaps documented above, suggests low review count, no dedicated site, and limited content presence are the likely contributing factors.
 
 **Biggest Opportunities:**
-1. **Review volume** (80–100 in 6 months → competitive baseline)
-2. **Dedicated website** (with area pages) → 2–3 position improvement in organic rank
+1. **Review volume** (sustained growth toward 80–100 over 6+ months, at a pace consistent with `02_local_seo_audit.md` → competitive baseline)
+2. **Dedicated website** (with area pages) → competitors with this combination consistently outrank agents without it; no specific position gain can be guaranteed
 3. **Multi-channel social** (TikTok + expanded Instagram + Facebook) → lead generation + brand awareness
 
-**Realistic Timeline to "Top 3":**
-- **3 months:** 50+ reviews, dedicated site live, TikTok active → move to #5–7 in key queries
-- **6 months:** 100+ reviews, area pages ranked, content cadence steady → move to #3–5
-- **12 months:** Team brand established, thought leadership in market → sustain top 3 vs. Sean/Jessica/Stephen (assuming sustained effort)
+**Realistic Timeline to Improved Visibility:**
+No ranking positions are guaranteed, by us or anyone — SERP position depends on factors outside this plan's control (competitor activity, algorithm changes, personalization). Directionally: if the review-generation, website, and content cadence above are sustained, meaningful map-pack and organic visibility gains are realistic by months 4–6, with continued compounding through month 12 as review volume, backlinks, and content depth accumulate. This is a trend expectation, not a rank promise, and should be verified against actual Lafayette-IP search results (see Manual Verification Checklist) rather than assumed.
 
 **Carrie's Competitive Edge (not yet leveraged):**
 - eXp Realty's tech/branding (not mentioned in current online presence)

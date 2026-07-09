@@ -3,11 +3,15 @@
 **Agent:** Carrie Billeaud, eXp Realty, Lafayette LA  
 **Scope:** 12 public profiles across platforms, websites, social media, and local directories
 
+**Tagging key:** `[verified]` = we directly fetched the source and confirmed a specific fact **appears on it as shown** (e.g., "this page displays phone number X," "this page displays the words '46 families helped'"). This is an observation about what a source page states, **not** a determination that the underlying fact is true. `[inferred]` = a reasonable conclusion drawn from available data, not independently confirmed. `[client-confirm]` = requires a decision or fact-check from Carrie before it can be used or published, especially anything touching her career history, production stats, or credentials — per `data/known_claims.yaml`, none of these are independently verifiable from public web sources alone. `[best-practice]` = general SEO/industry guidance, not specific to Carrie's data.
+
+NAP data (phone numbers, addresses, emails **as displayed** on each source) is genuinely `[verified]` as an observation of what each platform shows — the fact that a given page displays a given number is directly confirmed by fetch. Which number/address is *canonically correct* remains `[client-confirm]`. Career/production claims (years of experience, license number, family/sales counts, dollar volume, rank claims, ICON Agent count, association membership) are downgraded to `[client-confirm]` throughout this report even where a source page was successfully fetched, because "we confirmed the page says X" is not the same as "X is true," and these specific categories are the ones the role file requires to be confirmed with Carrie before any marketing use.
+
 ---
 
 ## Executive Summary
 
-Carrie Billeaud maintains a moderately strong public presence across major real estate platforms and social media, with strong bio quality and reviews on Zillow (29 reviews, 5.0★). However, significant issues exist:
+Carrie Billeaud maintains a moderately strong public presence across major real estate platforms and social media, with strong bio quality and reviews on Zillow (29 reviews, 5.0★ `[verified]`; see Per-Source Findings for tag provenance). However, significant issues exist:
 
 1. **Critical NAP inconsistencies** across address and phone fields
 2. **No Google Business Profile** (major opportunity missed)
@@ -33,7 +37,7 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
   - Bio Quality: **WEAK** — generic customer testimonial only; no credentials, experience, or professional positioning
   - Reviews/Rating: None displayed
   - Website Links: Active (search, sell, finance, contact pages)
-- **Assessment:** **[inferred]** Primary web presence lacks professional depth; bio should highlight Icon Agent status, years of experience, and key credentials visible elsewhere
+- **Assessment:** **[inferred]** Primary web presence lacks professional depth; bio should highlight ICON Agent status, years of experience, and key credentials visible elsewhere — all `[client-confirm]` before publishing (see Bio Quality Assessment)
 
 ---
 
@@ -59,7 +63,7 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
   - Phone: **337-258-5379** [verified]
   - Email: **carriebilleaud@gmail.com** [verified]
   - Address: **1318 Camellia Blvd. Ste 222, Lafayette, LA 70508** [CONFLICT]
-  - Years in Business: **11 years** [verified]
+  - Years in Business: **11 years** [client-confirm — shown on Zillow, unverified as fact per `known_claims.yaml`]
   - Review Count: **29 reviews** (substantial)
   - Rating: **5.0/5★** (perfect)
   - Bio Quality: **STRONG** — mentions business degree from UL Lafayette, analytical ability, real estate investments, problem-solving, market trend expertise
@@ -93,7 +97,7 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
   - Phone: **337-258-5379** [verified]
   - Address: **1720 Kaliste Saloom Ste B 2, Lafayette, LA 70508** [CONFLICT - matches asset file]
   - Brokerage: **EXP Realty LLC** [verified]
-  - License: **0995689513** [verified]
+  - License: **0995689513** [client-confirm — shown on Realtor.com, unverified as fact; conflicts with an 8-digit variant shown on Homes.com, see License Variations below]
   - Review Count: **2 reviews** (low)
   - Rating: Display unclear
   - Bio Quality: **STRONG** — professional detail about business degree, analytical skills, investment focus, team structure
@@ -112,18 +116,18 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
   - License: **09956895** [slight variant from Realtor.com]
   - Brokerage: **EXP Realty LLC** [verified]
   - Bio Quality: **STRONG** — detailed bio emphasizing:
-    - ICON Agent status
-    - Certified Mentor at EXP
-    - 46 families helped (last year)
-    - **$10.5 million production volume**
-    - **Ranked #45 out of 1,900 realtors** in area
+    - ICON Agent status `[client-confirm — shown on Homes.com, unverified as fact; multiplier also disputed, see ICON Agent Claim Discrepancy below]`
+    - Certified Mentor at EXP `[client-confirm — shown on Homes.com, unverified as fact]`
+    - 46 families helped (last year) `[client-confirm — shown on Homes.com, unverified as fact]`
+    - **$10.5 million production volume** `[client-confirm — shown on Homes.com, unverified as fact]`
+    - **Ranked #45 out of 1,900 realtors** in area `[client-confirm — shown on Homes.com, unverified as fact]`
     - Mom of four; understands family needs
-  - Credentials Listed: Louisiana Realtor, Acadiana Top Producer, Certified Mentor, ICON Agent
+  - Credentials Listed: Louisiana Realtor, Acadiana Top Producer, Certified Mentor, ICON Agent `[client-confirm — shown on Homes.com, unverified as fact]`
   - Specialties: 5 types
   - Service Areas: 16 cities (comprehensive)
   - Social Links: Facebook, Instagram, TikTok, LinkedIn
   - Reviews/Rating: None displayed
-- **Assessment:** **[verified]** Most detailed bio; highest production claims; phone conflict requires investigation [client-confirm]
+- **Assessment:** **[verified]** that this page was fetched and displays the phone number, license variant, and bio text shown above. **[client-confirm]** for every specific stat within the bio (46 families, $10.5M, #45/1900, ICON Agent, Certified Mentor) — none of these are independently verified as fact; phone conflict also requires investigation.
 
 ---
 
@@ -139,9 +143,9 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
   - Address: **3 Flagg Place Building B, Suite B-4, Lafayette, LA 70508** [MATCHES known conflict variant #2]
   - Ratings: **6 faves**
   - Bio Quality: **STRONG** — professional positioning:
-    - 2x ICON Agent
-    - Top producer
-    - Certified mentor
+    - 2x ICON Agent `[client-confirm — shown on Nextdoor, unverified as fact; multiplier disputed, see ICON Agent Claim Discrepancy below]`
+    - Top producer `[client-confirm — shown on Nextdoor, unverified as fact]`
+    - Certified mentor `[client-confirm — shown on Nextdoor, unverified as fact]`
     - Home stager
     - Mom of four
   - Social Links Provided:
@@ -150,7 +154,7 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
     - YouTube: bit.ly/3WZfq9n
     - LinkedIn: bit.ly/3O4PhSt
   - Website: carriebilleaud.exprealty.com
-- **Assessment:** **[verified]** Strong neighborhood presence; ICON/mentor credentials reinforced; alternate email suggests different entity (Southern Collective Group); address matches one variant
+- **Assessment:** **[verified]** that this page was fetched and displays the phone, address, and bio text shown above. **[client-confirm]** for the ICON/mentor/top-producer credential claims within it. Alternate email suggests different entity (Southern Collective Group); address matches one known conflict variant.
 
 ---
 
@@ -163,16 +167,16 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
   - Address: **Lafayette, LA 70508** (city/zip only; partial)
   - Brokerage: **eXp Realty**
   - Bio Quality: **STRONG** — full professional bio:
-    - ICON Agent
-    - Acadiana top producer
-    - Certified mentor
+    - ICON Agent `[client-confirm — shown on LoopNet, unverified as fact]`
+    - Acadiana top producer `[client-confirm — shown on LoopNet, unverified as fact]`
+    - Certified mentor `[client-confirm — shown on LoopNet, unverified as fact]`
     - Investment portfolio (long-term + short-term rentals)
-    - 46 families served; $10.5M volume; ranked #45/1900
-    - Business degree from UL Lafayette
+    - 46 families served; $10.5M volume; ranked #45/1900 `[client-confirm — shown on LoopNet, unverified as fact]`
+    - Business degree from UL Lafayette `[client-confirm — shown on LoopNet, unverified as fact]`
     - Market trend expertise
   - Service Areas: Lafayette
   - Specialties: Not specifically listed
-- **Assessment:** **[verified]** Commercial platform; phone conflict intentional or data error requires clarification [client-confirm]
+- **Assessment:** **[verified]** that this page was fetched and displays the phone number and bio text shown above; this is a commercial (non-residential) platform. **[client-confirm]** for every specific stat within the bio (46 families, $10.5M, #45/1900, ICON Agent, Certified Mentor, business degree) — none of these are independently verified as fact. Phone conflict is intentional or a data error and also requires clarification.
 
 ---
 
@@ -183,8 +187,8 @@ Carrie Billeaud maintains a moderately strong public presence across major real 
 - **Data Available (from search):**
   - Title: "Licensed Real Estate Agent at eXp Realty Acadiana"
   - Bio Snippet: "top-producing Realtor and Icon Agent with Exp Realty here in Lafayette, LA. I am also a proud member of the Realtor Association of Acadiana, as well as a certified mentor with EXP"
-  - Credentials: RAA member; certified mentor
-- **Assessment:** **[inferred]** Profile exists and reinforces ICON/mentor positioning; full profile blocked from view; confidence=low
+  - Credentials: RAA member; certified mentor `[client-confirm — shown in LinkedIn search snippet, unverified as fact]`
+- **Assessment:** **[inferred]** Profile exists and reinforces ICON/mentor positioning; full profile blocked from view; confidence=low. Credential claims within remain `[client-confirm]`.
 
 ---
 
@@ -300,12 +304,13 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 ## Bio Quality Assessment
 
 ### Strong Bios (Detail + Credentials + Social Proof)
+*"Strong" here rates writing quality and depth, not truth — every specific credential/production figure below is `[client-confirm]` until Carrie confirms it.*
 - **Zillow Individual:** Business degree, analytical skill, investments, market trends ✓
 - **Zillow Team:** Top-producing team, brokered by eXp ✓
 - **Realtor.com:** Business degree, investments, team structure ✓
-- **Homes.com:** ICON Agent, Certified Mentor, 46 families, $10.5M, ranked #45/1900 ✓✓
-- **Nextdoor:** 2x ICON, top producer, mentor, home stager ✓
-- **LoopNet:** Full credentials, production stats, investment portfolio ✓
+- **Homes.com:** ICON Agent, Certified Mentor, 46 families, $10.5M, ranked #45/1900 ✓✓ `[client-confirm]`
+- **Nextdoor:** 2x ICON, top producer, mentor, home stager ✓ `[client-confirm]`
+- **LoopNet:** Full credentials, production stats, investment portfolio ✓ `[client-confirm]`
 
 ### Weak Bios (Generic/Template)
 - **eXp Primary Website:** Generic customer testimonial only ✗
@@ -373,8 +378,8 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 2. **Weak Primary Website Bio**
    - Status: Generic testimonial vs. competitive detail
    - Impact: Low conversion on owned channel
-   - Action: Update eXp website bio to include: ICON Agent status, 11 years experience, Icon/Mentor credentials, production stats (46 families, $10.5M, #45/1900)
-   - Timeline: Week 1
+   - Action: `[client-confirm first]` — Before publishing, confirm with Carrie: ICON Agent status/multiplier, 11 years experience, Icon/Mentor credentials, and production stats (46 families, $10.5M, #45/1900). None of these are independently verified as fact; do not publish them to the owned website until Carrie confirms each figure.
+   - Timeline: Week 1 for confirmation; bio update only after confirmation
 
 3. **NAP Inconsistencies (Address + Phone)**
    - Status: 5 addresses, 2 phones, 3 emails across platforms
@@ -429,9 +434,9 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 
 ## Data Quality Notes
 
-- **High Confidence [verified]:** Zillow, Realtor.com, Nextdoor, eXp primary (accessible sources; direct fetch)
-- **Medium Confidence [inferred]:** Homes.com bio claims (production stats; #45/1900 rank requires independent verification)
-- **Low Confidence [client-confirm]:** All phone/address/email conflicts; ICON multiplier (2x vs. 3x); license variants
+- **High Confidence [verified]:** That these sources were successfully fetched and display the NAP data (phone/address/email as shown) reported above — Zillow, Realtor.com, Nextdoor, eXp primary, Homes.com, LoopNet (accessible sources; direct fetch). This is an observation of what each page shows, not a determination that career/production claims on those pages are factually true.
+- **[client-confirm] — requires Carrie's confirmation before any marketing use:** 11 years of experience; license number (0995689513 vs. 09956895 variant); 46 families helped; $10.5M production volume; #45/1900 rank; ICON Agent status and multiplier (2x vs. 3x); Certified Mentor status; RAA membership. None of these are independently verifiable from public sources alone, consistent with `data/known_claims.yaml`.
+- **Low Confidence [client-confirm — canonical NAP]:** All phone/address/email conflicts (which value is correct, not just which value is displayed where)
 - **Unverified:** Instagram, TikTok, YouTube (no data access); full LinkedIn detail (blocked)
 
 ---
@@ -457,7 +462,7 @@ Requires [client-confirm] which is primary/canonical address for NAP standardiza
 
 ## Conclusion
 
-Carrie Billeaud has established a **moderately strong** public presence across major real estate platforms, with particular strength on Zillow (29★ reviews) and detailed credentials on Homes.com/Realtor.com. However, critical gaps exist:
+Carrie Billeaud has established a **moderately strong** public presence across major real estate platforms, with particular strength on Zillow (29★ reviews) and detailed self-reported credentials on Homes.com/Realtor.com (`[client-confirm]` — unverified as fact). However, critical gaps exist:
 
 1. **Missing Google Business Profile** — Highest priority; immediate action required
 2. **NAP inconsistencies** — Address and phone conflicts across platforms require standardization
