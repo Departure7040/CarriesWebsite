@@ -1,0 +1,11 @@
+keyword,intent,funnel_stage,target_page,priority,notes
+Lafayette LA realtor,commercial-local,decision,/content/page_briefs/lafayette_realtor.md,P1,head term
+best realtor Lafayette LA,commercial-local,decision,/content/page_briefs/lafayette_realtor.md,P1,reputation-driven
+real estate agent Lafayette LA,commercial-local,decision,/content/page_briefs/lafayette_realtor.md,P1,synonym head term
+listing agent Lafayette LA,commercial-local,decision,/content/page_briefs/lafayette_listing_agent.md,P1,seller intent
+sell my house Lafayette,transactional-local,decision,/content/page_briefs/sell_my_house_lafayette.md,P1,highest seller intent
+buyer agent Lafayette LA,commercial-local,decision,/content/page_briefs/lafayette_buyers_agent.md,P2,buyer intent
+first time home buyer realtor Lafayette LA,commercial-local,consideration,/content/page_briefs/first_time_homebuyers_lafayette.md,P1,matches claimed specialty
+Youngsville LA realtor,commercial-local,decision,/content/page_briefs/youngsville_realtor.md,P2,service area
+Broussard LA realtor,commercial-local,decision,/content/page_briefs/broussard_realtor.md,P2,service area
+Acadiana realtor,commercial-local,consideration,/content/page_briefs/lafayette_realtor.md,P3,regional term

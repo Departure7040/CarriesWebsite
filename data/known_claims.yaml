@@ -1,0 +1,52 @@
+# Claims registry — nothing here may appear in client-facing copy as fact
+# until its status is "verified" (with source) or "client_confirmed".
+# status: unverified | verified | client_confirmed | contradicted
+
+claims:
+  - id: phone_primary
+    claim: "Primary phone is 337-258-5379"
+    source: "Multiple public profiles"
+    status: unverified
+  - id: phone_loopnet
+    claim: "Phone 337-522-7554 shown on LoopNet search result"
+    source: "LoopNet"
+    status: unverified
+    note: "Conflicts with phone_primary — NAP issue"
+  - id: address_kaliste
+    claim: "Office at 1720 Kaliste Saloom Ste B 2, Lafayette, LA 70508"
+    source: "Realtor.com search result"
+    status: unverified
+  - id: address_flagg
+    claim: "Office at 3 Flagg Place Building B, Suite B-4, Lafayette, LA 70508"
+    source: "Instagram / Nextdoor snippets"
+    status: unverified
+    note: "Conflicts with address_kaliste — NAP issue"
+  - id: license
+    claim: "License 0995689513"
+    source: "Public profiles"
+    status: unverified
+  - id: sales_volume
+    claim: "174 closed sales, $44.6M total value over prior 5 years"
+    source: "Homes.com profile"
+    status: unverified
+    note: "Verify with Carrie before any marketing use"
+  - id: years_experience
+    claim: "11 years of experience"
+    source: "Realtor.com"
+    status: unverified
+  - id: families_per_year
+    claim: "Serves 50+ families yearly"
+    source: "Instagram bio"
+    status: unverified
+  - id: icon_agent
+    claim: "eXp Icon Agent / top-producing Realtor"
+    source: "Public profiles"
+    status: unverified
+  - id: raa_member
+    claim: "Member, Realtor Association of Acadiana"
+    source: "Public profiles"
+    status: unverified
+  - id: rentals_investment
+    claim: "Handles rentals / investment property"
+    source: "Profile specialties"
+    status: unverified

@@ -1,0 +1,20 @@
+# Target queries for competitor research (WF04)
+# intent: commercial-local unless noted
+
+queries:
+  - q: Lafayette LA realtor
+  - q: best realtor Lafayette LA
+  - q: real estate agent Lafayette LA
+  - q: top realtor Lafayette LA
+  - q: listing agent Lafayette LA
+  - q: buyer agent Lafayette LA
+  - q: first time home buyer realtor Lafayette LA
+  - q: Youngsville LA realtor
+  - q: Broussard LA realtor
+  - q: Acadiana realtor
+  - q: eXp Realty Lafayette realtor
+
+notes:
+  - SERP capture is location/personalization dependent; positions recorded are
+    approximate. Manual verification checklist lives in
+    /reports/04_competitor_gap_analysis.md.

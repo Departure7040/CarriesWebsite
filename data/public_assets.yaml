@@ -1,0 +1,99 @@
+# Public assets for Carrie Billeaud — Realtor, eXp Realty, Lafayette LA
+# Status values: not_checked | checked | blocked | not_found
+# Findings are filled by public_presence_researcher (WF01).
+
+entity:
+  name: Carrie Billeaud
+  business_name: "Carrie Billeaud, Realtor"
+  brokerage: eXp Realty
+  market: Lafayette, Louisiana and surrounding Acadiana
+  phone_primary_claimed: "337-258-5379"        # seen on most profiles [client-confirm]
+  phone_conflict: "337-522-7554"               # LoopNet search result [needs verification]
+  license_shown_publicly: "0995689513"
+  address_conflicts:
+    - "1720 Kaliste Saloom Ste B 2, Lafayette, LA 70508"   # Realtor.com search result
+    - "3 Flagg Place Building B, Suite B-4, Lafayette, LA 70508"  # Instagram / Nextdoor snippets
+  service_areas_likely:
+    - Lafayette
+    - Youngsville
+    - Broussard
+    - Carencro
+    - Scott
+    - Maurice
+    - Milton
+    - Acadiana
+  specialties_claimed:
+    - First-time home buyers
+    - Sellers
+    - Buyer's agent
+    - Seller's agent
+    - Residential real estate
+    - "Rentals / investment property (verify before using)"
+  credibility_claims_unverified:
+    - "Realtor Association of Acadiana member (verify)"
+    - "eXp Icon Agent / top-producing Realtor (verify)"
+    - "174 closed sales, $44.6M over prior 5 years (Homes.com — verify)"
+    - "11 years experience (Realtor.com — verify)"
+    - "Serving 50+ families yearly (Instagram — verify)"
+
+assets:
+  - name: Primary website (eXp)
+    url: https://carriebilleaud.exprealty.com
+    type: website
+    status: not_checked
+    findings: {}
+  - name: eXp agent profile page
+    url: https://carriebilleaud.exprealty.com/agents.php
+    type: website
+    status: not_checked
+    findings: {}
+  - name: Zillow profile
+    url: https://www.zillow.com/profile/carriebilleaud
+    type: platform_profile
+    status: not_checked
+    findings: {}
+  - name: Zillow team profile
+    url: https://www.zillow.com/profile/carriebilleaudteam
+    type: platform_profile
+    status: not_checked
+    findings: {}
+  - name: Realtor.com profile
+    url: https://www.realtor.com/realestateagents/567985a6bb954c0100686dd4
+    type: platform_profile
+    status: not_checked
+    findings: {}
+  - name: Homes.com profile
+    url: https://www.homes.com/real-estate-agents/carrie-billeaud/pf5j8yv/
+    type: platform_profile
+    status: not_checked
+    findings: {}
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/carrie-billeaud-921ab6a1
+    type: social
+    status: not_checked
+    findings: {}
+  - name: Facebook
+    url: https://www.facebook.com/carriebilleaud/
+    type: social
+    status: not_checked
+    findings: {}
+  - name: Instagram
+    url: https://www.instagram.com/carriebilleaud_realtor/
+    type: social
+    status: not_checked
+    findings: {}
+  - name: Nextdoor
+    url: https://nextdoor.com/pages/carrie-billeaud-realtor-exp-realty-lafayette-la/
+    type: local_profile
+    status: not_checked
+    findings: {}
+  - name: LoopNet broker profile
+    url: https://www.loopnet.com/commercial-real-estate-brokers/profile/carrie-billeaud/bh92wrcb
+    type: platform_profile
+    status: not_checked
+    findings: {}
+  - name: Google Business Profile
+    url: null   # NOT YET FOUND — WF01 must search; if absent, top client request
+    type: gbp
+    status: not_checked
+    findings: {}
