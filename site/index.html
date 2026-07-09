@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Carrie Billeaud · Lafayette LA Realtor — Demo Concept</title>
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=3">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"RealEstateAgent",
 "name":"Carrie Billeaud, Realtor","telephone":"+1-337-258-5379",
@@ -155,7 +155,7 @@
       <p class="kicker">About Carrie</p>
       <h2>A Lafayette Realtor with Acadiana roots</h2>
       <p>Carrie Billeaud is a REALTOR® with eXp Realty, serving buyers and sellers throughout Lafayette and the surrounding Acadiana communities of Youngsville, Broussard, Carencro, Scott, Maurice and Milton. She holds a business degree from the University of Louisiana at Lafayette, which shapes an analytical, detail-driven approach to pricing, negotiation and market timing. Carrie works alongside her father as part of her team, and brings a background in home staging to the table — helping sellers present their homes at their best before they hit the market. Her focus areas are first-time home buyers navigating their first purchase and sellers who want a straightforward, well-managed listing process, along with residential and investment property transactions for clients across the Lafayette area. Whether you're weighing your first offer or getting a home ready to list, Carrie walks through each step so you know what to expect next. Clients rate her work 5.0 stars across 185 Google reviews and 29 more on Zillow.</p>
-      <p><em>(Sample bio — final copy needs Carrie's confirmation.)</em></p>
+      <p><em>(Sample bio drafted from your public profiles — final copy would need your approval.)</em></p>
     </div>
   </div>
 </section>
@@ -201,52 +201,52 @@
   <div class="wrap">
     <p class="kicker">Listings</p>
     <h2>Your active listings, front and center</h2>
-    <p>These are your real listings, pulled from your Realtor.com profile data (snapshot July 8, 2026). A production build would sync this automatically from your MLS/IDX feed — your inventory always on your own site, ahead of the portals.</p>
-    <div class="card-grid">
+    <p id="listings-intro">These are your real listings, pulled live from your Realtor.com profile data. A production build would sync from your MLS/IDX feed the same way — your inventory always on your own site, ahead of the portals.</p>
+    <div class="card-grid" id="listings-grid">
       <div class="card listing-card">
         <img src="assets/img/listings/101-rio-ridge-dr.jpg" alt="101 Rio Ridge Dr, Lafayette LA" loading="lazy">
         <h3>$3,400,000</h3>
         <p><strong>101 Rio Ridge Dr</strong>, Lafayette</p>
         <p>5 bd · 5.5+ ba · 6,800 sqft</p>
-        <p><a href="#contact">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/101-Rio-Ridge-Dr_Lafayette_LA_70508_M76949-15948" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
+        <p><a href="#contact" class="ask-home" data-addr="101 Rio Ridge Dr, Lafayette" data-price="$3,400,000">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/101-Rio-Ridge-Dr_Lafayette_LA_70508_M76949-15948" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
       </div>
       <div class="card listing-card">
         <img src="assets/img/listings/204-ivy-cottage-dr.jpg" alt="204 Ivy Cottage Dr, Youngsville LA" loading="lazy">
         <h3>$1,510,000</h3>
         <p><strong>204 Ivy Cottage Dr</strong>, Youngsville</p>
         <p>4 bd · 3.5 ba · 3,918 sqft</p>
-        <p><a href="#contact">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/204-Ivy-Cottage-Dr_Youngsville_LA_70592_M80755-96386" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
+        <p><a href="#contact" class="ask-home" data-addr="204 Ivy Cottage Dr, Youngsville" data-price="$1,510,000">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/204-Ivy-Cottage-Dr_Youngsville_LA_70592_M80755-96386" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
       </div>
       <div class="card listing-card">
         <img src="assets/img/listings/1006-carla-dr.jpg" alt="1006 Carla Dr, Saint Martinville LA" loading="lazy">
         <h3>$665,000</h3>
         <p><strong>1006 Carla Dr</strong>, Saint Martinville</p>
         <p>3 bd · 2.5+ ba · 3,800 sqft</p>
-        <p><a href="#contact">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/1006-Carla-Dr_St-Martinvlle_LA_70582_M86324-76620" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
+        <p><a href="#contact" class="ask-home" data-addr="1006 Carla Dr, Saint Martinville" data-price="$665,000">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/1006-Carla-Dr_St-Martinvlle_LA_70582_M86324-76620" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
       </div>
       <div class="card listing-card">
         <img src="assets/img/listings/1600-blk-guillot-rd.jpg" alt="1600 Blk Guillot Rd, Youngsville LA" loading="lazy">
         <h3>$600,000</h3>
         <p><strong>1600 Blk Guillot Rd</strong>, Youngsville</p>
         <p>Land / lot</p>
-        <p><a href="#contact">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/1600-Blk-Guillot-Rd_Youngsville_LA_70592_M91207-11979" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
+        <p><a href="#contact" class="ask-home" data-addr="1600 Blk Guillot Rd, Youngsville" data-price="$600,000">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/1600-Blk-Guillot-Rd_Youngsville_LA_70592_M91207-11979" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
       </div>
       <div class="card listing-card">
         <img src="assets/img/listings/107-cypress-lake-dr.jpg" alt="107 Cypress Lake Dr, Youngsville LA" loading="lazy">
         <h3>$510,750</h3>
         <p><strong>107 Cypress Lake Dr</strong>, Youngsville</p>
         <p>4 bd · 3 ba · 2,250 sqft</p>
-        <p><a href="#contact">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/107-Cypress-Lake-Dr_Youngsville_LA_70592_M99540-31916" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
+        <p><a href="#contact" class="ask-home" data-addr="107 Cypress Lake Dr, Youngsville" data-price="$510,750">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/107-Cypress-Lake-Dr_Youngsville_LA_70592_M99540-31916" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
       </div>
       <div class="card listing-card">
         <img src="assets/img/listings/205-queenstown-ave.jpg" alt="205 Queenstown Ave, Youngsville LA" loading="lazy">
         <h3>$465,000</h3>
         <p><strong>205 Queenstown Ave</strong>, Youngsville</p>
         <p>4 bd · 2 ba · 2,202 sqft</p>
-        <p><a href="#contact">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/205-Queenstown-Ave_Youngsville_LA_70592_M98507-88743" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
+        <p><a href="#contact" class="ask-home" data-addr="205 Queenstown Ave, Youngsville" data-price="$465,000">Ask about this home</a> · <a href="https://www.realtor.com/realestateandhomes-detail/205-Queenstown-Ave_Youngsville_LA_70592_M98507-88743" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>
       </div>
     </div>
-    <p style="margin-top:1rem"><em>Showing 6 of 10 active listings in this snapshot. Photos © their MLS sources — shown here in this private demo only.</em></p>
+    <p style="margin-top:1rem"><em id="listings-note">Showing 6 of 10 active listings (snapshot July 8, 2026 — live feed loads when the demo server is running). Photos © their MLS sources — shown in this private demo only.</em></p>
   </div>
 </section>
 
@@ -288,7 +288,7 @@
         <p><strong>Dominick C.</strong> · ★★★★★ Google review</p>
       </div>
     </div>
-    <p style="margin-top:1rem"><em>Reviews shown are from Carrie's live Google profile; on a production site we'd confirm reviewer permission before featuring them.</em></p>
+    <p style="margin-top:1rem"><em>These are real reviews from your live Google profile — before a production launch we’d confirm reviewer permission with you.</em></p>
   </div>
 </section>
 
@@ -369,7 +369,7 @@
       </div>
       <button class="btn btn-gold" type="submit">Send (demo only)</button>
     </form>
-    <p><em>Demo form — not wired up.</em></p>
+    <p><em>Demo form — not wired up yet; a production build would send these straight to your inbox/CRM.</em></p>
     <p style="margin-top:1rem">Prefer to talk? <a class="btn" href="tel:3372585379">Call 337-258-5379</a></p>
   </div>
 </section>
@@ -382,4 +382,50 @@
   <p>Demo concept built as part of an SEO audit by Brook DuBose. Not Carrie's live website. Sample copy marked as placeholder is illustrative only.</p>
 </div></footer>
 <div class="sticky-call"><a href="tel:3372585379">📞 Call Carrie — 337-258-5379</a></div>
+<script>
+(function(){
+  function money(v){ return v ? '$' + v.toLocaleString('en-US') : ''; }
+  function esc(t){ var d=document.createElement('div'); d.textContent=t==null?'':String(t); return d.innerHTML; }
+  fetch('api/listings').then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(data){
+    var rs=(data.results||[]).filter(function(r){ return r.primary_photo && r.primary_photo.href; });
+    if(!rs.length) return;
+    rs.sort(function(a,b){ return (b.list_price||0)-(a.list_price||0); });
+    var grid=document.getElementById('listings-grid');
+    grid.innerHTML=rs.map(function(r){
+      var d=r.description||{}, adr=(r.location||{}).address||{};
+      var specs=[];
+      if(d.beds) specs.push(d.beds+' bd');
+      if(d.baths_consolidated) specs.push(d.baths_consolidated+' ba');
+      if(d.sqft) specs.push(d.sqft.toLocaleString('en-US')+' sqft');
+      return '<div class="card listing-card">'
+        + '<img src="'+esc(r.primary_photo.href)+'" alt="'+esc((adr.line||'Listing')+', '+(adr.city||'')+' LA')+'" loading="lazy">'
+        + '<h3>'+money(r.list_price)+'</h3>'
+        + '<p><strong>'+esc(adr.line||'')+'</strong>, '+esc(adr.city||'')+'</p>'
+        + '<p>'+(specs.join(' · ')||'Land / lot')+'</p>'
+        + '<p><a href="#contact" class="ask-home" data-addr="'+esc(adr.line||'')+', '+esc(adr.city||'')+'" data-price="">Ask about this home</a> · <a href="'+esc(r.href||'')+'" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>'
+        + '</div>';
+    }).join('');
+    var note=document.getElementById('listings-note');
+    if(note) note.textContent='Live feed: '+rs.length+' active listings via your Realtor.com profile data, refreshed '+(data.fetched_at||'just now')+' (cached 15 min). Photos © their MLS sources — shown in this private demo only.';
+  }).catch(function(){ /* keep snapshot cards */ });
+})();
+</script>
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('.ask-home') : null;
+    if(!a) return;
+    e.preventDefault();
+    var msg = document.getElementById('message');
+    var addr = a.getAttribute('data-addr') || 'one of your listings';
+    var price = a.getAttribute('data-price');
+    if(msg){
+      msg.value = "Hi Carrie — I'd like to ask about " + addr + (price ? " (" + price + ")" : "") + ". Is it still available?";
+    }
+    var contact = document.getElementById('contact');
+    if(contact) contact.scrollIntoView({behavior:'smooth', block:'start'});
+    setTimeout(function(){ var n=document.getElementById('name'); if(n) n.focus(); }, 600);
+  });
+})();
+</script>
 </body></html>
