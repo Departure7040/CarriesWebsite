@@ -20,6 +20,7 @@ h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
 .tag.inferred{background:#fdf1dd;color:var(--warn)}
 .tag.confirm{background:transparent;border:1.5px solid var(--bad);color:var(--bad)}
 .tag.practice{background:transparent;border:1.5px solid var(--teal);color:var(--teal)}
+.tag.owner{background:#eef1f5;color:#4a5568}
 .tag.fix-direct{background:transparent;border:1.5px solid var(--ok);color:var(--ok)}
 .tag.fix-ticket{background:transparent;border:1.5px solid var(--warn);color:var(--warn)}
 .score{font-family:Georgia,serif;font-size:2.4rem;font-weight:700}
