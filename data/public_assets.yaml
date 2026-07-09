@@ -134,42 +134,77 @@ assets:
       bio_note: "BLOCKED by firecrawl; search snippet shows: top-producing Realtor and Icon Agent with Exp Realty; member Realtor Association of Acadiana; certified mentor"
       confidence: "low"
       data_source: "search snippet only"
-  - name: Facebook
+  - name: Facebook (personal profile)
     url: https://www.facebook.com/carriebilleaud/
     type: social
-    status: blocked
+    status: checked
     findings:
-      phone: "337-258-5379"
-      email: "carriebilleaud@gmail.com"
-      bio_quality: "strong"
-      bio_note: "BLOCKED by firecrawl; search shows: 5550 likes; 142 discussing; 3x ICON Agent (Zillow shows 2x, Facebook shows 3x); Acadiana Realtor Lafayette Luxury & Lifestyle"
-      confidence: "low"
-      data_source: "search snippet only; discrepancy in ICON claims (2x vs 3x)"
-      social_engagement: "high (5550 likes)"
+      note: "[verified] Live logged-in browser session 2026-07-08 resolved the 'blocked' status: this is a PERSONAL PROFILE in Facebook's professional/creator mode ('Digital creator'), NOT a business Page. This is the resolution of the prior 'split Facebook presence' open question — one entity is a personal profile, the other (carriebilleaudrealty) is a true business Page."
+      followers: "5.5K"
+      following: "11"
+      verified_badge: "YES — blue check, likely Meta Verified"
+      bio: "Acadiana Realtor / Lafayette Luxury & Lifestyle / 3x ICON Agent / Buy • Build • Sell • Invest / DM 'HOME'"
+      work: "eXp Realty since Feb 21, 2022 ('Realtor, Real Estate Consultant', 4 yrs 4 mo tenure shown)"
+      tenure_note: "[client-confirm] eXp tenure shown (since Feb 2022, ~4yr4mo) conflicts with the '11 years experience' claim seen elsewhere (Zillow) — tenure at eXp specifically is not necessarily total years as a realtor; needs Carrie's clarification, not a contradiction to correct unilaterally."
+      education: "UL Lafayette"
+      activity: "Active organically — post from yesterday (37 reactions); June 1 post: nominated for 'Acadiana's Choice Best Realtor' (13 reactions)"
+      icon_agent_claim: "3x ICON Agent [client-confirm — still conflicts with 2x shown on Zillow Team/Nextdoor]"
+      confidence: "high"
+      data_source: "live logged-in browser session, 2026-07-08"
+    date_checked: "2026-07-08"
   - name: Instagram
     url: https://www.instagram.com/carriebilleaud_realtor/
     type: social
-    status: not_found
+    status: checked
     findings:
-      note: "NOT SUPPORTED by firecrawl scraping; marked as unsupported site"
-      confidence: "low"
-      data_source: "none - access blocked"
-      action_needed: "Consider manual review or alternative scraping method"
-  - name: Facebook (BUSINESS page — separate from primary Facebook)
+      note: "[verified] Live logged-in browser session 2026-07-08 resolved the prior BLOCKED/not_found status."
+      followers: "949"
+      following: "436"
+      posts: "1,831"
+      display_name: "Carrie Billeaud | Acadiana Realtor | Louisiana"
+      bio: "Serving 50+ families in Acadiana yearly / Real estate clarity. No fluff. / 📍Homes, mom life, women empowerment / Grab the…(truncated)"
+      bio_issue: "Bio CTA/link line is truncated in the display — likely a broken or unclear link-in-bio; worth fixing (see backlog)."
+      linked_facebook_entity: "Carrie Billeaud-Realtor, EXP Realty (i.e. links to the BUSINESS Facebook Page, not the personal profile)"
+      confidence: "high"
+      data_source: "live logged-in browser session, 2026-07-08"
+    date_checked: "2026-07-08"
+  - name: Facebook (BUSINESS page — separate from personal profile)
     url: https://www.facebook.com/carriebilleaudrealty
     type: social
-    status: blocked
+    status: checked
     findings:
-      note: "SEPARATE page from https://www.facebook.com/carriebilleaud (5,550 likes, already audited). Discovered 2026-07-08 second pass: Carrie's TikTok video descriptions (e.g. video 7451802974244048174) and an Instagram giveaway post (instagram.com/p/DUbbywokkar/) both link to this URL and label it 'my Facebook Page' / 'Carrie Billeaud' — i.e. this is the page she is actively promoting to new audiences, not the larger legacy page."
-      followers: "~2,500 (client-observed 2026-07-08; not independently verifiable — page blocked to scrapers)"
-      corroborating_evidence: "Also cross-posted by lender partner Aimee Power / Approved Mortgage Now in joint giveaway posts (e.g. facebook.com/approvedmortgagenow/posts/1366535455479770), which link both facebook.com/carriebilleaudrealty and facebook.com/aimeepowerloans as the two entry-qualifying pages."
-      likes: "UNKNOWN — BLOCKED; no search snippet surfaced like count, category, or phone for this page directly"
-      category: "UNKNOWN — BLOCKED"
-      phone: "UNKNOWN — BLOCKED"
-      bio_quality: "unknown"
-      confidence: "low"
-      data_source: "cross-referenced from TikTok/Instagram/lender-partner search snippets only; firecrawl does not support scraping facebook.com (same limitation as the primary FB page)"
-      action_needed: "Resolve with Carrie: which Facebook page is canonical/primary — see reports/09_questions_for_client.md"
+      note: "[verified] Live logged-in browser session 2026-07-08 resolved the prior BLOCKED status. Confirms this is a true Facebook business Page (category: Real Estate Agent), distinct from the personal profile at facebook.com/carriebilleaud. Carrie's TikTok/Instagram content actively promotes this page."
+      page_name_as_shown: "Carrie Billeaud-Realtor, EXP Realty"
+      followers: "2.5K"
+      following: "135"
+      category: "Real Estate Agent"
+      bio: "Acadiana Realtor | 3x ICON Agent / Luxury • New Construction • Lifestyle / Proud Partner with Acadiana Home Builders / Serving Lafayette & Surrounding Areas"
+      reviews: "4 (Facebook reviews)"
+      hours: "Always open [best-practice — same spammy-looking pattern flagged on the GBP's 'Open 24 hours'; consider showing real business hours instead]"
+      address: "#3 Flagg Place Building B, Suite B-4, Lafayette, LA 70508"
+      address_match: "MATCHES the GBP address and the Nextdoor address variant (known conflict #2) — corroborating evidence for that variant, same annotation as the GBP cell."
+      phone: "337-258-5379 (shown on a featured post/sign graphic)"
+      email: "Carriebilleaud@gmail.com (shown on a featured post/sign graphic)"
+      service_areas: "Lafayette Parish, Maurice, Youngsville, Carencro, Broussard"
+      links_section: "carriebilleaud.com — SHE OWNS THIS DOMAIN; see new 'Personal domain' asset entry below"
+      activity: "Posts very actively (most recent post ~11h before capture)"
+      corroborating_evidence: "Also cross-posted by lender partner Aimee Power / Approved Mortgage Now in joint giveaway posts (e.g. facebook.com/approvedmortgagenow/posts/1366535455479770)"
+      confidence: "high"
+      data_source: "live logged-in browser session, 2026-07-08"
+    date_checked: "2026-07-08"
+  - name: Personal domain (carriebilleaud.com)
+    url: https://carriebilleaud.com
+    type: domain
+    status: checked
+    findings:
+      note: "[verified] MAJOR FINDING, discovered 2026-07-08 via the business Facebook page's Links section, then confirmed via whois + curl. Carrie already owns a dedicated personal domain. Report 04's gap analysis previously recommended acquiring/building one as a future option — she already has it, and it's currently doing nothing but redirecting."
+      registrar: "GoDaddy"
+      registered: "2021-12-14"
+      expiry: "2027-12-14"
+      current_behavior: "301 redirect to https://carriebilleaud.exprealty.com"
+      significance: "This resolves the 'dedicated domain' gap in 04_competitor_gap_analysis.md from 'she needs to acquire one' to 'she needs to activate one she already owns and has paid for since 2021.' Recommendation shifts from domain acquisition to a build-out decision."
+      confidence: "high"
+      data_source: "curl + whois, 2026-07-08"
     date_checked: "2026-07-08"
   - name: TikTok
     url: https://www.tiktok.com/@carriebilleaud_realtor
@@ -248,4 +283,13 @@ assets:
       discoverability_note: "Our own recon (3 search-query variants) failed to surface this profile despite it existing live; name decoration may be hurting match quality for 'Carrie Billeaud realtor' queries — worth investigating, and also an internal process lesson (absence of search evidence is not evidence of absence)"
       source: "Client-supplied share link, verified via live knowledge panel fetch"
       confidence: "high"
+      live_browser_observations_2026_07_08:
+        hours_shown: "Open 24 hours — [best-practice] real-estate agents generally should show real availability or no hours; '24 hours' can look spammy and sets a response-time expectation; discuss with Carrie"
+        booking_link: "calendly.com link present on profile (good conversion asset; UTM-tag it)"
+        attribute: "Identifies as women-owned"
+        owner_posts: "ACTIVE — owner listing post dated Apr 2, 2026 (311 Buenos Aires Ave, Youngsville); photos updated 'a day ago' — she already posts; cadence framing should be 'sustain/systematize', not 'start'"
+        owner_review_responses: "Owner responds to reviews; responses signed with the full decorated profile name"
+        review_topics_shown: "closing process (3), scheduling showings (2), finding the right home (5), reliable staff (3)"
+        sample_reviews_captured: "Dominick C. (2 mo), Annalise D. (8 mo), Amy L. (8 mo) — used on demo site reviews section"
+        nearby_agents_google_counts: "Blake Arceneaux & Team 98, Brandy Smith 77, Nick Hundley 71, Kathy Leger 4, Beau Thomas 2 — Carrie's 185 tops every nearby agent shown"
     date_checked: "2026-07-08"

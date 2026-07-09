@@ -44,3 +44,14 @@ most of these take 30 seconds each. Grouped so you can knock them out fast.
 14. Where do leads currently come from? (Rough percentages are fine.)
 15. What CRM do you use?
 16. Do you have a review request process today? (When/how do you ask?)
+
+## Outside marketing firm (added 2026-07-08, third pass)
+We noticed the business Facebook page (`carriebilleaudrealty`) has a distinct pattern of very high-view reels mixed with more typical ones — consistent with paid boosting on top of organic content. You've mentioned paying an outside firm ~$3,000/month for marketing on that page. Before we can tell you whether that spend is working, we need:
+
+17. Who is the firm, and what's actually included in the $3,000/month? Specifically, what's the split between content production (filming/editing) and paid ad spend (boosting/targeting)?
+18. Can Brook get **read-only access to Meta Business Suite / Ads Manager** for the business page, so we can see real spend, targeting, and cost-per-result instead of just public view counts?
+19. Does the firm provide you with any reporting today (leads generated, cost per lead, cost per click)? If so, can you forward the last 2-3 reports?
+20. Who holds the **GoDaddy login** for `carriebilleaud.com`? (We discovered you own this domain — see `reports/01_public_presence_inventory.md` and `reports/04_competitor_gap_analysis.md` addenda. It's currently just redirecting to your eXp site.)
+21. Does the firm manage the business Facebook page's profile details (hours, address, category)? The page currently shows "Always open" — same pattern as your Google Business Profile's "Open 24 hours" — worth knowing who controls that field before we recommend changing it.
+
+See `reports/10_facebook_reels_and_marketing_spend.md` for the full reels-view analysis and the specific reporting we'd want to see from the firm.

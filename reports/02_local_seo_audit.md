@@ -187,3 +187,17 @@ Tied directly to the canonical NAP decision in Section (a)(2). Once Carrie confi
 | 4 | Replace the GBP website link's fbclid tracking artifact with a clean UTM link | Manager access (#1) |
 | 5 | Launch sustained review request system (2–4/month, split across Google to maintain momentum and Realtor.com/Homes.com to close the gap) | Nothing — templates ready now (`/content/review_request_templates.md`) |
 | 6 | Complete GBP categories/services/photos/Q&A/posting cadence | Manager access (#1) |
+
+---
+
+## Addendum — live profile observations (2026-07-08, real-browser session)
+
+Viewed the live GBP in a real browser session; several findings refine the checklist above:
+
+- **She already posts.** Owner listing post dated Apr 2, 2026 (311 Buenos Aires Ave, Youngsville) and photos updated "a day ago." [verified] The posting recommendation shifts from "start a cadence" to **sustain and systematize** the cadence she already has (use the 12 prepared posts as a queue).
+- **Hours show "Open 24 hours."** [verified] [best-practice] For a solo agent this can read as spammy and sets an unrealistic response expectation; recommend real availability hours or removing hours — Carrie's call.
+- **A Calendly booking link is on the profile.** [verified] Genuine conversion asset; keep it, and UTM-tag it alongside the website link.
+- **"Identifies as women-owned" attribute is set.** [verified] Good — leave as is.
+- **Owner responds to reviews** — responses are signed with the full decorated profile name; when the name-policy fix happens, response signatures should switch to the canonical name too. [verified]
+- **Review topics Google surfaces:** closing process (3), scheduling showings (2), finding the right home (5), reliable staff (3). [verified] These are the phrases future review requests should naturally reinforce.
+- **Google review benchmark now exists.** Nearby agents shown on her own profile: Blake Arceneaux & Team 98, Brandy Smith 77, Nick Hundley 71, Kathy Leger 4, Beau Thomas 2. **Carrie's 185 tops every one of them.** [verified]

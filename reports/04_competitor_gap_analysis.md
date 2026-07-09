@@ -68,7 +68,7 @@ Note: review counts are drawn from different platforms per agent (Zillow, Experi
 |-----------|----------------------|------------------|-----|----------|
 | **Review Count** | **185 Google (5.0★) / 29 Zillow / 2 Realtor.com / 0 Homes.com** `[verified — per 01/02, corrected 2026-07-08]` | Sean: 353 (Zillow), Stephen: 79 (Experience.com), Nah: 97 (FastExpert) — **note: none of these are Google counts; we have no competitor Google review data** `[inferred — gap, not a measured comparison]` | **MODERATE** — Google is now Carrie's strongest platform and likely rivals or beats competitors on Google specifically, though we can't confirm without their Google counts; the real gap is Realtor.com/Homes.com | **2** |
 | **Platform Consolidation** | eXp Realty profile + Instagram only | Zillow, Realtor.com, Homes.com, BirdEye, Experience.com + directories | **CRITICAL** | **1** |
-| **Dedicated Website** | None (relying on eXp Realty + Instagram) | Dedicated domain (e.g., therealjessicabroussard.com, topagent337.com, lafayettehomepros.com) | **HIGH** | **2** |
+| **Dedicated Website** | **UPDATE (3rd pass): she owns `carriebilleaud.com` — currently just a redirect to eXp, not built out** | Dedicated domain (e.g., therealjessicabroussard.com, topagent337.com, lafayettehomepros.com) | **MEDIUM (downgraded from HIGH — domain acquisition is no longer the blocker, build-out is)** | **2** |
 | **Area-Specific Landing Pages** | None | Youngsville, Broussard, Acadiana pages (Jessica, Robbie) | **HIGH** | **2** |
 | **Content Depth** | Instagram only | Guides (buyer/seller), market tips, service area info | **HIGH** | **2** |
 | **Team/Branding** | Individual branding (eXp Realty affiliate) | Named team (Sean's "Lafayette's Realtor", Nah's "Dream Team", Keaty "team" structure) | **MEDIUM** | **3** |
@@ -106,8 +106,9 @@ Note: review counts are drawn from different platforms per agent (Zillow, Experi
 **Why:** Competitors with dedicated domains and area-specific pages consistently outrank agents without them for these queries `[inferred — pattern observed across Jessica Broussard, Robbie Breaux, Sean Hettich]`. The magnitude of improvement varies by competitive density and content quality; no specific position gain can be promised.
 
 1. **Build Standalone Presence (Short-term, Low Cost):**
+   - **UPDATE (2026-07-08, third pass):** Option B below is no longer hypothetical — Carrie already owns `carriebilleaud.com` (GoDaddy, registered 2021-12-14). See the Addendum at the end of this report for the full finding and revised recommendation.
    - Option A: **Sub-domain under eXp Realty** (carriebilleaud-realty.exprealty.com) — mirrors competitors using platform-hosted sites
-   - Option B: **Personal domain** (carrieselllafayette.com, carrie-realtor-lafayette.com) — higher autonomy, higher authority (6–12 mo to build)
+   - Option B: **Personal domain** — ~~carrieselllafayette.com, carrie-realtor-lafayette.com~~ **she already owns `carriebilleaud.com`; activate it instead of registering a new name** — higher autonomy, higher authority (6–12 mo to build out)
    - **Minimum content:**
      - Home page with professional photo, bio, specializations, service area map
      - Area pages: /youngsville, /broussard, /acadiana (mirror Robbie Breaux's model)
@@ -200,3 +201,26 @@ No ranking positions are guaranteed, by us or anyone — SERP position depends o
 - Local community involvement (check if documented)
 - Specialization (new construction? luxury? first-time buyers?) — not clear from current profiles
 - **Action:** Audit Carrie's unique value prop and spotlight it in website + social content
+
+---
+
+## Addendum — Google-review benchmark (2026-07-08, second pass)
+
+The earlier caveat "we lack competitors' Google counts" is now partially resolved. Google's own "People also search for" panel on Carrie's live GBP shows nearby agents' **Google** review counts: Blake Arceneaux & Team 98, Brandy Smith 77, Nick Hundley 71, Kathy Leger 4, Beau Thomas 2. [verified]
+
+**Carrie's 185 Google reviews top every nearby agent Google associates with her profile.** On the platform that matters most for the local pack, she is the review leader, not the laggard. The remaining review gaps are platform-specific: Realtor.com (2), Homes.com (0), and Zillow (29 vs Sean Hettich's 353). Note: Sean Hettich's Google count remains unknown — his 353 are Zillow reviews; no direct Google comparison to him is available yet.
+
+---
+
+## Addendum — she already owns a dedicated domain (2026-07-08, third pass)
+
+This report's "Dedicated Website" gap (Gap Matrix, Phase 2) was written on the assumption that Carrie would need to **acquire** a personal domain to compete with Jessica Broussard (therealjessicabroussard.com), Sean Hettich (topagent337.com), and Robbie Breaux (lafayettehomepros.com). `[verified]` That assumption is wrong: Carrie already owns **carriebilleaud.com** — registered through GoDaddy on 2021-12-14, expiring 2027-12-14 — discovered via a link in her Facebook business page and confirmed independently via `whois` and `curl`. It currently 301-redirects to `carriebilleaud.exprealty.com` and is otherwise unused.
+
+**Why this matters for this report specifically:** every competitor cited in this analysis as having a "dedicated domain" advantage built their site on a domain they had to go register. Carrie skipped that step five years ago and never used it. The gap was never acquisition — it's build-out. This changes the framing and, modestly, the effort estimate for Phase 2:
+
+- **Recommendation, updated:** Stop suggesting new domain names (`carrieselllafayette.com` etc., see Option B above). Activate `carriebilleaud.com` instead.
+- **Short-term (no cost, no decision needed):** Leave the redirect to `carriebilleaud.exprealty.com` in place — it's not broken, and it's better than a dead domain.
+- **Long-term (Phase 2 timing, pending Carrie's decision):** Build the standalone site described in Phase 2 (home page, area pages, buyer/seller guides, blog) directly on `carriebilleaud.com` rather than a new registration. This also sidesteps any domain-availability/branding debate — the name is already hers, already aged 5 years (a minor positive domain-age signal), and already circulating in at least one live channel (linked from the Facebook business page).
+- **Access needed:** Confirm who holds the GoDaddy login (see `reports/09_questions_for_client.md`) before any DNS or hosting changes.
+
+This does not change the underlying Phase 2 rationale (dedicated domains + area pages correlate with stronger competitor rankings) — it only changes the first step from "buy a domain" to "use the one you already have."
