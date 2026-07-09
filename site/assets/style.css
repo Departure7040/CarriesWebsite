@@ -78,4 +78,5 @@ details p{margin-top:.6rem}
 .open-house-table td .tag{margin-left:.5rem;vertical-align:middle}
 @media (max-width:720px){.search-form{padding:1rem}.search-field{min-width:100%}.search-submit{width:100%}}
 .results-bar{margin:1rem 0 .5rem}
-#results-frame{width:100%;height:75vh;min-height:480px;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+.results-crop{overflow:hidden;border:1px solid var(--rule);border-radius:10px;background:var(--paper)}
+#results-frame{width:100%;height:calc(75vh + 170px);min-height:650px;border:0;margin-top:-170px;display:block}
