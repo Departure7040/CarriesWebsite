@@ -96,3 +96,12 @@ details p{margin-top:.6rem}
 .vendor-line a{color:var(--teal)}
 .lender-card{border-left:3px solid var(--gold)}
 .search-external{margin-left:.5rem}
+
+.oh-featured{display:flex;gap:1.25rem;align-items:center;background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--gold);border-radius:10px;padding:1.4rem 1.5rem;margin:1.25rem 0}
+.oh-date{flex:0 0 auto;width:74px;border-radius:10px;overflow:hidden;text-align:center;border:1.5px solid var(--teal);background:var(--paper)}
+.oh-mon{display:block;background:var(--teal);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.14em;padding:.25rem 0}
+.oh-day{display:block;font-family:Georgia,serif;font-size:1.9rem;font-weight:700;color:var(--ink);padding:.25rem 0 .35rem}
+.oh-info h3{margin:.1rem 0 .3rem}
+.oh-info p{margin:.15rem 0}
+.oh-info a{color:var(--teal)}
+@media (max-width:560px){.oh-featured{flex-direction:column;align-items:flex-start}}
