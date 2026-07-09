@@ -62,3 +62,18 @@ details p{margin-top:.6rem}
 .contact-form label{display:block;font-weight:600;margin-bottom:.3rem;font-size:.9rem}
 .contact-form input,.contact-form textarea{width:100%;padding:.6rem .7rem;border:1px solid var(--rule);border-radius:6px;font:inherit}
 @media (max-width:720px){.hero .wrap{grid-template-columns:1fr;text-align:center}.hero-photo{max-width:220px}.about-wrap{grid-template-columns:1fr}.about-photo{max-width:220px;margin:0 auto}}
+
+/* --- logo, search, listings, open houses (additive) --- */
+.brand-logo{display:inline-flex;align-items:center;line-height:0}
+.brand-logo img{height:40px;width:auto;display:block}
+.footer-logo{height:28px;width:auto;display:block;margin-bottom:.75rem;opacity:.9}
+.search-form{display:flex;flex-wrap:wrap;align-items:end;gap:1rem;background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:1.25rem;margin-bottom:.75rem}
+.search-field{display:flex;flex-direction:column;gap:.3rem;min-width:9rem}
+.search-field-wide{flex:2 1 16rem}
+.search-field label{font-weight:600;font-size:.85rem}
+.search-field input,.search-field select{padding:.6rem .7rem;border:1px solid var(--rule);border-radius:6px;font:inherit;width:100%;background:#fff}
+.search-submit{align-self:end;white-space:nowrap}
+.listing-card{display:flex;flex-direction:column;gap:.5rem;align-items:start}
+.listing-note{font-size:.85rem;color:#5a6472}
+.open-house-table td .tag{margin-left:.5rem;vertical-align:middle}
+@media (max-width:720px){.search-form{padding:1rem}.search-field{min-width:100%}.search-submit{width:100%}}
