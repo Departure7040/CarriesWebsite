@@ -3,7 +3,7 @@
 **Purpose:** Ready-to-send templates for building sustained review volume (target: 2–4 new reviews/month, not one-time bursts — see `/reports/02_local_seo_audit.md` Section (d)). All templates are policy-compliant: no incentives, no gating, every client gets the same public link regardless of anticipated sentiment. `[best-practice]`
 
 **Before sending:** Replace `[LINK]` placeholders with the actual live review link once available:
-- Google review link: `[client-confirm — available once GBP is created, see 02_local_seo_audit.md Section a-1]`
+- Google review link: `https://search.google.com/local/writereview?placeid=ChIJdUhCUO2dJIYRe6NLEeyEd_M` `[verified — resolves to Carrie Billeaud Realtor's review dialog]`
 - Zillow review link: `https://www.zillow.com/profile/carriebilleaud#reviews` (Carrie's strongest existing platform — 29 reviews `[verified]`)
 
 Tone: friendly, warm, Louisiana-casual without being unprofessional. Keep texts under 3-4 sentences; emails slightly longer but still skimmable.
