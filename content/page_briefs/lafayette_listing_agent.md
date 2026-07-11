@@ -31,7 +31,7 @@ Book a listing consultation (in-home or virtual walkthrough + pricing conversati
 - H3: Pricing — data-driven approach (tie to her analytical/business-degree background [verified]), not "list high and see."
 - H3: Staging — she's a certified home stager [verified]; explain that staging is done in-house as part of the listing, not an upsell. This is a genuine differentiator vs. most competitor agents named in `04_competitor_gap_analysis.md`.
 - H3: Marketing & exposure — [client-confirm] specifics: professional photography, MLS syndication, social promotion (tie to her Instagram/Facebook presence), team support (team of 4 [verified] means faster showings coordination).
-- H3: Negotiation & closing — team of 4 including her father [verified] gives a "always someone available" framing — write honestly, not as a gimmick.
+- H3: Negotiation & closing — team of 4 [verified — Zillow roster] gives an "always someone available" framing — write honestly, not as a gimmick. (No family framing — "father on team" was disputed by client 2026-07-11.)
 
 ### H2: Neighborhoods & Home Types
 - Note she lists across Lafayette, Youngsville, Broussard, Carencro, Scott, Maurice, Milton — link to area pages for Youngsville/Broussard specifically.
@@ -52,7 +52,7 @@ Primary: "Schedule your free listing consultation" (form: address + timeframe + 
 
 ## 10. Trust signals
 - Home stager credential [verified] — the single strongest differentiator for this specific page; lead with it.
-- Team of 4, father on team [verified]
+- Team of 4 [verified] (no family framing — disputed)
 - Zillow 29 reviews, 5.0 [verified]
 - Certified mentor [verified] — brief mention only, less relevant to a seller than staging/reviews.
 - [client-confirm] Years of experience, ICON Agent status, any specific listing performance stats (days-on-market, list-to-sale ratio) — do not publish without client-supplied, current, verifiable numbers.

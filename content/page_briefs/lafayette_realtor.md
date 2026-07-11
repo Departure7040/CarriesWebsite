@@ -26,7 +26,7 @@ Primary contact conversion: phone call, text, or contact-form submission request
 
 ### H2: Meet Carrie Billeaud
 - Short, human bio: Lafayette-area Realtor with eXp Realty, business degree from the University of Louisiana at Lafayette [verified — Zillow bio], analytical approach to pricing and investment.
-- Family/team note: works alongside her father and a team of 4 [verified — Zillow team profile]. This is a genuine differentiator (multi-generational, local roots) — write it as a real detail, not a slogan.
+- Team note: leads a team of 4 [verified — Zillow team roster: Carrie, Jake, Blake, Arrow]. ("Father on team" from the Realtor.com bio was DISPUTED by client 2026-07-11 — do not use family framing.)
 - [client-confirm] Years licensed/active (public listings say 11 — confirm before publishing as fact).
 
 ### H2: Areas Carrie Serves
@@ -59,7 +59,7 @@ Primary: "Call or text Carrie" with `tel:` link — use `337-258-5379` [client-c
 ## 10. Trust signals
 - Zillow: 29 reviews, 5.0 rating [verified]
 - UL Lafayette business degree [verified — Zillow bio]
-- Team of 4, including her father [verified — Zillow team profile]
+- Team of 4 [verified — Zillow team roster]
 - Home stager [verified]
 - Certified mentor [verified]
 - [client-confirm] 11 years of experience

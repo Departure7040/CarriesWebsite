@@ -60,3 +60,8 @@ claims:
     source: "Direct observation of live GBP knowledge panel, 2026-07-08"
     status: verified
     note: "[verified] observation of what the name field currently shows; [best-practice] the policy-violation risk assessment. Fix carefully: discuss with Carrie first, change only the name in one pass, document before/after."
+  - id: father_on_team
+    claim: "Carrie works alongside her father on her team"
+    source: "First-pass recon extraction of Realtor.com bio (2026-07-08)"
+    status: contradicted
+    note: "Client (Brook, knows Carrie personally) says 'not remotely true' (2026-07-11). Likely extraction misread. Purged from site/index.html, site/areas/lafayette.html, and 3 page briefs. Team-of-4 roster (Carrie, Jake, Blake, Arrow) remains verified via Zillow team profile."

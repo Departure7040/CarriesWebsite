@@ -33,7 +33,7 @@ th{background:var(--cream)}
 .bar-fill{background:var(--teal);height:1.1rem;border-radius:4px;min-width:2px}
 .bar-fill.carrie{background:var(--gold)}
 .sticky-call{display:none}
-@media (max-width:720px){.sticky-call{display:block;position:fixed;bottom:0;left:0;right:0;background:var(--teal);text-align:center;padding:.9rem;z-index:20}.sticky-call a{color:#fff;font-weight:700;text-decoration:none}}
+@media (max-width:720px){.sticky-call{display:block;position:fixed;bottom:0;left:0;right:0;background:var(--teal);text-align:center;padding:.9rem;z-index:20}.sticky-call a{color:#fff;font-weight:700;text-decoration:none}.footer{padding-bottom:4.5rem}}
 .audit-nav{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:1rem;margin:1.5rem 0}
 .audit-nav a{display:inline-block;margin:.25rem .75rem .25rem 0;color:var(--teal)}
 .finding{border-left:4px solid var(--gold);padding:.75rem 1rem;background:var(--paper);margin:1rem 0}
@@ -109,3 +109,13 @@ details p{margin-top:.6rem}
 .oh-photo{flex:0 0 auto;width:210px;height:140px;object-fit:cover;border-radius:8px}
 .oh-thumb{width:72px;height:48px;object-fit:cover;border-radius:5px;vertical-align:middle;margin-right:.4rem}
 @media (max-width:560px){.oh-photo{width:100%;height:160px}}
+
+/* --- area pages (additive; shared by lafayette.html + sibling area pages) --- */
+.snapshot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:1.25rem}
+.snapshot-tile{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:1.25rem 1.5rem;text-align:center}
+.snapshot-num{display:block;font-family:Georgia,serif;font-weight:700;font-size:1.8rem;color:var(--teal-dark)}
+.snapshot-label{display:block;font-size:.9rem;color:#4a5568;margin-top:.25rem}
+.snapshot-label em{display:block;font-size:.78rem;color:var(--warn);margin-top:.35rem;font-style:italic}
+.card h3 .tag{margin-left:.5rem;vertical-align:middle}
+.area-card-link{margin-top:.5rem;font-weight:600}
+.area-page-footer-links a{color:var(--gold);margin:0 .35rem}

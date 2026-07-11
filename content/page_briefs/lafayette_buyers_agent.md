@@ -35,7 +35,7 @@ Book a buyer consultation call — the point where Carrie explains representatio
 
 ### H2: How the Process Works With Carrie's Team
 - Search setup, showings, offer strategy, inspection/closing support.
-- Team of 4 including her father [verified] — frame as faster response time/more showing availability, written honestly.
+- Team of 4 [verified — Zillow team roster] — frame as faster response time/more showing availability. (A 'father on team' detail from the Realtor.com bio was DISPUTED by client 2026-07-11 — do not use.)
 
 ### H2: Areas Covered
 - Restate 8 service areas; link to Youngsville/Broussard pages for buyers with a specific area in mind.
@@ -52,7 +52,7 @@ Primary: "Start your home search — book a buyer consultation" (form: budget ra
 
 ## 10. Trust signals
 - Zillow 29 reviews, 5.0 [verified]
-- Team of 4 / father on team [verified] — responsiveness angle
+- Team of 4 [verified] — responsiveness angle (no family framing — disputed)
 - UL Lafayette business degree [verified] — useful for the investment-buyer subsection (financial/analytical framing)
 - [client-confirm] Years of experience, any relocation/military specialization claims, ICON Agent status
 
