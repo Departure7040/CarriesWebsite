@@ -80,3 +80,22 @@ research/setup time or DNS propagation wait, and assuming Option A.
 - **[DECISION NEEDED]** Sequencing of eXp site vs. new site once
   carriebilleaud.com goes live — keep both indexed, or canonical one to the
   other?
+
+---
+
+## Status update — 2026-07-11
+
+The content build is DONE ahead of schedule: 18 pages live on the demo
+(home + 7 area pages + 4 service pages + 6 sourced guides), dropdown nav,
+live listings feed (demo proxy), footer socials, slim location-first heroes.
+Remaining "stand it up" work only:
+
+**Gated on Carrie (kickoff meeting):** GoDaddy access; canonical NAP answers;
+bio + sample-mark sign-offs; reviewer permissions (3 Google quotes); MLS/IDX
+authorization; lead-delivery email/CRM choice; AHB partnership permissions
+(new-construction page).
+
+**Brook, post-access (~8–12h):** Cloudflare Pages migration + Worker replacing
+server.py's /api/listings proxy; licensed IDX swap (feed + on-site search);
+form wiring + spam protection; de-demo pass (banners, sample marks, noindex
+OFF LAST, robots.txt open, sitemap -> GSC); pre-change GBP baselines.
