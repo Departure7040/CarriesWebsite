@@ -177,3 +177,8 @@ Brook: ___________  Carrie: ___________
   percentages — Q14 in `09_questions_for_client.md`).
 - A gut answer on target client mix (decision #5) — doesn't need to be
   precise, just directional.
+- **Closed transactions by city, last 3 years** (a CRM/MLS export or even a
+  hand list). This decides which expansion markets get pages next (Duson,
+  Rayne, Breaux Bridge, St. Martinville, New Iberia, Abbeville…): the rule is
+  real deals + something locally true to say + thin competition — all three
+  or no page.
