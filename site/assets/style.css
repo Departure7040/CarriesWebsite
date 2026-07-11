@@ -122,3 +122,13 @@ details p{margin-top:.6rem}
 
 .social-links{margin-top:.5rem}
 .social-links a{color:var(--gold)}
+
+.main-nav{display:flex;align-items:center;flex-wrap:wrap;gap:0}
+.nav-item{position:relative;display:inline-block}
+.nav-item>a{display:inline-block}
+.caret-dn{font-size:.7em;color:var(--gold)}
+.drop{display:none;position:absolute;top:100%;left:0;min-width:220px;background:var(--paper);border:1px solid var(--rule);border-radius:0 0 8px 8px;box-shadow:0 6px 18px rgba(26,35,50,.12);padding:.4rem 0;z-index:30}
+.drop a{display:block;padding:.45rem 1rem;margin-left:0 !important;font-size:.95rem}
+.drop a:hover{background:var(--cream)}
+.has-drop:hover>.drop,.has-drop:focus-within>.drop,.has-drop.open>.drop{display:block}
+@media (max-width:720px){.drop{position:static;box-shadow:none;border:none;border-left:2px solid var(--gold);border-radius:0;min-width:0}}
