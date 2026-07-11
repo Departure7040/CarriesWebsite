@@ -176,7 +176,15 @@ Brook: ___________  Carrie: ___________
 - Any existing CRM/lead-source notes (rough where-leads-come-from
   percentages — Q14 in `09_questions_for_client.md`).
 - A gut answer on target client mix (decision #5) — doesn't need to be
-  precise, just directional.
+  precise, just directional. NOTE (2026-07-11): Carrie volunteered that she's
+  working with Acadiana Home Builders to push luxury listings and custom-build
+  buyers — luxury/new-construction likely belongs at the top of the mix.
+- **Acadiana Home Builders partnership details** (new, from her 7/11 text):
+  what the arrangement includes (listing their specs? buyer referrals?
+  co-marketing?), whether it's exclusive, whether we can name them + use
+  their photos/listings on her site, and whether a builder co-marketing
+  budget exists. This gates a dedicated new-construction/custom-build page
+  that would be genuinely unique content.
 - **Closed transactions by city, last 3 years** (a CRM/MLS export or even a
   hand list). This decides which expansion markets get pages next (Duson,
   Rayne, Breaux Bridge, St. Martinville, New Iberia, Abbeville…): the rule is
