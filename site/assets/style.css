@@ -119,3 +119,6 @@ details p{margin-top:.6rem}
 .card h3 .tag{margin-left:.5rem;vertical-align:middle}
 .area-card-link{margin-top:.5rem;font-weight:600}
 .area-page-footer-links a{color:var(--gold);margin:0 .35rem}
+
+.social-links{margin-top:.5rem}
+.social-links a{color:var(--gold)}
