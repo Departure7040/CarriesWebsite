@@ -425,29 +425,71 @@
 <div class="sticky-call"><a href="tel:3372585379">📞 Call Carrie — 337-258-5379</a></div>
 <script>
 (function(){
-  function money(v){ return v ? '$' + v.toLocaleString('en-US') : ''; }
-  function esc(t){ var d=document.createElement('div'); d.textContent=t==null?'':String(t); return d.innerHTML; }
+  // DOM-XSS-safe rendering (code-review CR-005): all upstream values go
+  // through createElement/textContent property assignment — never HTML
+  // string concatenation — and URLs pass a scheme+host allowlist.
+  function money(v){ return (typeof v === 'number' && isFinite(v) && v > 0) ? '$' + v.toLocaleString('en-US') : ''; }
+  function str(v, max){ return (typeof v === 'string') ? v.slice(0, max || 200) : ''; }
+  function num(v){ return (typeof v === 'number' && isFinite(v) && v > 0) ? v : null; }
+  function safeUrl(u, hosts){
+    try {
+      var p = new URL(String(u));
+      if (p.protocol !== 'https:') return null;
+      for (var i = 0; i < hosts.length; i++) {
+        if (p.hostname === hosts[i] || p.hostname.endsWith('.' + hosts[i])) return p.href;
+      }
+    } catch (e) {}
+    return null;
+  }
+  function el(tag, cls, text){
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
   fetch('api/listings').then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(data){
-    var rs=(data.results||[]).filter(function(r){ return r.primary_photo && r.primary_photo.href; });
+    var rs=(Array.isArray(data.results)?data.results:[]).filter(function(r){
+      return r && r.primary_photo && safeUrl(r.primary_photo.href, ['rdcpix.com', 'realtor.com']);
+    }).slice(0, 12);
     if(!rs.length) return;
-    rs.sort(function(a,b){ return (b.list_price||0)-(a.list_price||0); });
+    rs.sort(function(a,b){ return (num(b.list_price)||0)-(num(a.list_price)||0); });
     var grid=document.getElementById('listings-grid');
-    grid.innerHTML=rs.map(function(r){
+    grid.textContent='';
+    rs.forEach(function(r){
       var d=r.description||{}, adr=(r.location||{}).address||{};
+      var line=str(adr.line,120), city=str(adr.city,60);
       var specs=[];
-      if(d.beds) specs.push(d.beds+' bd');
-      if(d.baths_consolidated) specs.push(d.baths_consolidated+' ba');
-      if(d.sqft) specs.push(d.sqft.toLocaleString('en-US')+' sqft');
-      return '<div class="card listing-card">'
-        + '<img src="'+esc(r.primary_photo.href)+'" alt="'+esc((adr.line||'Listing')+', '+(adr.city||'')+' LA')+'" loading="lazy">'
-        + '<h3>'+money(r.list_price)+'</h3>'
-        + '<p><strong>'+esc(adr.line||'')+'</strong>, '+esc(adr.city||'')+'</p>'
-        + '<p>'+(specs.join(' · ')||'Land / lot')+'</p>'
-        + '<p><a href="#contact" class="ask-home" data-addr="'+esc(adr.line||'')+', '+esc(adr.city||'')+'" data-price="'+money(r.list_price)+'">Ask about this home</a> · <a href="'+esc(r.href||'')+'" target="_blank" rel="noopener">view on Realtor.com ↗</a></p>'
-        + '</div>';
-    }).join('');
+      if(num(d.beds)) specs.push(num(d.beds)+' bd');
+      if(str(d.baths_consolidated,10)) specs.push(str(d.baths_consolidated,10)+' ba');
+      if(num(d.sqft)) specs.push(num(d.sqft).toLocaleString('en-US')+' sqft');
+      var card=el('div','card listing-card');
+      var img=el('img');
+      img.src=safeUrl(r.primary_photo.href,['rdcpix.com','realtor.com']);
+      img.alt=(line||'Listing')+', '+city+' LA';
+      img.loading='lazy'; img.width=380; img.height=180;
+      card.appendChild(img);
+      card.appendChild(el('h3',null,money(num(r.list_price))));
+      var pAddr=el('p'); pAddr.appendChild(el('strong',null,line)); pAddr.appendChild(document.createTextNode(', '+city));
+      card.appendChild(pAddr);
+      card.appendChild(el('p',null,specs.join(' · ')||'Land / lot'));
+      var pLinks=el('p');
+      var ask=el('a','ask-home','Ask about this home');
+      ask.href='#contact';
+      ask.setAttribute('data-addr', line+', '+city);
+      ask.setAttribute('data-price', money(num(r.list_price)));
+      pLinks.appendChild(ask);
+      var ext=safeUrl(r.href,['realtor.com']);
+      if(ext){
+        pLinks.appendChild(document.createTextNode(' · '));
+        var view=el('a',null,'view on Realtor.com ↗');
+        view.href=ext; view.target='_blank'; view.rel='noopener';
+        pLinks.appendChild(view);
+      }
+      card.appendChild(pLinks);
+      grid.appendChild(card);
+    });
     var note=document.getElementById('listings-note');
-    if(note) note.textContent='Live feed: '+rs.length+' active listings via your Realtor.com profile data, refreshed '+(data.fetched_at||'just now')+' (cached 15 min). Photos © their MLS sources — shown in this private demo only.';
+    if(note) note.textContent='Live feed: '+rs.length+' active listings via your Realtor.com profile data, refreshed '+str(data.fetched_at,40)+' (cached 15 min). Photos © their MLS sources — shown in this private demo only.';
   }).catch(function(){ /* keep snapshot cards */ });
 })();
 </script>

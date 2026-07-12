@@ -71,14 +71,23 @@ def fetch_listings() -> bytes:
         return body
 
 
+# Only these file types are served; everything else (server source, docs,
+# logs, dotfiles) is invisible to the web. Directory URLs may serve index.html
+# but never a listing. (Code-review finding CR-001.)
+ALLOWED_EXT = {".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".webp",
+               ".svg", ".gif", ".ico", ".txt", ".xml", ".woff", ".woff2"}
+
+
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.rstrip("/") == "/api/listings":
             try:
                 body = fetch_listings()
                 self.send_response(200)
-            except Exception as exc:  # upstream failure -> page uses snapshot
-                body = json.dumps({"error": str(exc)}).encode()
+            except Exception as exc:  # log privately, answer generically
+                import sys
+                print(f"upstream error: {exc}", file=sys.stderr)
+                body = json.dumps({"error": "upstream unavailable"}).encode()
                 self.send_response(502)
             self.send_header("Content-Type", "application/json")
             self.send_header("Cache-Control", "max-age=300")
@@ -86,12 +95,32 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(body)
             return
+        import os as _os
+        import urllib.parse as _up
+        clean = _up.urlparse(self.path).path
+        if clean.endswith("/"):
+            clean += "index.html"
+        ext = _os.path.splitext(clean)[1].lower()
+        base = _os.path.basename(clean)
+        if ext not in ALLOWED_EXT or base.startswith("."):
+            self.send_error(404)
+            return
         super().do_GET()
+
+    def list_directory(self, path):  # never expose directory indexes
+        self.send_error(404)
+        return None
+
+    def send_error(self, code, message=None, explain=None):
+        # generic error text only (no path echoes / tracebacks)
+        super().send_error(code, message="error", explain="")
 
 
 if __name__ == "__main__":
-    import functools, os
+    import os
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    with http.server.ThreadingHTTPServer(("0.0.0.0", PORT), Handler) as srv:
-        print(f"serving demo site + /api/listings on :{PORT}")
+    # loopback only: the Cloudflare tunnel and local previews both use
+    # localhost; nothing else on the network should reach this directly.
+    with http.server.ThreadingHTTPServer(("127.0.0.1", PORT), Handler) as srv:
+        print(f"serving demo site + /api/listings on 127.0.0.1:{PORT}")
         srv.serve_forever()
