@@ -1,7 +1,7 @@
 # Kickoff Meeting Pack — July 24, 2026
 **Brook DuBose + Carrie Billeaud · runsheet for the implementation kickoff**
 
-Goal of this meeting: show her what's already been done, get 6 quick yes/no
+Goal of this meeting: show her what's already been done, get 7 quick yes/no
 decisions, get logged into the accounts we need together (so nothing sits in
 her inbox as a follow-up), and leave with a signed/verbal deal memo covering
 the 30-day foundation sprint.
@@ -13,13 +13,13 @@ the 30-day foundation sprint.
 | Time | Segment | What happens |
 |---|---|---|
 | 0:00–0:05 | **Wins tour** | Show the live demo (`carrie.dubose.me` or localhost) — GBP finding (185 reviews, 5.0, tops every nearby agent Google shows), the audit site, the mocked-up carriebilleaud.com concept. Set the tone: real assets, fixable gaps, not a doom-and-gloom pitch. |
-| 0:05–0:25 | **The 6 decisions** | Walk section (b) below in order. Each has a recommendation — she just says yes/no/other. Target: under 3 min per decision. |
+| 0:05–0:25 | **The 7 decisions** | Walk section (b) below in order. Each has a recommendation — she just says yes/no/other. Target: under 3 min per decision. |
 | 0:25–0:40 | **Access setup, together** | Do the phone taps live, side by side (section (c)). Don't leave any of this for "I'll send it later" — access delays are the #1 way a 30-day plan becomes a 90-day plan. |
 | 0:40–0:45 | **Next steps + deal confirmation** | Confirm scope (section (d)), both sign/initial or verbally confirm, set the next check-in date. |
 
 ---
 
-## (b) The 6 decisions
+## (b) The 7 decisions
 
 Bring a printed or on-screen copy of this section — the idea is she can say
 "yes" to the recommendation and move on, or flag the ones she wants to think
@@ -70,6 +70,14 @@ week, to avoid tripping Google's spam-detection on rapid profile changes.
 Confirm: does she want this done the week of the 24th, or held until after
 manager access is fully sorted and tested on a smaller edit first (e.g., the
 website link/UTM fix) to make sure access works cleanly?
+
+
+### 7. Listing search at launch
+**Recommend:** launch with a clean "Search homes" link out to your eXp search
+(new tab), and add licensed IDX search on the site later only if the data says
+it earns its cost (~$70/mo + setup). The demo's embedded search is a concept
+preview, not the launch plan. **Needs her call only if:** she wants on-site
+IDX from day one regardless.
 
 ---
 

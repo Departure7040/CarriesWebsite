@@ -99,3 +99,24 @@ authorization; lead-delivery email/CRM choice; AHB partnership permissions
 server.py's /api/listings proxy; licensed IDX swap (feed + on-site search);
 form wiring + spam protection; de-demo pass (banners, sample marks, noindex
 OFF LAST, robots.txt open, sitemap -> GSC); pre-change GBP baselines.
+
+## Refinements adopted from the independent code review (2026-07-11)
+
+1. **Staged launch set:** launch with 8–12 fully-approved pages (seller funnel:
+   sell-my-house + listing-agent; areas: Lafayette, Youngsville, Broussard;
+   corrected guides: flood, homestead, closing; testimonials + home). Every
+   other page stays noindex until its facts pass Carrie's sign-off — rolling
+   approval, not one big gate. Milton and remaining pages join as approved.
+2. **IDX is a justified-later decision, not a launch gate:** at launch, listing
+   search = clear new-tab link to her eXp search; the Realtor.com demo proxy
+   NEVER ships to production. Licensed IDX (~$70/mo + build) gets adopted only
+   when conversion data or listing-SEO goals justify it. (Kickoff decision #7.)
+3. **Deterministic publish artifact:** production deploys from a generated
+   allowlisted dist/ (marketing pages only) — never the raw site/ directory.
+   Audit stays on the demo host, which remains temporary and demo-only
+   (Cloudflare Access explicitly declined by Brook — accepted risk, CR-001).
+4. **Editorial ops:** every financial/legal/market page gets an owner, primary
+   sources, a visible reviewed-on date, and a refresh schedule at launch.
+5. **Launch acceptance criteria:** adopt the code review's verification suite
+   (reports/14_code_review_findings.md — crawl checks, canonical/redirect
+   tests, forbidden-path assertions, form-flow tests) as the launch checklist.

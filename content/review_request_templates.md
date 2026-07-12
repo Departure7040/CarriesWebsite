@@ -1,6 +1,6 @@
 # Review Request Templates
 
-**Purpose:** Ready-to-send templates for building sustained review volume (target: 2–4 new reviews/month, not one-time bursts — see `/reports/02_local_seo_audit.md` Section (d)). All templates are policy-compliant: no incentives, no gating, every client gets the same public link regardless of anticipated sentiment. `[best-practice]`
+**Purpose:** Ready-to-send templates for building sustained review volume (target: 2–4 new reviews/month, not one-time bursts — see `/reports/02_local_seo_audit.md` Section (d)). All templates are policy-compliant: requests go only to people with genuine, firsthand experience of a transaction or professional service with Carrie — not friends, family, or acquaintances with no service experience. This follows Google's Maps user-contributed-content policy, which requires reviews to reflect a genuine experience and treats content from someone with a close personal or financial relationship to the business as a conflict of interest (potential rating/review manipulation). No incentives, no gating, every client gets the same public link regardless of anticipated sentiment. `[best-practice]`
 
 **Before sending:** Replace `[LINK]` placeholders with the actual live review link once available:
 - Google review link: `https://search.google.com/local/writereview?placeid=ChIJdUhCUO2dJIYRe6NLEeyEd_M` `[verified — resolves to Carrie Billeaud Realtor's review dialog]`
@@ -57,9 +57,11 @@ Carrie
 
 ---
 
-## 5. Sphere / Repeat Client (friends, family, referral partners who've worked with Carrie or referred someone)
+## 5. Transaction Partner (lender, title company, inspector, contractor or other professional who directly worked a closed deal with Carrie)
 
-> Hey [Name]! Quick ask, if you don't mind — I'm trying to grow my online reviews so people searching for a realtor around Lafayette/Youngsville/Broussard get a real sense of how I work. Whether it's from [property/referral] or just knowing me as your realtor, I'd really appreciate a quick review here: [LINK]. Means a lot — thank you!
+> Hey [Name]! We just wrapped up [property/client] together and I really appreciated how smoothly things worked on your end. If you have a minute, would you mind sharing a quick review about what it's like working with me on a transaction? Here's the link: [LINK]. Thanks so much — always good working with you!
+
+`[best-practice]` Only send this to a professional who had direct, hands-on involvement in a specific closed transaction with Carrie (e.g., co-handled a file, coordinated closing, inspected a property she listed) — not a vendor she's simply aware of, and never a friend, family member, or acquaintance whose only connection is knowing Carrie socially. That distinction is what keeps this request within Google's genuine-experience and conflict-of-interest rules.
 
 ---
 

@@ -810,9 +810,37 @@ Add these checks before launch and keep them in CI/operations:
 8. Monitor uptime, 4xx/5xx, worker/API failures, Web Vitals, GSC indexing, and
    sitemap drift after release.
 
+## Response log (2026-07-11, demo hardening pass)
+
+Owner note (Brook): the demo/audit origin stays **public with no Cloudflare
+Access** on purpose — it's a temporary demo of material already shared with
+the client. So CR-001's *authentication* sub-item is **Accepted risk (demo)**;
+its dangerous sub-items (served source/ops files, directory indexes) were
+fixed. All production launch-gate findings remain Open — they gate
+carriebilleaud.com, not the demo.
+
+| ID | New status | What changed |
+|---|---|---|
+| CR-001 | Partially closed / auth = accepted-risk (demo) | server.py now serves an extension allowlist only (`.py`/`.md`/dotfiles/dirlists → 404), binds 127.0.0.1, returns generic errors. Verified live: `/server.py`, `/SERVING.md`, `/assets/img/` all 404. Auth intentionally declined for the demo. |
+| CR-003 | Decision needed (language softened) | Fair-housing/steering language neutralized site-wide (grep: 0 "family-friendly/low crime/top-rated schools" outside audit). Broker approval + LREC broker-ID disclosures remain a launch gate + kickoff item. |
+| CR-004 | Closed | USDA $324,700 Direct-program figure removed (Guaranteed section now income-limit-based); Maurice corrected to Vermilion Parish/VPSB; which-town price measures relabeled with source + as-of. |
+| CR-005 | Closed | Listings render via createElement/textContent + type validation + https/host allowlist + 12-cap + img dimensions. No innerHTML string concatenation of upstream data. |
+| CR-007 | Partially closed | Nonfunctional forms given `method="post" action="#"` so a dead-JS fallback can't GET PII into the URL; full backend/privacy notice remains a launch gate. |
+| CR-009 | Partially closed | Self-serving `aggregateRating` removed; homepage meta description added. Canonical/OG/Twitter/favicon/entity-@id matrix remains a launch gate. |
+| CR-011 | Closed | 8 broken testimonials nav fragments fixed (now point to `index.html#...`). Templating/CI remains a Medium improvement. |
+| CR-012 | Partially closed | Loopback bind + generic error responses done; managed hosting + edge header policy remain a launch gate. |
+| CR-013 | Partially closed | Listing `<img>` now gets width/height; initial listings capped at 12. srcset/aspect-ratio/budgets remain. |
+| CR-014 | Partially closed | Dropdown `aria-haspopup`/`aria-expanded` + Escape; `--gold-ink` contrast fix for small text; skip links sitewide; calculator `aria-live`; which-town table caption+scope. Full AT smoke-test remains. |
+| CR-015 | Closed | Review templates restricted to genuine-experience/transaction-partner contacts (friends/family/"just knowing me" removed); GBP 7-day-expiry myth corrected to 6-month archive. |
+| CR-002, 006, 008, 010, 016 | Open (launch gates) | Deterministic publish artifact, licensed-IDX decision (kickoff #7 — now "justified later, eXp link at launch"), canonical/redirect/sitemap policy, per-page editorial sign-off, and conversion analytics spec — all folded into implementation/production_site_plan.md and the reconciled backlog (6 new gate rows). |
+
+**Disputed / clarified:**
+- CR-006 iframe "cannot be embedded": in a real logged-in Chrome session the eXp results DID render inside the demo iframe (verified 2026-07-08 by header-crop; screenshots exist). The finding's underlying point still stands — it's fragile and unlicensed — so production drops the proxy and links out (kickoff #7). Status: agreed on the fix, corrected on the premise.
+
 ## Review log
 
 | Date | Snapshot | Work performed | Result |
 |---|---|---|---|
 | 2026-07-11 | `3191635` | Initial read-only repository, rendered-page, crawl, SEO, content, accessibility, security, performance, and production-readiness review | 16 open findings recorded; no existing source file changed |
+| 2026-07-11 | (post-`3191635`) | Demo-hardening response: CR-004/005/011/015 closed; CR-001(sec)/003(lang)/007/009/012/013/014 partially closed; CR-001 auth = accepted-risk (demo); launch gates folded into production plan + backlog | 4 closed, 7 partially closed, 5 launch-gates open, 1 accepted-risk |
 
