@@ -1,5 +1,16 @@
 # 18: Production & Throughput — Who Actually Sells the Most Houses (Portal-Displayed)
 
+> **[CORRECTED BY REPORT 19, 2026-07-11]** An independent audit (reports/19)
+> found a source-interpretation error in this report: Zillow's "188" for
+> Carrie is her **career/total** sales, NOT trailing-12-month. Her actual
+> trailing-12-month figures are ~22 (Zillow) and ~34 / $9.48M (Homes.com) —
+> consistent with each other, not the "188 / 46 / 1" spread this report
+> headlined. The Realtor.com "1" remains the attribution-broken outlier.
+> **The load-bearing conclusion is unchanged and reinforced:** portal
+> production numbers are attribution-limited and mix time windows; nothing
+> is marketing-safe without Carrie's own authorized ROAM/MLS export. See
+> reports/19 for the corrected numbers and the exact ROAM export spec.
+
 **Date:** 2026-07-11
 **Supersedes:** `reports/15_top_producers_vs_seo.md`, which lost its data-collection scout mid-run and shipped with an incomplete/inconsistent production dataset. This report keeps report 15's framing (two leaderboards — SEO visibility vs. production — and where they overlap) but replaces its data with a fresh, single-pass collection across 16 agents/teams and 6 portals (Zillow, Homes.com, Realtor.com, FastExpert, HomeLight, RateMyAgent), collected 2026-07-11.
 **Reads with:** `reports/11_top10_ranking_drivers.md` (SEO top 10), `reports/17_current_serp_competitor_audit.md` (current SERP capture), `data/known_claims.yaml` (Carrie's own unverified claims registry).

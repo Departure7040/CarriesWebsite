@@ -34,10 +34,12 @@ claims:
       REJECTED. (1) Circular: Homes.com is the original source, not an
       independent check. (2) Homes.com is an MLS aggregator, not public records;
       LA conveyance records are name-indexed by buyer/seller, not agent;
-      RealTrends is agent-SUBMITTED. (3) Our production audit (reports/18) found
-      Carrie's own portals contradict each other 188 (Zillow) / 46 (Homes.com) /
-      1 (Realtor.com) for last-12mo. Status stays unverified; only her own MLS
-      export (kickoff ask) can make any figure marketing-safe."
+      RealTrends is agent-SUBMITTED. (3) Her portals mix time windows and
+      attribution: Zillow 188 is CAREER total, ~22 is trailing-12mo; Homes.com
+      ~34/$9.48M is a 1-yr module; Realtor.com ~1 is attribution-broken
+      (reports/19 corrects reports/18 on this). No portal figure is audited.
+      Status stays unverified; only Carrie's own authorized ROAM/MLS export
+      (kickoff ask) can make any figure marketing-safe."
   - id: years_experience
     claim: "11 years of experience"
     source: "Realtor.com"
