@@ -73,6 +73,33 @@ website link/UTM fix) to make sure access works cleanly?
 
 ---
 
+## (b2) Operations questions
+
+Added 2026-07-11 from `16_operations_and_lifecycle.md` — these decide the
+post-acquisition plan (lead response, CRM, transaction workflow). Aim for
+~5 minutes; rough answers are fine.
+
+1. **Jake, Blake, Arrow** — who are they day-to-day, and does any of them
+   take a new-lead handoff or drive a transaction today? (Zillow shows a
+   4-person team; the ops plan differs completely if she's effectively solo.)
+2. **Last web/social lead, walked through:** where did it land, who
+   responded, how fast, and where is that person now?
+3. **BoldTrail (kvCORE):** working database — past clients, close dates,
+   active drips — or mostly an unused login? Open it together if possible
+   (pairs with access item (c)3).
+4. **SkySlope:** who drives it on her files, and roughly how many hours does
+   contract-to-close admin take per deal?
+5. **The 2pm-Tuesday test:** if a lead comes in while she's in a two-hour
+   listing appointment, what happens right now — and is she open to an
+   auto-text going out under her name within 60 seconds? (Speed-to-lead is
+   the single most predictive conversion variable — MIT Lead Response study:
+   contact odds drop ~100x between a 5- and 30-minute response.)
+6. **Volume numbers:** closings per month this year, and new inquiries per
+   month from all sources — sets real thresholds for the hire-a-TC /
+   showing-partner / ISA triggers in `16_operations_and_lifecycle.md` §(e).
+
+---
+
 ## (c) Access checklist — do this together, on her phone
 
 Walk each of these live rather than emailing instructions — most failure
