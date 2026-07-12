@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Acadiana Home Buyer's &amp; Seller's Guide — Carrie Billeaud, REALTOR®</title>
+<style>
+/* =========================================================================
+   The Acadiana Home Buyer's & Seller's Guide — print-first PDF stylesheet
+   Purpose-built for PDF export (Chromium/Playwright). Not a web page.
+   ========================================================================= */
+
+:root{
+  --ink:#1a2332;
+  --teal:#0f5c5a;
+  --teal-dark:#0b4442;
+  --gold:#c9a24b;
+  --gold-ink:#8a6d2f;
+  --cream:#faf7f2;
+  --rule:#e3ded4;
+}
+
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+
+/* ---------- Page geometry ---------- */
+@page{
+  size: Letter;
+  margin: 0.75in;
+  @bottom-left{
+    content: "Carrie Billeaud, Realtor \00B7 eXp Realty";
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 8.5pt;
+    color:#7a7364;
+    letter-spacing:.01em;
+  }
+  @bottom-right{
+    content: "Page " counter(page);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 8.5pt;
+    color:#7a7364;
+  }
+}
+/* Cover: full bleed, no running footer */
+@page cover{
+  margin: 0;
+}
+@page cover:first{
+  margin: 0;
+}
+
+body{
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--ink);
+  background:#fff;
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,h4{ font-family: Georgia, "Times New Roman", serif; color:var(--ink); font-weight:700; }
+p{ orphans:3; widows:3; margin:0 0 0.75em; }
+strong{ font-weight:700; }
+em{ font-style:italic; }
+
+a{ color: var(--teal-dark); text-decoration:none; }
+
+/* =========================================================================
+   COVER PAGE
+   ========================================================================= */
+.cover-page{
+  page: cover;
+  break-after: page;
+  box-sizing: border-box;
+  width:8.5in;
+  height:11in;
+  background: linear-gradient(160deg, var(--teal) 0%, var(--teal-dark) 100%);
+  color:#fff;
+  text-align:center;
+  padding: 1.15in 1in 0.9in;
+  overflow: hidden;
+}
+.cover-inset{
+  box-sizing:border-box;
+  border: 1px solid rgba(201,162,75,0.55);
+  padding: 0.42in 0.35in;
+}
+.cover-kicker{
+  font-family: Georgia, serif;
+  text-transform:uppercase;
+  letter-spacing:.26em;
+  font-size:10pt;
+  line-height:1.2;
+  color: var(--gold);
+  margin-bottom: 0.4in;
+}
+.cover-logo{
+  height:60px;
+  width:auto;
+  margin-bottom: 0.4in;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,.15));
+}
+.cover-title{
+  font-size: 31pt;
+  line-height:1.2;
+  max-width: 5.7in;
+  color:#fff;
+  margin: 0 auto 0.3in;
+  letter-spacing:.005em;
+}
+.cover-rule{
+  width:1.6in;
+  height:2px;
+  background: var(--gold);
+  margin: 0 auto 0.3in;
+}
+.cover-subtitle{
+  font-size:11.5pt;
+  font-style:italic;
+  max-width: 4.7in;
+  color:#eaf3f2;
+  line-height:1.5;
+  margin: 0 auto 0.42in;
+}
+.cover-byline{
+  font-size:12.5pt;
+  font-weight:700;
+  line-height:1.2;
+  letter-spacing:.02em;
+  margin-bottom:.1in;
+}
+.cover-place{
+  font-size:10pt;
+  line-height:1.2;
+  color:#cfe4e2;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  margin-bottom:.42in;
+}
+.cover-edition{
+  font-size:9pt;
+  line-height:1.2;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color: var(--gold);
+  border-top:1px solid rgba(255,255,255,.28);
+  padding-top:.18in;
+}
+
+/* =========================================================================
+   INTERIOR PAGE SHELL
+   ========================================================================= */
+.page{
+  break-before: page;
+}
+.page:first-of-type{ break-before: avoid; }
+
+/* ---------- Copyright / disclaimer page ---------- */
+.title-page-heading{
+  font-size:15pt;
+  color: var(--teal-dark);
+  margin-bottom: .3in;
+  padding-bottom:.14in;
+  border-bottom: 2px solid var(--gold);
+}
+.copyright p{ font-size:10.3pt; line-height:1.65; color:#333; margin-bottom:.85em; }
+.copyright .fine{
+  margin-top: 1in;
+  font-size:9pt;
+  color:#6b6558;
+  border-top:1px solid var(--rule);
+  padding-top:.2in;
+}
+.copyright .sample-note{
+  margin-top:.5in;
+  font-size:9.3pt;
+  font-style:italic;
+  color:#6b6558;
+}
+
+/* ---------- Table of contents ---------- */
+.toc-list{ list-style:none; margin-top:.35in; }
+.toc-list li{
+  display:flex;
+  align-items:baseline;
+  gap:.35em;
+  font-size:12.5pt;
+  padding: .16in 0;
+  border-bottom: 1px dotted var(--rule);
+}
+.toc-list li .toc-num{
+  font-family: Georgia, serif;
+  color: var(--gold-ink);
+  font-weight:700;
+  font-size:10.5pt;
+  width: 1.3em;
+  flex:0 0 auto;
+}
+.toc-list li .toc-title{ flex:0 1 auto; }
+.toc-list li .toc-leader{
+  flex:1 1 auto;
+  border-bottom: 1px dotted var(--rule);
+  margin: 0 .1in -.2em;
+}
+.toc-list li.toc-cta .toc-title{ font-style:italic; color: var(--teal-dark); }
+
+/* =========================================================================
+   CHAPTERS
+   ========================================================================= */
+.chapter-head{
+  break-after: avoid;
+  margin-bottom: .28in;
+}
+.chapter-num{
+  display:block;
+  font-family: Georgia, serif;
+  font-size:30pt;
+  font-weight:700;
+  color: var(--gold);
+  line-height:1;
+  margin-bottom:.06in;
+}
+.chapter-title{
+  font-size:19pt;
+  line-height:1.2;
+  color: var(--ink);
+}
+.chapter-rule{
+  height:2px;
+  background: var(--teal);
+  margin-top:.16in;
+  width:100%;
+}
+
+h3.section-head{
+  font-size:12.3pt;
+  color: var(--teal-dark);
+  margin: 1.1em 0 .5em;
+  break-after: avoid;
+}
+
+/* body copy */
+.chapter p{ font-size:11pt; }
+.src{
+  font-size:8.7pt;
+  color:#8a8375;
+  font-style:italic;
+}
+
+/* ---------- stat grid ---------- */
+.stat-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.22in;
+  margin: .3in 0 .4in;
+  break-inside:avoid;
+}
+.stat-tile{
+  flex: 1 1 1.55in;
+  border:1px solid var(--rule);
+  border-radius:5px;
+  padding:.18in .2in;
+  text-align:center;
+  background: var(--cream);
+}
+.stat-num{
+  display:block;
+  font-family:Georgia,serif;
+  font-weight:700;
+  font-size:15.5pt;
+  color: var(--teal-dark);
+  line-height:1.1;
+}
+.stat-label{
+  display:block;
+  font-size:8.6pt;
+  color:#5a6472;
+  margin-top:.06in;
+  line-height:1.35;
+}
+
+/* ---------- definition list (compact facts) ---------- */
+.fact-list{ margin:.15in 0 .35in; }
+.fact-list .fact{
+  margin-bottom:.22in;
+  break-inside:avoid;
+}
+.fact dt, .fact .fact-term{
+  font-weight:700;
+  font-size:10.7pt;
+  color: var(--ink);
+  display:inline;
+}
+.fact .fact-tag{
+  font-size:7.6pt;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  font-weight:700;
+  color: var(--gold-ink);
+  border:1px solid var(--gold);
+  border-radius:8px;
+  padding:.02in .1in;
+  margin-left:.15em;
+  white-space:nowrap;
+}
+.fact p{ font-size:10.3pt; margin:.05em 0 0; display:inline; }
+.fact-block{ display:block; }
+
+/* ---------- callout / tip box ---------- */
+.callout{
+  background: var(--cream);
+  border-left: 4px solid var(--gold);
+  padding: .2in .28in;
+  margin: .3in 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.callout h4{
+  font-size:10.6pt;
+  color: var(--teal-dark);
+  margin-bottom:.08in;
+}
+.callout p{ font-size:10.2pt; margin-bottom:.4em; }
+.callout p:last-child{ margin-bottom:0; }
+
+/* ---------- simple table (town comparison) ---------- */
+.simple-table{
+  width:100%;
+  border-collapse:collapse;
+  margin:.25in 0 .15in;
+  font-size:9.3pt;
+  break-inside:avoid;
+}
+.simple-table caption{
+  caption-side:top;
+  text-align:left;
+  font-size:8.7pt;
+  font-style:italic;
+  color:#6b6558;
+  padding-bottom:.1in;
+}
+.simple-table th, .simple-table td{
+  border:1px solid var(--rule);
+  padding:.1in .12in;
+  text-align:left;
+  vertical-align:top;
+}
+.simple-table thead th{
+  background: var(--cream);
+  color: var(--teal-dark);
+  font-size:8.8pt;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.simple-table tr{ break-inside:avoid; }
+
+/* ---------- back-cover CTA page ---------- */
+.back-cover{
+  background: linear-gradient(165deg, var(--teal-dark) 0%, var(--teal) 100%);
+  color:#fff;
+  padding: 0.65in 0.6in;
+  min-height: 9.4in;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.back-cover .kicker{
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-size:9.5pt;
+  color: var(--gold);
+  margin-bottom:.2in;
+}
+.back-cover h2{
+  font-size:24pt;
+  color:#fff;
+  line-height:1.2;
+  margin-bottom:.22in;
+  max-width:5.6in;
+}
+.back-cover p{ color:#eaf3f2; font-size:10.8pt; line-height:1.65; max-width:5.7in; }
+.back-cover .areas{
+  margin:.3in 0;
+  font-size:10.5pt;
+  color:#fff;
+}
+.back-cover .areas strong{ color: var(--gold); }
+.back-cover .contact-block{
+  margin-top:.35in;
+  padding-top:.28in;
+  border-top:1px solid rgba(255,255,255,.3);
+}
+.back-cover .contact-block .name{
+  font-size:13.5pt;
+  font-weight:700;
+  color:#fff;
+}
+.back-cover .contact-block .role{
+  font-size:10pt;
+  color:#cfe4e2;
+  margin-top:.03in;
+}
+.back-cover .contact-block .phone{
+  font-size:16pt;
+  font-weight:700;
+  color: var(--gold);
+  margin-top:.14in;
+}
+.back-cover .legal{
+  margin-top:.4in;
+  font-size:8.4pt;
+  color:#bcd3d1;
+  line-height:1.55;
+  max-width:5.8in;
+}
+
+.wrap{ max-width:100%; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- COVER                                                          -->
+<!-- ============================================================ -->
+<section class="cover-page"><div class="cover-inset">
+  <p class="cover-kicker">A Guide for Acadiana Buyers &amp; Sellers</p>
+  <img class="cover-logo" src="data:image/png;base64,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" alt="Carrie Billeaud, Realtor — eXp Realty">
+  <h1 class="cover-title">The Acadiana Home Buyer's &amp; Seller's Guide</h1>
+  <div class="cover-rule"></div>
+  <p class="cover-subtitle">Six things Louisiana does differently — flood zones, the homestead exemption, notary closings, zero-down USDA loans, seller disclosures, and how the towns around Lafayette compare — compiled into one guide, with sources.</p>
+  <p class="cover-byline">Carrie Billeaud, REALTOR&reg;</p>
+  <p class="cover-place">eXp Realty &middot; Lafayette, Louisiana</p>
+  <p class="cover-edition">2026 Edition</p>
+</div></section>
+
+<!-- ============================================================ -->
+<!-- COPYRIGHT / DISCLAIMER PAGE                                    -->
+<!-- ============================================================ -->
+<section class="page copyright">
+  <h2 class="title-page-heading">About This Guide</h2>
+  <p>This guide compiles publicly available information in plain language for people buying or selling a home in the Acadiana area. <strong>It is not legal, tax, lending, or insurance advice</strong>, and it is not a substitute for guidance from a licensed attorney, notary, lender, insurance agent, or tax professional.</p>
+  <p>Laws, flood maps, program rules, and market figures change over time. Verify anything that matters to your decision with the relevant licensed professional or public agency before you rely on it. Facts throughout this guide are marked with their source in small type; full source detail is available from Carrie on request.</p>
+  <p>Sourced 2026 &mdash; verify current rules before relying on any figure.</p>
+  <p class="sample-note">(Sample &mdash; Carrie confirms.) Contact information, service areas, and other local specifics in this edition are prepared for Carrie Billeaud's review and reflect the sample content of this project. Carrie confirms all client-facing details before this guide is printed or distributed to buyers and sellers.</p>
+  <p class="fine">&copy; 2026 Carrie Billeaud, REALTOR&reg;. Prepared for Carrie Billeaud, eXp Realty, Lafayette, Louisiana. All rights reserved by their respective sources; see inline attributions.</p>
+</section>
+
+<!-- ============================================================ -->
+<!-- TABLE OF CONTENTS                                              -->
+<!-- ============================================================ -->
+<section class="page toc">
+  <h2 class="title-page-heading">What's Inside</h2>
+  <ul class="toc-list">
+    <li><span class="toc-num">01</span><span class="toc-title">Flood Zones &amp; Flood Insurance in Lafayette Parish</span><span class="toc-leader"></span></li>
+    <li><span class="toc-num">02</span><span class="toc-title">The Louisiana Homestead Exemption</span><span class="toc-leader"></span></li>
+    <li><span class="toc-num">03</span><span class="toc-title">How Closing Works in Louisiana (the Act of Sale)</span><span class="toc-leader"></span></li>
+    <li><span class="toc-num">04</span><span class="toc-title">Zero-Down USDA Loans Around Acadiana</span><span class="toc-leader"></span></li>
+    <li><span class="toc-num">05</span><span class="toc-title">What Louisiana Sellers Must Disclose (and When)</span><span class="toc-leader"></span></li>
+    <li><span class="toc-num">06</span><span class="toc-title">Which Acadiana Town Fits You? &mdash; a Comparison</span><span class="toc-leader"></span></li>
+    <li class="toc-cta"><span class="toc-num">&nbsp;</span><span class="toc-title">Work With Carrie</span><span class="toc-leader"></span></li>
+  </ul>
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 1 — FLOOD ZONES & INSURANCE                            -->
+<!-- ============================================================ -->
+<section class="page chapter">
+  <div class="chapter-head">
+    <span class="chapter-num">01</span>
+    <h2 class="chapter-title">Flood Zones &amp; Flood Insurance in Lafayette Parish</h2>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <p>Before you fall in love with a house, find out what flood zone it's in &mdash; it affects whether flood insurance is required, what it costs, and what your real risk looks like. FEMA defines a Special Flood Hazard Area (SFHA) as an area with at least a 1% annual chance of flooding &mdash; the &ldquo;base flood&rdquo; or &ldquo;100-year flood.&rdquo; <span class="src">Source: FEMA</span></p>
+
+  <div class="fact-list">
+    <div class="fact"><span class="fact-term">Zone A</span> <span class="fact-tag">High risk</span><p> &mdash; at least a 1% annual chance of flooding. Flood insurance is mandatory with a federally backed mortgage. <span class="src">Source: FloodSmart.gov</span></p></div>
+    <div class="fact"><span class="fact-term">Zone AE</span> <span class="fact-tag">High risk</span><p> &mdash; same 1% annual chance, with a mapped base flood elevation; same mandatory-insurance rule for federally backed mortgages. <span class="src">Source: FloodSmart.gov</span></p></div>
+    <div class="fact"><span class="fact-term">Zone X (shaded)</span> <span class="fact-tag">Moderate</span><p> &mdash; usually the area between the 100-year and 500-year flood limits. <span class="src">Source: FloodSmart.gov</span></p></div>
+    <div class="fact"><span class="fact-term">Zone X (unshaded)</span> <span class="fact-tag">Minimal</span><p> &mdash; outside the SFHA and above the 0.2%-annual-chance (500-year) flood level. <span class="src">Source: FEMA</span></p></div>
+  </div>
+
+  <div class="callout">
+    <h4>&ldquo;Low risk&rdquo; isn't &ldquo;no risk&rdquo;</h4>
+    <p>Zone X sits outside the SFHA, but low flood risk does not mean zero flood risk. Nationally, more than 1 in 3 NFIP flood insurance claims come from properties in moderate- to low-risk zones. <span class="src">Source: FloodSmart.gov; Neptune Flood</span></p>
+    <p>The August 2016 Louisiana flood &mdash; a National Weather Service&ndash;characterized less-than-1-in-1,000-year rainfall event &mdash; damaged roughly 146,000 homes statewide, and most affected homeowners lacked flood insurance. <span class="src">Source: NWS/NOAA data, via Wikipedia</span></p>
+  </div>
+
+  <h3 class="section-head">When it's required, and how to check an address</h3>
+  <p>Flood insurance is mandatory for homes in high-risk zones (A and AE) with a mortgage from a federally regulated or government-backed lender. <span class="src">Source: FEMA; Louisiana Dept. of Insurance</span> Outside those zones it's optional but worth pricing out &mdash; confirm the requirement for your loan with your lender. Flood zone lines can split a single street, so check the specific address on FEMA's Flood Map Service Center (msc.fema.gov), the LSU AgCenter FloodMaps portal, or Lafayette Consolidated Government's flood maps page.</p>
+
+  <h3 class="section-head">What it costs</h3>
+  <p>FEMA fully implemented Risk Rating 2.0 as of April 1, 2023, pricing a property by distance to water, flood frequency, flood type, elevation, and rebuild cost rather than zone alone. About 80% of Louisiana NFIP policyholders saw premiums increase under the new model. <span class="src">Source: FEMA; Chabert Insurance</span></p>
+
+  <div class="stat-grid">
+    <div class="stat-tile"><span class="stat-num">$350&ndash;$743</span><span class="stat-label">Typical Lafayette-area annual premium</span></div>
+    <div class="stat-tile"><span class="stat-num">~$569</span><span class="stat-label">Zone X Louisiana average / year</span></div>
+    <div class="stat-tile"><span class="stat-num">~$850&ndash;$1,400</span><span class="stat-label">Zone AE Louisiana average / year</span></div>
+    <div class="stat-tile"><span class="stat-num">30 days</span><span class="stat-label">Standard NFIP waiting period before coverage begins</span></div>
+  </div>
+
+  <div class="callout">
+    <h4>Ways to lower the cost <em>(confirm with a professional)</em></h4>
+    <p>Private flood insurance is often 20&ndash;40% cheaper than NFIP for homes in Zone X or a lower-risk part of Zone AE with good elevation, and an elevation certificate can adjust NFIP premiums downward. <span class="src">Source: Chabert Insurance</span> Ask a licensed flood insurance agent whether either applies to a specific property. Because NFIP carries a 30-day waiting period, arrange coverage well before closing &mdash; not the week of.</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 2 — HOMESTEAD EXEMPTION                                -->
+<!-- ============================================================ -->
+<section class="page chapter">
+  <div class="chapter-head">
+    <span class="chapter-num">02</span>
+    <h2 class="chapter-title">The Louisiana Homestead Exemption</h2>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <p>The homestead exemption is one of the simplest, most valuable things a new Lafayette Parish homeowner can file for &mdash; and one of the easiest to forget. It exempts the first $7,500 of a home's assessed value &mdash; equivalent to $75,000 of market value &mdash; from property taxation, for owner-occupied primary residences. <span class="src">Source: Lafayette Parish Assessor</span> It's governed by Louisiana Constitution Article VII, Section 20. Louisiana residential property is assessed at 10% of fair market value, which is why $75,000 of market value equals $7,500 of assessed value. <span class="src">Source: Louisiana Legislature; Louisiana Law Help</span></p>
+
+  <div class="stat-grid">
+    <div class="stat-tile"><span class="stat-num">$75,000</span><span class="stat-label">Market value exempted from property tax</span></div>
+    <div class="stat-tile"><span class="stat-num">$7,500</span><span class="stat-label">Assessed value exempted (10% assessment ratio)</span></div>
+    <div class="stat-tile"><span class="stat-num">Dec 31</span><span class="stat-label">Filing deadline for the year you acquire</span></div>
+  </div>
+
+  <p>Actual dollar savings depend on your specific millage rate &mdash; the Lafayette Parish Assessor's online estimator can show your exact figure. <span class="src">Source: Lafayette Parish Assessor</span></p>
+
+  <div class="fact-list">
+    <div class="fact fact-block"><span class="fact-term">Who qualifies</span><p> &mdash; Owner-occupied as your primary residence as of January 1 of the tax year; only one exemption is allowed per person or household. <span class="src">Source: Louisiana Legislature</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">What to bring</span><p> &mdash; Proof of ownership (deed or act of sale) and a valid Louisiana driver's license or state ID, taken to the assessor's office. <span class="src">Source: Louisiana Law Help</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">The deadline</span><p> &mdash; File by December 31 of the year you acquire the property to get the exemption for that tax year. Miss it and you'll likely wait a year.</p></div>
+    <div class="fact fact-block"><span class="fact-term">Where to go</span><p> &mdash; Lafayette Parish Assessor's office, 213 West Vermilion Street, Lafayette, LA 70501 &middot; (337) 291-7080.</p></div>
+  </div>
+
+  <div class="callout">
+    <h4>It's permanent &mdash; mostly</h4>
+    <p>Once filed, the exemption does not require annual reapplication as long as you continue to own and occupy the home. Some parishes ask for periodic occupancy confirmation &mdash; confirm current Lafayette Parish practice with the assessor's office directly. The exemption applies to parish and state ad valorem taxes but not municipal (city) taxes, except in specific circumstances such as certain school taxes. <span class="src">Source: Lafayette Parish Assessor; Louisiana Legislature</span></p>
+  </div>
+
+  <h3 class="section-head">Extra exemptions for veterans, seniors &amp; disabled homeowners</h3>
+  <div class="fact-list">
+    <div class="fact fact-block"><span class="fact-term">Disabled veterans, 50&ndash;69%</span><p> &mdash; an additional $2,500 of assessed value exemption on top of the standard exemption.</p></div>
+    <div class="fact fact-block"><span class="fact-term">Disabled veterans, 70&ndash;99%</span><p> &mdash; an additional $4,500 of assessed value exemption.</p></div>
+    <div class="fact fact-block"><span class="fact-term">Disabled veterans, 100%</span><p> &mdash; exempt from all ad valorem taxation except certain municipal assessments. <span class="src">Source: LA Dept. of Veterans Affairs</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">Seniors 65+ &amp; permanently disabled</span><p> &mdash; may apply for a Special Assessment Level &ldquo;freeze&rdquo; that locks assessed value if income requirements are met; Lafayette Parish sets the threshold at $100,000 or less AGI. <span class="src">Source: Lafayette Parish Assessor</span></p></div>
+  </div>
+
+  <div class="callout">
+    <h4>The freeze isn't a tax-rate freeze <em>(confirm with a professional)</em></h4>
+    <p>The senior/disability freeze locks your assessed value, not the millage rate &mdash; your bill can still rise if taxing bodies raise their millage. <span class="src">Source: Jefferson Parish Assessor</span> Income thresholds change year to year, so confirm the current figure with the Lafayette Parish Assessor before applying.</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 3 — CLOSING PROCESS                                    -->
+<!-- ============================================================ -->
+<section class="page chapter">
+  <div class="chapter-head">
+    <span class="chapter-num">03</span>
+    <h2 class="chapter-title">How Closing Works in Louisiana (the Act of Sale)</h2>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <p>If you've bought a home anywhere else in the U.S., Louisiana's closing process will feel unfamiliar. Louisiana is the only U.S. state that operates under a civil law system, derived from the Napoleonic Code and French and Spanish colonial law, rather than English common law. <span class="src">Source: Quill Title &amp; Closing</span> Instead of an escrow-held closing, property transfers happen through an <strong>act of sale</strong> &mdash; a formal, notarized document executed before a notary public and two witnesses, signed by each party, each witness, and the notary, under Civil Code Article 1833. <span class="src">Source: Justia; NOLA Title Authority</span></p>
+
+  <p>Either an attorney-notary or a non-attorney notary can conduct the act of sale &mdash; but for title insurance purposes, an attorney must still examine the title and issue a title opinion even when a non-attorney notary handles the signing. <span class="src">Source: Quill Title &amp; Closing</span></p>
+
+  <h3 class="section-head">From offer to act of sale: the general timeline (30&ndash;60 days)</h3>
+  <div class="fact-list">
+    <div class="fact fact-block"><span class="fact-term">1. Purchase agreement signed</span><p> &mdash; REALTOR&reg; members statewide typically use the Louisiana Association of REALTORS standard residential purchase agreement.</p></div>
+    <div class="fact fact-block"><span class="fact-term">2. Earnest money deposited</span><p> &mdash; typically within 24 hours of contract ratification.</p></div>
+    <div class="fact fact-block"><span class="fact-term">3. Attorney title examination</span><p> &mdash; typically 14&ndash;30 days after the purchase agreement; surfaces liens or ownership issues before closing.</p></div>
+    <div class="fact fact-block"><span class="fact-term">4. Act of sale executed</span><p> &mdash; buyer, seller, two witnesses and the notary sign, transferring ownership under Article 1833.</p></div>
+    <div class="fact fact-block"><span class="fact-term">5. Act of sale recorded</span><p> &mdash; the notary records with the parish Clerk of Court within 15 days outside Orleans Parish, or 48 hours inside Orleans Parish.</p></div>
+    <div class="fact fact-block"><span class="fact-term">6. Transfer is final</span><p> &mdash; once recorded, the transfer is effective against third parties.</p></div>
+  </div>
+  <p class="src">Source: Louisiana Association of REALTORS; Quill Title &amp; Closing; Louisiana Legislature</p>
+
+  <div class="callout">
+    <h4>Earnest money works differently here</h4>
+    <p>Under Louisiana Civil Code Article 2624, if a seller recedes (backs out) without a contractual cause, the seller must return the buyer's earnest money <em>plus an equal amount</em> &mdash; the &ldquo;double-return&rdquo; rule. <span class="src">Source: Quill Title &amp; Closing</span> Ask Carrie to walk through your specific purchase agreement's terms, and confirm anything contract-specific with your closing attorney or notary.</p>
+  </div>
+
+  <div class="fact-list">
+    <div class="fact fact-block"><span class="fact-term">Buyer closing costs</span><p> &mdash; typically 2%&ndash;5% of the purchase price. <span class="src">Source: Southern Title</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">Seller closing costs</span><p> &mdash; average around 3.15% of the purchase price. <span class="src">Source: Clever Real Estate</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">Title insurance</span><p> &mdash; not required for buyers but highly recommended; lenders always require a mortgagee policy. <span class="src">Source: Crescent Title</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">Recording is local</span><p> &mdash; Louisiana has 64 parishes, each with its own Clerk of Court, fees, and turnaround times.</p></div>
+  </div>
+
+  <div class="callout">
+    <h4>Married buyers: community property matters <em>(confirm with a professional)</em></h4>
+    <p>Louisiana presumes property owned by a married person is community property, with exceptions for gifts, inheritances, and property acquired before marriage; both spouses generally must concur in the sale, mortgage, or lease of community real estate. <span class="src">Source: Louisiana Law Help</span> How you hold title affects the paperwork from day one &mdash; raise it with your closing attorney or notary early. This is general information, not legal advice for your situation.</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 4 — USDA LOANS                                         -->
+<!-- ============================================================ -->
+<section class="page chapter">
+  <div class="chapter-head">
+    <span class="chapter-num">04</span>
+    <h2 class="chapter-title">Zero-Down USDA Loans Around Acadiana</h2>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <p>If you're house-hunting near Youngsville, Scott, Maurice, or Carencro, a USDA loan can mean buying with no down payment at all &mdash; but eligibility is tied to the exact address, not the town name. The USDA Section 502 Guaranteed Loan Program provides 100% financing for eligible rural homebuyers; USDA gives participating lenders a 90% loan note guarantee, the loans are 30-year fixed-rate, and reasonable closing costs can sometimes be financed in. <span class="src">Source: USDA Rural Development</span></p>
+
+  <div class="stat-grid">
+    <div class="stat-tile"><span class="stat-num">$0</span><span class="stat-label">Down payment required</span></div>
+    <div class="stat-tile"><span class="stat-num">115%</span><span class="stat-label">Max household income vs. area median</span></div>
+    <div class="stat-tile"><span class="stat-num">$119,850</span><span class="stat-label">2026 income limit, 1&ndash;4 person household</span></div>
+    <div class="stat-tile"><span class="stat-num">$158,250</span><span class="stat-label">2026 income limit, 5&ndash;8+ person household</span></div>
+  </div>
+
+  <p>For context, Lafayette Parish's median household income is $67,451 (2020&ndash;2024 data). <span class="src">Source: U.S. Census Bureau</span> As of 2026, published USDA income limits allow households of 1&ndash;4 up to $119,850 and 5&ndash;8+ up to $158,250. <span class="src">Source: Neighbors Bank</span> The <strong>Guaranteed</strong> program doesn't apply a fixed area loan limit or maximum sale price &mdash; a lender qualifies you against income limits and standard debt-to-income underwriting instead.</p>
+
+  <h3 class="section-head">Where it applies around Youngsville, Scott, Maurice &amp; Carencro</h3>
+  <p>USDA eligibility is address-specific. Roughly 42.3% of Lafayette Parish is ineligible for traditional USDA loans, and core Lafayette city addresses generally don't qualify. <span class="src">Source: USDAProperties.com</span></p>
+
+  <div class="fact-list">
+    <div class="fact"><span class="fact-term">Youngsville</span> <span class="fact-tag">Often eligible</span><p> &mdash; higher eligibility likelihood per USDA property databases; address-specific verification still required.</p></div>
+    <div class="fact"><span class="fact-term">Scott</span> <span class="fact-tag">Often eligible</span><p> &mdash; also flagged with higher eligibility likelihood in Lafayette Parish USDA data.</p></div>
+    <div class="fact"><span class="fact-term">Maurice</span> <span class="fact-tag">100% eligible parish</span><p> &mdash; Vermilion Parish carries no geographic USDA restrictions, per official eligibility data. <span class="src">Source: USDAProperties.com</span></p></div>
+    <div class="fact"><span class="fact-term">Carencro</span> <span class="fact-tag">Often eligible</span><p> &mdash; named among the surrounding areas commonly eligible outside Lafayette's ineligible core.</p></div>
+  </div>
+
+  <div class="callout">
+    <h4>Always verify the exact address <em>(confirm per address)</em></h4>
+    <p>Property eligibility must be checked address-by-address on USDA's official eligibility map, not assumed from a town name. <span class="src">Source: USDA eligibility map</span> USDA updated rural-area maps based on 2020 Census data, so a fast-growing edge of Youngsville or Scott may have shifted. Some eligibility above is inferred from property-listing data (medium confidence) &mdash; ask Carrie or a lender to check the current map.</p>
+  </div>
+
+  <div class="fact-list">
+    <div class="fact fact-block"><span class="fact-term">Credit</span><p> &mdash; no federal minimum score, but many lenders look for 620+.</p></div>
+    <div class="fact fact-block"><span class="fact-term">Debt-to-income</span><p> &mdash; 29%/41% standard for automatic approval; 32%/44% maximum allowed.</p></div>
+    <div class="fact fact-block"><span class="fact-term">Occupancy</span><p> &mdash; owner-occupied primary residence only; no investment or rental use.</p></div>
+    <div class="fact fact-block"><span class="fact-term">Property types</span><p> &mdash; detached, attached, condo, PUD, modular, and qualifying manufactured homes.</p></div>
+  </div>
+  <p class="src">Source: USDA Rural Development; Neighbors Bank. A separate USDA Direct program (not covered here) uses a published area loan limit.</p>
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 5 — SELLER DISCLOSURES                                 -->
+<!-- ============================================================ -->
+<section class="page chapter">
+  <div class="chapter-head">
+    <span class="chapter-num">05</span>
+    <h2 class="chapter-title">What Louisiana Sellers Must Disclose (and When)</h2>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <p>Before you sign a listing agreement, it helps to know exactly what Louisiana law requires you to tell a buyer &mdash; and when. Louisiana sellers of residential property with 1&ndash;4 units must complete and deliver a Property Disclosure Document, as mandated by LSA-R.S. 9:3196&ndash;3200. <span class="src">Source: La. R.S. 9:3196, via Justia</span> The form is not a warranty and is not part of any contract; the current official version is prescribed by the Louisiana Real Estate Commission. Real estate licensees cannot fill it out for you &mdash; the representations are the seller's, not the agent's. <span class="src">Source: LREC</span></p>
+
+  <div class="callout">
+    <h4>Timing gives the buyer an out if you're late</h4>
+    <p>The disclosure must be delivered no later than the time a buyer makes an offer. <span class="src">Source: srossie.com</span> If it's delivered after the offer, the buyer may terminate or withdraw for up to 72 hours after receiving it &mdash; without penalty, with a full return of any deposit or earnest money.</p>
+  </div>
+
+  <p>A &ldquo;known defect&rdquo; is a condition actually known to the seller that (a) substantially hurts value, (b) significantly impairs future occupants' health or safety, or (c) if left unaddressed would significantly shorten the property's expected normal life. <span class="src">Source: Justia</span> Since January 1, 2018, the form allows only YES or NK (No Knowledge) on each item &mdash; the old NO option was removed to stop blanket &ldquo;no defects&rdquo; answers. <span class="src">Source: Steeg Law</span> Complete it in good faith as of the date you sign, and promptly correct it if something changes before closing.</p>
+
+  <h3 class="section-head">What the form asks about</h3>
+  <div class="fact-list">
+    <div class="fact fact-block"><span class="fact-term">Structure &amp; systems</span><p> &mdash; structures and additions, roof age, foundation repairs, plumbing, gas, sewerage, electrical, HVAC, and appliances.</p></div>
+    <div class="fact fact-block"><span class="fact-term">Pests &amp; hazards</span><p> &mdash; termites and wood-destroying insects, lead-based paint (required for pre-1978 homes), and methamphetamine labs.</p></div>
+    <div class="fact fact-block"><span class="fact-term">History &amp; land</span><p> &mdash; land and servitudes, property damage history, and flood history and flood insurance.</p></div>
+    <div class="fact fact-block"><span class="fact-term">Legal &amp; community</span><p> &mdash; zoning and restrictive covenants, plus HOA, COA, or POA information.</p></div>
+  </div>
+
+  <p>If your property has flood history, disclose known flood claims and provide flood insurance declarations, elevation certificates, and FEMA documentation if you have them. For homes built before 1978, provide the EPA/HUD lead-based paint pamphlet and complete the lead-based paint addendum. <span class="src">Source: srossie.com; Property Disclosure Document</span></p>
+
+  <div class="callout">
+    <h4>You can't skip it by selling &ldquo;as-is&rdquo; <em>(confirm with a professional)</em></h4>
+    <p>An &ldquo;as-is&rdquo; clause doesn't erase the requirement. Willful misrepresentation or fraud on the form can still expose a seller to fraud and redhibition claims &mdash; Louisiana's doctrine letting a buyer pursue latent defects that existed at sale, potentially resulting in rescission, price reduction, recovery of expenses, and attorney's fees. <span class="src">Source: srossie.com</span> Sellers aren't automatically liable for good-faith errors based on their best information, knowledge, and belief. Some transfers are exempt (court-ordered, post-foreclosure, certain fiduciary, never-occupied new construction, between co-owners or to a spouse/blood relative, and more) &mdash; confirm exemption with a real estate attorney before assuming.</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 6 — TOWN COMPARISON                                    -->
+<!-- ============================================================ -->
+<section class="page chapter">
+  <div class="chapter-head">
+    <span class="chapter-num">06</span>
+    <h2 class="chapter-title">Which Acadiana Town Fits You? &mdash; a Comparison</h2>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <p>Six Acadiana towns, six different price points. These figures aren't all the same measure &mdash; some are median closed-sale prices, others are Zillow's estimated average value, and one is a median asking (listing) price; each row is labeled with its measure and source. For reference, Lafayette itself has a median sale price of $240,606 (Redfin, May&ndash;June 2026), down 2.7% year-over-year.</p>
+
+  <table class="simple-table">
+    <caption>Home price measure, growth trend, and school district by Acadiana town, as sourced and dated in each row.</caption>
+    <thead>
+      <tr><th>Town</th><th>Price (measure &middot; source &middot; as of)</th><th>Trend</th><th>School district</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Youngsville</strong></td><td>$314,812 &mdash; median sale price (Redfin, Jun 2026)</td><td>Population up 300% over three decades (KATC)</td><td>Lafayette Parish School System</td></tr>
+      <tr><td><strong>Broussard</strong></td><td>$282,154 &mdash; average value, Zillow Zestimate (mid-2026)</td><td>Up 3.8% over past year (Zillow)</td><td>Lafayette Parish School System</td></tr>
+      <tr><td><strong>Milton</strong></td><td>$313,500 &mdash; median listing price (Realtor.com, mid-2026)</td><td>Small, established community, 2,590 residents (NeighborhoodScout)</td><td>Lafayette Parish School System</td></tr>
+      <tr><td><strong>Scott</strong></td><td>$247,084 &mdash; median sale price (Redfin, May 2026)</td><td>Up 5.5% year-over-year (Redfin)</td><td>Lafayette Parish School System</td></tr>
+      <tr><td><strong>Maurice</strong></td><td>$252,357 &mdash; average value, Zillow Zestimate (mid-2026)</td><td>Up 3.0% year-over-year (Zillow)</td><td>Vermilion Parish School Board; zoning near the parish line can vary by address</td></tr>
+      <tr><td><strong>Carencro</strong></td><td>$222,455 &mdash; median sale price (Redfin, May 2026)</td><td>Up 6.8% year-over-year (Redfin)</td><td>Lafayette Parish School System</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Broussard and Maurice figures are Zillow's estimated average value, not a median closed-sale price; Milton's is a median listing (asking) price. Five of the six are in the Lafayette Parish School System, which operates 44 school sites; Maurice sits in Vermilion Parish. School zoning can change &mdash; confirm your specific address with LPSS or VPSB directly.</p>
+
+  <h3 class="section-head">If one thing matters most</h3>
+  <div class="fact-list">
+    <div class="fact fact-block"><span class="fact-term">Lowest price point</span><p> &mdash; Carencro has the lowest median in this group at $222,455, up 6.8% year-over-year; Scott is close behind at $247,084. <span class="src">Source: Redfin</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">Growth &amp; new construction</span><p> &mdash; Youngsville's population has grown 300% over three decades, and its Sports Complex draws roughly 1 million visitors a year. <span class="src">Source: KATC</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">Dining &amp; shopping close by</span><p> &mdash; Broussard features local Cajun cuisine restaurants and shopping centers, with a home value up 3.8% over the past year. <span class="src">Source: Zillow</span></p></div>
+    <div class="fact fact-block"><span class="fact-term">Small &amp; established</span><p> &mdash; Milton is a community of 2,590 residents, mostly owner-occupied single-family homes. <span class="src">Source: NeighborhoodScout</span></p></div>
+  </div>
+
+  <div class="callout">
+    <h4>Draw your own conclusions on schools &amp; safety</h4>
+    <p>For school ratings and crime data, review official sources yourself &mdash; LPSS, VPSB, and NeighborhoodScout &mdash; and draw your own conclusions. Exact commute times weren't available from a sourced dataset for this edition; confirm with Carrie.</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- BACK COVER — WORK WITH CARRIE                                  -->
+<!-- ============================================================ -->
+<section class="page">
+  <div class="back-cover">
+    <p class="kicker">Work With Carrie</p>
+    <h2>Ready to make a move in Acadiana?</h2>
+    <p>Carrie Billeaud is a REALTOR&reg; with eXp Realty serving Lafayette and the greater Acadiana communities. Whether you're buying your first home, relocating from an escrow state, or preparing to list, she walks each step personally: pulling flood zones and USDA eligibility before you tour, explaining the act-of-sale process so nothing at the notary's table is a surprise, and reviewing the Property Disclosure Document line by line before it reaches a buyer.</p>
+    <p class="areas"><strong>Service areas:</strong> Lafayette &middot; Youngsville &middot; Broussard &middot; Carencro &middot; Scott &middot; Maurice &middot; Milton</p>
+    <p>From pre-approval and offers through closing and your after-closing homestead exemption filing, you'll get straight answers and a clear plan &mdash; built for first-time buyers, relocating families, and sellers who want their home in front of the right buyers.</p>
+    <div class="contact-block">
+      <p class="name">Carrie Billeaud, REALTOR&reg;</p>
+      <p class="role">eXp Realty &middot; Lafayette, Louisiana</p>
+      <p class="phone">337-258-5379</p>
+    </div>
+    <p class="legal">Buyer-agent compensation depends on the listing, the offer terms, and your buyer-agency agreement; Carrie will walk through exactly what applies before you tour homes. This guide is informational only and is not legal, tax, lending, or insurance advice &mdash; verify current details for your specific situation with the relevant licensed professional or public agency before making a decision.</p>
+  </div>
+</section>
+
+</body>
+</html>
