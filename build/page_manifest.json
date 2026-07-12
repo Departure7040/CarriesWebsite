@@ -1,0 +1,212 @@
+{
+ "_comment": "One entry per PUBLISHABLE marketing page (all 10 audit/ pages are excluded by construction and never appear here). publish defaults to false for a STAGED, rolling-approval launch (CR-002 refinement #1). The initial launch set is the 11 pages with publish:true. Canonicals are self-referential, derived from config.canonical_host. Titles/descriptions here are the demo values; the build strips the ' — Demo Concept' suffix at emit time.",
+ "pages": [
+  {
+   "path": "index.html",
+   "canonical": "https://carriebilleaud.com/",
+   "title": "Carrie Billeaud · Lafayette LA Realtor",
+   "meta_description": "Carrie Billeaud, REALTOR® with eXp Realty, helps buyers and sellers across Lafayette, Youngsville, Broussard, Carencro, Scott, Maurice and Milton, Louisiana.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "broker approval + canonical NAP required (CR-003, CR-004)"
+  },
+  {
+   "path": "services/sell-my-house.html",
+   "canonical": "https://carriebilleaud.com/services/sell-my-house.html",
+   "title": "Sell My House in Lafayette, LA | Free Home Value | Carrie B.",
+   "meta_description": "Selling your home in Lafayette, LA? Get a free, no-obligation home value estimate from local Realtor Carrie Billeaud — staging included. Request yours now.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "broker approval + NAP + valuation-form backend (CR-003, CR-007)"
+  },
+  {
+   "path": "services/listing-agent.html",
+   "canonical": "https://carriebilleaud.com/services/listing-agent.html",
+   "title": "Lafayette Listing Agent | Carrie Billeaud, eXp Realty",
+   "meta_description": "Choosing a listing agent in Lafayette, LA? Carrie Billeaud pairs a full marketing plan with in-house home staging. 5.0-rated, local team. Book a consult.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "broker approval + NAP required (CR-003)"
+  },
+  {
+   "path": "services/first-time-buyers.html",
+   "canonical": "https://carriebilleaud.com/services/first-time-buyers.html",
+   "title": "First-Time Home Buyer Realtor in Lafayette, LA | Carrie B.",
+   "meta_description": "New to home buying in Lafayette, LA? Carrie Billeaud specializes in first-time buyers — down payments, loan programs & neighborhoods explained. Free consult.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "broker approval + NAP required (CR-003)"
+  },
+  {
+   "path": "services/buyers-agent.html",
+   "canonical": "https://carriebilleaud.com/services/buyers-agent.html",
+   "title": "Lafayette Buyer's Agent | Carrie Billeaud, eXp Realty",
+   "meta_description": "Buying a home in Lafayette, LA? Carrie Billeaud represents buyers, relocations & investors across Acadiana. 5.0-rated. Free buyer consultation — call today.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "broker approval + NAP required (CR-003)"
+  },
+  {
+   "path": "areas/lafayette.html",
+   "canonical": "https://carriebilleaud.com/areas/lafayette.html",
+   "title": "Lafayette, LA Realtor | Carrie Billeaud, eXp Realty",
+   "meta_description": "Carrie Billeaud is a Lafayette, LA Realtor with eXp Realty serving Lafayette, Youngsville, Broussard & Acadiana. 5.0 rating, 29 reviews. Call or text today.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "broker approval + fair-housing language sign-off + NAP (CR-003, CR-010)"
+  },
+  {
+   "path": "areas/youngsville.html",
+   "canonical": "https://carriebilleaud.com/areas/youngsville.html",
+   "title": "Youngsville, LA Realtor | New Construction & Family Homes",
+   "meta_description": "Moving to Youngsville, LA? Carrie Billeaud helps buyers & sellers navigate new construction and Sugar Mill Pond in the Lafayette Parish School System. 5.0-rated. Call today.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "broker approval + resolve metadata 'top-rated schools' vs body caveat (CR-003, CR-010)"
+  },
+  {
+   "path": "areas/broussard.html",
+   "canonical": "https://carriebilleaud.com/areas/broussard.html",
+   "title": "Broussard, LA Realtor | Established Neighborhoods, Easy Commute",
+   "meta_description": "Buying or selling in Broussard, LA? Carrie Billeaud knows the established neighborhoods & easy Lafayette commute. 5.0-rated local Realtor. Call today.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "broker approval + replace sample/confirmation placeholders (CR-003, CR-010)"
+  },
+  {
+   "path": "guides/flood-zones-insurance.html",
+   "canonical": "https://carriebilleaud.com/guides/flood-zones-insurance.html",
+   "title": "Flood Zones & Flood Insurance in Lafayette Parish | Carrie Billeaud, eXp Realty",
+   "meta_description": "What FEMA flood zones mean for Lafayette Parish buyers, when flood insurance is required, what it typically costs, and how to check a specific address before you offer.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "editorial owner + reviewed-on date (CR-004, CR-010)"
+  },
+  {
+   "path": "guides/homestead-exemption.html",
+   "canonical": "https://carriebilleaud.com/guides/homestead-exemption.html",
+   "title": "The Louisiana Homestead Exemption: How Lafayette Homeowners Save | Carrie Billeaud, eXp Realty",
+   "meta_description": "A plain-English guide to the Louisiana homestead exemption for Lafayette Parish homeowners: how much it saves, who qualifies, deadlines, veteran and senior add-ons, and how to file.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "editorial owner + reviewed-on date (CR-004, CR-010)"
+  },
+  {
+   "path": "guides/louisiana-closing-process.html",
+   "canonical": "https://carriebilleaud.com/guides/louisiana-closing-process.html",
+   "title": "How Closing on a Home Works in Louisiana | Carrie Billeaud, eXp Realty",
+   "meta_description": "Moving to Acadiana from an escrow state? Louisiana closes real estate through a notarized 'act of sale,' not traditional escrow. Here's how it actually works.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "editorial owner + fix old-host mainEntityOfPage + reviewed-on date (CR-008, CR-010)"
+  },
+  {
+   "path": "testimonials.html",
+   "canonical": "https://carriebilleaud.com/testimonials.html",
+   "title": "What Clients Say About Working With Carrie | Carrie Billeaud, eXp Realty",
+   "meta_description": "Client testimonials and reviews for Carrie Billeaud, Lafayette LA Realtor with eXp Realty. 5.0 rating across 185 Google reviews and 29 Zillow reviews.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": true,
+   "approval_gate": "PUBLISHABLE: these are genuine PUBLIC reviews, not permission-gated. Standard: surface Google reviews via official widget or attributed link to the live profile (platform ToS); the ~23 testimonials sourced from Carrie's OWN eXp site are her existing published content (free to reuse); keep the set representative (FTC genuine+not-misleading). Courtesy-only: give Carrie a heads-up on featured named reviews."
+  },
+  {
+   "path": "areas/carencro.html",
+   "canonical": "https://carriebilleaud.com/areas/carencro.html",
+   "title": "Carencro, LA Realtor | Space, Value & Quick I-49 Access",
+   "meta_description": "Looking for space and value near Lafayette? Carrie Billeaud helps buyers find affordable homes in Carencro with quick I-49 access. 5.0-rated. Call today.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: placeholders + broker approval pending; joins on rolling sign-off (CR-003, CR-010)"
+  },
+  {
+   "path": "areas/scott.html",
+   "canonical": "https://carriebilleaud.com/areas/scott.html",
+   "title": "Scott, LA Realtor | Small-Town Charm, Budget-Friendly Homes",
+   "meta_description": "Buying or selling in Scott, LA? Carrie Billeaud knows this small-town, central Acadiana market and its budget-friendly established homes. 5.0-rated. Call today.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: placeholders + broker approval pending; joins on rolling sign-off (CR-003, CR-010)"
+  },
+  {
+   "path": "areas/maurice.html",
+   "canonical": "https://carriebilleaud.com/areas/maurice.html",
+   "title": "Maurice, LA Realtor | Land, Acreage & Rural Homes",
+   "meta_description": "Want land near Lafayette? Carrie Billeaud helps buyers find acreage and homes with land in the Maurice, LA area. Call today.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: verify Vermilion Parish/VPSB zoning claims + broker approval (CR-004, CR-010)"
+  },
+  {
+   "path": "areas/milton.html",
+   "canonical": "https://carriebilleaud.com/areas/milton.html",
+   "title": "Milton, LA Realtor | Quiet Community Near Youngsville",
+   "meta_description": "Want small-town quiet near Youngsville's amenities? Carrie Billeaud helps buyers find homes in Milton, LA — close-in country living. Call today.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: placeholders + broker approval pending; joins on rolling sign-off (CR-003, CR-010)"
+  },
+  {
+   "path": "guides/which-town-fits.html",
+   "canonical": "https://carriebilleaud.com/guides/which-town-fits.html",
+   "title": "Youngsville, Broussard, Carencro, Scott, Maurice or Milton — Which Fits You? | Carrie Billeaud, eXp Realty",
+   "meta_description": "Comparing Acadiana towns? See home prices (labeled by measure), growth trends and school districts for Youngsville, Broussard, Carencro, Scott, Maurice & Milton, sourced and compared.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: fair-housing steering-language review of town comparisons (CR-003)"
+  },
+  {
+   "path": "guides/seller-disclosure-checklist.html",
+   "canonical": "https://carriebilleaud.com/guides/seller-disclosure-checklist.html",
+   "title": "What Louisiana Sellers Must Disclose (and When) | Carrie Billeaud, eXp Realty",
+   "meta_description": "A plain-English guide to Louisiana's Property Disclosure Document — what sellers must disclose, when it's due, and what happens if it's late. Informational only, not legal advice.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: editorial owner + reviewed-on date; joins on sign-off (CR-010)"
+  },
+  {
+   "path": "guides/usda-loans-acadiana.html",
+   "canonical": "https://carriebilleaud.com/guides/usda-loans-acadiana.html",
+   "title": "Zero-Down USDA Loans Near Youngsville, Scott & Maurice | Carrie Billeaud",
+   "meta_description": "How zero-down USDA Section 502 Guaranteed loans work around Youngsville, Scott, Maurice & Carencro — income limits, eligible areas and next steps.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: re-verify Guaranteed-program figures post-correction + reviewed-on date (CR-004)"
+  },
+  {
+   "path": "homes/first-home-under-250k.html",
+   "canonical": "https://carriebilleaud.com/homes/first-home-under-250k.html",
+   "title": "First Homes Under $250K in Lafayette Parish | Carrie Billeaud",
+   "meta_description": "What $250K realistically buys around Lafayette Parish, where budget-friendly homes cluster, zero-down USDA options, and inspection realities on older homes — a first-time buyer's starting point.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: depends on licensed IDX/listing feed decision (CR-006); price-band claims sign-off"
+  },
+  {
+   "path": "homes/move-up-250-500.html",
+   "canonical": "https://carriebilleaud.com/homes/move-up-250-500.html",
+   "title": "Move-Up Homes $250K–$500K in Lafayette & Youngsville | Carrie Billeaud",
+   "meta_description": "Selling one home and buying the next in the $250K–$500K band around Lafayette, Youngsville and Broussard — how contingent timing works, what the band buys, and schools-vs-space trade-offs.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: depends on licensed IDX/listing feed decision (CR-006); price-band claims sign-off"
+  },
+  {
+   "path": "homes/luxury-custom-500k-plus.html",
+   "canonical": "https://carriebilleaud.com/homes/luxury-custom-500k-plus.html",
+   "title": "Luxury & Custom Homes $500K+ in Acadiana | Carrie Billeaud",
+   "meta_description": "Luxury and custom-build homes above $500K across Acadiana — Carrie Billeaud's current high-end listings, the custom-build path with local builders, and staging-led marketing for luxury sellers.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: depends on licensed IDX/listing feed decision + AHB partnership permissions (CR-006)"
+  },
+  {
+   "path": "tools/mortgage-calculator.html",
+   "canonical": "https://carriebilleaud.com/tools/mortgage-calculator.html",
+   "title": "Mortgage Payment Calculator | Carrie Billeaud, eXp Realty",
+   "meta_description": "Estimate your monthly mortgage payment for a home in Lafayette and Acadiana. Free calculator from Carrie Billeaud, eXp Realty. Estimates only — talk to a lender.",
+   "og_image": "/assets/img/carrie-headshot-gbp.webp",
+   "publish": false,
+   "approval_gate": "HELD: fix old-host schema url + reviewed-on; joins on sign-off (CR-008)"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+# Cloudflare Pages redirects — carriebilleaud.com
+# Format: <from>  <to>  <status>. First match wins.
+#
+# NOTES (handled OUTSIDE this file, documented here for the launch runbook):
+#  - HTTP -> HTTPS is automatic on Cloudflare (Always Use HTTPS); no rule needed.
+#  - apex <-> www normalization: pick ONE canonical host (canonical_host in
+#    build/production.config.json = https://carriebilleaud.com, i.e. APEX).
+#    Enforce www -> apex as a Cloudflare Bulk Redirect / Redirect Rule at the
+#    zone level (Pages _redirects cannot match on hostname). Rule:
+#        https://www.carriebilleaud.com/*  ->  https://carriebilleaud.com/:splat  301
+#  - OLD HOST: carriebilleaud.exprealty.com -> carriebilleaud.com is a 301 that
+#    must live at eXp / the DNS+hosting for the exprealty.com subdomain, NOT
+#    here (we don't control that zone). Track as a launch dependency (CR-008);
+#    until eXp sets it, link equity from the old host is not forwarded.
+
+# Trailing-slash / index normalization (canonical = clean, no index.html):
+/index.html            /            301
+/*/index.html          /:splat/     301
+
+# Trailing-slash policy: directory URLs keep their trailing slash (Pages serves
+# /path/ -> /path/index.html). Non-directory clean URLs are served as-is; no
+# forced trailing slash on leaf pages.
+
+# SPA-style fallback intentionally NOT used — this is a multi-page static site.

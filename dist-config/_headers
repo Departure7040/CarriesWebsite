@@ -1,0 +1,37 @@
+# Cloudflare Pages headers — carriebilleaud.com
+# Applied to every response. Tighten CSP further once GA4 (ga4_id) is finalized.
+
+/*
+  # --- Content Security Policy ---------------------------------------------
+  # default-src 'self'             : same-origin only baseline.
+  # script-src 'self'              : first-party JS (assets/nav.js, inline
+  #     listings loader). Add https://www.googletagmanager.com ONLY if GA4 is
+  #     enabled (tokens.ga4_id set). 'unsafe-inline' is deliberately omitted —
+  #     the listings script is a same-origin file, not inline.
+  # style-src 'self' 'unsafe-inline': stylesheet is 'self'; inline style="…"
+  #     attributes remain on demo markup, so 'unsafe-inline' is required.
+  # img-src : 'self' + data: + the live listings feed image CDN (rdcpix.com,
+  #     realtor.com per index.html safeUrl allowlist). If the live feed is
+  #     dropped, reduce img-src to 'self' data:.
+  # connect-src 'self'             : fetch('api/listings') + POST /api/lead are
+  #     same-origin.
+  # frame-ancestors 'self'         : clickjacking protection.
+  # form-action 'self'             : forms may only POST to this origin.
+  # base-uri 'self'; object-src 'none'; upgrade-insecure-requests.
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.rdcpix.com https://rdcpix.com https://*.realtor.com https://realtor.com; connect-src 'self'; font-src 'self'; frame-ancestors 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+
+  # HSTS: force HTTPS for 2 years incl. subdomains; preload-eligible.
+  # Only ship once apex + www are confirmed HTTPS-only (they are on CF).
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+  # Block MIME-type sniffing.
+  X-Content-Type-Options: nosniff
+
+  # Send origin only on cross-origin, full URL same-origin.
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Legacy clickjacking header (CSP frame-ancestors is the modern equivalent).
+  X-Frame-Options: SAMEORIGIN
+
+  # Minimal Permissions-Policy: deny powerful features the site never uses.
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=(), interest-cohort=()

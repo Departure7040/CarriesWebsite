@@ -1,0 +1,54 @@
+{
+  "_comment": "Single source of truth for the carriebilleaud.com production build. Values marked __FILL__ await Carrie / the sponsoring broker (kickoff decisions + LREC broker identity). The build FAILS if any published page would ship a __FILL__ value. Do NOT flip strip_noindex until DNS has cut over and every launch-gate finding (reports/14_code_review_findings.md) is closed.",
+  "canonical_host": "https://carriebilleaud.com",
+
+  "tokens": {
+    "business_name": "__FILL__",
+    "phone": "__FILL__",
+    "phone_tel": "__FILL__",
+    "address": "__FILL__",
+    "email": "__FILL__",
+    "license_number": "__FILL__",
+    "broker_name": "__FILL__",
+    "broker_phone": "__FILL__",
+    "broker_office": "__FILL__",
+    "broker_jurisdiction": "Licensed by the Louisiana Real Estate Commission",
+    "ga4_id": "__FILL__",
+    "gsc_verification": "__FILL__",
+    "form_destination": "__FILL__"
+  },
+
+  "_token_notes": {
+    "business_name": "Exact licensed trade name as it must appear (CR-003). Demo uses 'Carrie Billeaud, Realtor'.",
+    "phone": "Visible/display NAP phone, e.g. 337-258-5379.",
+    "phone_tel": "Digits-only for tel: hrefs, e.g. 3372585379.",
+    "address": "Canonical office/mailing address once Carrie confirms (demo intentionally omitted it).",
+    "email": "Public contact email.",
+    "license_number": "Carrie's LREC license number (CR-003 broker-advertising disclosure).",
+    "broker_name": "Sponsoring/qualifying broker legal name.",
+    "broker_phone": "Broker-OWNED telephone, required conspicuously by LREC (CR-003).",
+    "broker_office": "Broker office city/state.",
+    "broker_jurisdiction": "Regulatory jurisdiction line (pre-filled, confirm exact wording with broker).",
+    "ga4_id": "GA4 measurement ID (G-XXXXXXX). GA4 snippet injected only when set and not __FILL__.",
+    "gsc_verification": "Google Search Console verification token (google-site-verification meta).",
+    "form_destination": "Contact-form POST endpoint / Worker URL (CR-007)."
+  },
+
+  "flags": {
+    "strip_noindex": false,
+    "include_audit": false,
+    "_note": "strip_noindex is the LAST switch flipped at launch. false => pages keep noindex AND robots.txt emits Disallow: / so a pre-launch/staging deploy stays private (CR-002). include_audit stays false; audit pages never ship to production."
+  },
+
+  "nap_replacements": [
+    { "find": "+1-337-258-5379", "value_template": "+1-{phone}", "note": "schema telephone (E.164-ish). Replaced before the bare display number so it is not partially matched." },
+    { "find": "tel:3372585379", "value_template": "tel:{phone_tel}", "note": "tel: hrefs (header CTA, sticky-call, in-body call buttons)." },
+    { "find": "337-258-5379", "value_template": "{phone}", "note": "visible display phone number." },
+    { "find": "carriebilleaud.exprealty.com", "value_template": "__CANONICAL_HOST_BARE__", "note": "rewrites schema url/@id and search-form hosts from the eXp host to the canonical host (CR-008)." },
+    { "find": "\"name\":\"Carrie Billeaud, Realtor\"", "value_template": "\"name\":\"{business_name}\"", "note": "RealEstateAgent schema name." },
+    { "find": "Carrie Billeaud, REALTOR® · eXp Realty", "value_template": "{business_name} · eXp Realty", "note": "visible footer NAP business-name line." }
+  ],
+
+  "og_image_default": "/assets/img/carrie-headshot-gbp.webp",
+  "favicon": "/assets/img/carrie-logo.png"
+}
