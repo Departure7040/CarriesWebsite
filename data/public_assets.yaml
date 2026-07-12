@@ -293,3 +293,71 @@ assets:
         sample_reviews_captured: "Dominick C. (2 mo), Annalise D. (8 mo), Amy L. (8 mo) — used on demo site reviews section"
         nearby_agents_google_counts: "Blake Arceneaux & Team 98, Brandy Smith 77, Nick Hundley 71, Kathy Leger 4, Beau Thomas 2 — Carrie's 185 tops every nearby agent shown"
     date_checked: "2026-07-08"
+  - name: HomeLight (county/city directory listings — no dedicated claimed profile confirmed)
+    url: "https://www.homelight.com/iberia-county-la/top-real-estate-agents"
+    type: platform_profile
+    status: checked
+    findings:
+      note: "[verified] CONFIRMED via direct scrape 2026-07-11 (fourth pass, verifying a third-party AI sweep's claims). Carrie appears in HomeLight's Iberia County AND New Iberia, LA agent-directory listing pages, name shown with a trailing asterisk (*) and no photo/rating — consistent with an unclaimed/system-generated listing rather than an agent-managed profile. Could NOT pin an exact dedicated homelight.com/agents/<id> profile URL for her in this pass (the directory page's per-agent links did not resolve unambiguously to her ID in the scraped markup); this remains open if a claimed profile URL is needed."
+      years_experience: "9 (HomeLight-displayed) — THIRD data point in the years-experience conflict: Zillow shows 11, HomeLight shows 9, eXp Facebook tenure shown since Feb 2022 (~4yr4mo). [client-confirm]"
+      home_transactions_shown: "11"
+      reviews: "not shown / none visible on directory card"
+      rating: "not shown"
+      confidence: "medium — existence and the two stat fields (11 transactions, 9 years) are directly observed on a live, successfully-fetched HomeLight page; no dedicated profile page was isolated"
+      data_source: "firecrawl scrape, 2026-07-11"
+    date_checked: "2026-07-11"
+  - name: RateMyAgent (individual agent profile)
+    url: "https://www.ratemyagent.com/real-estate-agent/carrie-billeaud-b0zzvd/sales/overview"
+    type: platform_profile
+    status: checked
+    findings:
+      note: "[verified] CONFIRMED to exist 2026-07-11. Direct profile URL discovered via a live, successfully-fetched RateMyAgent area page (https://www.ratemyagent.com/real-estate-profile/sales/louisiana/iota-la/agents, HTTP 200) which links to and displays her card inline: 'star N/A — From 0 reviews overall.' The direct profile URL itself returned HTTP 403 (JS/adblock wall) when scraped directly, but its existence, slug, and review count are corroborated by the working area-listing page, which is a stronger source than a search snippet."
+      reviews: "0 — CONFIRMED (matches the third-party sweep's claim)"
+      rating: "N/A (no reviews)"
+      transaction_sync: "Appears ACTIVE, not zero — she is shown as listing/co-listing agent on multiple live RateMyAgent property-listing pages with real MLS data (e.g. 118 Granada Drive, Lafayette; 1114 Dermelie Calais Road, Breaux Bridge, co-listed with Blake Arceneaux), so the platform is pulling her transactions even though no reviews have been collected. This nuances the third-party claim — reviews=0 is true, but 'no transaction sync' would be false if that was implied."
+      confidence: "high for existence/review-count (corroborated via working page); medium for transaction-sync characterization (inferred from listing pages, not a profile-level transaction count)"
+      data_source: "firecrawl scrape + search, 2026-07-11"
+    date_checked: "2026-07-11"
+  - name: Acadian Home Builders Association (AHBA) — member listing
+    url: "https://business.acadianhba.com/list/Details/carrie-billeaud-4640468"
+    type: local_profile
+    status: checked
+    findings:
+      note: "[verified] CONFIRMED 2026-07-11. Page loaded successfully (HTTP 200, full content, GrowthZone-powered member directory) — this DIRECTLY CONTRADICTS the third-party sweep's claim that the member profile URL 404s. The listing is live, complete, and current (last modified 2026-06-19)."
+      membership_type: "Affiliate"
+      category: "Real Estate Sales & Marketing"
+      bio: "Same bio text as seen on Homes.com/LoopNet (3x Icon Agent, RAA member, certified mentor, investor with rental portfolio, mom of four, 'Last year I had the pleasure of helping 53 families find their dream home with a total production volume of over $10 million' — a slightly different families-helped figure than the 46 seen elsewhere, [client-confirm])"
+      address: "100 Goodwood Circle, Lafayette, LA 70508 — NEW address variant, not previously seen in this audit; adds to the NAP address-conflict list"
+      phone: "(337) 258-5379 — matches primary NAP"
+      partnership_connection: "IMPORTANT: this AHBA (Acadian Home Builders ASSOCIATION, the trade association — acadianhba.com) 'Affiliate' membership is a DIFFERENT entity from 'Acadiana Home Builders' (the specific builder company, acadianahomebuilders.com, run by Moe & Missi Keeton) that Carrie told Brook she's partnering with on 2026-07-11. Both are real and both corroborate Carrie's active involvement in local homebuilding circles: (1) the AHBA trade-association membership is a general credential; (2) acadianahomebuilders.com's own homepage states directly, 'We're very happy to have Carrie Billeaud representing Acadiana Home Builders as our realtor,' with her name/phone/email as their listed realtor, and their Instagram content (2,298 followers) repeatedly credits her as their listing agent for new-construction homes (e.g. 204/206 Ivy Cottage in Le Jardin, Youngsville). The builder-company partnership is the stronger, more specific corroboration of what she described to Brook; the AHBA membership is supporting evidence that she's a credentialed, active participant in the local homebuilding trade community."
+      confidence: "high"
+      data_source: "firecrawl scrape (business.acadianhba.com and acadianahomebuilders.com), 2026-07-11"
+    date_checked: "2026-07-11"
+  - name: UpNest (agent directory listing — not in prior claims list, found during this pass)
+    url: "https://www.upnest.com/re/top-real-estate-agents/la/lafayette"
+    type: platform_profile
+    status: checked
+    findings:
+      note: "[verified] Not one of the four claims this pass was tasked with verifying, but surfaced organically while searching for other directories (task item 4) and is a genuine new profile, so recorded here."
+      years_experience: "11 — matches Zillow's 11-years claim (see years-experience conflict note on the HomeLight entry above)"
+      sold_last_year_shown: "0"
+      brokerage: "eXp"
+      confidence: "high — directly observed on a live, successfully-fetched page"
+      data_source: "firecrawl scrape, 2026-07-11"
+    date_checked: "2026-07-11"
+  - name: "1 Percent Lists — checked, not found"
+    url: "N/A"
+    type: platform_profile
+    status: not_found
+    findings:
+      note: "Quick check per task item 4. Search turned up only an unrelated Instagram photo-credit collision (a different agent's post crediting a '1 Percent Lists' photographer, with a separate mention of Carrie elsewhere on the same page) — no evidence of an actual Carrie Billeaud profile or listing on 1percentlists.com."
+      confidence: "medium — absence-of-evidence from one search pass, not an exhaustive site search"
+    date_checked: "2026-07-11"
+  - name: "Rocket Homes — checked, not found"
+    url: "N/A"
+    type: platform_profile
+    status: not_found
+    findings:
+      note: "Quick check per task item 4. site:rockethomes.com search for 'Carrie Billeaud' returned zero results."
+      confidence: "medium — absence-of-evidence from one search pass, not an exhaustive site search"
+    date_checked: "2026-07-11"

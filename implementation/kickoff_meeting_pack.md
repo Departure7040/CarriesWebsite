@@ -220,6 +220,11 @@ Brook: ___________  Carrie: ___________
   their photos/listings on her site, and whether a builder co-marketing
   budget exists. This gates a dedicated new-construction/custom-build page
   that would be genuinely unique content.
+  AHBA (Acadian Home Builders Association) member listing found and confirmed
+  LIVE (business.acadianhba.com/list/Details/carrie-billeaud-4640468 loads
+  fine as of 2026-07-11 — an earlier "this link 404s" claim was checked and
+  is false); shows a new address variant (100 Goodwood Circle, Lafayette)
+  worth folding into the NAP conversation.
 - **Closed transactions by city, last 3 years** (a CRM/MLS export or even a
   hand list). This decides which expansion markets get pages next (Duson,
   Rayne, Breaux Bridge, St. Martinville, New Iberia, Abbeville…): the rule is

@@ -65,3 +65,23 @@ claims:
     source: "First-pass recon extraction of Realtor.com bio (2026-07-08)"
     status: contradicted
     note: "Client (Brook, knows Carrie personally) says 'not remotely true' (2026-07-11). Likely extraction misread. Purged from site/index.html, site/areas/lafayette.html, and 3 page briefs. Team-of-4 roster (Carrie, Jake, Blake, Arrow) remains verified via Zillow team profile."
+  - id: homelight_exists
+    claim: "A HomeLight agent listing exists for Carrie Billeaud, showing 9 years of experience and 11 home transactions"
+    source: "Direct fetch of homelight.com/iberia-county-la/top-real-estate-agents and homelight.com/new-iberia-la/top-real-estate-agents, 2026-07-11"
+    status: verified
+    note: "Verified a fourth-pass third-party AI sweep claim. Listing shown with a trailing asterisk and no photo — consistent with an unclaimed/system-generated entry, not an agent-managed profile; no dedicated claimed profile URL was isolated. The '9 years' figure is a THIRD data point in the years-experience conflict (Zillow: 11 years; HomeLight: 9 years; eXp Facebook tenure: since Feb 2022, ~4yr4mo) — still [client-confirm], not resolved by this finding."
+  - id: ratemyagent_exists
+    claim: "A RateMyAgent individual profile exists for Carrie Billeaud (https://www.ratemyagent.com/real-estate-agent/carrie-billeaud-b0zzvd/sales/overview) with 0 reviews"
+    source: "Direct fetch of ratemyagent.com/real-estate-profile/sales/louisiana/iota-la/agents, 2026-07-11, which displays her profile card inline (0 reviews) and links to the profile URL above"
+    status: verified
+    note: "Verified a fourth-pass third-party AI sweep claim: profile exists, 0 reviews confirmed true. However, the platform does appear to sync transaction/listing data independent of reviews — she is shown as listing/co-listing agent on multiple live RateMyAgent property pages with real MLS data. Do not read '0 reviews' as 'no data on the platform.'"
+  - id: ahba_member
+    claim: "Carrie Billeaud has an active member listing with the Acadian Home Builders Association (AHBA), and the member profile URL 404s"
+    source: "Direct fetch of business.acadianhba.com/list/Details/carrie-billeaud-4640468, 2026-07-11"
+    status: contradicted
+    note: "HALF confirmed, half false. The AHBA membership itself IS real and active (Affiliate member, category 'Real Estate Sales & Marketing', last modified 2026-06-19) — verified true. But the '404s' part of the claim is FALSE: the page loaded successfully (HTTP 200) with full content. This membership is a general trade-association credential; it should not be conflated with the specific 'Acadiana Home Builders' (the builder company, acadianahomebuilders.com) partnership Carrie described to Brook on 2026-07-11 — that partnership is separately and more directly confirmed by acadianahomebuilders.com's own homepage copy naming her as their realtor."
+  - id: acadiana_home_builders_partnership
+    claim: "Carrie Billeaud is partnering with Acadiana Home Builders (the builder company) as their realtor for new-construction/custom-build listings"
+    source: "Direct fetch of acadianahomebuilders.com, 2026-07-11 — homepage states 'We're very happy to have Carrie Billeaud representing Acadiana Home Builders as our realtor,' with her name/phone/email listed, and their Instagram content (2,298 followers) repeatedly credits her on new-construction listing posts (e.g. 204/206 Ivy Cottage, Le Jardin, Youngsville)"
+    status: verified
+    note: "This corroborates what Carrie told Brook directly on 2026-07-11. Independently confirmed via the builder's own site and social content, not just her side of the relationship. Also see the Facebook business page bio (public_assets.yaml), which already showed 'Proud Partner with Acadiana Home Builders' as of the 2026-07-08 audit — this new finding is additional, stronger corroboration (the builder's own site, not just Carrie's self-description)."
