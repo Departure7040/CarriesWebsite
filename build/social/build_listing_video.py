@@ -44,7 +44,7 @@ OUT_DIR = REPO / "site" / "studio" / "packages" / "videos"
 
 LABEL = "JUST LISTED"
 T_INTRO, T_OUTRO, XF_CARD = 2.0, 2.5, 0.4     # card durations + card cross-fade
-T_PHOTO, XF_PHOTO = 2.0, 0.35                  # per-photo duration + montage cross-fade
+T_PHOTO, XF_PHOTO = 1.9, 0.6                    # per-photo hold + montage transition (motion lives here)
 
 LISTINGS = {
     "204-ivy-cottage-dr": {"photo": "204-ivy-cottage-dr.jpg", "price": "$1,510,000",
@@ -187,26 +187,29 @@ def kenburns_card(png, dur, out):
 
 
 def photo_clip(photo, dur, out):
-    """Aspect-agnostic, JUDDER-FREE Ken Burns. Key fixes vs a naive zoompan:
-    (1) supersample — composite at 2x (2160x3840) and let zoompan output at
-    1080x1920, so the downscale antialiases the sub-pixel crop steps that cause
-    the "phone held over a photo" stutter; (2) framerate-lock the looped still to
-    30fps so zoompan's d=1 is exactly one output frame (no resample); (3) a gentle
-    zoom range so any residual motion is smooth."""
+    """Each photo is a STATIC composite: a blurred-fill background + the sharp
+    photo centered. No intra-clip zoom — ffmpeg's zoompan rounds the crop to whole
+    pixels every frame, so a slow zoom "sticks then jumps" (the phone-over-a-photo
+    judder). Instead ALL motion comes from the smooth float-interpolated xfade
+    transitions between clips (see xfade_chain), which don't judder."""
     fc = ("[0:v]split=2[bg][fg];"
-          "[bg]scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,"
-          "boxblur=42:2,eq=brightness=-0.16:saturation=1.04[bgb];"
-          "[fg]scale=2160:-1[fgs];"
-          "[bgb][fgs]overlay=(W-w)/2:(H-h)/2[comp];"
-          "[comp]zoompan=z='min(pzoom+0.00055,1.09)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
-          "s=1080x1920:fps=30,format=yuv420p[v]")
+          "[bg]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
+          "boxblur=32:2,eq=brightness=-0.16:saturation=1.04[bgb];"
+          "[fg]scale=1080:-1[fgs];"
+          "[bgb][fgs]overlay=(W-w)/2:(H-h)/2,format=yuv420p[v]")
     run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", "30", "-loop", "1", "-t", f"{dur}",
          "-i", str(photo), "-filter_complex", fc, "-map", "[v]", "-c:v", "libx264",
          "-pix_fmt", "yuv420p", "-r", "30", str(out)])
 
 
+# Smooth, eased transitions carry all the motion (float-interpolated -> no judder).
+# A tasteful mix: mostly gentle dissolves with occasional directional glides.
+TRANSITIONS = ["fade", "smoothleft", "fade", "smoothup", "fade", "smoothright", "fade", "smoothdown"]
+
+
 def xfade_chain(clips, dur, xf, out):
-    """Cross-fade a list of equal-duration clips into one montage."""
+    """Cross-fade a list of equal-duration clips into one montage using varied
+    eased transitions, so the montage feels like video without any per-photo zoom."""
     if len(clips) == 1:
         run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(clips[0]), "-c", "copy", str(out)]); return
     inputs, parts, prev = [], [], "[0]"
@@ -214,8 +217,9 @@ def xfade_chain(clips, dur, xf, out):
         inputs += ["-i", str(c)]
     for k in range(1, len(clips)):
         off = k * (dur - xf)
+        trans = TRANSITIONS[(k - 1) % len(TRANSITIONS)]
         label = "[v]" if k == len(clips) - 1 else f"[x{k}]"
-        parts.append(f"{prev}[{k}]xfade=transition=fade:duration={xf}:offset={off:.3f}{label}")
+        parts.append(f"{prev}[{k}]xfade=transition={trans}:duration={xf}:offset={off:.3f}{label}")
         prev = label
     run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(parts),
          "-map", "[v]", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "30", str(out)])
