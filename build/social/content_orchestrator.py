@@ -49,6 +49,8 @@ from pathlib import Path
 # Import the graphic generator as a module (same dir).
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from generate_graphics import generate_graphics, _slugify  # noqa: E402
+from generate_landing import generate_landing  # noqa: E402
+from links import all_links, base_url  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent.parent
 SOCIAL_DIR = REPO / "build" / "social"
@@ -339,10 +341,43 @@ def generate_captions(l: dict) -> tuple[dict, bool]:
 # --------------------------------------------------------------------------- #
 # Package assembly
 # --------------------------------------------------------------------------- #
-def ready_to_post_md(l: dict, pkg: dict, mock: bool) -> str:
+# Maps each package caption field to the platform whose tracked link is appended.
+# (threads has a tracked link too, surfaced in tracked_links, but no caption field.)
+_CAPTION_LINK_TARGETS = [
+    ("instagram", "caption"),
+    ("facebook", "caption"),
+    ("tiktok", "script"),
+    ("youtube", "description"),
+]
+
+
+def apply_tracked_links(pkg: dict, slug: str) -> dict[str, str]:
+    """APPEND each platform's tracked (DIRECT) link to that platform's caption
+    text in-place, and return {platform: direct_link} for every platform.
+
+    So when Carrie copies the IG caption, the IG-tracked link is already in it —
+    post -> tracked link -> /l/<slug>/ -> lead with a KNOWN source.
+    """
+    links = all_links(slug)  # {platform: {direct, short}}
+    tracked = {p: links[p]["direct"] for p in links}
+    for platform, field in _CAPTION_LINK_TARGETS:
+        section = pkg.get(platform)
+        link = tracked.get(platform)
+        if not section or not link:
+            continue
+        text = section.get(field, "")
+        if link not in text:  # idempotent: never double-append on re-runs
+            section[field] = f"{text.rstrip()}\n\n{link}"
+    return tracked
+
+
+def ready_to_post_md(l: dict, pkg: dict, mock: bool, tracked: dict[str, str]) -> str:
     ig, fb, tt, yt = pkg["instagram"], pkg["facebook"], pkg["tiktok"], pkg["youtube"]
     tag = " _(demo mock content)_" if mock else ""
     hashtags = " ".join(ig["hashtags"])
+    links_md = "\n".join(
+        f"- **{p.capitalize()}:** {tracked[p]}" for p in tracked
+    )
     return f"""# Ready to post — {l['address']}, {l['city']}{tag}
 
 **{l['price']} · {l['beds']} bed / {l['baths']} bath · {l['sqft']} sq ft · {l['status']}**
@@ -350,6 +385,11 @@ Listing: {l['url']}
 
 > Review, tweak if you like, then copy the caption and post with the graphic.
 > Publishing stays manual (or hand to an aggregator) — nothing auto-posts.
+
+**Tracked links** (already appended to each caption below → clicks + leads attribute to the right post/platform):
+{links_md}
+
+Property landing page: {base_url(l['slug'])}
 
 ---
 
@@ -398,24 +438,36 @@ def process_listing(l: dict) -> dict:
     square.replace(square_final)
     story.replace(story_final)
 
+    print(f"  [{slug}] building property landing page -> site/l/{slug}/ ...")
+    generate_landing(l)
+
     print(f"  [{slug}] generating captions...")
     pkg, mock = generate_captions(l)
+
+    # Attribution: append each platform's tracked link to its caption in-place
+    # and record the per-platform link map.
+    tracked = apply_tracked_links(pkg, slug)
 
     captions_path = pkg_dir / "captions.json"
     captions_path.write_text(json.dumps({
         "listing": {k: l[k] for k in ("slug", "address", "city", "price", "beds",
                                        "baths", "sqft", "status", "url")},
         "package": pkg,
+        "tracked_links": tracked,
+        "landing_url": base_url(slug),
+        "landing_path": f"/l/{slug}/",
         "mock": mock,
     }, indent=2), encoding="utf-8")
 
-    (pkg_dir / "ready-to-post.md").write_text(ready_to_post_md(l, pkg, mock), encoding="utf-8")
+    (pkg_dir / "ready-to-post.md").write_text(
+        ready_to_post_md(l, pkg, mock, tracked), encoding="utf-8")
 
     return {
         "slug": slug, "address": l["address"], "city": l["city"], "price": l["price"],
         "beds": l["beds"], "baths": l["baths"], "sqft": l["sqft"], "url": l["url"],
         "square": f"{slug}/square.png", "story": f"{slug}/story.png",
-        "package": pkg, "mock": mock,
+        "package": pkg, "tracked_links": tracked, "landing_path": f"/l/{slug}/",
+        "mock": mock,
     }
 
 

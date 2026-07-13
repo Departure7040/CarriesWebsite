@@ -41,6 +41,15 @@
     font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap}
   .copy-btn:hover{background:var(--teal-dark)}
   .copy-btn.done{background:var(--ok)}
+  .link-row{display:flex;align-items:center;gap:.5rem;padding:.5rem .8rem;
+    border-top:1px dashed var(--rule);background:#fbfaf7;font-size:.8rem}
+  .link-row .tl{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    color:var(--teal-dark);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .link-row .note{color:#8a929e;font-style:italic}
+  .copy-btn.sm{padding:.25rem .6rem;font-size:.75rem}
+  .preview-link{display:inline-block;margin-top:.4rem;font-size:.85rem;font-weight:600;
+    color:var(--gold-ink);text-decoration:none}
+  .preview-link:hover{text-decoration:underline}
   .mock-flag{display:inline-block;font-size:.7rem;background:var(--warn);color:#fff;border-radius:4px;
     padding:.1rem .4rem;vertical-align:middle;margin-left:.4rem;letter-spacing:.03em}
   #empty{padding:2rem;border:1px dashed var(--rule);border-radius:10px;text-align:center;color:var(--ink)}
@@ -52,7 +61,7 @@
 <div class="demo-banner">Private content studio — internal review tool. <a href="../index.html">Back to site →</a></div>
 <header class="site-header"><div class="wrap nav">
   <a class="brand-logo" href="../index.html"><img src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
-  <nav class="main-nav"><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+  <nav class="main-nav"><a href="attribution.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Attribution →</a><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
 </div></header>
 
 <main id="main">
@@ -65,6 +74,7 @@
 <section class="section"><div class="wrap">
   <div class="studio-note">
     <strong>How this works.</strong> When a new listing hits your feed, the engine drafts the captions and renders your branded graphics automatically. Here you just <strong>review, tweak in your head, and one-tap copy</strong> the caption, then <strong>download the graphic</strong> and post it yourself on each platform. Publishing stays in your hands for now (or later, hand the approved batch to a scheduling aggregator like Buffer/Metricool) — <strong>nothing is ever auto-posted.</strong> You are always the voice and the compliance check.
+    <br><br>Each caption now ends with a <strong>tracked link</strong> to that home's landing page — a different link per platform, so every click and lead ties back to the exact post it came from. See the <a href="attribution.html" style="color:var(--teal-dark);font-weight:600">Attribution dashboard →</a>.
   </div>
 
   <div id="packages"></div>
@@ -91,7 +101,23 @@ const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c =>
 function loadApproved(){ try { return JSON.parse(localStorage.getItem(APPROVED_KEY)) || {}; } catch { return {}; } }
 function saveApproved(a){ localStorage.setItem(APPROVED_KEY, JSON.stringify(a)); }
 
-function capBlock(plat, imgTag, text, tags){
+function wireCopy(btn, getText, label){
+  btn.addEventListener('click', async () => {
+    const val = getText();
+    try { await navigator.clipboard.writeText(val); }
+    catch {
+      const ta = document.createElement('textarea');
+      ta.value = val; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+    }
+    const orig = label || 'Copy';
+    btn.textContent = 'Copied ✓'; btn.classList.add('done');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('done'); }, 1600);
+  });
+}
+
+// trackedLink (optional): the per-platform link already appended to the caption.
+function capBlock(plat, imgTag, text, tags, trackedLink){
   const full = text + (tags ? '\n\n' + tags : '');
   const el = document.createElement('div');
   el.className = 'cap';
@@ -100,18 +126,16 @@ function capBlock(plat, imgTag, text, tags){
     '<span class="img-tag">' + esc(imgTag) + '</span>' +
     '<button class="copy-btn">Copy</button></div>' +
     '<div class="cap-body">' + esc(text) +
-    (tags ? '<div class="tags">' + esc(tags) + '</div>' : '') + '</div>';
-  const btn = el.querySelector('.copy-btn');
-  btn.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(full); }
-    catch {
-      const ta = document.createElement('textarea');
-      ta.value = full; document.body.appendChild(ta); ta.select();
-      document.execCommand('copy'); ta.remove();
-    }
-    btn.textContent = 'Copied ✓'; btn.classList.add('done');
-    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
-  });
+    (tags ? '<div class="tags">' + esc(tags) + '</div>' : '') + '</div>' +
+    (trackedLink
+      ? '<div class="link-row"><span class="tl" title="' + esc(trackedLink) + '">' +
+        esc(trackedLink) + '</span>' +
+        '<button class="copy-btn sm link-copy">Copy link</button>' +
+        '<span class="note">✓ in caption</span></div>'
+      : '');
+  wireCopy(el.querySelector('.copy-btn'), () => full);
+  const lc = el.querySelector('.link-copy');
+  if (lc) wireCopy(lc, () => trackedLink, 'Copy link');
   return el;
 }
 
@@ -158,19 +182,29 @@ function renderPackage(p, approved){
   left.appendChild(arow);
   body.appendChild(left);
 
-  // Right: per-platform captions, each copyable.
+  // Landing-page preview link (attribution destination for every tracked link).
+  const landing = p.landing_path || ('/l/' + p.slug + '/');
+  const pv = document.createElement('a');
+  pv.className = 'preview-link';
+  pv.href = landing; pv.target = '_blank'; pv.rel = 'noopener';
+  pv.textContent = '↗ Preview landing page';
+  left.appendChild(pv);
+
+  // Right: per-platform captions, each copyable — with its tracked link
+  // (already appended to the caption) + a Copy link button.
+  const tl = p.tracked_links || {};
   const right = document.createElement('div');
   if (pkg.instagram)
     right.appendChild(capBlock('Instagram', 'use square.png',
-      pkg.instagram.caption, (pkg.instagram.hashtags || []).join(' ')));
+      pkg.instagram.caption, (pkg.instagram.hashtags || []).join(' '), tl.instagram));
   if (pkg.facebook)
-    right.appendChild(capBlock('Facebook', 'use square.png', pkg.facebook.caption, ''));
+    right.appendChild(capBlock('Facebook', 'use square.png', pkg.facebook.caption, '', tl.facebook));
   if (pkg.tiktok)
     right.appendChild(capBlock('TikTok / Reels', 'use story.png',
-      'Hook: ' + pkg.tiktok.hook + '\n\n' + pkg.tiktok.script, ''));
+      'Hook: ' + pkg.tiktok.hook + '\n\n' + pkg.tiktok.script, '', tl.tiktok));
   if (pkg.youtube)
     right.appendChild(capBlock('YouTube', 'use square.png',
-      pkg.youtube.title + '\n\n' + pkg.youtube.description, ''));
+      pkg.youtube.title + '\n\n' + pkg.youtube.description, '', tl.youtube));
   if (pkg.story_text)
     right.appendChild(capBlock('Story overlay', 'use story.png', pkg.story_text, ''));
   if (pkg.hooks && pkg.hooks.length)

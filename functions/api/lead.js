@@ -36,6 +36,16 @@
  */
 
 const MAX = 4000; // hard cap on any single field length
+const MAX_ATTR = 200; // tighter cap for attribution/campaign label fields
+
+// Sanitize a short attribution label: strip control chars + CR/LF (header-safety),
+// collapse to a modest length. Attribution fields are campaign labels, not prose.
+function attr(v) {
+  return String(v || "")
+    .replace(/[\r\n\t\x00-\x1f\x7f]/g, " ")
+    .slice(0, MAX_ATTR)
+    .trim();
+}
 
 function json(status, body) {
   return new Response(JSON.stringify(body), {
@@ -97,13 +107,24 @@ async function forwardEmail(env, lead) {
   if (!to) return false;
 
   const subject = `New ${lead.source || "website"} lead: ${lead.name}`;
+  const attribution =
+    lead.listing_slug || lead.platform || lead.utm_source || lead.utm_campaign
+      ? `\n--- Attribution ---\n` +
+        `Listing: ${lead.listing_address || lead.listing_slug || "-"}\n` +
+        `Listing slug: ${lead.listing_slug || "-"}\n` +
+        `Platform: ${lead.platform || "-"}\n` +
+        `UTM source: ${lead.utm_source || "-"}\n` +
+        `UTM campaign: ${lead.utm_campaign || "-"}\n` +
+        `UTM content: ${lead.utm_content || "-"}\n`
+      : "";
   const text =
     `Name: ${lead.name}\n` +
     `Email: ${lead.email || "-"}\n` +
     `Phone: ${lead.phone || "-"}\n` +
     `Address: ${lead.address || "-"}\n` +
-    `Source: ${lead.source || "-"}\n\n` +
-    `${lead.message || ""}\n`;
+    `Source: ${lead.source || "-"}\n` +
+    attribution +
+    `\n${lead.message || ""}\n`;
 
   // Resend if key present, else MailChannels (keyless, Cloudflare-native).
   if (env.RESEND_API_KEY) {
@@ -161,6 +182,14 @@ export async function onRequestPost({ request, env }) {
     address: body.address || "",
     message: body.message || "",
     source: body.source || "website",
+    // Attribution (all optional, sanitized, length-capped). These let every
+    // lead carry its origin: which property landing page + which social post.
+    listing_slug: attr(body.listing_slug),
+    listing_address: attr(body.listing_address),
+    platform: attr(body.platform),
+    utm_source: attr(body.utm_source),
+    utm_campaign: attr(body.utm_campaign),
+    utm_content: attr(body.utm_content),
     submitted_at: new Date().toISOString(),
   };
 

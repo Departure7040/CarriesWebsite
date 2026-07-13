@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Attribution — Carrie Billeaud, eXp Realty (Private)</title>
+<meta name="description" content="Private attribution dashboard — clicks per post/platform and leads per post/platform for every listing.">
+<link rel="stylesheet" href="../assets/style.css?v=10">
+<style>
+  .studio-note{background:var(--cream);border:1px solid var(--rule);border-left:4px solid var(--gold);
+    border-radius:8px;padding:1rem 1.25rem;margin:1.25rem 0 1.5rem;font-size:.95rem;line-height:1.5}
+  .studio-note strong{color:var(--teal-dark)}
+  .funnels{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:0 0 2rem}
+  @media(max-width:640px){.funnels{grid-template-columns:1fr}}
+  .funnel{border:1px solid var(--rule);border-radius:10px;padding:1.1rem 1.25rem;background:var(--paper)}
+  .funnel .step{font-family:Georgia,serif;font-weight:700;color:var(--ink)}
+  .funnel .arrow{color:var(--gold-ink);margin:0 .35rem}
+  .funnel h3{margin:0 0 .5rem;font-size:1rem;color:var(--teal-dark)}
+  .funnel p{margin:.4rem 0 0;font-size:.88rem;color:#5a6472}
+  .lst{border:1px solid var(--rule);border-radius:12px;overflow:hidden;margin-bottom:2rem;
+    box-shadow:0 2px 10px rgba(26,35,50,.05)}
+  .lst-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1rem;justify-content:space-between;
+    padding:.9rem 1.3rem;background:var(--ink);color:#fff}
+  .lst-head h2{font-size:1.1rem;margin:0;color:#fff}
+  .lst-head .price{color:var(--gold);font-weight:700}
+  .lst-head a{color:var(--gold);font-size:.82rem;font-weight:600;text-decoration:none}
+  .lst-head a:hover{text-decoration:underline}
+  .tbl-scroll{overflow-x:auto}
+  table.attr{width:100%;border-collapse:collapse;font-size:.88rem;min-width:560px}
+  table.attr th,table.attr td{text-align:left;padding:.6rem .9rem;border-bottom:1px solid var(--rule)}
+  table.attr th{background:var(--cream);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#5a6472}
+  table.attr td.plat{font-weight:700;color:var(--teal-dark);text-transform:capitalize}
+  table.attr td.num{font-family:Georgia,serif;font-weight:700;font-size:1.05rem;color:var(--ink);text-align:center}
+  table.attr td.num .ph{color:#b8bec8;font-weight:400;font-size:.9rem}
+  .tl{max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.78rem;color:var(--teal-dark)}
+  .copy-btn{background:var(--teal);color:#fff;border:none;border-radius:6px;padding:.25rem .6rem;
+    font-size:.74rem;font-weight:600;cursor:pointer;white-space:nowrap}
+  .copy-btn:hover{background:var(--teal-dark)}
+  .copy-btn.done{background:var(--ok)}
+  .live-note{background:#fff8ec;border:1px solid var(--gold);border-radius:8px;padding:.8rem 1rem;
+    font-size:.83rem;color:#6b5a2e;margin:1.5rem 0 0}
+  .live-note code{background:#fdf3dc;padding:.1rem .35rem;border-radius:4px}
+  #empty{padding:2rem;border:1px dashed var(--rule);border-radius:10px;text-align:center;color:var(--ink)}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-banner">Private attribution dashboard — internal tool. <a href="index.html">← Content Studio</a></div>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand-logo" href="../index.html"><img src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
+  <nav class="main-nav"><a href="index.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">← Studio</a><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap"><div class="hero-copy">
+  <p class="kicker">Private · Know Where Every Lead Came From</p>
+  <h1>Attribution</h1>
+  <p class="sub">Every post gets its own tracked link. When someone clicks it and reaches out, you see exactly which listing, which platform, which post brought them in.</p>
+</div></div></section>
+
+<section class="section"><div class="wrap">
+  <div class="studio-note">
+    <strong>Two funnels, one link.</strong> Each listing's caption carries a per-platform tracked link. The same link powers both counts below — so you never guess which post is working.
+  </div>
+
+  <div class="funnels">
+    <div class="funnel">
+      <h3>1 · Clicks per post / platform</h3>
+      <p><span class="step">Post</span><span class="arrow">→</span><span class="step">Tracked link</span><span class="arrow">→</span><span class="step">Landing page</span></p>
+      <p>How many people tapped the link in each platform's post. Measures reach that actually moved.</p>
+    </div>
+    <div class="funnel">
+      <h3>2 · Leads per post / platform</h3>
+      <p><span class="step">Landing page</span><span class="arrow">→</span><span class="step">Form</span><span class="arrow">→</span><span class="step">Lead (source tagged)</span></p>
+      <p>Of those clicks, how many sent Carrie a note — each lead stamped with the source it came from.</p>
+    </div>
+  </div>
+
+  <div id="listings"></div>
+  <div id="empty" hidden>
+    No packages loaded yet. Run the content orchestrator, then refresh.
+  </div>
+
+  <div class="live-note">
+    Click and lead counts show <strong>—</strong> in this demo. Live counts populate from
+    <code>CLICKS_KV</code> + lead source once deployed — CR: <code>functions/api/clicks.js</code>
+    (the <code>/go/&lt;code&gt;</code> redirect logs a click, then 302s to the landing page;
+    <code>functions/api/lead.js</code> already records the source on every lead).
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <img class="footer-logo" src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty">
+  <p>Carrie Billeaud, REALTOR® · eXp Realty · Lafayette, Louisiana · <a href="tel:3372585379">337-258-5379</a></p>
+  <p>Private internal tool — part of an SEO/content audit by Brook DuBose. Not Carrie's live website.</p>
+</div></footer>
+
+<script>
+const params = new URLSearchParams(location.search);
+const MANIFEST = params.get('manifest') || './packages/index.json';
+const PLATFORMS = ['instagram', 'facebook', 'tiktok', 'youtube', 'threads'];
+
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function wireCopy(btn, val){
+  btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(val); }
+    catch {
+      const ta = document.createElement('textarea');
+      ta.value = val; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+    }
+    btn.textContent = 'Copied ✓'; btn.classList.add('done');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+  });
+}
+
+function renderListing(p){
+  const links = p.tracked_links || {};
+  const landing = p.landing_path || ('/l/' + p.slug + '/');
+  const card = document.createElement('div');
+  card.className = 'lst';
+
+  const head = document.createElement('div');
+  head.className = 'lst-head';
+  head.innerHTML =
+    '<h2>' + esc(p.address) + ', ' + esc(p.city) + '</h2>' +
+    '<span class="price">' + esc(p.price) + '</span>' +
+    '<a href="' + esc(landing) + '" target="_blank" rel="noopener">↗ Landing page</a>';
+  card.appendChild(head);
+
+  const scroll = document.createElement('div');
+  scroll.className = 'tbl-scroll';
+  const tbl = document.createElement('table');
+  tbl.className = 'attr';
+  tbl.innerHTML =
+    '<thead><tr><th>Platform</th><th>Tracked link</th>' +
+    '<th style="text-align:center">Clicks</th><th style="text-align:center">Leads</th></tr></thead>';
+  const tb = document.createElement('tbody');
+
+  const rows = PLATFORMS.filter(pl => links[pl]);
+  (rows.length ? rows : PLATFORMS).forEach(pl => {
+    const link = links[pl] || '';
+    const tr = document.createElement('tr');
+    tr.innerHTML =
+      '<td class="plat">' + esc(pl) + '</td>' +
+      '<td><div style="display:flex;align-items:center;gap:.5rem">' +
+        '<span class="tl" title="' + esc(link) + '">' + esc(link) + '</span>' +
+        (link ? '<button class="copy-btn">Copy</button>' : '') + '</div></td>' +
+      '<td class="num"><span class="ph">—</span></td>' +
+      '<td class="num"><span class="ph">—</span></td>';
+    const btn = tr.querySelector('.copy-btn');
+    if (btn) wireCopy(btn, link);
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb);
+  scroll.appendChild(tbl);
+  card.appendChild(scroll);
+  return card;
+}
+
+(async function(){
+  const wrap = document.getElementById('listings');
+  const empty = document.getElementById('empty');
+  try {
+    const res = await fetch(MANIFEST, { cache: 'no-store' });
+    if (!res.ok) throw new Error('manifest ' + res.status);
+    const data = await res.json();
+    const packages = data.packages || [];
+    if (!packages.length) { empty.hidden = false; return; }
+    packages.forEach(p => wrap.appendChild(renderListing(p)));
+  } catch (e) {
+    empty.hidden = false;
+  }
+})();
+</script>
+</body>
+</html>
