@@ -98,7 +98,23 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
         import os as _os
         import urllib.parse as _up
-        clean = _up.urlparse(self.path).path
+        parsed = _up.urlparse(self.path)
+        clean = parsed.path
+        # Directory without a trailing slash (e.g. /studio) that has an
+        # index.html: 301-redirect to add the slash, like any normal web
+        # server. Without this, bare directory URLs 404 (phones rarely type
+        # the trailing slash).
+        if not clean.endswith("/") and not _os.path.splitext(clean)[1]:
+            fs = _os.path.join(".", clean.lstrip("/"))
+            if _os.path.isdir(fs) and _os.path.isfile(_os.path.join(fs, "index.html")):
+                dest = clean + "/"
+                if parsed.query:
+                    dest += "?" + parsed.query
+                self.send_response(301)
+                self.send_header("Location", dest)
+                self.send_header("Content-Length", "0")
+                self.end_headers()
+                return
         if clean.endswith("/"):
             clean += "index.html"
         ext = _os.path.splitext(clean)[1].lower()
