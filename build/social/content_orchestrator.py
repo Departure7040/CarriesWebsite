@@ -53,7 +53,9 @@ from generate_graphics import generate_graphics, _slugify  # noqa: E402
 REPO = Path(__file__).resolve().parent.parent.parent
 SOCIAL_DIR = REPO / "build" / "social"
 OUT_DIR = SOCIAL_DIR / "out"
-PACKAGES_DIR = OUT_DIR / "packages"
+# Publish packages into the SERVED web root so the content studio (a real
+# subsite at /studio/) can load them through the tunnel.
+PACKAGES_DIR = REPO / "site" / "studio" / "packages"
 SEEN_FILE = PACKAGES_DIR / ".seen_ids.json"
 DATA_DIR = REPO / "data"
 
@@ -472,7 +474,7 @@ def main() -> None:
         tag = " (mock captions)" if p["mock"] else ""
         print(f"  - {p['slug']}: {p['address']}, {p['city']} — {p['price']}{tag}")
         print(f"      {PACKAGES_DIR / p['slug']}")
-    print("Review/approve in site/tools/content-studio.html (serve repo root).")
+    print("Review/approve at /studio/ (site/studio/index.html).")
     print("=" * 60)
 
 

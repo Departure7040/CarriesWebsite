@@ -75,7 +75,8 @@ def fetch_listings() -> bytes:
 # logs, dotfiles) is invisible to the web. Directory URLs may serve index.html
 # but never a listing. (Code-review finding CR-001.)
 ALLOWED_EXT = {".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".webp",
-               ".svg", ".gif", ".ico", ".txt", ".xml", ".woff", ".woff2", ".pdf"}
+               ".svg", ".gif", ".ico", ".txt", ".xml", ".woff", ".woff2",
+               ".pdf", ".json"}
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
