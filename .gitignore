@@ -3,3 +3,7 @@ dist/
 build/social/out/
 site/studio/packages/
 site/l/
+
+# Python bytecode
+__pycache__/
+*.pyc

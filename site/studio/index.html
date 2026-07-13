@@ -61,7 +61,7 @@
 <div class="demo-banner">Private content studio — internal review tool. <a href="../index.html">Back to site →</a></div>
 <header class="site-header"><div class="wrap nav">
   <a class="brand-logo" href="../index.html"><img src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
-  <nav class="main-nav"><a href="attribution.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Attribution →</a><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+  <nav class="main-nav"><a href="#review-graphics" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Reviews</a><a href="nurture.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Nurture →</a><a href="../market/" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Market →</a><a href="attribution.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Attribution →</a><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
 </div></header>
 
 <main id="main">
@@ -77,12 +77,33 @@
     <br><br>Each caption now ends with a <strong>tracked link</strong> to that home's landing page — a different link per platform, so every click and lead ties back to the exact post it came from. See the <a href="attribution.html" style="color:var(--teal-dark);font-weight:600">Attribution dashboard →</a>.
   </div>
 
+  <div class="card-grid" style="margin-bottom:2.5rem">
+    <a class="card" href="#packages" style="text-decoration:none;color:inherit"><h3>📸 Listing content</h3><p>Branded Just-Listed graphics + a caption for every platform, each with a tracked link. Review &amp; copy them below.</p></a>
+    <a class="card" href="#review-graphics" style="text-decoration:none;color:inherit"><h3>⭐ Review graphics</h3><p>Shareable "client love" graphics built from her real 5-star Google reviews.</p></a>
+    <a class="card" href="../market/" style="text-decoration:none;color:inherit"><h3>📊 Market report</h3><p>The monthly Acadiana market report — branded PDF, a social package, and a lead-capture landing page.</p></a>
+    <a class="card" href="nurture.html" style="text-decoration:none;color:inherit"><h3>✉️ Lead nurture</h3><p>AI-drafted follow-up for leads who aren't ready yet — you approve every message before it sends.</p></a>
+    <a class="card" href="attribution.html" style="text-decoration:none;color:inherit"><h3>📈 Attribution</h3><p>Clicks and leads per post, per platform, per listing — the number the firm never gives her.</p></a>
+  </div>
+
+  <h2 style="margin:0 0 .5rem">Listing content packages</h2>
   <div id="packages"></div>
   <div id="empty" hidden>
     No packages loaded yet. Run the content orchestrator to generate packages, then refresh.<br>
     <code>python build/social/content_orchestrator.py</code><br>
     <code>python -m http.server 8080</code> &nbsp;→&nbsp; open <code>/site/tools/content-studio.html</code>
   </div>
+</div></section>
+
+<section class="section section-alt" id="review-graphics"><div class="wrap">
+  <p class="kicker">Review Graphics</p>
+  <h2>Turn her 5-star reviews into posts</h2>
+  <p style="max-width:60ch">Built automatically from her <strong>real Google reviews</strong> — the exact words a client already wrote, set in her brand as a ready-to-post feed square or story. Nothing is invented; only reviews that show a star rating get stars.</p>
+  <div class="card-grid" style="margin-top:1.25rem">
+    <div class="card"><img src="./packages/reviews/annalise-d-square.png" alt="Branded review graphic — Annalise D." style="width:100%;border-radius:8px;display:block;margin-bottom:.6rem"><a class="dl" href="./packages/reviews/annalise-d-square.png" download>↓ square</a> &nbsp;·&nbsp; <a class="dl" href="./packages/reviews/annalise-d-story.png" download>↓ story</a></div>
+    <div class="card"><img src="./packages/reviews/amy-l-square.png" alt="Branded review graphic — Amy L." style="width:100%;border-radius:8px;display:block;margin-bottom:.6rem"><a class="dl" href="./packages/reviews/amy-l-square.png" download>↓ square</a> &nbsp;·&nbsp; <a class="dl" href="./packages/reviews/amy-l-story.png" download>↓ story</a></div>
+    <div class="card"><img src="./packages/reviews/dominick-c-square.png" alt="Branded review graphic — Dominick C." style="width:100%;border-radius:8px;display:block;margin-bottom:.6rem"><a class="dl" href="./packages/reviews/dominick-c-square.png" download>↓ square</a> &nbsp;·&nbsp; <a class="dl" href="./packages/reviews/dominick-c-story.png" download>↓ story</a></div>
+  </div>
+  <p style="margin-top:1rem"><a href="../testimonials.html" style="color:var(--teal-dark);font-weight:600">See all her reviews on the site →</a></p>
 </div></section>
 </main>
 

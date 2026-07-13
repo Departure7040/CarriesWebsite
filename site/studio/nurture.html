@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lead Nurture — Carrie Billeaud, eXp Realty (Private)</title>
+<meta name="description" content="Private lead-nurture review — approve, edit, or skip each drafted follow-up message before anything sends.">
+<link rel="stylesheet" href="../assets/style.css?v=10">
+<style>
+  /* Studio-only styling, layered on the site palette (--ink/--gold/--cream/etc). */
+  .studio-note{background:var(--cream);border:1px solid var(--rule);border-left:4px solid var(--gold);
+    border-radius:8px;padding:1rem 1.25rem;margin:1.25rem 0 2rem;font-size:.95rem;line-height:1.5}
+  .studio-note strong{color:var(--teal-dark)}
+  .lead{border:1px solid var(--rule);border-radius:12px;background:var(--paper);
+    overflow:hidden;margin-bottom:2.5rem;box-shadow:0 2px 10px rgba(26,35,50,.05)}
+  .lead-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1rem;justify-content:space-between;
+    padding:1.1rem 1.4rem;border-bottom:1px solid var(--rule);background:var(--ink);color:#fff}
+  .lead-head h2{font-size:1.2rem;margin:0;color:#fff}
+  .lead-head .seq{color:var(--gold);font-weight:700;font-size:.95rem}
+  .lead-head .meta{opacity:.82;font-size:.85rem;width:100%}
+  .steps{padding:1.2rem 1.4rem;display:flex;flex-direction:column;gap:1.1rem}
+  .step{border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:#fff}
+  .step.approved{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok) inset}
+  .step.skipped{opacity:.55}
+  .step-head{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .7rem;
+    padding:.6rem .9rem;background:var(--cream);border-bottom:1px solid var(--rule)}
+  .chan{font-weight:700;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;
+    color:#fff;background:var(--teal);border-radius:4px;padding:.12rem .5rem}
+  .chan.sms{background:var(--gold-ink)}
+  .day{font-size:.82rem;color:#5a6472;font-weight:600}
+  .intent{flex:1;min-width:160px;font-size:.82rem;color:#5a6472;font-style:italic}
+  .state-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+    border-radius:4px;padding:.12rem .5rem}
+  .state-tag.draft{background:var(--warn);color:#fff}
+  .state-tag.approved{background:var(--ok);color:#fff}
+  .state-tag.skipped{background:#8a929e;color:#fff}
+  .step-body{padding:.9rem 1rem}
+  .subject{font-weight:700;color:var(--ink);margin:0 0 .5rem;font-size:.95rem}
+  .msg{white-space:pre-wrap;font-size:.9rem;line-height:1.5;color:var(--ink);margin:0}
+  .msg-edit{width:100%;min-height:150px;font:inherit;font-size:.9rem;line-height:1.5;
+    border:1px solid var(--teal);border-radius:8px;padding:.6rem .7rem;resize:vertical}
+  .optout{margin-top:.7rem;font-size:.78rem;color:var(--teal-dark);background:#f2f9f2;
+    border:1px solid var(--ok);border-radius:6px;padding:.4rem .6rem;display:flex;gap:.4rem;align-items:center}
+  .optout.missing{color:#8a3a3a;background:#fbeeee;border-color:var(--warn)}
+  .actions{display:flex;flex-wrap:wrap;gap:.5rem;padding:.7rem 1rem;border-top:1px dashed var(--rule);background:#fbfaf7}
+  .btn-sm{border:none;border-radius:6px;padding:.4rem .9rem;font-size:.82rem;font-weight:600;cursor:pointer}
+  .btn-approve{background:var(--ok);color:#fff}
+  .btn-edit{background:var(--teal);color:#fff}
+  .btn-skip{background:#e9ebee;color:#5a6472}
+  .btn-save{background:var(--gold-ink);color:#fff}
+  .btn-sm:hover{filter:brightness(.94)}
+  .mock-flag{display:inline-block;font-size:.7rem;background:var(--warn);color:#fff;border-radius:4px;
+    padding:.1rem .4rem;vertical-align:middle;margin-left:.4rem;letter-spacing:.03em}
+  #empty{padding:2rem;border:1px dashed var(--rule);border-radius:10px;text-align:center;color:var(--ink)}
+  code{background:var(--cream);padding:.1rem .35rem;border-radius:4px;font-size:.85em}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-banner">Private lead-nurture review — internal tool. <a href="../index.html">Back to site →</a></div>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand-logo" href="../index.html"><img src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
+  <nav class="main-nav"><a href="index.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">← Content Studio</a><a href="attribution.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Attribution →</a><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap"><div class="hero-copy">
+  <p class="kicker">Private · Lead-Nurture Review</p>
+  <h1>Follow-Up Drafts</h1>
+  <p class="sub">Every lead who isn't ready today gets a warm, low-pressure follow-up sequence — drafted for you, step by step. You review each message, then approve, edit, or skip. Nothing sends on its own.</p>
+</div></div></section>
+
+<section class="section"><div class="wrap">
+  <div class="studio-note">
+    <strong>These are drafts — Carrie approves before anything sends.</strong> The engine drafts each
+    step of a lead's follow-up sequence (a warm welcome, a criteria-matched touch, a useful resource, a
+    gentle check-in). You <strong>Approve</strong>, <strong>Edit</strong>, or <strong>Skip</strong> each
+    one. Approval is the only thing that would ever make a message sendable — and even then, sending
+    happens through the messaging gateway wired at deploy, never from this page.
+    <br><br>Every message carries its <strong>opt-out</strong> line (SMS: <em>Reply STOP to opt out</em>;
+    email: an unsubscribe line) — TCPA for texts, CAN-SPAM for email. Content is held to the same
+    fair-housing / facts-only rules as the rest of the site. <strong>Consent is required before a real
+    lead is ever enqueued.</strong> Approvals here are saved in your browser only (demo).
+  </div>
+
+  <div id="leads"></div>
+  <div id="empty" hidden>
+    No nurture drafts loaded yet. Generate the review queue, then refresh.<br>
+    <code>python build/nurture/generate_nurture.py</code><br>
+    <code>python -m http.server 8080</code> &nbsp;→&nbsp; open <code>/site/studio/nurture.html</code>
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <img class="footer-logo" src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty">
+  <p>Carrie Billeaud, REALTOR® · eXp Realty · Lafayette, Louisiana · <a href="tel:3372585379">337-258-5379</a></p>
+  <p>Private internal tool — part of an SEO/content audit by Brook DuBose. Not Carrie's live website.</p>
+</div></footer>
+<div class="sticky-call"><a href="tel:3372585379">📞 Call Carrie — 337-258-5379</a></div>
+<script src="../assets/nav.js" defer></script>
+
+<script>
+// Queue the generator writes into MY studio packages subfolder. Relative fetch
+// resolves when the repo is served from root (python -m http.server), exactly
+// like the content studio loads ./packages/index.json.
+const params = new URLSearchParams(location.search);
+const QUEUE = params.get('queue') || './packages/nurture/queue.sample.json';
+const STATE_KEY = 'cb_nurture_state';       // { "<leadKey>#<stepIdx>": {status, body?, subject?} }
+
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function loadState(){ try { return JSON.parse(localStorage.getItem(STATE_KEY)) || {}; } catch { return {}; } }
+function saveState(s){ localStorage.setItem(STATE_KEY, JSON.stringify(s)); }
+
+// Client-side opt-out presence check (mirrors the server guarantee) so the UI can
+// visibly confirm every draft is compliant before approval.
+function hasOptOut(step){
+  const b = String(step.body || '').toLowerCase();
+  return step.channel === 'sms' ? b.includes('reply stop to opt out') : b.includes('unsubscribe');
+}
+
+function renderStep(leadKey, i, step, state){
+  const stKey = leadKey + '#' + i;
+  const saved = state[stKey] || {};
+  const status = saved.status || step.status || 'draft';
+  const subject = saved.subject != null ? saved.subject : (step.subject || '');
+  const bodyText = saved.body != null ? saved.body : (step.body || '');
+  const okOptOut = hasOptOut({ channel: step.channel, body: bodyText });
+
+  const el = document.createElement('div');
+  el.className = 'step' + (status === 'approved' ? ' approved' : status === 'skipped' ? ' skipped' : '');
+
+  el.innerHTML =
+    '<div class="step-head">' +
+      '<span class="chan ' + esc(step.channel) + '">' + esc(step.channel) + '</span>' +
+      '<span class="day">Day ' + esc(step.day_offset) + '</span>' +
+      '<span class="intent">' + esc(step.intent || '') + '</span>' +
+      '<span class="state-tag ' + esc(status) + '">' + esc(status) + '</span>' +
+    '</div>' +
+    '<div class="step-body">' +
+      (step.channel === 'email'
+        ? '<p class="subject" data-role="subject">' + esc(subject) + '</p>'
+        : '') +
+      '<p class="msg" data-role="msg">' + esc(bodyText) + '</p>' +
+      '<div class="optout' + (okOptOut ? '' : ' missing') + '">' +
+        (okOptOut ? '✓ Opt-out present' : '⚠ Opt-out line missing — do not approve') +
+      '</div>' +
+    '</div>' +
+    '<div class="actions">' +
+      '<button class="btn-sm btn-approve">Approve</button>' +
+      '<button class="btn-sm btn-edit">Edit</button>' +
+      '<button class="btn-sm btn-skip">Skip</button>' +
+    '</div>';
+
+  const setStatus = (s) => {
+    state[stKey] = Object.assign({}, state[stKey], { status: s });
+    saveState(state);
+    el.className = 'step' + (s === 'approved' ? ' approved' : s === 'skipped' ? ' skipped' : '');
+    el.querySelector('.state-tag').className = 'state-tag ' + s;
+    el.querySelector('.state-tag').textContent = s;
+  };
+
+  el.querySelector('.btn-approve').addEventListener('click', () => {
+    // Guard: never let a message without its opt-out line be marked approved.
+    const curBody = (state[stKey] && state[stKey].body != null) ? state[stKey].body : bodyText;
+    if (!hasOptOut({ channel: step.channel, body: curBody })) {
+      alert('This message is missing its required opt-out line. Edit it before approving.');
+      return;
+    }
+    setStatus('approved');
+  });
+  el.querySelector('.btn-skip').addEventListener('click', () => setStatus('skipped'));
+
+  // Edit: swap the body (and subject for email) to editable fields; Save persists
+  // locally. Demo only — no send, no server write.
+  el.querySelector('.btn-edit').addEventListener('click', () => {
+    const bodyEl = el.querySelector('[data-role="msg"]');
+    if (el.querySelector('.msg-edit')) return; // already editing
+    const ta = document.createElement('textarea');
+    ta.className = 'msg-edit'; ta.value = bodyEl.textContent;
+    bodyEl.replaceWith(ta);
+
+    let subjInput = null;
+    if (step.channel === 'email') {
+      const subjEl = el.querySelector('[data-role="subject"]');
+      subjInput = document.createElement('input');
+      subjInput.type = 'text'; subjInput.className = 'msg-edit';
+      subjInput.style.minHeight = 'auto'; subjInput.value = subjEl.textContent;
+      subjEl.replaceWith(subjInput);
+    }
+
+    const actions = el.querySelector('.actions');
+    const saveBtn = document.createElement('button');
+    saveBtn.className = 'btn-sm btn-save'; saveBtn.textContent = 'Save draft';
+    actions.prepend(saveBtn);
+    saveBtn.addEventListener('click', () => {
+      const newBody = ta.value;
+      const patch = { body: newBody };
+      if (subjInput) patch.subject = subjInput.value;
+      state[stKey] = Object.assign({}, state[stKey], patch);
+      // Editing returns a step to draft (needs re-approval).
+      state[stKey].status = 'draft';
+      saveState(state);
+      location.reload(); // simplest reliable re-render of this step
+    });
+  });
+
+  return el;
+}
+
+function renderLead(entry, idx, state){
+  const leadKey = (entry.sequence || 'seq') + ':' + (entry.first_name || idx);
+  const card = document.createElement('div');
+  card.className = 'lead';
+
+  const head = document.createElement('div');
+  head.className = 'lead-head';
+  head.innerHTML =
+    '<h2>' + esc(entry.first_name || 'Lead') +
+      (entry.mock ? '<span class="mock-flag">DEMO</span>' : '') + '</h2>' +
+    '<span class="seq">' + esc(entry.sequence_label || entry.sequence || '') + '</span>' +
+    '<span class="meta">Interest: ' + esc(entry.interest || '—') +
+      ' · Source: ' + esc(entry.source || '—') +
+      ' · Consent: ' + (entry.consent ? '✓ stated' : '⚠ missing') +
+      ' · ' + (entry.steps ? entry.steps.length : 0) + ' drafts</span>';
+  card.appendChild(head);
+
+  const steps = document.createElement('div');
+  steps.className = 'steps';
+  (entry.steps || []).forEach((s, i) => steps.appendChild(renderStep(leadKey, i, s, state)));
+  card.appendChild(steps);
+  return card;
+}
+
+(async function(){
+  const wrap = document.getElementById('leads');
+  const empty = document.getElementById('empty');
+  try {
+    const res = await fetch(QUEUE, { cache: 'no-store' });
+    if (!res.ok) throw new Error('queue ' + res.status);
+    const data = await res.json();
+    const leads = data.leads || [];
+    if (!leads.length) { empty.hidden = false; return; }
+    const state = loadState();
+    leads.forEach((entry, i) => wrap.appendChild(renderLead(entry, i, state)));
+  } catch (e) {
+    empty.hidden = false;
+  }
+})();
+</script>
+</body>
+</html>

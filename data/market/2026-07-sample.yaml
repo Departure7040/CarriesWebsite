@@ -1,0 +1,99 @@
+# =============================================================================
+# Acadiana Market Report — INPUT DATA (single source of truth)
+# =============================================================================
+# Real numbers replace these; NEVER present sample as real.
+#
+# Every figure in the generated PDF, the social captions, and the landing page
+# is read ONLY from this file. There are zero hardcoded statistics in the
+# templates or build scripts. A metric that is missing here renders as an
+# em-dash ("—") — it is never invented.
+#
+# TO SHIP A REAL REPORT:
+#   1. Copy this file to data/market/<period>.yaml (e.g. 2026-08.yaml).
+#   2. Set  sample: false
+#   3. Replace `source` with the real attribution (e.g. the MLS/board name).
+#   4. Replace every metric with the real, sourced numbers from Carrie's
+#      authorized MLS/ROAM export. Delete any metric you don't have — it will
+#      render as "—" rather than a guess.
+#   5. Re-run the two build scripts (see build/market/README.md).
+#
+# While sample: true, a visible "SAMPLE — illustrative data" ribbon stamps the
+# PDF, and every caption / landing note states the figures are illustrative.
+# =============================================================================
+
+sample: true
+disclaimer: >-
+  SAMPLE — illustrative data only. The figures below are placeholder values used
+  to demonstrate the report format. They are NOT real Acadiana market data and
+  must not be quoted, published, or relied upon. Real numbers, supplied by Carrie
+  from an authorized MLS/board export, replace these before any distribution.
+
+period: "July 2026"
+area: "Acadiana / Lafayette Parish"
+# __FILL__ — replace with the real data source when sample:false,
+# e.g. "Realtor Association of Acadiana MLS". Left as __FILL__ so the demo never
+# names an unverified source; the copy shows "(source pending)" until filled.
+source: "__FILL__ (e.g. Realtor Association of Acadiana MLS)"
+
+# Area-wide headline metrics. Obviously-round SAMPLE values.
+metrics:
+  median_sale_price: 250000        # dollars
+  avg_days_on_market: 45           # days
+  active_inventory: 900            # active listings
+  closed_sales: 300                # closed in the period
+  months_of_supply: 3.5            # months
+  median_price_per_sqft: 150       # dollars per sq ft
+
+# Per-town breakdown. Each town carries the same six metric keys.
+# Any missing key is allowed and renders as an em-dash ("—").
+by_area:
+  Lafayette:
+    median_sale_price: 255000
+    avg_days_on_market: 42
+    active_inventory: 400
+    closed_sales: 140
+    months_of_supply: 3.0
+    median_price_per_sqft: 155
+  Youngsville:
+    median_sale_price: 320000
+    avg_days_on_market: 38
+    active_inventory: 150
+    closed_sales: 55
+    months_of_supply: 2.8
+    median_price_per_sqft: 165
+  Broussard:
+    median_sale_price: 285000
+    avg_days_on_market: 44
+    active_inventory: 110
+    closed_sales: 40
+    months_of_supply: 3.2
+    median_price_per_sqft: 158
+  Carencro:
+    median_sale_price: 225000
+    avg_days_on_market: 50
+    active_inventory: 90
+    closed_sales: 30
+    months_of_supply: 3.6
+    median_price_per_sqft: 140
+  Scott:
+    median_sale_price: 245000
+    avg_days_on_market: 47
+    active_inventory: 70
+    closed_sales: 22
+    months_of_supply: 3.4
+    median_price_per_sqft: 145
+  Maurice:
+    median_sale_price: 250000
+    avg_days_on_market: 55
+    active_inventory: 45
+    closed_sales: 12
+    months_of_supply: 4.0
+    median_price_per_sqft: 148
+  Milton:
+    median_sale_price: 310000
+    avg_days_on_market: 60
+    active_inventory: 25
+    closed_sales: 8
+    months_of_supply: 4.5
+    # median_price_per_sqft intentionally omitted to demonstrate that a
+    # missing metric renders as an em-dash ("—"), never a fabricated number.

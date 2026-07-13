@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Client Love — Review Graphic (Story)</title>
+<style>
+  @font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url("data:font/woff2;base64,{{FONT_PLAYFAIR_B64}}") format("woff2");
+  }
+  @font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    src: url("data:font/woff2;base64,{{FONT_PLAYFAIR_B64}}") format("woff2");
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; background:#0c0e12; }
+
+  :root{
+    --charcoal:#12151c;
+    --charcoal-deep:#0a0c10;
+    --gold:#c9a24b;
+    --gold-soft:rgba(201,162,75,0.55);
+    --cream:#faf7f2;
+    --cream-muted:#cfc9ba;
+  }
+
+  #root{
+    position:relative;
+    width:1080px;
+    height:1920px;
+    background:
+      radial-gradient(110% 60% at 50% 0%, #171b24 0%, var(--charcoal) 52%, var(--charcoal-deep) 100%);
+    overflow:hidden;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color:var(--cream);
+  }
+
+  .frame{
+    position:absolute;
+    inset:56px;
+    border:1px solid var(--gold-soft);
+    pointer-events:none;
+  }
+
+  .plate{
+    position:absolute;
+    top:150px; left:130px; right:130px; bottom:150px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .kicker{
+    font-size:19px;
+    font-weight:600;
+    letter-spacing:9px;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  .mark{
+    font-family:"Playfair Display", Georgia, serif;
+    font-weight:700;
+    font-size:220px;
+    line-height:0.6;
+    color:var(--gold);
+    margin-top:80px;
+    height:140px;
+  }
+
+  .quote-wrap{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .quote{
+    font-family:"Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight:400;
+    font-size:66px;
+    line-height:1.4;
+    color:var(--cream);
+  }
+
+  .attrib{ margin-top:24px; }
+  .attrib .name{
+    font-family:"Playfair Display", Georgia, serif;
+    font-weight:700;
+    font-size:46px;
+    letter-spacing:1px;
+    color:var(--cream);
+  }
+  .attrib .source{
+    margin-top:16px;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  .rule{
+    height:1px;
+    width:240px;
+    margin:60px auto 0;
+    background:var(--gold-soft);
+  }
+
+  .bottom-band{
+    margin-top:56px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+  }
+  .bottom-band img{
+    height:52px;
+    width:auto;
+    display:block;
+    filter:brightness(0) invert(1) opacity(0.94);
+  }
+  .brand-text{ text-align:center; line-height:1.4; }
+  .brand-name{
+    font-size:19px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--cream);
+  }
+  .brand-sub{
+    font-size:16px;
+    font-weight:400;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--cream-muted);
+  }
+</style>
+</head>
+<body>
+  <div id="root">
+    <div class="frame"></div>
+    <div class="plate">
+      <div class="kicker">Client Love</div>
+      <div class="mark">&ldquo;</div>
+      <div class="quote-wrap">
+        <p class="quote">{{QUOTE}}</p>
+      </div>
+      <div class="attrib">
+        <div class="name">{{FIRST_NAME}}</div>
+        <div class="source">{{SOURCE_LABEL}}</div>
+      </div>
+      <div class="rule"></div>
+      <div class="bottom-band">
+        <img src="{{LOGO_DATA_URI}}" alt="Carrie Billeaud">
+        <div class="brand-text">
+          <div class="brand-name">Carrie Billeaud, REALTOR&reg;</div>
+          <div class="brand-sub">eXp Realty &middot; 337.258.5379</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

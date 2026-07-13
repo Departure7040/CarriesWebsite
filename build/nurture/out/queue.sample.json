@@ -1,0 +1,156 @@
+{
+  "generated": "2026-07-13",
+  "note": "Lead-nurture review queue. Every message is a DRAFT \u2014 Carrie approves each one before anything sends. Nothing auto-sends.",
+  "count": 4,
+  "leads": [
+    {
+      "first_name": "SAMPLE-Buyer",
+      "interest": "buying a first home in the Youngsville area, budget around 250k",
+      "source": "contact-form",
+      "sequence": "new_buyer_lead",
+      "sequence_label": "New buyer lead",
+      "consent": true,
+      "listing": null,
+      "steps": [
+        {
+          "day_offset": 0,
+          "channel": "email",
+          "intent": "Helpful welcome + what to expect working with Carrie; no ask beyond 'reply anytime'.",
+          "subject": "Welcome \u2014 here whenever you're ready",
+          "body": "Hi SAMPLE-Buyer,\n\nThanks so much for reaching out about buying a first home in the Youngsville area, budget around 250k. I wanted to say a warm hello and let you know there's no pressure and no rush on my end \u2014 I'm happy to help at whatever pace works for you. When you'd like, just reply and we'll take the next small step together.\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 2,
+          "channel": "sms",
+          "intent": "Short, friendly note offering to set up a saved home search matching the buyer's OWN stated criteria.",
+          "body": "Hi SAMPLE-Buyer, it's Carrie Billeaud with eXp Realty. Happy to set up a saved home search matching what you're looking for whenever you're ready \u2014 no rush.\nReply STOP to opt out\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 7,
+          "channel": "email",
+          "intent": "Share a useful local buying resource already on the site (e.g. the free Acadiana Home Guide, USDA zero-down basics, or flood-zone guide) \u2014 education, not a pitch.",
+          "subject": "A resource you might find useful",
+          "body": "Hi SAMPLE-Buyer,\n\nNo ask here \u2014 just passing along a resource from my site that folks often find helpful. Take a look whenever it's convenient, and reply anytime if a question comes up.\n\nUseful resource: __FILL__ (link to the relevant on-site guide)\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 21,
+          "channel": "email",
+          "intent": "Gentle check-in: is now still a good time to look, or should Carrie check back later? Easy to say 'not yet'.",
+          "subject": "Just checking in",
+          "body": "Hi SAMPLE-Buyer,\n\nA quick, low-key check-in \u2014 is now still a good time, or would later be easier? Totally fine to say \"not yet,\" and I'll happily check back down the road.\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        }
+      ],
+      "mock": true
+    },
+    {
+      "first_name": "SAMPLE-Seller",
+      "interest": "thinking about selling their current home in Lafayette",
+      "source": "sell-my-house-valuation",
+      "sequence": "new_seller_lead",
+      "sequence_label": "New seller lead",
+      "consent": true,
+      "listing": null,
+      "steps": [
+        {
+          "day_offset": 0,
+          "channel": "email",
+          "intent": "Helpful welcome + what to expect when selling with Carrie; offer to answer questions, no obligation.",
+          "subject": "Welcome \u2014 here whenever you're ready",
+          "body": "Hi SAMPLE-Seller,\n\nThanks so much for reaching out about thinking about selling their current home in Lafayette. I wanted to say a warm hello and let you know there's no pressure and no rush on my end \u2014 I'm happy to help at whatever pace works for you. When you'd like, just reply and we'll take the next small step together.\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 3,
+          "channel": "sms",
+          "intent": "Short note offering to prepare a no-obligation home-value comparison Carrie runs herself (never quote a price or guarantee an outcome in the message).",
+          "body": "Hi SAMPLE-Seller, it's Carrie Billeaud with eXp Realty. Whenever it's useful, I can put together a no-obligation look at your home's value \u2014 just say the word.\nReply STOP to opt out\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 9,
+          "channel": "email",
+          "intent": "Share a useful local selling resource on the site (e.g. the seller-disclosure checklist or the Louisiana closing-process guide) \u2014 education, not pressure.",
+          "subject": "A resource you might find useful",
+          "body": "Hi SAMPLE-Seller,\n\nNo ask here \u2014 just passing along a resource from my site that folks often find helpful. Take a look whenever it's convenient, and reply anytime if a question comes up.\n\nUseful resource: __FILL__ (link to the relevant on-site guide)\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 24,
+          "channel": "email",
+          "intent": "Gentle check-in on their timeline; make it easy to say they're not ready yet.",
+          "subject": "Just checking in",
+          "body": "Hi SAMPLE-Seller,\n\nA quick, low-key check-in \u2014 is now still a good time, or would later be easier? Totally fine to say \"not yet,\" and I'll happily check back down the road.\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        }
+      ],
+      "mock": true
+    },
+    {
+      "first_name": "SAMPLE-PastClient",
+      "interest": "closed with Carrie last year; stay-in-touch",
+      "source": "past-client",
+      "sequence": "past_client_checkin",
+      "sequence_label": "Past-client check-in",
+      "consent": true,
+      "listing": null,
+      "steps": [
+        {
+          "day_offset": 0,
+          "channel": "email",
+          "intent": "Warm hello + a genuinely useful homeowner resource (e.g. the Louisiana homestead-exemption guide) \u2014 no ask.",
+          "subject": "A resource you might find useful",
+          "body": "Hi SAMPLE-PastClient,\n\nNo ask here \u2014 just passing along a resource from my site that folks often find helpful. Take a look whenever it's convenient, and reply anytime if a question comes up.\n\nUseful resource: __FILL__ (link to the relevant on-site guide)\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 45,
+          "channel": "sms",
+          "intent": "Brief, friendly check-in \u2014 how's the home treating them; offer to help with any real-estate questions, no pitch.",
+          "body": "Hi SAMPLE-PastClient, it's Carrie Billeaud with eXp Realty. Just checking in \u2014 no pressure at all. Reply anytime if I can help.\nReply STOP to opt out\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 120,
+          "channel": "email",
+          "intent": "Occasional value touch: a useful local/seasonal homeowner tip or resource already on the site; remind them Carrie is a call away for anyone they know.",
+          "subject": "A resource you might find useful",
+          "body": "Hi SAMPLE-PastClient,\n\nNo ask here \u2014 just passing along a resource from my site that folks often find helpful. Take a look whenever it's convenient, and reply anytime if a question comes up.\n\nUseful resource: __FILL__ (link to the relevant on-site guide)\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        }
+      ],
+      "mock": true
+    },
+    {
+      "first_name": "SAMPLE-ColdLead",
+      "interest": "browsed listings months ago, went quiet",
+      "source": "ai-chat",
+      "sequence": "cold_lead_reengage",
+      "sequence_label": "Cold-lead re-engage",
+      "consent": true,
+      "listing": null,
+      "steps": [
+        {
+          "day_offset": 0,
+          "channel": "email",
+          "intent": "Low-key 'still here if it's useful' note; offer a helpful resource; make opting out effortless and pressure-free.",
+          "subject": "A resource you might find useful",
+          "body": "Hi SAMPLE-ColdLead,\n\nNo ask here \u2014 just passing along a resource from my site that folks often find helpful. Take a look whenever it's convenient, and reply anytime if a question comes up.\n\nUseful resource: __FILL__ (link to the relevant on-site guide)\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        },
+        {
+          "day_offset": 30,
+          "channel": "email",
+          "intent": "One final gentle check-in: reply if you'd like to pick things back up, otherwise Carrie won't keep reaching out. Respect silence as a no.",
+          "subject": "Just checking in",
+          "body": "Hi SAMPLE-ColdLead,\n\nA quick, low-key check-in \u2014 is now still a good time, or would later be easier? Totally fine to say \"not yet,\" and I'll happily check back down the road.\n\nWarmly,\nCarrie Billeaud, REALTOR\u00ae \u00b7 eXp Realty \u00b7 Acadiana\n337-258-5379\n\nReply UNSUBSCRIBE or use the unsubscribe link to stop these emails.\n\n[Demo mode \u2014 sample draft; Carrie approves before anything sends.]",
+          "status": "draft"
+        }
+      ],
+      "mock": true
+    }
+  ]
+}
