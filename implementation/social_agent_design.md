@@ -129,3 +129,29 @@ firm question.
   luxury site aesthetic). Editorial/restrained: deep tones, ivory, gold accent
   (matches her existing gold), elegant serif, generous whitespace, thin rules —
   Sotheby's/The Agency register, not busy. Ties to Play 2 (luxury/AHB vertical).
+
+---
+
+## Auto-publish options (the "one button → posts" question, 2026-07-13)
+**Hard platform limits decide what's even possible:**
+- FB **personal profile**: NO publishing API, ever. Only Pages are postable.
+- IG: auto-post ONLY with a Business/Creator account (free convert). Personal IG = no API.
+- Nextdoor: no posting API. TikTok: drafts free; public post needs app audit.
+- YouTube / FB Page / Threads / LinkedIn / Pinterest / X: auto-postable.
+→ "one button everywhere" = ~6 platforms auto + 2-3 manual holdouts. Honest.
+
+**The four routes:**
+1. **Aggregator API (RECOMMENDED)** — Ayrshare (API-first, ~$150/mo, they did the
+   Meta/TikTok app reviews) or self-hosted **Postiz** (open-source, free + Brook
+   hosts). Studio "Post" button → their API with caption+graphic+accounts. Fastest ship.
+2. **Direct platform APIs** — full control, no fee, but weeks of Meta/TikTok app
+   review + business accounts + maintenance. Only at product scale.
+3. **Browser automation (RPA)** — DON'T. ToS violation, fragile, risks banning her
+   real accounts.
+4. **Hybrid (realistic)** — aggregator for what it covers; TikTok→drafts; FB-personal
+   + Nextdoor stay manual.
+
+**Recommendation:** wire the studio Post button to Ayrshare/Postiz, convert her
+personal IG to Creator, accept the manual holdouts. ~$150/mo (or self-host free)
+= 1/20th of the $3k/mo firm for the mechanical half of their job. One-time: HER
+accounts connect via OAuth once. This is Phase-2 (metered/hosting cost → arrangement).
