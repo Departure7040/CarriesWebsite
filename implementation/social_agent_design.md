@@ -112,3 +112,20 @@ Two things this locks:
 one-tap multi-post, scoped to her personal accounts, listing-triggered off the
 feed we already have. Ships the "perfect" she just asked for without opening the
 firm question.
+
+---
+
+## Expanded requirements (2026-07-12, from Carrie)
+- **Auto-branded graphics** — she asked "there has to be a way to automatically
+  brand the posts too?" YES. Approach = **templated image composition** (branded
+  HTML/CSS template + her logo + property photo + feed specs → render to PNG via
+  the SAME Playwright pipeline used for the ebook PDF). NOT generative image AI
+  (never hallucinate a house — composite HER real photo into a branded frame).
+  Options: self-hosted HTML→PNG render (full control, free) or a templating-image
+  API (Bannerbear/Placid/Canva) if she wants a template GUI. Brook already does
+  this class of thing for PowerPoints/Word.
+- **Brand direction: "classy, high-end luxury to attract that clientele."** This
+  is the visual brief for the post templates (and, later, a lean toward a more
+  luxury site aesthetic). Editorial/restrained: deep tones, ivory, gold accent
+  (matches her existing gold), elegant serif, generous whitespace, thin rules —
+  Sotheby's/The Agency register, not busy. Ties to Play 2 (luxury/AHB vertical).

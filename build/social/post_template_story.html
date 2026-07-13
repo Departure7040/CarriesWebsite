@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Just Listed — Story</title>
+<style>
+  @font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url("data:font/woff2;base64,{{FONT_PLAYFAIR_B64}}") format("woff2");
+  }
+  @font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    src: url("data:font/woff2;base64,{{FONT_PLAYFAIR_B64}}") format("woff2");
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; background:#0c0e12; }
+
+  :root{
+    --charcoal:#12151c;
+    --charcoal-deep:#0a0c10;
+    --gold:#c9a24b;
+    --gold-soft:rgba(201,162,75,0.55);
+    --cream:#faf7f2;
+    --cream-muted:#cfc9ba;
+  }
+
+  #root{
+    position:relative;
+    width:1080px;
+    height:1920px;
+    background:var(--charcoal);
+    overflow:hidden;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color:var(--cream);
+  }
+
+  /* ---- Hero photo (top ~58%) ---- */
+  .hero{
+    position:absolute;
+    top:80px; left:72px; right:72px;
+    height:1080px;
+    overflow:hidden;
+    background:#1c1f26;
+  }
+  .hero img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .hero .scrim{
+    position:absolute; inset:0;
+    background:linear-gradient(
+      to top,
+      rgba(8,9,12,0.94) 0%,
+      rgba(8,9,12,0.72) 20%,
+      rgba(8,9,12,0.28) 42%,
+      rgba(8,9,12,0) 60%
+    );
+  }
+  .hero .kicker{
+    position:absolute;
+    top:36px; left:40px;
+    font-size:17px;
+    font-weight:600;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+  .hero .price-block{
+    position:absolute;
+    left:40px; right:40px; bottom:40px;
+  }
+  .hero .price{
+    font-family:"Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight:700;
+    font-size:96px;
+    letter-spacing:-1.5px;
+    line-height:1;
+    color:var(--cream);
+  }
+  .hero .address{
+    margin-top:18px;
+    font-size:23px;
+    font-weight:500;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:var(--cream-muted);
+  }
+
+  /* ---- Detail zone (below photo) ---- */
+  .details{
+    position:absolute;
+    top:1160px; left:72px; right:72px; bottom:64px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:56px;
+  }
+  .rule{
+    height:1px;
+    width:100%;
+    background:var(--gold-soft);
+  }
+  .specs{
+    font-size:23px;
+    font-weight:500;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:var(--cream);
+  }
+  .specs .dot{
+    color:var(--gold);
+    margin:0 22px;
+    font-weight:700;
+  }
+
+  .bottom-band{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:22px;
+    padding-top:44px;
+    border-top:1px solid var(--gold-soft);
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:20px;
+  }
+  .brand img{
+    height:42px;
+    width:auto;
+    display:block;
+    /* logo source is dark script on transparent; recolor to cream so it reads on the charcoal band */
+    filter:brightness(0) invert(1) opacity(0.94);
+  }
+  .brand .brand-text{
+    line-height:1.4;
+    text-align:left;
+  }
+  .brand .brand-name{
+    font-size:17px;
+    font-weight:700;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    color:var(--cream);
+  }
+  .brand .brand-sub{
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    color:var(--cream-muted);
+  }
+  .phone{
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:3px;
+    color:var(--gold);
+  }
+</style>
+</head>
+<body>
+  <div id="root">
+    <div class="hero">
+      <img src="{{PHOTO_DATA_URI}}" alt="">
+      <div class="scrim"></div>
+      <div class="kicker">{{LABEL}}</div>
+      <div class="price-block">
+        <div class="price">{{PRICE}}</div>
+        <div class="address">{{ADDRESS}}, {{CITY}}</div>
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="rule"></div>
+      <div class="specs">{{SPECS}}</div>
+      <div class="bottom-band">
+        <div class="brand">
+          <img src="{{LOGO_DATA_URI}}" alt="Carrie Billeaud">
+          <div class="brand-text">
+            <div class="brand-name">Carrie Billeaud, REALTOR&reg;</div>
+            <div class="brand-sub">eXp Realty</div>
+          </div>
+        </div>
+        <div class="phone">337.258.5379</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
