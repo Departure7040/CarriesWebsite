@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Content Studio — Carrie Billeaud, eXp Realty (Private)</title>
+<meta name="description" content="Private content studio — review, approve, copy and download branded social posts generated from your live listings.">
+<link rel="stylesheet" href="../assets/style.css?v=10">
+<style>
+  /* Studio-only styling, layered on the site palette (--ink/--gold/--cream/etc). */
+  .studio-note{background:var(--cream);border:1px solid var(--rule);border-left:4px solid var(--gold);
+    border-radius:8px;padding:1rem 1.25rem;margin:1.25rem 0 2rem;font-size:.95rem;line-height:1.5}
+  .studio-note strong{color:var(--teal-dark)}
+  .pkg{border:1px solid var(--rule);border-radius:12px;background:var(--paper);
+    overflow:hidden;margin-bottom:2.5rem;box-shadow:0 2px 10px rgba(26,35,50,.05)}
+  .pkg-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1rem;justify-content:space-between;
+    padding:1.1rem 1.4rem;border-bottom:1px solid var(--rule);background:var(--ink);color:#fff}
+  .pkg-head h2{font-size:1.25rem;margin:0;color:#fff}
+  .pkg-head .price{color:var(--gold);font-weight:700;font-size:1.15rem}
+  .pkg-head .specs{opacity:.8;font-size:.9rem;width:100%}
+  .pkg-body{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:1.75rem;padding:1.5rem 1.4rem}
+  @media(max-width:720px){.pkg-body{grid-template-columns:1fr}}
+  .previews{display:flex;flex-direction:column;gap:.9rem}
+  .previews img{width:100%;border:1px solid var(--rule);border-radius:8px;display:block;background:var(--cream)}
+  .previews .story-thumb{max-width:150px}
+  .dl{display:inline-block;font-size:.85rem;color:var(--teal-dark);text-decoration:none;font-weight:600}
+  .dl:hover{text-decoration:underline}
+  .approve-row{display:flex;align-items:center;gap:.6rem;margin-top:.5rem;padding:.6rem .8rem;
+    border:1px dashed var(--rule);border-radius:8px}
+  .approve-row.on{border-style:solid;border-color:var(--ok);background:#f2f9f2}
+  .approve-row label{font-weight:600;cursor:pointer;user-select:none}
+  .cap{border:1px solid var(--rule);border-radius:8px;margin-bottom:1rem;overflow:hidden}
+  .cap-head{display:flex;justify-content:space-between;align-items:center;gap:.5rem;
+    padding:.55rem .8rem;background:var(--cream);border-bottom:1px solid var(--rule)}
+  .cap-head .plat{font-weight:700;color:var(--teal-dark);font-size:.9rem;letter-spacing:.02em}
+  .cap-head .img-tag{font-size:.72rem;color:var(--gold-ink);text-transform:uppercase;letter-spacing:.05em}
+  .cap-body{padding:.8rem;white-space:pre-wrap;font-size:.92rem;line-height:1.5}
+  .cap-body .tags{margin-top:.5rem;color:var(--gold-ink);font-size:.85rem}
+  .copy-btn{background:var(--teal);color:#fff;border:none;border-radius:6px;padding:.35rem .8rem;
+    font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap}
+  .copy-btn:hover{background:var(--teal-dark)}
+  .copy-btn.done{background:var(--ok)}
+  .mock-flag{display:inline-block;font-size:.7rem;background:var(--warn);color:#fff;border-radius:4px;
+    padding:.1rem .4rem;vertical-align:middle;margin-left:.4rem;letter-spacing:.03em}
+  #empty{padding:2rem;border:1px dashed var(--rule);border-radius:10px;text-align:center;color:var(--ink)}
+  code{background:var(--cream);padding:.1rem .35rem;border-radius:4px;font-size:.85em}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-banner">Private content studio — internal review tool. <a href="../index.html">Back to site →</a></div>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand-logo" href="../index.html"><img src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
+  <nav class="main-nav"><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap"><div class="hero-copy">
+  <p class="kicker">Private · Personal Posting Wedge</p>
+  <h1>Your Content Studio</h1>
+  <p class="sub">Every new listing on your feed is turned into a ready-to-post package — branded graphic + a caption written for each platform. Review, approve, copy, post.</p>
+</div></div></section>
+
+<section class="section"><div class="wrap">
+  <div class="studio-note">
+    <strong>How this works.</strong> When a new listing hits your feed, the engine drafts the captions and renders your branded graphics automatically. Here you just <strong>review, tweak in your head, and one-tap copy</strong> the caption, then <strong>download the graphic</strong> and post it yourself on each platform. Publishing stays in your hands for now (or later, hand the approved batch to a scheduling aggregator like Buffer/Metricool) — <strong>nothing is ever auto-posted.</strong> You are always the voice and the compliance check.
+  </div>
+
+  <div id="packages"></div>
+  <div id="empty" hidden>
+    No packages loaded yet. Run the orchestrator, then serve the repo root:<br>
+    <code>python build/social/content_orchestrator.py</code><br>
+    <code>python -m http.server 8080</code> &nbsp;→&nbsp; open <code>/site/tools/content-studio.html</code>
+  </div>
+</div></section>
+</main>
+
+<script>
+// Manifest the orchestrator writes. Path is relative to the repo root when the
+// whole repo is served locally (site/tools/ -> build/social/out/packages/).
+// Override with ?manifest=<url> if you serve the packages from elsewhere.
+const params = new URLSearchParams(location.search);
+const MANIFEST = params.get('manifest') || '../../build/social/out/packages/index.json';
+const BASE = MANIFEST.replace(/index\.json$/, '');
+const APPROVED_KEY = 'cb_studio_approved';
+
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function loadApproved(){ try { return JSON.parse(localStorage.getItem(APPROVED_KEY)) || {}; } catch { return {}; } }
+function saveApproved(a){ localStorage.setItem(APPROVED_KEY, JSON.stringify(a)); }
+
+function capBlock(plat, imgTag, text, tags){
+  const full = text + (tags ? '\n\n' + tags : '');
+  const el = document.createElement('div');
+  el.className = 'cap';
+  el.innerHTML =
+    '<div class="cap-head"><span class="plat">' + esc(plat) + '</span>' +
+    '<span class="img-tag">' + esc(imgTag) + '</span>' +
+    '<button class="copy-btn">Copy</button></div>' +
+    '<div class="cap-body">' + esc(text) +
+    (tags ? '<div class="tags">' + esc(tags) + '</div>' : '') + '</div>';
+  const btn = el.querySelector('.copy-btn');
+  btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(full); }
+    catch {
+      const ta = document.createElement('textarea');
+      ta.value = full; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+    }
+    btn.textContent = 'Copied ✓'; btn.classList.add('done');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+  });
+  return el;
+}
+
+function renderPackage(p, approved){
+  const pkg = p.package || {};
+  const card = document.createElement('div');
+  card.className = 'pkg';
+
+  const head = document.createElement('div');
+  head.className = 'pkg-head';
+  head.innerHTML =
+    '<h2>' + esc(p.address) + ', ' + esc(p.city) +
+      (p.mock ? '<span class="mock-flag">DEMO</span>' : '') + '</h2>' +
+    '<span class="price">' + esc(p.price) + '</span>' +
+    '<span class="specs">' + esc(p.beds) + ' bd · ' + esc(p.baths) + ' ba · ' +
+      esc(Number(p.sqft).toLocaleString()) + ' sqft · Just Listed</span>';
+  card.appendChild(head);
+
+  const body = document.createElement('div');
+  body.className = 'pkg-body';
+
+  // Left: graphics + download links + approve toggle.
+  const left = document.createElement('div');
+  left.className = 'previews';
+  left.innerHTML =
+    '<img src="' + esc(BASE + p.square) + '" alt="Square feed graphic for ' + esc(p.address) + '">' +
+    '<a class="dl" href="' + esc(BASE + p.square) + '" download>↓ Download square (feed) graphic</a>' +
+    '<img class="story-thumb" src="' + esc(BASE + p.story) + '" alt="Story graphic for ' + esc(p.address) + '">' +
+    '<a class="dl" href="' + esc(BASE + p.story) + '" download>↓ Download story graphic</a>';
+
+  const arow = document.createElement('div');
+  arow.className = 'approve-row' + (approved[p.slug] ? ' on' : '');
+  const cb = document.createElement('input');
+  cb.type = 'checkbox'; cb.id = 'ap-' + p.slug; cb.checked = !!approved[p.slug];
+  const lb = document.createElement('label');
+  lb.setAttribute('for', cb.id);
+  lb.textContent = approved[p.slug] ? '✓ Approved' : 'Approve this package';
+  cb.addEventListener('change', () => {
+    approved[p.slug] = cb.checked; saveApproved(approved);
+    arow.classList.toggle('on', cb.checked);
+    lb.textContent = cb.checked ? '✓ Approved' : 'Approve this package';
+  });
+  arow.appendChild(cb); arow.appendChild(lb);
+  left.appendChild(arow);
+  body.appendChild(left);
+
+  // Right: per-platform captions, each copyable.
+  const right = document.createElement('div');
+  if (pkg.instagram)
+    right.appendChild(capBlock('Instagram', 'use square.png',
+      pkg.instagram.caption, (pkg.instagram.hashtags || []).join(' ')));
+  if (pkg.facebook)
+    right.appendChild(capBlock('Facebook', 'use square.png', pkg.facebook.caption, ''));
+  if (pkg.tiktok)
+    right.appendChild(capBlock('TikTok / Reels', 'use story.png',
+      'Hook: ' + pkg.tiktok.hook + '\n\n' + pkg.tiktok.script, ''));
+  if (pkg.youtube)
+    right.appendChild(capBlock('YouTube', 'use square.png',
+      pkg.youtube.title + '\n\n' + pkg.youtube.description, ''));
+  if (pkg.story_text)
+    right.appendChild(capBlock('Story overlay', 'use story.png', pkg.story_text, ''));
+  if (pkg.hooks && pkg.hooks.length)
+    right.appendChild(capBlock('Alternate hooks', '—', pkg.hooks.join('\n'), ''));
+  body.appendChild(right);
+
+  card.appendChild(body);
+  return card;
+}
+
+(async function(){
+  const wrap = document.getElementById('packages');
+  const empty = document.getElementById('empty');
+  try {
+    const res = await fetch(MANIFEST, { cache: 'no-store' });
+    if (!res.ok) throw new Error('manifest ' + res.status);
+    const data = await res.json();
+    const packages = data.packages || [];
+    if (!packages.length) { empty.hidden = false; return; }
+    const approved = loadApproved();
+    packages.forEach(p => wrap.appendChild(renderPackage(p, approved)));
+  } catch (e) {
+    empty.hidden = false;
+  }
+})();
+</script>
+</body>
+</html>
