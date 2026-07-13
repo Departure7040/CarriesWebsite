@@ -258,11 +258,10 @@ def gather_photos(slug, listing):
     return [hero], False
 
 
-def build(slug, music_arg):
-    listing = LISTINGS.get(slug)
-    if not listing:
-        raise SystemExit(f"Unknown listing '{slug}'. Options: {', '.join(LISTINGS)}")
-    photos, is_gallery = gather_photos(slug, listing)
+def render_video(slug, listing, photos, is_gallery, music_arg=None):
+    """Core render: given listing metadata (price/address/city/beds/baths/sqft)
+    + a list of photo paths, produce the branded Short. Reused by the CLI (build)
+    and by batch_listing_videos.py (feed-driven, all active listings)."""
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     final = OUT_DIR / f"{slug}-short.mp4"
 
@@ -306,6 +305,14 @@ def build(slug, music_arg):
     audio = f"music: {Path(music_arg).name}" if music_arg else "silent (add --music)"
     print(f"Wrote {final}  ({kb:.0f} KB, ~{total:.1f}s, 1080x1920, {audio})")
     return final
+
+
+def build(slug, music_arg=None):
+    listing = LISTINGS.get(slug)
+    if not listing:
+        raise SystemExit(f"Unknown listing '{slug}'. Options: {', '.join(LISTINGS)}")
+    photos, is_gallery = gather_photos(slug, listing)
+    return render_video(slug, listing, photos, is_gallery, music_arg)
 
 
 if __name__ == "__main__":
