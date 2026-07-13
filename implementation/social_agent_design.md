@@ -88,3 +88,27 @@ the firm" to "here's what I produce, what are they adding?"
 This is textbook AI-integration consulting (his actual domain). The content
 engine + approval loop + measurement is a productizable module for solo agents,
 Carrie as flagship. Ship tier 1 as the proof; price tiers 2–3 as the service.
+
+---
+
+## Customer validation + the clean wedge (2026-07-12, from Carrie directly)
+Asked "are you manually posting everything to FB/IG, to each one?" she said:
+**"My personal yes and my business platform posts."** Then to the pitch —
+streamline it so one post goes everywhere, multiply her time, handle more
+volume with a lighter load — she replied **"All of this would be perfect!!!!"**
+
+Two things this locks:
+1. **The pain is real and felt** — she manually cross-posts, one platform at a
+   time. This is exactly the Tier-1 content-engine + scheduling problem, and
+   she's already asking for it. Build signal, not speculation.
+2. **The clean entry wedge = her PERSONAL posting.** Her personal social she
+   does herself (hers to control); the *business page* is the $3k/mo firm's
+   turf. So the no-politics first build is a tool that streamlines HER personal
+   cross-posting + generates the content — it solves the pain she owns, proves
+   the value, and touches nothing of the firm relationship. The firm/$3k
+   conversation stays a later, evidence-based decision. Wedge first, firm later.
+
+**Recommended first build:** the human-in-the-loop content engine (Tier 1) +
+one-tap multi-post, scoped to her personal accounts, listing-triggered off the
+feed we already have. Ships the "perfect" she just asked for without opening the
+firm question.
