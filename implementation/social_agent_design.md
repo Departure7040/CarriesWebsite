@@ -155,3 +155,27 @@ firm question.
 personal IG to Creator, accept the manual holdouts. ~$150/mo (or self-host free)
 = 1/20th of the $3k/mo firm for the mechanical half of their job. One-time: HER
 accounts connect via OAuth once. This is Phase-2 (metered/hosting cost → arrangement).
+
+---
+
+## Per-post tracked links + property landing pages (2026-07-13) — the attribution keystone
+Closes the loop: post → tracked link → property landing → lead with KNOWN source.
+This is the measurement layer that makes every post accountable (and wins the $3k
+conversation: "here's clicks + leads per post/platform — what's the firm's number?").
+
+**Flow:** social post → carriebilleaud.com/l/<slug>?utm_source=<platform>&utm_campaign=just-listed
+→ click logged (post/platform/time) → property-specific landing page (feed data +
+pre-scoped contact form) → /api/lead WITH source/platform/listing hidden fields.
+
+**Build (all reuse what we have):**
+1. Per-listing landing template /l/<slug> — property from the feed + a contact form
+   pre-filled for THAT property. Higher-converting than "DM me".
+2. Tracked-link Cloudflare Function /l/<code> — log click (KV/log), 302 to landing +UTMs.
+   Studio generates a DISTINCT link per platform (utm_source differs) → platform attribution.
+3. Attribution: landing form carries source/platform/listing hidden fields into /api/lead;
+   GA4 reads UTMs for pageview attribution.
+4. Studio: each package shows a per-platform tracked link (copy button); caption embeds it.
+
+**Two funnels per post:** clicks (link fn, incl. non-converters) + leads (form source).
+Privacy: no PII in URLs — UTMs are campaign labels only (CR-007 form privacy notice stays).
+Phase-2 (ties Play 1 conversion + Play 3 content). Buildable now from feed + /api/lead + studio.
