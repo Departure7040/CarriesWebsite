@@ -7,3 +7,6 @@ site/l/
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Fetched listing galleries (reproducible via fetch_listing_photos.py)
+site/assets/img/listings/gallery/
