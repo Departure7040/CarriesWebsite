@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Quick Intake — Carrie Billeaud × Brook (Private)</title>
+<link rel="stylesheet" href="../assets/style.css?v=10">
+<style>
+  .intake{max-width:760px}
+  fieldset{border:1px solid var(--rule);border-radius:10px;padding:1.2rem 1.3rem;margin:0 0 1.6rem}
+  legend{font-weight:700;color:var(--teal-dark,#0f5c5a);padding:0 .5rem;font-size:1.05rem}
+  .q{margin:1rem 0}
+  .q:first-child{margin-top:.3rem}
+  label.qlabel{display:block;font-weight:600;margin-bottom:.35rem}
+  .hint{font-size:.86rem;color:#667;margin:.15rem 0 .5rem}
+  input[type=text],input[type=email],input[type=tel],textarea,select{
+    width:100%;padding:.6rem .7rem;border:1px solid var(--rule);border-radius:6px;font:inherit;font-size:1rem}
+  textarea{min-height:70px;resize:vertical}
+  .opts label{display:block;font-weight:400;margin:.25rem 0;cursor:pointer}
+  .opts input{margin-right:.5rem}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+  @media(max-width:560px){.row2{grid-template-columns:1fr}}
+  .metric{border-top:1px solid var(--rule);padding:.7rem 0}
+  .metric:first-of-type{border-top:0}
+  .metric .claim{font-weight:600;margin-bottom:.3rem}
+  .metric .choices label{display:inline-block;margin-right:1.1rem;font-weight:400}
+  .prefill{background:var(--cream,#f7f4ee);border-left:3px solid var(--gold,#c9a24b);padding:.15rem .5rem;
+    border-radius:4px;font-size:.82rem;color:#555;display:inline-block;margin-bottom:.35rem}
+  #output-wrap{display:none;margin-top:1.5rem}
+  #output{width:100%;min-height:260px;font-family:ui-monospace,Menlo,monospace;font-size:.85rem}
+  .btnrow{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.8rem}
+  .note-box{background:var(--cream,#f7f4ee);border:1px solid var(--rule);border-radius:8px;padding:1rem 1.2rem;margin:1rem 0}
+</style>
+</head>
+<body id="top">
+<div class="demo-banner">Private intake for Carrie — just for us. Nothing here is public.</div>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand-logo" href="../index.html"><img src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
+  <nav class="main-nav"><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap"><div class="hero-copy">
+  <p class="kicker">The Last Piece</p>
+  <h1>Quick intake — let's make it official</h1>
+  <p class="sub">The whole site and toolkit are built and waiting on you. This is the info only you can give me — the details that go live on your real site. About <strong>15 minutes</strong>, phone-friendly. I've pre-filled my best guess on most of it, so a lot of this is just "yep, that's right." When you're done, tap <strong>Generate</strong> and send me the result.</p>
+</div></div></section>
+
+<section class="section"><div class="wrap intake">
+  <div class="note-box">
+    <strong>You don't need any logins for this.</strong> Setting up Google, your domain, and analytics we'll do together on the 24th — takes 10 minutes side by side. This form is just the questions.
+  </div>
+
+  <form id="intake-form" novalidate>
+
+  <fieldset><legend>1 · Your info, everywhere</legend>
+    <p class="hint">This exact name / number / address / email goes on your site, Google, and every profile — so they all match (that consistency is a real ranking signal).</p>
+    <div class="q">
+      <label class="qlabel">Business name as it should appear</label>
+      <span class="prefill">My recommendation: Carrie Billeaud, Realtor</span>
+      <input type="text" name="business_name" value="Carrie Billeaud, Realtor">
+      <p class="hint">Matches your license and signage. Change it only if your cards say something different.</p>
+    </div>
+    <div class="q">
+      <label class="qlabel">Best phone number for the public</label>
+      <span class="prefill">My recommendation: 337-258-5379</span>
+      <input type="tel" name="phone" value="337-258-5379">
+      <p class="hint">A couple other numbers show up online (337-522-7554, 337-341-8976) — want those retired?</p>
+    </div>
+    <div class="q">
+      <label class="qlabel">Which office address should be public?</label>
+      <div class="opts">
+        <label><input type="radio" name="address_choice" value="3 Flagg Place, Bldg B, Suite B-4, Lafayette, LA 70508" checked> 3 Flagg Place, Bldg B, Suite B-4, Lafayette, LA 70508 <em>(matches Google)</em></label>
+        <label><input type="radio" name="address_choice" value="1720 Kaliste Saloom, Ste B-2, Lafayette, LA 70508"> 1720 Kaliste Saloom, Ste B-2, Lafayette, LA 70508</label>
+        <label><input type="radio" name="address_choice" value="__other"> Something else:</label>
+      </div>
+      <input type="text" name="address_other" placeholder="Only if 'something else' above">
+    </div>
+    <div class="q">
+      <label class="qlabel">Best public email</label>
+      <input type="email" name="email" placeholder="the one you actually check">
+      <p class="hint">We found a few floating around — pick the one professional address to use everywhere.</p>
+    </div>
+    <div class="q">
+      <label class="qlabel">Your LREC license number</label>
+      <span class="prefill">We have: 0995689513</span>
+      <input type="text" name="license" value="0995689513">
+      <p class="hint">Just confirm it's right — it's legally required on the site.</p>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>2 · You &amp; who you want more of</legend>
+    <div class="q">
+      <label class="qlabel">How many years have you been licensed?</label>
+      <input type="text" name="years" placeholder="e.g. 11">
+      <p class="hint">Different sites say 9, 11, ~4 — want the right one so we're accurate.</p>
+    </div>
+    <div class="q">
+      <label class="qlabel">Who do you want MORE of? (check all, star your top 1–2)</label>
+      <div class="opts">
+        <label><input type="checkbox" name="mix" value="Luxury / custom-build"> Luxury / custom-build</label>
+        <label><input type="checkbox" name="mix" value="New construction"> New construction</label>
+        <label><input type="checkbox" name="mix" value="Sellers / listings"> Sellers / listings</label>
+        <label><input type="checkbox" name="mix" value="Move-up buyers"> Move-up buyers</label>
+        <label><input type="checkbox" name="mix" value="First-time buyers"> First-time buyers</label>
+        <label><input type="checkbox" name="mix" value="Investors"> Investors</label>
+        <label><input type="checkbox" name="mix" value="Relocation"> Relocation</label>
+      </div>
+      <input type="text" name="mix_notes" placeholder="Your top priority in your own words (e.g. 'mostly luxury + new construction')">
+    </div>
+    <div class="q">
+      <label class="qlabel">In one line: what would winning look like a year from now?</label>
+      <input type="text" name="goal" placeholder="more closings? higher price point? fewer hours for the same income?">
+    </div>
+  </fieldset>
+
+  <fieldset><legend>3 · Your broker (required legal bit)</legend>
+    <p class="hint">Louisiana requires your sponsoring broker's info on the site. You may need to grab these from your eXp broker — no rush, but we can't launch without them.</p>
+    <div class="q">
+      <label class="qlabel">eXp sponsoring/qualifying broker — legal name</label>
+      <input type="text" name="broker_name" placeholder="e.g. eXp Realty, LLC — [broker of record name]">
+    </div>
+    <div class="row2">
+      <div class="q"><label class="qlabel">Broker phone (broker-owned)</label><input type="tel" name="broker_phone" placeholder="required by LREC"></div>
+      <div class="q"><label class="qlabel">Broker office city, state</label><input type="text" name="broker_office" placeholder="e.g. Covington, LA"></div>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>4 · Numbers — can I use these in marketing?</legend>
+    <p class="hint">These are floating around online but I won't put any number on your site until YOU confirm it's real and you're comfortable with it. For each: yes use it, not accurate, or give me the correct number.</p>
+    <div id="metrics"></div>
+  </fieldset>
+
+  <fieldset><legend>5 · Acadiana Home Builders partnership</legend>
+    <p class="hint">You mentioned working with them — this could be a genuinely unique page nobody else has.</p>
+    <div class="q">
+      <label class="qlabel">What's the arrangement?</label>
+      <textarea name="ahb" placeholder="e.g. I list their spec homes / they refer custom-build buyers to me / co-marketing. Is it exclusive? Can I name them + use their listing photos on your site? Is there a co-marketing budget?"></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>6 · Where you've actually sold</legend>
+    <div class="q">
+      <label class="qlabel">Towns/cities you've closed deals in (last ~3 years)</label>
+      <textarea name="transactions" placeholder="Rough is fine — e.g. Lafayette (lots), Youngsville, Broussard, Baton Rouge (a few), St. Martinville... This decides which town pages we build next."></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>7 · Your accounts &amp; photos</legend>
+    <p class="hint">Just confirm these are right so I link the correct ones.</p>
+    <div class="q">
+      <label class="qlabel">Social handles — correct?</label>
+      <div class="opts">
+        <label><input type="checkbox" name="socials_ok" value="Facebook page /carriebilleaudrealty" checked> Facebook: /carriebilleaudrealty</label>
+        <label><input type="checkbox" name="socials_ok" value="Instagram @carriebilleaud_realtor" checked> Instagram: @carriebilleaud_realtor</label>
+        <label><input type="checkbox" name="socials_ok" value="TikTok @carriebilleaud_realtor" checked> TikTok: @carriebilleaud_realtor</label>
+        <label><input type="checkbox" name="socials_ok" value="YouTube @carriebilleaud_realtor" checked> YouTube: @carriebilleaud_realtor</label>
+      </div>
+      <input type="text" name="socials_fix" placeholder="Anything wrong or missing? (LinkedIn? another handle?)">
+    </div>
+    <div class="q">
+      <label class="qlabel">Headshot &amp; logo</label>
+      <textarea name="assets" placeholder="Happy with your current headshot/logo, or do you have higher-res files to send? Any brand colors you love?"></textarea>
+    </div>
+    <div class="q">
+      <label class="qlabel">Anything else on your mind?</label>
+      <textarea name="anything" placeholder="Anything you want the site to say, avoid, or highlight."></textarea>
+    </div>
+  </fieldset>
+
+  <button type="button" class="btn btn-gold" id="generate">Generate my answers →</button>
+  </form>
+
+  <div id="output-wrap">
+    <h3>Done! Here are your answers 🎉</h3>
+    <p>Tap <strong>Copy</strong> and text or email it to Brook — that's it.</p>
+    <textarea id="output" readonly></textarea>
+    <div class="btnrow">
+      <button type="button" class="btn btn-gold" id="copy">Copy answers</button>
+      <a class="btn" id="email" href="#">Email it to Brook</a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <img class="footer-logo" src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty">
+  <p>Private intake · Carrie Billeaud × Brook DuBose · nothing here is public.</p>
+</div></footer>
+
+<script>
+const METRICS = [
+  {k:'m_prod', claim:'174 closed sales / about $44.6M total, over the last ~5 years'},
+  {k:'m_families', claim:'Serves 50+ families a year'},
+  {k:'m_icon', claim:'eXp ICON Agent / top-producing Realtor'},
+  {k:'m_raa', claim:'Member, Realtor Association of Acadiana'},
+  {k:'m_rentals', claim:'Handles rentals & investment property too'},
+];
+const mWrap = document.getElementById('metrics');
+METRICS.forEach(m => {
+  const d = document.createElement('div');
+  d.className = 'metric';
+  d.innerHTML =
+    '<div class="claim">'+m.claim+'</div>'+
+    '<div class="choices">'+
+      '<label><input type="radio" name="'+m.k+'" value="Yes, use it" checked> Yes, use it</label>'+
+      '<label><input type="radio" name="'+m.k+'" value="Not accurate — don\'t use"> Not accurate</label>'+
+      '<label><input type="radio" name="'+m.k+'" value="Use corrected"> Use this instead:</label>'+
+    '</div>'+
+    '<input type="text" name="'+m.k+'_fix" placeholder="corrected number, only if needed" style="margin-top:.4rem">';
+  mWrap.appendChild(d);
+});
+
+function val(name){ const el = document.querySelector('[name="'+name+'"]'); return el ? el.value.trim() : ''; }
+function checks(name){ return [...document.querySelectorAll('[name="'+name+'"]:checked')].map(e=>e.value); }
+function radio(name){ const el = document.querySelector('[name="'+name+'"]:checked'); return el ? el.value : ''; }
+
+function build(){
+  const addr = radio('address_choice') === '__other' ? val('address_other') : radio('address_choice');
+  const L = [];
+  L.push('CARRIE — INTAKE ANSWERS');
+  L.push('========================');
+  L.push('');
+  L.push('1. INFO EVERYWHERE');
+  L.push('  Business name: ' + val('business_name'));
+  L.push('  Phone: ' + val('phone'));
+  L.push('  Address: ' + addr);
+  L.push('  Email: ' + (val('email') || '(left blank)'));
+  L.push('  License: ' + val('license'));
+  L.push('');
+  L.push('2. YOU & TARGET');
+  L.push('  Years licensed: ' + (val('years') || '(blank)'));
+  L.push('  Wants more of: ' + (checks('mix').join(', ') || '(none checked)'));
+  L.push('  In her words: ' + (val('mix_notes') || '-'));
+  L.push('  1-year goal: ' + (val('goal') || '-'));
+  L.push('');
+  L.push('3. BROKER');
+  L.push('  Broker legal name: ' + (val('broker_name') || '(needs to get from broker)'));
+  L.push('  Broker phone: ' + (val('broker_phone') || '(needs to get from broker)'));
+  L.push('  Broker office: ' + (val('broker_office') || '(needs to get from broker)'));
+  L.push('');
+  L.push('4. METRICS APPROVAL');
+  METRICS.forEach(m => {
+    let ans = radio(m.k);
+    if (ans === 'Use corrected') ans = 'Use: ' + val(m.k + '_fix');
+    L.push('  - ' + m.claim + '  ->  ' + ans);
+  });
+  L.push('');
+  L.push('5. ACADIANA HOME BUILDERS');
+  L.push('  ' + (val('ahb') || '-'));
+  L.push('');
+  L.push('6. SOLD IN (towns, last 3 yrs)');
+  L.push('  ' + (val('transactions') || '-'));
+  L.push('');
+  L.push('7. ACCOUNTS & PHOTOS');
+  L.push('  Socials confirmed: ' + (checks('socials_ok').join(', ') || '(none)'));
+  L.push('  Socials fix/add: ' + (val('socials_fix') || '-'));
+  L.push('  Headshot/logo: ' + (val('assets') || '-'));
+  L.push('  Anything else: ' + (val('anything') || '-'));
+  return L.join('\n');
+}
+
+document.getElementById('generate').addEventListener('click', () => {
+  const text = build();
+  const out = document.getElementById('output');
+  out.value = text;
+  document.getElementById('output-wrap').style.display = 'block';
+  document.getElementById('email').href =
+    'mailto:brookd87@gmail.com?subject=' + encodeURIComponent('My intake answers') +
+    '&body=' + encodeURIComponent('Hey Brook — my answers are below (also copied to clipboard):\n\n' + text);
+  document.getElementById('output-wrap').scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+document.getElementById('copy').addEventListener('click', async () => {
+  const out = document.getElementById('output');
+  try { await navigator.clipboard.writeText(out.value); }
+  catch { out.select(); document.execCommand('copy'); }
+  const b = document.getElementById('copy');
+  b.textContent = 'Copied ✓';
+  setTimeout(() => b.textContent = 'Copy answers', 1800);
+});
+</script>
+</body>
+</html>
