@@ -76,7 +76,7 @@ def fetch_listings() -> bytes:
 # but never a listing. (Code-review finding CR-001.)
 ALLOWED_EXT = {".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".webp",
                ".svg", ".gif", ".ico", ".txt", ".xml", ".woff", ".woff2",
-               ".pdf", ".json"}
+               ".pdf", ".json", ".mp4", ".webm", ".mov"}
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):

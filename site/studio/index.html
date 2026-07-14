@@ -61,7 +61,7 @@
 <div class="demo-banner">Private content studio — internal review tool. <a href="../index.html">Back to site →</a></div>
 <header class="site-header"><div class="wrap nav">
   <a class="brand-logo" href="../index.html"><img src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
-  <nav class="main-nav"><a href="#review-graphics" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Reviews</a><a href="nurture.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Nurture →</a><a href="../market/" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Market →</a><a href="attribution.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Attribution →</a><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+  <nav class="main-nav"><a href="#listing-videos" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Videos</a><a href="#review-graphics" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Reviews</a><a href="nurture.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Nurture →</a><a href="../market/" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Market →</a><a href="attribution.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Attribution →</a><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
 </div></header>
 
 <main id="main">
@@ -78,6 +78,7 @@
   </div>
 
   <div class="card-grid" style="margin-bottom:2.5rem">
+    <a class="card" href="#listing-videos" style="text-decoration:none;color:inherit"><h3>🎬 Listing videos</h3><p>Branded "Just Listed" 9:16 Shorts built from each listing's real MLS photos — ready for Reels, TikTok, YouTube.</p></a>
     <a class="card" href="#packages" style="text-decoration:none;color:inherit"><h3>📸 Listing content</h3><p>Branded Just-Listed graphics + a caption for every platform, each with a tracked link. Review &amp; copy them below.</p></a>
     <a class="card" href="#review-graphics" style="text-decoration:none;color:inherit"><h3>⭐ Review graphics</h3><p>Shareable "client love" graphics built from her real 5-star Google reviews.</p></a>
     <a class="card" href="../market/" style="text-decoration:none;color:inherit"><h3>📊 Market report</h3><p>The monthly Acadiana market report — branded PDF, a social package, and a lead-capture landing page.</p></a>
@@ -94,7 +95,14 @@
   </div>
 </div></section>
 
-<section class="section section-alt" id="review-graphics"><div class="wrap">
+<section class="section section-alt" id="listing-videos"><div class="wrap">
+  <p class="kicker">Listing Videos</p>
+  <h2>Every listing, as a "Just Listed" Short</h2>
+  <p style="max-width:62ch">Branded 9:16 videos built automatically from each listing's <strong>real MLS photos</strong> — a cinematic walkthrough with her name and branding, ready to post to Reels, TikTok, and YouTube Shorts. Silent by design so she taps in-app music.</p>
+  <div class="card-grid" id="video-grid" style="margin-top:1.25rem"></div>
+</div></section>
+
+<section class="section" id="review-graphics"><div class="wrap">
   <p class="kicker">Review Graphics</p>
   <h2>Turn her 5-star reviews into posts</h2>
   <p style="max-width:60ch">Built automatically from her <strong>real Google reviews</strong> — the exact words a client already wrote, set in her brand as a ready-to-post feed square or story. Nothing is invented; only reviews that show a star rating get stars.</p>
@@ -249,6 +257,32 @@ function renderPackage(p, approved){
     packages.forEach(p => wrap.appendChild(renderPackage(p, approved)));
   } catch (e) {
     empty.hidden = false;
+  }
+})();
+</script>
+<script>
+// Listing-videos gallery — loads the manifest written by batch_listing_videos.py.
+(async function(){
+  const grid = document.getElementById('video-grid');
+  if(!grid) return;
+  try{
+    const res = await fetch('./packages/videos/index.json', {cache:'no-store'});
+    if(!res.ok) throw new Error('no manifest');
+    const data = await res.json();
+    const vids = data.videos || [];
+    if(!vids.length) throw new Error('empty');
+    vids.forEach(v => {
+      const c = document.createElement('div');
+      c.className = 'card';
+      c.innerHTML =
+        '<video controls preload="metadata" playsinline style="width:100%;border-radius:8px;display:block;background:#000"' +
+        ' src="./packages/videos/' + v.file + '"></video>' +
+        '<p style="margin:.55rem 0 0;font-weight:600">' + (v.title || v.slug) + '</p>' +
+        '<a class="dl" href="./packages/videos/' + v.file + '" download>↓ Download</a>';
+      grid.appendChild(c);
+    });
+  } catch(e) {
+    grid.innerHTML = '<p>No videos yet — run <code>python build/social/batch_listing_videos.py</code>.</p>';
   }
 })();
 </script>

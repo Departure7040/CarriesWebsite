@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from fetch_listing_photos import GALLERY_ROOT, HEADERS, URL, FULFILLMENT_ID, upsize  # noqa: E402
-from build_listing_video import render_video  # noqa: E402
+from build_listing_video import render_video, OUT_DIR  # noqa: E402
 
 QUERY = {
     "operationName": "AgentPropertyListing",
@@ -102,10 +102,19 @@ def main(count: int, min_photos: int) -> None:
             skipped.append((slug, len(photos)))
         print()
 
+    # Manifest for the studio video gallery — scan the dir so it reflects ALL
+    # rendered videos, not just this run.
+    def _title(s):
+        return re.sub(r"\b(\w)", lambda m: m.group(1).upper(), s.replace("-", " "))
+    vids = [{"slug": p.name[:-len("-short.mp4")], "title": _title(p.name[:-len("-short.mp4")]), "file": p.name}
+            for p in sorted(OUT_DIR.glob("*-short.mp4"))]
+    (OUT_DIR / "index.json").write_text(json.dumps({"videos": vids}, indent=2), encoding="utf-8")
+
     print("=" * 60)
     print(f"RENDERED {len(rendered)}: {', '.join(rendered)}")
     if skipped:
         print(f"SKIPPED {len(skipped)}: {', '.join(f'{s}({n})' for s, n in skipped)}")
+    print(f"Manifest: {len(vids)} videos -> {OUT_DIR/'index.json'}")
     print(f"Output: site/studio/packages/videos/<slug>-short.mp4 (silent — add music in-app)")
 
 
