@@ -97,7 +97,7 @@
       <p class="hint">Different sites say 9, 11, ~4 — want the right one so we're accurate.</p>
     </div>
     <div class="q">
-      <label class="qlabel">Who do you want MORE of? (check all, star your top 1–2)</label>
+      <label class="qlabel">Who do you want more of? (check all that apply)</label>
       <div class="opts">
         <label><input type="checkbox" name="mix" value="Luxury / custom-build"> Luxury / custom-build</label>
         <label><input type="checkbox" name="mix" value="New construction"> New construction</label>
@@ -107,7 +107,20 @@
         <label><input type="checkbox" name="mix" value="Investors"> Investors</label>
         <label><input type="checkbox" name="mix" value="Relocation"> Relocation</label>
       </div>
-      <input type="text" name="mix_notes" placeholder="Your top priority in your own words (e.g. 'mostly luxury + new construction')">
+    </div>
+    <div class="q">
+      <label class="qlabel">Which one matters most right now?</label>
+      <select name="top_focus">
+        <option value="">— pick your #1 —</option>
+        <option>Luxury / custom-build</option>
+        <option>New construction</option>
+        <option>Sellers / listings</option>
+        <option>Move-up buyers</option>
+        <option>First-time buyers</option>
+        <option>Investors</option>
+        <option>Relocation</option>
+      </select>
+      <input type="text" name="mix_notes" placeholder="Anything to add in your own words (optional)" style="margin-top:.5rem">
     </div>
     <div class="q">
       <label class="qlabel">In one line: what would winning look like a year from now?</label>
@@ -232,6 +245,7 @@ function build(){
   L.push('2. YOU & TARGET');
   L.push('  Years licensed: ' + (val('years') || '(blank)'));
   L.push('  Wants more of: ' + (checks('mix').join(', ') || '(none checked)'));
+  L.push('  #1 focus: ' + (val('top_focus') || '(none picked)'));
   L.push('  In her words: ' + (val('mix_notes') || '-'));
   L.push('  1-year goal: ' + (val('goal') || '-'));
   L.push('');
