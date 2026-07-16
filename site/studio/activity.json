@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "date": "2026-07-12",
+      "type": "content_package",
+      "count": 8,
+      "detail": "branded graphics + per-platform captions"
+    },
+    {
+      "date": "2026-07-13",
+      "type": "tracked_link",
+      "count": 40,
+      "detail": "per-platform landing links"
+    },
+    {
+      "date": "2026-07-13",
+      "type": "review_graphic",
+      "count": 6,
+      "detail": "client-love graphics"
+    },
+    {
+      "date": "2026-07-13",
+      "type": "market_report",
+      "count": 1,
+      "detail": "monthly Acadiana report + posts"
+    },
+    {
+      "date": "2026-07-13",
+      "type": "listing_video",
+      "count": 1,
+      "detail": "204 Ivy Cottage"
+    },
+    {
+      "date": "2026-07-14",
+      "type": "listing_video",
+      "count": 9,
+      "detail": "active-listings batch"
+    }
+  ]
+}

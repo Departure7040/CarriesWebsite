@@ -1,4 +1,8 @@
-# ListingLoop *(working name — the Inventory Marketing Engine)*
+# The Inventory Marketing Engine *(product name TBD)*
+
+> **Naming note:** an earlier draft used "ListingLoop" — that's already an Australian
+> real-estate platform, so it's off the table. Pick the real name only after a proper
+> trademark + domain clearance pass; treat the descriptor above as a placeholder.
 
 **Thesis (one line):** A structured-feed → branded-content + attribution platform. Every new inventory item auto-becomes a branded video, social posts, and a tracked link to a source-tagged lead — human-approved, real photos only. Realtors are the *beachhead*, not the ceiling.
 

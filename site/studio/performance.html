@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Performance — Carrie Billeaud Content Studio (Private)</title>
+<link rel="stylesheet" href="../assets/style.css?v=10">
+<style>
+  .wrap-narrow{max-width:900px;margin:0 auto}
+  .counters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:1.5rem 0}
+  .counter{border:1px solid var(--rule);border-radius:12px;background:var(--paper);padding:1.1rem 1.2rem;
+    box-shadow:0 2px 10px rgba(26,35,50,.05)}
+  .counter .num{font-size:2.3rem;font-weight:800;color:var(--ink);line-height:1;letter-spacing:-.02em}
+  .counter .num.gold{color:var(--gold-ink,#a5822f)}
+  .counter .lab{font-size:.85rem;color:#667;margin-top:.35rem}
+  .counter.future{background:var(--cream,#f7f4ee)}
+  .counter.future .num{color:#b9a06a}
+  .counter .sub{font-size:.72rem;color:#8a929e;margin-top:.2rem;font-style:italic}
+  .panel{border:1px solid var(--rule);border-radius:12px;background:var(--paper);padding:1.3rem 1.4rem;margin:1.5rem 0}
+  .panel h2{margin:0 0 .3rem;font-size:1.2rem}
+  .panel .kicker{margin-bottom:.2rem}
+  .chart{width:100%;height:240px;margin-top:1rem}
+  .chart .bar{fill:var(--teal,#137a72)}
+  .chart .bar:hover{fill:var(--gold,#c9a24b)}
+  .chart text{font-size:11px;fill:#667}
+  .chart text.val{font-weight:700;fill:var(--ink)}
+  .feed{list-style:none;margin:1rem 0 0;padding:0}
+  .feed li{display:flex;gap:.8rem;padding:.55rem 0;border-bottom:1px solid var(--rule);font-size:.92rem}
+  .feed li .d{color:#8a929e;white-space:nowrap;min-width:66px}
+  .feed li .c{font-weight:700;color:var(--teal-dark,#0f5c5a);min-width:34px}
+  .note{background:var(--cream,#f7f4ee);border:1px solid var(--rule);border-left:4px solid var(--gold,#c9a24b);
+    border-radius:8px;padding:.9rem 1.1rem;font-size:.88rem;color:#444;margin:1rem 0}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-banner">Private studio — performance tracker. <a href="./index.html">← Back to studio</a></div>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand-logo" href="../index.html"><img src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
+  <nav class="main-nav"><a href="./index.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Studio</a><a href="attribution.html" style="margin-right:1rem;font-weight:600;color:var(--teal-dark);text-decoration:none">Attribution →</a><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap"><div class="hero-copy">
+  <p class="kicker">Private · Perpetual Tracker</p>
+  <h1>Your performance, over time</h1>
+  <p class="sub">Everything your marketing engine has put out — and, once you're live, everything it brings back. This keeps a running history: every time content is generated, it's logged here, so you can watch it build week over week.</p>
+</div></div></section>
+
+<section class="section"><div class="wrap wrap-narrow">
+
+  <p class="kicker">What You've Produced</p>
+  <h2 style="margin:.2rem 0">Cumulative output</h2>
+  <div class="counters" id="counters"></div>
+
+  <div class="panel">
+    <p class="kicker">Over Time</p>
+    <h2>Content produced</h2>
+    <p style="color:#667;font-size:.9rem;margin:.2rem 0 0">Pieces of content (packages, videos, review graphics, market reports) generated per day. It stays perpetual — this chart fills out as you keep publishing.</p>
+    <svg class="chart" id="chart" preserveAspectRatio="none"></svg>
+  </div>
+
+  <div>
+    <p class="kicker">Results</p>
+    <h2 style="margin:.2rem 0">What it brings back</h2>
+    <div class="counters">
+      <div class="counter future"><div class="num">—</div><div class="lab">Link clicks</div><div class="sub">counting begins at launch</div></div>
+      <div class="counter future"><div class="num">—</div><div class="lab">Leads captured</div><div class="sub">counting begins at launch</div></div>
+      <div class="counter future"><div class="num">—</div><div class="lab">Lead source split</div><div class="sub">see Attribution at launch</div></div>
+    </div>
+    <div class="note">Clicks and leads start counting the day we flip the site live (they need the hosted tracking to be on). The <a href="attribution.html" style="color:var(--teal-dark);font-weight:600">Attribution dashboard</a> breaks them down per post and platform — the number the firm never gives you.</div>
+  </div>
+
+  <div class="panel">
+    <p class="kicker">Recent Activity</p>
+    <h2>The running log</h2>
+    <ul class="feed" id="feed"></ul>
+  </div>
+
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <img class="footer-logo" src="../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty">
+  <p>Private performance tracker · Carrie Billeaud × Brook DuBose.</p>
+</div></footer>
+
+<script>
+const TYPE_LABELS = {
+  content_package: 'Content packages',
+  listing_video: 'Listing videos',
+  tracked_link: 'Tracked links',
+  review_graphic: 'Review graphics',
+  market_report: 'Market reports',
+};
+const PIECE_TYPES = ['content_package','listing_video','review_graphic','market_report']; // links excluded from "pieces"
+
+(async function(){
+  let events = [];
+  try {
+    const res = await fetch('./activity.json', {cache:'no-store'});
+    if (res.ok) events = (await res.json()).events || [];
+  } catch(e) {}
+
+  // cumulative totals by type
+  const totals = {};
+  events.forEach(e => { totals[e.type] = (totals[e.type]||0) + (e.count||0); });
+  const order = ['content_package','listing_video','tracked_link','review_graphic','market_report'];
+  document.getElementById('counters').innerHTML = order.map((t,i) =>
+    '<div class="counter"><div class="num'+(i===0?' gold':'')+'">'+(totals[t]||0)+'</div>'+
+    '<div class="lab">'+TYPE_LABELS[t]+'</div></div>').join('');
+
+  // daily buckets of content "pieces"
+  const byDay = {};
+  events.filter(e => PIECE_TYPES.includes(e.type)).forEach(e => {
+    byDay[e.date] = (byDay[e.date]||0) + (e.count||0);
+  });
+  const days = Object.keys(byDay).sort();
+  drawChart(days.map(d => ({d, v: byDay[d]})));
+
+  // recent activity feed (newest first)
+  const feed = [...events].sort((a,b) => (a.date<b.date?1:-1));
+  document.getElementById('feed').innerHTML = feed.map(e => {
+    const dt = new Date(e.date+'T00:00:00');
+    const label = (TYPE_LABELS[e.type]||e.type).toLowerCase();
+    return '<li><span class="d">'+(dt.getMonth()+1)+'/'+dt.getDate()+'</span>'+
+      '<span class="c">+'+e.count+'</span><span>'+label+(e.detail?' — '+e.detail:'')+'</span></li>';
+  }).join('') || '<li>No activity logged yet.</li>';
+})();
+
+function drawChart(data){
+  const svg = document.getElementById('chart');
+  if (!data.length){ svg.innerHTML = '<text x="10" y="30">No data yet.</text>'; return; }
+  const W = 900, H = 240, padB = 28, padT = 22, padX = 12;
+  svg.setAttribute('viewBox', '0 0 '+W+' '+H);
+  const max = Math.max(...data.map(d => d.v), 1);
+  const n = data.length;
+  const slot = (W - padX*2) / n;
+  const bw = Math.min(slot*0.62, 70);
+  let s = '';
+  data.forEach((d,i) => {
+    const x = padX + i*slot + (slot-bw)/2;
+    const h = (H - padB - padT) * (d.v/max);
+    const y = H - padB - h;
+    const dt = new Date(d.d+'T00:00:00');
+    s += '<rect class="bar" x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="3"><title>'+d.d+': '+d.v+'</title></rect>';
+    s += '<text class="val" x="'+(x+bw/2).toFixed(1)+'" y="'+(y-6).toFixed(1)+'" text-anchor="middle">'+d.v+'</text>';
+    s += '<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-9)+'" text-anchor="middle">'+(dt.getMonth()+1)+'/'+dt.getDate()+'</text>';
+  });
+  svg.innerHTML = s;
+}
+</script>
+</body>
+</html>

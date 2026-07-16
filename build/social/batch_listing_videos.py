@@ -110,6 +110,14 @@ def main(count: int, min_photos: int) -> None:
             for p in sorted(OUT_DIR.glob("*-short.mp4"))]
     (OUT_DIR / "index.json").write_text(json.dumps({"videos": vids}, indent=2), encoding="utf-8")
 
+    # Perpetual activity ledger — record what this run produced (dashboard reads it).
+    if rendered:
+        try:
+            from activity_log import log_activity
+            log_activity("listing_video", len(rendered), "active-listings batch")
+        except Exception:
+            pass
+
     print("=" * 60)
     print(f"RENDERED {len(rendered)}: {', '.join(rendered)}")
     if skipped:
