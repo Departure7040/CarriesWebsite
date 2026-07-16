@@ -10,3 +10,6 @@ __pycache__/
 
 # Fetched listing galleries (reproducible via fetch_listing_photos.py)
 site/assets/img/listings/gallery/
+
+# Playwright MCP scratch output
+.playwright-mcp/

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Am I Ready to Buy in Acadiana? — Free Home-Buyer Readiness Tool | Carrie Billeaud, eXp Realty (Demo)</title>
+<meta name="description" content="A free, private tool that shows first-time and move-up buyers the REAL cash it takes to buy in Acadiana — down payment plus closing costs, prepaids and reserves — with an ordered checklist. Educational estimates only; your numbers stay in your browser.">
+<link rel="stylesheet" href="../../assets/style.css?v=10">
+<style>
+  .hr{max-width:820px;margin:0 auto}
+  .legal-bar{background:var(--cream,#f7f4ee);border:1px solid var(--rule);border-left:4px solid var(--gold,#c9a24b);
+    border-radius:8px;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.86rem;line-height:1.5;color:#444}
+  .legal-bar strong{color:var(--teal-dark,#0f5c5a)}
+  fieldset{border:1px solid var(--rule);border-radius:12px;padding:1.3rem 1.4rem;margin:0 0 1.6rem}
+  legend{font-weight:700;color:var(--teal-dark,#0f5c5a);padding:0 .5rem;font-size:1.1rem}
+  .q{margin:1rem 0}
+  label.qlabel{display:block;font-weight:600;margin-bottom:.3rem}
+  .hint{font-size:.83rem;color:#667;margin:.15rem 0 .5rem}
+  input[type=text],input[type=email],input[type=tel],input[type=number],select{
+    width:100%;padding:.6rem .7rem;border:1px solid var(--rule);border-radius:6px;font:inherit;font-size:1rem}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+  @media(max-width:560px){.row2{grid-template-columns:1fr}}
+  .opts label{display:block;font-weight:400;margin:.2rem 0;cursor:pointer}
+  .opts input{margin-right:.5rem}
+  .est-tag{display:inline-block;font-size:.72rem;background:var(--cream,#f7f4ee);border:1px solid var(--rule);
+    border-radius:4px;padding:.05rem .4rem;color:#777;margin-left:.3rem;vertical-align:middle}
+  #afford-out,#area-out{display:none;margin-top:1.4rem}
+  .result-card{border:1px solid var(--rule);border-radius:10px;padding:1.1rem 1.3rem;margin:0 0 1rem;background:var(--paper)}
+  .result-card.headline{border-color:var(--gold,#c9a24b);border-width:2px;background:var(--cream,#f7f4ee)}
+  .result-card h3{margin:0 0 .4rem}
+  .big{font-size:2rem;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+  .big.gold{color:var(--gold-ink,#a5822f)}
+  .ctc-table{width:100%;border-collapse:collapse;margin:.6rem 0;font-size:.95rem}
+  .ctc-table td{padding:.4rem .3rem;border-bottom:1px solid var(--rule)}
+  .ctc-table td:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .ctc-table tr.total td{font-weight:800;border-top:2px solid var(--ink);border-bottom:0;padding-top:.6rem}
+  .gap-good{color:#1a7f37;font-weight:700}
+  .gap-bad{color:#b3541e;font-weight:700}
+  details.cost{border:1px solid var(--rule);border-radius:8px;margin:.5rem 0;overflow:hidden}
+  details.cost summary{cursor:pointer;padding:.7rem .9rem;font-weight:600;background:var(--cream,#f7f4ee);
+    display:flex;justify-content:space-between;gap:1rem;align-items:baseline}
+  details.cost summary .rng{font-weight:400;font-size:.82rem;color:#777;text-align:right}
+  details.cost .body{padding:.7rem .9rem;font-size:.92rem;line-height:1.55}
+  details.cost .body .who{display:block;margin-top:.4rem;font-size:.82rem;color:#667}
+  .step{border:1px solid var(--rule);border-radius:8px;margin:.5rem 0;padding:.8rem .95rem;display:flex;gap:.7rem;align-items:flex-start}
+  .step input[type=checkbox]{margin-top:.25rem;width:18px;height:18px;flex:0 0 auto}
+  .step.done{background:#f2f9f2;border-color:var(--ok,#43a047)}
+  .step .s-body{flex:1}
+  .step .s-label{font-weight:700}
+  .step .s-detail{font-size:.9rem;line-height:1.5;color:#333;margin:.25rem 0}
+  .step .s-meta{font-size:.8rem;color:#667}
+  .town{border:1px solid var(--rule);border-radius:8px;padding:.8rem 1rem;margin:.5rem 0}
+  .town.top{border-color:var(--gold,#c9a24b);border-width:2px}
+  .town .t-head{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem}
+  .town .t-name{font-weight:700;font-size:1.05rem}
+  .town .t-why{font-size:.85rem;color:#555;margin:.3rem 0 0}
+  .town .t-attr{font-size:.82rem;color:#778;margin:.35rem 0 0}
+  .btn.calc{margin-top:.5rem}
+  .send-box{border:1px solid var(--rule);border-radius:10px;padding:1.2rem 1.3rem;background:var(--paper)}
+  .consent{display:flex;gap:.6rem;align-items:flex-start;margin:.8rem 0;font-size:.9rem}
+  .consent input{margin-top:.2rem;width:18px;height:18px;flex:0 0 auto}
+  #send-btn[disabled]{opacity:.45;cursor:not-allowed}
+  #send-done{display:none;margin-top:1rem;color:#1a7f37;font-weight:600}
+  .readiness{font-size:1.05rem;line-height:1.6}
+  .tier{display:inline-block;font-weight:700;color:var(--gold-ink,#a5822f)}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-banner">Demo concept — part of your SEO audit. <a href="../../audit/">See the analysis →</a></div>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand-logo" href="../../index.html"><img src="../../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty" height="40"></a>
+  <nav class="main-nav"><a class="btn btn-gold" href="tel:3372585379">337-258-5379</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="wrap"><div class="hero-copy">
+  <p class="kicker">Free · Private · No Sign-Up</p>
+  <h1>Am I ready to buy a home in Acadiana?</h1>
+  <p class="sub">The number that surprises almost every first-time buyer isn't the price — it's the <strong>cash it actually takes to get the keys.</strong> This walks you through the real budget, where every dollar goes, and the step-by-step, in order. Your income and debts are calculated <strong>right here in your browser</strong> and never saved.</p>
+</div></div></section>
+
+<section class="section"><div class="wrap hr">
+
+  <div class="legal-bar" id="top-legal">
+    <strong>Estimates only — not a loan quote or approval.</strong> This is a free educational planning tool. Every figure is an estimate that depends on your credit, loan program, the property, and current rates. Carrie Billeaud is a licensed Louisiana REALTOR®, not a lender — only a licensed lender can tell you what you actually qualify for. Nothing here is lending, financial, tax, or legal advice.
+  </div>
+
+  <!-- ===================== MODULE 1: AFFORDABILITY ===================== -->
+  <fieldset>
+    <legend>1 · What can I really afford?</legend>
+    <p class="hint">Everything here stays on your device. We never see or store these numbers.</p>
+    <div class="row2">
+      <div class="q"><label class="qlabel">Gross household income (per year)</label>
+        <input type="number" id="income" inputmode="numeric" placeholder="e.g. 75000"></div>
+      <div class="q"><label class="qlabel">Monthly debt payments</label>
+        <input type="number" id="debts" inputmode="numeric" placeholder="car, loans, card minimums">
+        <p class="hint">Not rent, utilities, or groceries — just monthly debt.</p></div>
+    </div>
+    <div class="row2">
+      <div class="q"><label class="qlabel">Cash you've set aside for buying</label>
+        <input type="number" id="savings" inputmode="numeric" placeholder="e.g. 25000"></div>
+      <div class="q"><label class="qlabel">Down payment <span class="est-tag">estimate</span></label>
+        <select id="downpct">
+          <option value="0.20">20% (no PMI)</option>
+          <option value="0.10">10%</option>
+          <option value="0.05" selected>5% (typical Conventional min)</option>
+          <option value="0.035">3.5% (typical FHA min)</option>
+          <option value="0">0% (VA / USDA, if eligible)</option>
+        </select>
+        <p class="hint">Program minimums are general info, not an eligibility ruling. <a href="../../guides/usda-loans-acadiana.html">USDA zero-down in Acadiana →</a></p></div>
+    </div>
+    <div class="q"><label class="qlabel"><input type="checkbox" id="flood"> The area I'm considering may be in a flood zone</label>
+      <p class="hint">Big deal in Acadiana — adds flood insurance. <a href="../../guides/flood-zones-insurance.html">Flood zones & insurance →</a></p></div>
+    <div class="q"><label class="qlabel">Sample interest rate range <span class="est-tag">illustrative — not a quote</span></label>
+      <div class="row2">
+        <input type="number" id="rateLow" step="0.125" value="6.5" aria-label="low sample rate">
+        <input type="number" id="rateHigh" step="0.125" value="7.75" aria-label="high sample rate">
+      </div>
+      <p class="hint">These are <strong>sample</strong> figures for the math, not current and not a quote — your lender sets your real rate. Adjust them to see how the range moves.</p>
+    </div>
+    <button type="button" class="btn btn-gold calc" id="afford-btn">Show my real numbers →</button>
+
+    <div id="afford-out">
+      <div class="result-card">
+        <h3>Your rough price range <span class="est-tag">estimate</span></h3>
+        <p class="big" id="price-range">—</p>
+        <p class="hint">A ballpark from your income, current debts, and the sample rate range. A licensed lender can confirm your real number — and it's the fastest way to firm this up.</p>
+      </div>
+      <div class="result-card headline">
+        <h3>The real cash to close — the part that surprises people</h3>
+        <table class="ctc-table" id="ctc-table"></table>
+        <p id="gap-readout" style="margin:.4rem 0 0"></p>
+        <p class="hint" style="margin-top:.6rem">Earnest money (~1% of price) is paid when your offer is accepted and <em>credited back</em> to you at closing — not an extra cost, but cash you need available early. Inspection & appraisal are paid out of pocket <em>during</em> the process, before closing.</p>
+      </div>
+      <p class="hint">Assumptions used (all estimates, adjustable in a lender conversation): back-end DTI 43% / front-end 30%; property tax ~0.5% of value (Louisiana is low; homestead lowers it); homeowners insurance ~1% (Acadiana runs high); flood ~$900/yr when flagged; PMI ~0.8%/yr if under 20% down; closing costs ~3% (range 2–5%); prepaids ~1.25%; reserves 2 months of payment.</p>
+    </div>
+  </fieldset>
+
+  <!-- ===================== MODULE 2: WHERE MONEY GOES ===================== -->
+  <fieldset>
+    <legend>2 · Where the money actually goes</legend>
+    <p class="hint">Beyond the down payment, your closing costs are a stack of one-time fees + prepaids + reserves. Louisiana is a little different (a notary/attorney "act of sale," no statewide transfer tax, flood priced by zone). Tap any line. <span class="est-tag">all ranges are estimates</span></p>
+    <div id="cost-list"></div>
+    <p class="hint" style="margin-top:.7rem">Broad benchmark: buyer closing costs commonly run <strong>~2–5% of the price</strong> — but it's itemized and transaction-specific. Your lender's Loan Estimate is the real list. <a href="../../guides/louisiana-closing-process.html">How closing works in Louisiana →</a></p>
+  </fieldset>
+
+  <!-- ===================== MODULE 3: CHECKLIST ===================== -->
+  <fieldset>
+    <legend>3 · Your step-by-step, in order</legend>
+    <p class="hint">Check them off as you go — saved on your device only. Each step says what you'll need.</p>
+    <div id="checklist"></div>
+    <p class="hint" id="checklist-progress" style="margin-top:.7rem"></p>
+  </fieldset>
+
+  <!-- ===================== MODULE 4: AREA MATCH ===================== -->
+  <fieldset>
+    <legend>4 · Which Acadiana towns fit your budget & criteria?</legend>
+    <div class="legal-bar">
+      <strong>How this works.</strong> Suggested towns are based <em>only</em> on the objective things you enter — budget, new vs. established, commute to a place you choose, lot size, and property type. We never consider or describe who lives in an area, schools, or safety. In keeping with the Fair Housing Act, Carrie serves all buyers equally.
+    </div>
+    <div class="row2">
+      <div class="q"><label class="qlabel">Your max price <span class="est-tag">estimate</span></label>
+        <input type="number" id="a-budget" inputmode="numeric" placeholder="e.g. 275000"></div>
+      <div class="q"><label class="qlabel">Where do you commute to most?</label>
+        <select id="a-anchor">
+          <option value="Lafayette">Central Lafayette</option>
+          <option value="Youngsville">Youngsville</option>
+          <option value="Broussard">Broussard</option>
+          <option value="Carencro">Carencro</option>
+          <option value="Scott">Scott</option>
+          <option value="Maurice">Maurice</option>
+          <option value="Milton">Milton</option>
+        </select></div>
+    </div>
+    <div class="row2">
+      <div class="q"><label class="qlabel">New or established?</label>
+        <select id="a-new">
+          <option value="any">No preference</option>
+          <option value="new">Prefer new construction</option>
+          <option value="est">Prefer established</option>
+        </select></div>
+      <div class="q"><label class="qlabel">Lot size</label>
+        <select id="a-lot">
+          <option value="any">No preference</option>
+          <option value="small">Low-maintenance / small lot</option>
+          <option value="std">Standard subdivision lot</option>
+          <option value="large">Larger lot / acreage</option>
+        </select></div>
+    </div>
+    <div class="q"><label class="qlabel">Property type</label>
+      <select id="a-type">
+        <option value="any">No preference</option>
+        <option value="single">Single-family</option>
+        <option value="townhome">Townhome / condo</option>
+        <option value="land">Land / acreage</option>
+      </select></div>
+    <button type="button" class="btn btn-gold calc" id="area-btn">Show towns that fit →</button>
+    <div id="area-out">
+      <div id="town-list"></div>
+      <p class="hint" style="margin-top:.6rem">Every town has homes across many price ranges — budget just narrows likely inventory, it never certifies affordability. Price positions are mid-2026 estimates to verify against current listings. Tour before you decide. <a href="../../guides/which-town-fits.html">Compare the towns →</a></p>
+    </div>
+  </fieldset>
+
+  <!-- ===================== MODULE 5: READINESS + CAPTURE ===================== -->
+  <fieldset>
+    <legend>5 · Where are you right now?</legend>
+    <div class="row2">
+      <div class="q"><label class="qlabel">When do you want to be in a home?</label>
+        <select id="timeline">
+          <option value="">— pick one —</option>
+          <option value="0-3 months">In the next 3 months</option>
+          <option value="3-6 months">3–6 months</option>
+          <option value="6-12 months">6–12 months</option>
+          <option value="12+ months">12+ months</option>
+          <option value="just exploring">Just exploring</option>
+        </select></div>
+      <div class="q"><label class="qlabel">Quick readiness checks</label>
+        <div class="opts">
+          <label><input type="checkbox" id="r-lender"> I've talked to a lender</label>
+          <label><input type="checkbox" id="r-credit"> I know my credit range</label>
+          <label><input type="checkbox" id="r-cash"> My down-payment cash is liquid now</label>
+        </div></div>
+    </div>
+    <button type="button" class="btn calc" id="ready-btn">See where I stand →</button>
+    <div id="ready-out" style="display:none;margin-top:1rem">
+      <div class="result-card"><p class="readiness" id="ready-text"></p></div>
+
+      <div class="send-box">
+        <h3 style="margin-top:0">Want Carrie to walk your numbers with you?</h3>
+        <p class="hint">A tool gets you in the ballpark — a lender preapproval gets you in the game. Carrie can talk it through and connect you with a few local lenders (your choice — she doesn't push any one).</p>
+        <form id="lead-form" method="post" action="/api/lead" novalidate>
+          <input type="hidden" name="source" value="home-readiness">
+          <input type="hidden" name="readiness_tier" id="f-tier">
+          <input type="hidden" name="budget_band" id="f-budget">
+          <input type="hidden" name="timeline" id="f-timeline">
+          <input type="hidden" name="area_preference" id="f-area">
+          <div class="hp" aria-hidden="true" style="position:absolute;left:-9999px"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+          <div class="row2">
+            <div class="q"><label class="qlabel">Your name</label><input type="text" name="name" id="l-name" autocomplete="name"></div>
+            <div class="q"><label class="qlabel">Email</label><input type="email" name="email" id="l-email" autocomplete="email"></div>
+          </div>
+          <div class="q"><label class="qlabel">Phone (optional)</label><input type="tel" name="phone" autocomplete="tel"></div>
+          <label class="consent"><input type="checkbox" id="consent">
+            <span>Send my contact info and a short readiness summary (budget band, timeline, readiness) to Carrie Billeaud so she can follow up. <strong>My income and debt figures were calculated in my browser and are not included.</strong></span></label>
+          <button type="submit" class="btn btn-gold" id="send-btn" disabled>Send my summary to Carrie →</button>
+          <p class="hint" id="l-error" role="alert" style="color:var(--bad);display:none">Please enter your name and a valid email, and check the consent box.</p>
+        </form>
+        <div id="send-done">Thanks! Carrie will reach out from right where you are. (Demo: nothing was actually sent or stored.)</div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="legal-bar">
+    <strong>The fine print, in plain English.</strong> Estimates only — not a mortgage quote, rate, preapproval, or approval. Not lending, financial, tax, or legal advice. Interest rates shown are illustrative samples, not current and not quoted. Cost figures are ranges that vary by lender, program, property, and provider — get quotes from a few licensed providers (this tool never steers you to a specific paid lender, inspector, insurer, or title company). Louisiana specifics (attorney/notary closings, homestead exemption, flood zones, USDA) are general education — confirm with the appropriate licensed professional. Your income and debt numbers are calculated in your browser and never stored or sent; only your contact details and a short readiness summary are sent to Carrie, and only if you check the consent box.
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <img class="footer-logo" src="../../assets/img/carrie-logo.png" alt="Carrie Billeaud, Realtor — eXp Realty">
+  <p>Carrie Billeaud, REALTOR® · eXp Realty · Lafayette, Louisiana · <a href="tel:3372585379">337-258-5379</a></p>
+  <p>Demo concept built as part of an SEO audit by Brook DuBose. Not Carrie's live website. All results are illustrative educational estimates only.</p>
+</div></footer>
+<div class="sticky-call"><a href="tel:3372585379">📞 Call Carrie — 337-258-5379</a></div>
+<script src="../../assets/nav.js" defer></script>
+<script>
+const $ = id => document.getElementById(id);
+const money = n => '$' + Math.round(n).toLocaleString();
+const moneyK = n => '$' + Math.round(n/1000) + 'K';
+
+// ---------- MODULE 1: affordability + cash-to-close ----------
+function payment(loan, annualRatePct, years){
+  const r = (annualRatePct/100)/12, n = years*12;
+  if (r === 0) return loan/n;
+  return loan * r / (1 - Math.pow(1+r, -n));
+}
+// Solve price for a given P&I budget by iterating on taxes/insurance (which depend on price).
+function priceForRate(monthlyHousingBudget, ratePct, downpct, flood){
+  let price = 200000; // seed
+  for (let i=0;i<20;i++){
+    const loan = price * (1 - downpct);
+    const taxIns = price*0.005/12 + price*0.01/12 + (flood?900/12:0) + (downpct<0.20 ? loan*0.008/12 : 0);
+    const piBudget = Math.max(0, monthlyHousingBudget - taxIns);
+    const newLoan = solveLoan(piBudget, ratePct, 30);
+    const newPrice = downpct < 1 ? newLoan/(1-downpct) : newLoan;
+    if (Math.abs(newPrice - price) < 500){ price = newPrice; break; }
+    price = newPrice;
+  }
+  return Math.max(0, price);
+}
+function solveLoan(pi, ratePct, years){
+  const r = (ratePct/100)/12, n = years*12;
+  if (pi<=0) return 0;
+  if (r===0) return pi*n;
+  return pi * (1 - Math.pow(1+r,-n)) / r;
+}
+$('afford-btn').addEventListener('click', () => {
+  const income = +$('income').value || 0;
+  const debts = +$('debts').value || 0;
+  const savings = +$('savings').value || 0;
+  const downpct = +$('downpct').value;
+  const flood = $('flood').checked;
+  const rLow = +$('rateLow').value || 6.5, rHigh = +$('rateHigh').value || 7.75;
+  if (income <= 0){ alert('Add your gross annual income to see your numbers.'); return; }
+  const mIncome = income/12;
+  const housingBudget = Math.min(mIncome*0.43 - debts, mIncome*0.30);
+  if (housingBudget <= 0){ $('price-range').textContent = 'Your current monthly debts use up the room lenders usually allow — a lender can help you plan a path. This is just an estimate.'; $('afford-out').style.display='block'; $('ctc-table').innerHTML=''; $('gap-readout').textContent=''; return; }
+  const priceHigh = priceForRate(housingBudget, rLow, downpct, flood);   // lower rate -> higher price
+  const priceLow  = priceForRate(housingBudget, rHigh, downpct, flood);  // higher rate -> lower price
+  const priceMid = (priceHigh + priceLow)/2;
+  $('price-range').textContent = moneyK(priceLow) + ' – ' + moneyK(priceHigh);
+
+  // cash to close at the midpoint price
+  const down = priceMid * downpct;
+  const closing = priceMid * 0.03;
+  const prepaids = priceMid * 0.0125 + (flood ? 900 : 0);
+  const loan = priceMid*(1-downpct);
+  const monthlyPI = payment(loan, (rLow+rHigh)/2, 30);
+  const monthlyTI = priceMid*0.005/12 + priceMid*0.01/12 + (flood?900/12:0) + (downpct<0.20?loan*0.008/12:0);
+  const reserves = 2 * (monthlyPI + monthlyTI);
+  const total = down + closing + prepaids + reserves;
+  const rows = [
+    ['Down payment ('+Math.round(downpct*100)+'%)', down],
+    ['Closing costs (~2–5%)', closing],
+    ['Prepaids & escrow set-up' + (flood?' (incl. flood)':''), prepaids],
+    ['Reserve cushion (~2 mo.)', reserves],
+  ];
+  $('ctc-table').innerHTML = rows.map(r=>'<tr><td>'+r[0]+'</td><td>'+money(r[1])+'</td></tr>').join('') +
+    '<tr class="total"><td>Ballpark cash to close</td><td>'+money(total)+'</td></tr>';
+  if (savings > 0){
+    const gap = savings - total;
+    $('gap-readout').innerHTML = gap >= 0
+      ? 'You told us you\'ve set aside ' + money(savings) + ' — against this estimate you\'re roughly <span class="gap-good">' + money(gap) + ' ahead.</span> Nice spot to start.'
+      : 'You told us you\'ve set aside ' + money(savings) + ' — against this estimate you\'re roughly <span class="gap-bad">' + money(-gap) + ' short.</span> Totally normal and fixable — it just tells us what to plan for (a lender, a timeline, or a down-payment program).';
+  } else { $('gap-readout').textContent=''; }
+  $('afford-out').style.display = 'block';
+  // stash a coarse budget band for the lead summary
+  window.__budgetBand = moneyK(priceLow) + '–' + moneyK(priceHigh);
+  $('afford-out').scrollIntoView({behavior:'smooth', block:'nearest'});
+});
+
+// ---------- MODULE 2: closing-cost breakdown ----------
+const COSTS = [
+  ['Lender / origination fee','What the lender charges to process and underwrite your loan. Set by the lender (not the state), so it varies — some lenders charge $0 and price it into the rate instead. It lives on Page 2 of your Loan Estimate.','~0.5–1% of the loan (e.g. ~$1,250–$2,500 on a $250K loan)','Buyer (sometimes seller-paid via concessions)'],
+  ['Appraisal','A licensed appraiser estimates the home\'s value so the lender confirms the loan isn\'t bigger than the property is worth. Lender orders it; you usually pay upfront.','~$400–$600 typical; more for large/rural/unique','Buyer'],
+  ['Home inspection','Separate from the appraisal — this one\'s for YOU, flagging roof, foundation, HVAC, plumbing, moisture. Optional but worth it. In Louisiana add a termite/WDIR check. You pick the inspector — get a few quotes.','~$350–$500 standard; specialty add-ons extra','Buyer (paid at time of service, not at closing)'],
+  ['Title work + attorney / notary closing','Louisiana has no escrow company — a notary (often an attorney-notary) prepares and executes the "act of sale," and an attorney examines title. This bundles title search, title opinion, and the notary fee.','A few hundred to ~$1,000+ (flat closing fees often ~$750–$1,250; notary ~$200–$600), plus title search','Buyer typically (splits negotiable)'],
+  ['Lender\'s title insurance','If you finance, the lender requires a policy protecting their interest against title defects/claims. An owner\'s policy (for you) is optional but smart. LA title premiums are state-regulated, so you\'re not shopping on premium price.','~0.5–1% of price (rule of thumb; scales with price)','Buyer typically (negotiable)'],
+  ['Recording fees (parish Clerk of Court)','The parish charges to record your act of sale and mortgage in the public record. Louisiana has NO statewide transfer tax, so there\'s no percentage deed tax on top.','Modest flat/per-page — tens to a few hundred dollars total','Buyer typically'],
+  ['Prepaid interest','Interest from your closing day through month-end, collected upfront. Close later in the month and you prepay fewer days — a real lever to shrink cash-to-close.','(daily interest) × (days left in the month)','Buyer'],
+  ['Homeowners insurance — first year + escrow','Lenders require your first year paid at/before closing, plus a few months\' cushion in escrow. LA premiums can be meaningful due to hurricane exposure. You pick the insurer — get a few quotes.','First year upfront + ~2–3 months escrow cushion','Buyer'],
+  ['FLOOD insurance — first year + escrow (major in Acadiana)','Separate from homeowners, and often the surprise line here. Required if the home is in a FEMA high-risk zone with a federally backed loan. Price turns on the flood zone, so nearby homes differ sharply.','LA NFIP roughly $600–$1,000+/yr (Lafayette-area often ~$500–$610); zone-dependent','Buyer'],
+  ['Property-tax escrow reserve','LA taxes are billed by the parish, due late in the year. The lender collects a few months into escrow so the bill gets paid; there may also be a buyer/seller proration.','~2–6 months of estimated tax into escrow + proration','Buyer funds escrow; taxes prorated'],
+  ['Credit report, flood determination & small lender fees','A cluster of smaller third-party pass-through fees (credit pull, flood-zone determination, tax service, doc prep). Small individually, they add up on your Loan Estimate.','Tens to a couple hundred dollars each','Buyer'],
+];
+$('cost-list').innerHTML = COSTS.map(c =>
+  '<details class="cost"><summary><span>'+c[0]+'</span><span class="rng">'+c[2]+'</span></summary>'+
+  '<div class="body">'+c[1]+'<span class="who">Typically paid by: '+c[3]+' · estimate only</span></div></details>').join('');
+
+// ---------- MODULE 3: checklist ----------
+const STEPS = [
+  ['Get pre-approved with a lender','A lender\'s estimate of what you may qualify for — it sets your realistic range before you fall for a house. Gather: recent pay stubs (~30 days), W-2s / tax returns (2 yrs), bank statements (2–3 mo), photo ID. Self-employed? Add P&L and 1099s. Not a loan commitment — a starting estimate. Get a few quotes and compare.','Usually free (some charge ~$0–$75)'],
+  ['Define your budget & true cash-to-close','The #1 surprise: cash needed is far more than the down payment. Plan four buckets — down payment, closing costs, prepaids, reserves. Use Module 1 above (it computes on your device). In rural Acadiana, USDA zero-down may apply.','Varies by program & property'],
+  ['House hunt with your criteria set','Tour against the objective criteria you chose — budget, new vs. established, commute, lot size, property type, beds/baths. Keep a shortlist and note repairs each home needs (it feeds your cash plan).','No cost'],
+  ['Make an offer','Carrie prepares a purchase agreement: price, contingencies (inspection, financing, appraisal), included items, closing date. Contingencies are your protection. Show your pre-approval with the offer.','No direct cost yet'],
+  ['Deposit earnest money','A good-faith deposit, in LA typically placed within ~24 hrs of ratification and held by the closing office — not the seller. LA\'s "double-return" rule (Civ. Code 2624): if the seller backs out without cause, they owe it back plus an equal amount. Credited to your cash-to-close.','~1–2% of price (credited back)'],
+  ['Schedule the home inspection','Within your inspection period, hire a licensed inspector — get a few quotes, pick your own. Consider termite/WDIR (common here) and roof/HVAC checks. Decide: request repairs, a credit, or walk. Usually paid up front.','~$300–$500+ (specialty extra)'],
+  ['Get insurance quotes early — homeowners AND flood','Do this EARLY, not right before closing — premiums affect your monthly payment and approval. Check the flood zone; flood coverage is generally mandatory in high-risk zones with a federally backed loan. Compare a few insurers (NFIP vs private).','First-year premium often collected at closing'],
+  ['Appraisal','Your lender orders it to confirm value supports the loan. If it comes in low: renegotiate, bring cash, or use your appraisal contingency. Usually part of your loan costs.','~$450–$650 single-family'],
+  ['Final loan approval (underwriting)','The lender\'s deep review — expect requests for updated pay stubs, bank statements, your insurance binder, proof of earnest money. Protect your approval: don\'t open new credit, make large unexplained deposits, or change jobs. Respond fast — slow docs are the #1 delay.','No new out-of-pocket cost'],
+  ['Final walkthrough','Shortly before closing, walk the home once more to confirm condition, that repairs are done, and systems work. Flag anything now, not at the table.','No cost'],
+  ['Closing — the act of sale','LA closes with a notarized "act of sale," not escrow. Review your Closing Disclosure 3+ days before signing. Bring: photo ID, funds as certified/cashier\'s funds or a verified wire (confirm wire instructions by phone — fraud is real), proof of insurance. Signed by buyer, seller, two witnesses, and the notary.','Buyer closing costs ~2–5% of price'],
+  ['File your homestead exemption (after closing)','Easy money if you don\'t skip it. Once you own & occupy as your primary residence, file with your parish assessor — it exempts ~the first $75,000 of value from parish property taxes. Generally a one-time filing; bring your recorded act of sale + ID.','Free to file'],
+];
+const CKEY = 'cb_readiness_checklist';
+function loadChecks(){ try { return JSON.parse(localStorage.getItem(CKEY))||{}; } catch { return {}; } }
+function saveChecks(o){ localStorage.setItem(CKEY, JSON.stringify(o)); }
+function renderChecklist(){
+  const state = loadChecks();
+  $('checklist').innerHTML = STEPS.map((s,i)=>
+    '<div class="step'+(state[i]?' done':'')+'" data-i="'+i+'">'+
+    '<input type="checkbox" '+(state[i]?'checked':'')+' aria-label="'+s[0]+'">'+
+    '<div class="s-body"><div class="s-label">'+(i+1)+'. '+s[0]+'</div>'+
+    '<div class="s-detail">'+s[1]+'</div><div class="s-meta">Typical cost: '+s[2]+' · estimate</div></div></div>').join('');
+  let done = Object.values(state).filter(Boolean).length;
+  $('checklist-progress').textContent = done+' of '+STEPS.length+' done';
+  $('checklist').querySelectorAll('.step').forEach(el => {
+    el.querySelector('input').addEventListener('change', e => {
+      const st = loadChecks(); st[el.dataset.i] = e.target.checked; saveChecks(st); renderChecklist();
+    });
+  });
+}
+renderChecklist();
+
+// ---------- MODULE 4: objective area match ----------
+// Objective attributes ONLY. tier: rough price position (1 low .. 3 high). min: approx drive minutes to central Lafayette.
+const TOWNS = [
+  {name:'Lafayette', slug:'lafayette', tier:2, min:0,  price:'~$241K area median (est.)', nc:'med', lot:'std', types:['single','townhome'], why:'Widest inventory in the region, entry-level through custom; the commute hub.'},
+  {name:'Youngsville', slug:'youngsville', tier:3, min:15, price:'~$315K median (est.)', nc:'high', lot:'small', types:['single','townhome'], why:'Strongest new-construction (master-planned communities); newer single-family.'},
+  {name:'Broussard', slug:'broussard', tier:3, min:15, price:'~$282K avg (est.)', nc:'med', lot:'std', types:['single'], why:'Mix of established + newer subdivisions along the Hwy 90 corridor.'},
+  {name:'Carencro', slug:'carencro', tier:1, min:12, price:'~$222K median (est.)', nc:'med', lot:'std', types:['single'], why:'Lowest typical price positioning; often more square footage or lot for the money; direct I-49 access.'},
+  {name:'Scott', slug:'scott', tier:1, min:15, price:'~$247K median (est.)', nc:'low', lot:'std', types:['single'], why:'Budget-friendly crossroads west of Lafayette with I-10 access; mostly established.'},
+  {name:'Maurice', slug:'maurice', tier:2, min:15, price:'~$252K avg (est.)', nc:'low', lot:'large', types:['single','land'], why:'Best in the group for larger lots & acreage (Vermilion Parish — different tax/homestead filing).'},
+  {name:'Milton', slug:'milton', tier:3, min:12, price:'~$314K listing (est.)', nc:'low', lot:'large', types:['single','land'], why:'Country/lower-density with larger lots & some acreage, between Lafayette and Youngsville.'},
+];
+$('area-btn').addEventListener('click', () => {
+  const budget = +$('a-budget').value || 0;
+  const anchor = $('a-anchor').value;
+  const wantNew = $('a-new').value, wantLot = $('a-lot').value, wantType = $('a-type').value;
+  const anchorMin = (TOWNS.find(t=>t.name===anchor)||{min:0}).min;
+  const scored = TOWNS.map(t => {
+    let s = 0; const why = [];
+    // budget: town typical position at/below budget scores higher (never disqualifies)
+    if (budget > 0){
+      const tierPrice = [0,235000,265000,310000][t.tier];
+      if (tierPrice <= budget){ s += 3; why.push('fits your ~'+moneyK(budget)+' budget'); }
+      else { s += 1; why.push('typically above ~'+moneyK(budget)+' — homes exist across ranges'); }
+    }
+    // commute: approx minutes between town and anchor
+    const drive = Math.abs(t.min - anchorMin) + (t.name===anchor?0:4);
+    s += Math.max(0, 3 - drive/8);
+    why.push('~'+drive+' min to '+anchor+' (est.)');
+    // new vs established
+    if (wantNew==='new'){ s += t.nc==='high'?3:t.nc==='med'?1.5:0; if(t.nc!=='low') why.push('new construction available'); }
+    else if (wantNew==='est'){ s += t.nc==='low'?2:t.nc==='med'?1.5:0.5; }
+    // lot
+    if (wantLot!=='any'){ if (t.lot===wantLot){ s += 2; why.push(wantLot==='large'?'larger lots available':wantLot==='small'?'low-maintenance lots':'standard lots'); } }
+    // property type
+    if (wantType!=='any'){ if (t.types.includes(wantType)){ s += 2; } else { s -= 1; } }
+    return {t, s, why};
+  }).sort((a,b)=>b.s-a.s);
+  $('town-list').innerHTML = scored.map((r,i) =>
+    '<div class="town'+(i===0?' top':'')+'"><div class="t-head"><span class="t-name">'+(i===0?'★ ':'')+r.t.name+'</span>'+
+    '<a class="dl" href="../../areas/'+r.t.slug+'.html">See '+r.t.name+' →</a></div>'+
+    '<p class="t-why">Fits because: '+r.why.slice(0,3).join(' · ')+'</p>'+
+    '<p class="t-attr">'+r.t.why+' '+r.t.price+'</p></div>').join('');
+  $('area-out').style.display = 'block';
+  window.__areaPref = scored.slice(0,2).map(r=>r.t.name).join(', ');
+  $('area-out').scrollIntoView({behavior:'smooth', block:'nearest'});
+});
+
+// ---------- MODULE 5: readiness + capture ----------
+$('ready-btn').addEventListener('click', () => {
+  const timeline = $('timeline').value;
+  const checks = ['r-lender','r-credit','r-cash'].filter(id=>$(id).checked).length;
+  const hasBudget = !!window.__budgetBand;
+  let tier, msg;
+  const soon = timeline==='0-3 months' || timeline==='3-6 months';
+  if (hasBudget && soon && checks>=2){ tier='Ready now'; msg='You\'ve got a clear budget range, a near-term timeline, and the fundamentals in place — you\'re in a strong spot to start touring. The one thing left: a quick lender preapproval so your offer carries weight.'; }
+  else if ((hasBudget||soon) && checks>=1){ tier='Getting close'; msg='You\'re well on your way. A couple of pieces left — most likely a lender conversation and confirming your cash-to-close plan — and you\'ll be ready to move with confidence.'; }
+  else { tier='Planning ahead'; msg='Smart to map this out early. The best next moves: run your budget above, and have a no-pressure lender conversation so your real numbers replace the estimates. There\'s no rush — you\'re building the plan.'; }
+  $('ready-text').innerHTML = 'Where you are: <span class="tier">'+tier+'.</span> '+msg;
+  $('f-tier').value = tier;
+  $('f-budget').value = window.__budgetBand || '(not calculated)';
+  $('f-timeline').value = timeline || '(not set)';
+  $('f-area').value = window.__areaPref || '(not set)';
+  $('ready-out').style.display = 'block';
+  $('ready-out').scrollIntoView({behavior:'smooth', block:'nearest'});
+});
+$('consent').addEventListener('change', e => { $('send-btn').disabled = !e.target.checked; });
+$('lead-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('l-name').value.trim(), email = $('l-email').value.trim();
+  const ok = name && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && $('consent').checked;
+  if (!ok){ $('l-error').style.display='block'; return; }
+  $('l-error').style.display='none';
+  // Demo: no real send. In production this POSTs to /api/lead (contact + readiness summary only —
+  // never the income/debt figures, which stay in the browser).
+  $('lead-form').style.display='none';
+  $('send-done').style.display='block';
+});
+</script>
+</body>
+</html>
