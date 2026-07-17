@@ -81,7 +81,7 @@
   headTxt.className = "cbchat-head-txt";
   var title = document.createElement("div");
   title.className = "cbchat-title";
-  title.textContent = "Chat with Carrie's team";
+  title.textContent = "Chat with Carrie";
   var disc = document.createElement("div");
   disc.className = "cbchat-disc";
   disc.textContent = DISCLAIMER;

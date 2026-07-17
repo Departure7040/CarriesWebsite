@@ -46,7 +46,8 @@
     { "find": "337-258-5379", "value_template": "{phone}", "note": "visible display phone number." },
     { "find": "carriebilleaud.exprealty.com", "value_template": "__CANONICAL_HOST_BARE__", "note": "rewrites schema url/@id and search-form hosts from the eXp host to the canonical host (CR-008)." },
     { "find": "\"name\":\"Carrie Billeaud, Realtor\"", "value_template": "\"name\":\"{business_name}\"", "note": "RealEstateAgent schema name." },
-    { "find": "Carrie Billeaud, REALTOR® · eXp Realty", "value_template": "{business_name} · eXp Realty", "note": "visible footer NAP business-name line." }
+    { "find": "Carrie Billeaud, REALTOR® · eXp Realty", "value_template": "{business_name} · eXp Realty", "note": "visible footer NAP business-name line." },
+    { "find": "Broker of record: <span data-broker>to be confirmed at launch</span>", "value_template": "Broker of record: <span data-broker>{broker_name} · {broker_phone}</span>", "note": "LREC 2501(F): inject the sponsoring broker name + phone into the sitewide footer disclosure. Gated by the __FILL__ token check until broker_name/broker_phone are provided." }
   ],
 
   "og_image_default": "/assets/img/carrie-headshot-gbp.webp",

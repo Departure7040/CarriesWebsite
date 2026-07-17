@@ -111,7 +111,6 @@ def build_region(reviews: list) -> str:
 
     google_cards = "\n".join(card_html(r) for r in google)
     other_cards = "\n".join(card_html(r) for r in others)
-    jsonld = build_jsonld(reviews)
 
     return (
         f"{START}\n"
@@ -136,10 +135,10 @@ def build_region(reviews: list) -> str:
         '    <p style="margin-top:1.25rem"><em>Testimonials from Carrie\'s existing website and public profiles; a production launch would confirm permissions and link each to its source.</em></p>\n'
         "  </div>\n"
         "</section>\n"
-        "\n"
-        '<script type="application/ld+json" id="reviews-jsonld">\n'
-        f"{jsonld}\n"
-        "</script>\n"
+        # NOTE: self-referential Review JSON-LD is intentionally NOT emitted — an agent
+        # marking up their own reviews for star snippets is ineligible under Google's
+        # review-snippet policy (CR-009) and flagged by the eXp/LREC compliance audit.
+        # The visible review cards above stay; build_jsonld() is kept for reference only.
         f"{END}"
     )
 
