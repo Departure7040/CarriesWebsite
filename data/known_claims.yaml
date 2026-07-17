@@ -6,21 +6,26 @@ claims:
   - id: phone_primary
     claim: "Primary phone is 337-258-5379"
     source: "Multiple public profiles"
-    status: unverified
+    status: client_confirmed
+    note: "2026-07-17 intake (via assistant Rocel): confirmed as THE canonical NAP number."
   - id: phone_loopnet
     claim: "Phone 337-522-7554 shown on LoopNet search result"
     source: "LoopNet"
-    status: unverified
-    note: "Conflicts with phone_primary — NAP issue"
+    status: client_confirmed
+    note: "2026-07-17: NOT a wrong outlier — a REAL secondary line (in Carrie's own email
+      signature alongside 258-5379). Keep 258-5379 as the single canonical NAP display number
+      for consistency; 522-7554 is a valid alternate, not one to retire."
   - id: address_kaliste
     claim: "Office at 1720 Kaliste Saloom Ste B 2, Lafayette, LA 70508"
     source: "Realtor.com search result"
-    status: unverified
+    status: contradicted
+    note: "2026-07-17: superseded — Carrie chose 3 Flagg Place as canonical. Retire this variant."
   - id: address_flagg
     claim: "Office at 3 Flagg Place Building B, Suite B-4, Lafayette, LA 70508"
     source: "Instagram / Nextdoor snippets"
-    status: unverified
-    note: "Conflicts with address_kaliste — NAP issue"
+    status: client_confirmed
+    note: "2026-07-17 intake: Carrie chose '3 Flagg Place, Bldg B, Suite B-4' as the canonical
+      NAP address 'for now'."
   - id: license
     claim: "License 0995689513"
     source: "Public profiles"
@@ -28,8 +33,11 @@ claims:
   - id: sales_volume
     claim: "174 closed sales, $44.6M total value over prior 5 years"
     source: "Homes.com profile"
-    status: unverified
-    note: "Verify with Carrie before any marketing use. 2026-07-11: an external
+    status: client_confirmed
+    note: "2026-07-17 intake (via Rocel): Carrie APPROVED these figures for marketing use —
+      client-confirm gate satisfied. Caveat: client-approved, NOT independently audited; the
+      figures still have internal conflicts across portals (below). Use as Carrie's own claim.
+      2026-07-11: an external
       sweep claimed this is 'verified by public records, safe for marketing' —
       REJECTED. (1) Circular: Homes.com is the original source, not an
       independent check. (2) Homes.com is an MLS aggregator, not public records;
@@ -43,19 +51,23 @@ claims:
   - id: years_experience
     claim: "11 years of experience"
     source: "Realtor.com"
-    status: unverified
+    status: client_confirmed
+    note: "2026-07-17 intake: client-approved for marketing."
   - id: families_per_year
     claim: "Serves 50+ families yearly"
     source: "Instagram bio"
-    status: unverified
+    status: client_confirmed
+    note: "2026-07-17 intake: client-approved for marketing."
   - id: icon_agent
     claim: "eXp Icon Agent / top-producing Realtor"
     source: "Public profiles"
-    status: unverified
+    status: client_confirmed
+    note: "2026-07-17 intake + her email signature: '3x ICON AGENT'. Client-approved."
   - id: raa_member
     claim: "Member, Realtor Association of Acadiana"
     source: "Public profiles"
-    status: unverified
+    status: client_confirmed
+    note: "2026-07-17 intake: confirmed member."
   - id: rentals_investment
     claim: "Handles rentals / investment property"
     source: "Profile specialties"

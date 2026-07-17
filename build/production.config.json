@@ -3,10 +3,10 @@
   "canonical_host": "https://carriebilleaud.com",
 
   "tokens": {
-    "business_name": "__FILL__",
-    "phone": "__FILL__",
-    "phone_tel": "__FILL__",
-    "address": "__FILL__",
+    "business_name": "Carrie Billeaud, Realtor",
+    "phone": "337-258-5379",
+    "phone_tel": "3372585379",
+    "address": "3 Flagg Place, Bldg B, Suite B-4, Lafayette, LA 70508",
     "email": "__FILL__",
     "license_number": "__FILL__",
     "broker_name": "__FILL__",
@@ -15,7 +15,7 @@
     "broker_jurisdiction": "Licensed by the Louisiana Real Estate Commission",
     "ga4_id": "__FILL__",
     "gsc_verification": "__FILL__",
-    "form_destination": "__FILL__"
+    "form_destination": "/api/lead"
   },
 
   "_token_notes": {
