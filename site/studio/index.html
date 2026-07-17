@@ -77,6 +77,18 @@
     <br><br>Each caption now ends with a <strong>tracked link</strong> to that home's landing page — a different link per platform, so every click and lead ties back to the exact post it came from. See the <a href="attribution.html" style="color:var(--teal-dark);font-weight:600">Attribution dashboard →</a>.
   </div>
 
+  <div id="studio-controls" class="studio-note" style="display:none;border-left-color:var(--teal-dark)">
+    <strong>⚙️ Studio controls</strong> — running locally on this machine. Generate content here, then it appears below.
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.7rem">
+      <button class="copy-btn" data-task="content">Refresh content</button>
+      <button class="copy-btn" data-task="videos">Render videos</button>
+      <button class="copy-btn" data-task="reviews">Review graphics</button>
+      <button class="copy-btn" data-task="market">Market report</button>
+      <button class="copy-btn" data-task="all">Everything</button>
+    </div>
+    <div id="job-status" style="margin-top:.7rem;font-size:.85rem;color:var(--teal-dark);display:none;font-family:ui-monospace,Menlo,monospace"></div>
+  </div>
+
   <div class="card-grid" style="margin-bottom:2.5rem">
     <a class="card" href="#listing-videos" style="text-decoration:none;color:inherit"><h3>🎬 Listing videos</h3><p>Branded "Just Listed" 9:16 Shorts built from each listing's real MLS photos — ready for Reels, TikTok, YouTube.</p></a>
     <a class="card" href="#packages" style="text-decoration:none;color:inherit"><h3>📸 Listing content</h3><p>Branded Just-Listed graphics + a caption for every platform, each with a tracked link. Review &amp; copy them below.</p></a>
@@ -285,6 +297,41 @@ function renderPackage(p, approved){
   } catch(e) {
     grid.innerHTML = '<p>No videos yet — run <code>python build/social/batch_listing_videos.py</code>.</p>';
   }
+})();
+</script>
+<script>
+// Studio controls appear ONLY when served by the local studio app (build/studio_app.py),
+// which exposes /api/jobs + /api/generate. On the public read-only demo these 404, so the
+// controls stay hidden — the demo studio is showcase-only.
+(async function(){
+  let hasApi = false;
+  try { const r = await fetch('/api/jobs', {cache:'no-store'}); hasApi = r.ok; } catch(e){}
+  if(!hasApi) return;
+  const panel = document.getElementById('studio-controls');
+  const status = document.getElementById('job-status');
+  panel.style.display = 'block';
+  let polling = null;
+  const setBusy = b => panel.querySelectorAll('button').forEach(x => x.disabled = b);
+  async function poll(){
+    try{
+      const j = await (await fetch('/api/jobs', {cache:'no-store'})).json();
+      const last = (j.log && j.log.length) ? j.log[j.log.length-1] : '';
+      status.textContent = (j.status||'').toUpperCase() + (j.task?(' · '+j.task):'') + (last?(' — '+last):'');
+      if(j.status === 'running') return;
+      clearInterval(polling); polling = null; setBusy(false);
+      if(j.status === 'done'){ status.textContent = '✓ Done — refreshing…'; setTimeout(() => location.reload(), 900); }
+    }catch(e){ clearInterval(polling); polling = null; setBusy(false); }
+  }
+  panel.querySelectorAll('button[data-task]').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      setBusy(true); status.style.display = 'block'; status.textContent = 'Starting ' + btn.dataset.task + '…';
+      try{
+        const r = await fetch('/api/generate', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({task: btn.dataset.task})});
+        if(!r.ok){ const e = await r.json().catch(()=>({})); status.textContent = '⚠ ' + (e.error || ('HTTP '+r.status)); setBusy(false); return; }
+        polling = setInterval(poll, 2000); poll();
+      }catch(e){ status.textContent = '⚠ ' + e; setBusy(false); }
+    });
+  });
 })();
 </script>
 </body>
