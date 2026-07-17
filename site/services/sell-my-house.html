@@ -59,26 +59,58 @@
     <p class="kicker">What's My Lafayette Home Worth?</p>
     <h2>Request your free, no-obligation home value estimate</h2>
     <p>Fill out the form below and Carrie will personally follow up — this isn't an automated bot estimate. She'll ask a few quick questions about your home, then prepare a real Comparative Market Analysis (CMA) built from current comparable sales near you.</p>
-    <form class="contact-form" method="post" action="#" onsubmit="return false">
+    <style>
+      #seller-form select,#seller-form textarea{width:100%;padding:.6rem .7rem;border:1px solid var(--rule);border-radius:6px;font:inherit;font-size:1rem}
+      #seller-form .three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.6rem}
+      @media(max-width:520px){#seller-form .three{grid-template-columns:1fr}}
+    </style>
+    <form class="contact-form" id="seller-form" method="post" action="/api/lead" novalidate>
+      <input type="hidden" name="source" value="sell-my-house">
+      <div class="hp" aria-hidden="true" style="position:absolute;left:-9999px"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
       <div>
-        <label for="value-address">Property address</label>
-        <input id="value-address" type="text" name="address" placeholder="123 Main St, Lafayette, LA">
+        <label for="value-address">Property address <span aria-hidden="true">*</span></label>
+        <input id="value-address" type="text" name="address" placeholder="123 Main St, Lafayette, LA" required>
       </div>
       <div>
-        <label for="value-name">Name</label>
-        <input id="value-name" type="text" name="name" placeholder="Your name">
+        <label for="value-name">Your name <span aria-hidden="true">*</span></label>
+        <input id="value-name" type="text" name="name" placeholder="Your name" required autocomplete="name">
       </div>
       <div>
-        <label for="value-email">Email</label>
-        <input id="value-email" type="email" name="email" placeholder="you@example.com">
+        <label for="value-email">Email <span aria-hidden="true">*</span></label>
+        <input id="value-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
       </div>
       <div>
         <label for="value-phone">Phone</label>
-        <input id="value-phone" type="tel" name="phone" placeholder="337-000-0000">
+        <input id="value-phone" type="tel" name="phone" placeholder="337-000-0000" autocomplete="tel">
       </div>
-      <button class="btn btn-gold" type="submit" disabled aria-disabled="true">Request my free home value</button>
+      <div class="three">
+        <div><label for="v-beds">Beds</label><input id="v-beds" type="number" name="beds" placeholder="3" inputmode="numeric"></div>
+        <div><label for="v-baths">Baths</label><input id="v-baths" type="text" name="baths" placeholder="2"></div>
+        <div><label for="v-sqft">Approx. sq ft</label><input id="v-sqft" type="number" name="sqft" placeholder="1800" inputmode="numeric"></div>
+      </div>
+      <div>
+        <label for="v-timeline">When are you looking to sell?</label>
+        <select id="v-timeline" name="timeline">
+          <option value="">— pick one —</option>
+          <option>As soon as possible</option>
+          <option>1–3 months</option>
+          <option>3–6 months</option>
+          <option>6–12 months</option>
+          <option>Just curious what it's worth</option>
+        </select>
+      </div>
+      <div>
+        <label for="v-notes">Anything Carrie should know?</label>
+        <textarea id="v-notes" name="notes" rows="3" placeholder="Recent updates, condition, why you're selling — e.g. 'renovated kitchen in 2023, roof 2 yrs old, relocating for work.'"></textarea>
+      </div>
+      <p class="demo-note" style="font-size:.85rem;color:#667;margin:.2rem 0">By submitting, you agree Carrie Billeaud may contact you about your home. No obligation.</p>
+      <button class="btn btn-gold" type="submit">Request my free home value →</button>
+      <p id="sf-error" role="alert" style="color:var(--bad);display:none">Please add your property address, name, and a valid email.</p>
     </form>
-    <p><em>(Demo form — a production build sends this to Carrie instantly)</em></p>
+    <div id="sf-done" class="finding" style="display:none;margin-top:1rem">
+      <h3 style="margin-top:0">Thanks — Carrie will pull your comps <span class="tag verified">Received</span></h3>
+      <p>She'll review recent comparable sales for <strong id="sf-addr">your home</strong> and follow up personally with a real CMA. <em>(Demo: nothing was actually sent — in production this reaches Carrie instantly with everything you entered.)</em></p>
+    </div>
 
     <div class="finding" style="margin-top:1.5rem">
       <h3 style="margin-top:0">A real CMA vs. an online estimate</h3>
@@ -210,4 +242,23 @@
 </div></footer>
 <div class="sticky-call"><a href="tel:3372585379">📞 Call Carrie — 337-258-5379</a></div>
 <script src="../assets/nav.js" defer></script>
+<script>
+(function(){
+  var f = document.getElementById('seller-form'); if(!f) return;
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var addr = f.address.value.trim(), name = f.name.value.trim(), email = f.email.value.trim();
+    var err = document.getElementById('sf-error');
+    if(!(addr && name && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))){ err.style.display='block'; return; }
+    err.style.display='none';
+    document.getElementById('sf-addr').textContent = addr;
+    // Demo: reveal confirmation client-side. Production POSTs all fields to /api/lead
+    // (address, beds/baths/sqft, timeline, notes) so Carrie can prep a CMA before she calls.
+    f.style.display='none';
+    var done = document.getElementById('sf-done');
+    done.style.display='block';
+    done.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+})();
+</script>
 </body></html>
