@@ -82,7 +82,7 @@ _CSS = """
 """
 
 
-def intro_html(l, logo, font):
+def intro_html(l, logo, font, label, price_disp):
     return f"""<!doctype html><meta charset=utf-8><style>{_CSS.replace('{FONT}', font)}
   #root{{background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;text-align:center;padding:0 90px}}
   .price{{color:var(--ivory);font-size:150px;line-height:1;letter-spacing:-.01em}}
@@ -90,14 +90,14 @@ def intro_html(l, logo, font):
   .specs{{color:var(--gold);font-size:34px;letter-spacing:.14em;margin-top:10px}}
   .foot{{position:absolute;bottom:120px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:16px}}
   .foot img{{height:78px}} .foot .sub{{color:var(--muted);font-size:26px;letter-spacing:.24em;text-transform:uppercase}}
-</style><div id=root><div class=kick>{LABEL}</div><hr class=rule>
-  <div class="serif price">{l['price']}</div>
+</style><div id=root><div class=kick>{label}</div><hr class=rule>
+  <div class="serif price">{price_disp}</div>
   <div><div class="serif addr">{l['address']}</div><div class=city>{l['city']}</div></div>
   <div class=specs>{specs(l)}</div>
   <div class=foot><img class=logo src="{logo}"><div class=sub>REALTOR&reg; &middot; eXp Realty</div></div></div>"""
 
 
-def bug_html(l, font):
+def bug_html(l, font, price_disp):
     """Compact persistent price/address bar for the photo montage."""
     return f"""<!doctype html><meta charset=utf-8><style>{_CSS.replace('{FONT}', font)}
   #root{{background:transparent}}
@@ -108,12 +108,12 @@ def bug_html(l, font):
   .bar .addr{{color:var(--ivory);font-size:32px;letter-spacing:.02em;margin-top:16px;white-space:nowrap}}
   .bar .specs2{{color:var(--gold);font-size:28px;letter-spacing:.10em;margin-top:10px;white-space:nowrap}}
 </style><div id=root><div class=scrim></div>
-  <div class=bar><div class="serif price">{l['price']}</div>
+  <div class=bar><div class="serif price">{price_disp}</div>
   <div class=addr>{l['address']}, {l['city']}</div>
   <div class=specs2>{specs(l)}</div></div></div>"""
 
 
-def lowerthird_html(l, font):
+def lowerthird_html(l, font, label, price_disp):
     """Full lower third for single-hero fallback."""
     return f"""<!doctype html><meta charset=utf-8><style>{_CSS.replace('{FONT}', font)}
   #root{{background:transparent}}
@@ -124,18 +124,18 @@ def lowerthird_html(l, font):
   .lt .addr{{color:var(--ivory);font-size:46px;margin-top:14px}} .lt .city{{color:var(--muted);font-size:32px;letter-spacing:.14em;text-transform:uppercase;margin-top:4px}}
   .lt .specs{{color:var(--gold);font-size:32px;letter-spacing:.12em;margin-top:20px}}
 </style><div id=root><div class=scrim></div><div class=lt>
-  <div class=kick>{LABEL}</div><div class="serif price">{l['price']}</div>
+  <div class=kick>{label}</div><div class="serif price">{price_disp}</div>
   <div class="serif addr">{l['address']}</div><div class=city>{l['city']}</div><div class=specs>{specs(l)}</div></div></div>"""
 
 
-def outro_html(logo, font):
+def outro_html(logo, font, cta="Schedule a private showing"):
     return f"""<!doctype html><meta charset=utf-8><style>{_CSS.replace('{FONT}', font)}
   #root{{background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;text-align:center;padding:0 90px}}
   .logo{{height:150px}} .name{{color:var(--ivory);font-size:60px}} .sub{{color:var(--muted);font-size:32px;letter-spacing:.22em;text-transform:uppercase}}
   .cta{{color:var(--ivory);font-size:44px;margin-top:8px}} .phone{{color:var(--gold);font-size:58px;letter-spacing:.03em}}
 </style><div id=root><img class=logo src="{logo}">
   <div class="serif name">Carrie Billeaud</div><div class=sub>REALTOR&reg; &middot; eXp Realty &middot; Acadiana</div>
-  <hr class=rule><div class="serif cta">Schedule a private showing</div><div class=phone>337-258-5379</div></div>"""
+  <hr class=rule><div class="serif cta">{cta}</div><div class=phone>337-258-5379</div></div>"""
 
 
 def free_port():
@@ -150,10 +150,15 @@ def serve_dir(directory, port):
     return httpd
 
 
-def render_cards(listing, work):
+def render_cards(listing, work, sold=False):
     logo, font = data_uri(LOGO_PATH), font_b64()
-    cards = {"intro": intro_html(listing, logo, font), "bug": bug_html(listing, font),
-             "lowerthird": lowerthird_html(listing, font), "outro": outro_html(logo, font)}
+    label = "JUST SOLD" if sold else LABEL
+    # Louisiana is a NON-DISCLOSURE state — sale prices aren't public — so a Just
+    # Sold post shows "SOLD", never the price. (Only use on your OWN closed sales.)
+    price_disp = "SOLD" if sold else listing["price"]
+    cta = "Thinking of selling? Let's talk." if sold else "Schedule a private showing"
+    cards = {"intro": intro_html(listing, logo, font, label, price_disp), "bug": bug_html(listing, font, price_disp),
+             "lowerthird": lowerthird_html(listing, font, label, price_disp), "outro": outro_html(logo, font, cta)}
     port = free_port(); httpd = serve_dir(work, port); out = {}
     try:
         with sync_playwright() as p:
@@ -258,17 +263,18 @@ def gather_photos(slug, listing):
     return [hero], False
 
 
-def render_video(slug, listing, photos, is_gallery, music_arg=None):
+def render_video(slug, listing, photos, is_gallery, music_arg=None, sold=False):
     """Core render: given listing metadata (price/address/city/beds/baths/sqft)
     + a list of photo paths, produce the branded Short. Reused by the CLI (build)
-    and by batch_listing_videos.py (feed-driven, all active listings)."""
+    and by batch_listing_videos.py (feed-driven, all active listings).
+    sold=True renders a "JUST SOLD" variant (price hidden — LA is non-disclosure)."""
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    final = OUT_DIR / f"{slug}-short.mp4"
+    final = OUT_DIR / f"{slug}{'-sold' if sold else ''}-short.mp4"
 
     with tempfile.TemporaryDirectory() as td:
         work = Path(td)
-        print(f"[{slug}] {'gallery' if is_gallery else 'single-hero'}: {len(photos)} photo(s); rendering cards...")
-        cards = render_cards(listing, work)
+        print(f"[{slug}] {'JUST SOLD · ' if sold else ''}{'gallery' if is_gallery else 'single-hero'}: {len(photos)} photo(s); rendering cards...")
+        cards = render_cards(listing, work, sold)
 
         # Photo montage (or single hero with a full lower third).
         segs = []
@@ -307,17 +313,18 @@ def render_video(slug, listing, photos, is_gallery, music_arg=None):
     return final
 
 
-def build(slug, music_arg=None):
+def build(slug, music_arg=None, sold=False):
     listing = LISTINGS.get(slug)
     if not listing:
         raise SystemExit(f"Unknown listing '{slug}'. Options: {', '.join(LISTINGS)}")
     photos, is_gallery = gather_photos(slug, listing)
-    return render_video(slug, listing, photos, is_gallery, music_arg)
+    return render_video(slug, listing, photos, is_gallery, music_arg, sold)
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("slug", nargs="?", default="101-rio-ridge-dr")
     ap.add_argument("--music", default=None, help="path to a licensed/AI-generated instrumental track (mp3/wav)")
+    ap.add_argument("--sold", action="store_true", help="render a JUST SOLD variant (price hidden — use on YOUR OWN closed sales only)")
     a = ap.parse_args()
-    build(a.slug, a.music)
+    build(a.slug, a.music, a.sold)
