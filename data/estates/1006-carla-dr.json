@@ -1,0 +1,279 @@
+{
+  "slug": "1006-carla-dr",
+  "wordmark": "1006 Carla",
+  "wordmark_sub": "Saint Martinville · Louisiana",
+  "facts": {
+    "address": "1006 Carla Dr",
+    "city": "Saint Martinville",
+    "state": "LA",
+    "zip": "70582",
+    "price": "$599,000",
+    "status": "For Sale",
+    "beds": 3,
+    "baths": "2.5+",
+    "sqft": "3,800",
+    "lot": "5 acres",
+    "year_built": null,
+    "garage": "",
+    "type_short": "Single-Family",
+    "property_type": "Single-Family",
+    "mls": "",
+    "realtor_url": "https://www.realtor.com/realestateandhomes-detail/1006-Carla-Dr_St-Martinvlle_LA_70582_M86324-76620",
+    "lat": 30.103876,
+    "lon": -91.897529
+  },
+  "agent": {
+    "name_title": "Carrie Billeaud, REALTOR®",
+    "brokerage": "eXp Realty",
+    "phone": "337-258-5379",
+    "phone_tel": "3372585379",
+    "headshot": "/assets/img/carrie-headshot-gbp.webp",
+    "bio": "Offered by Carrie Billeaud, REALTOR® with eXp Realty. For private showings and further detail on 1006 Carla Drive, Carrie can be reached directly at 337-258-5379."
+  },
+  "seo": {
+    "title": "1006 Carla Dr, Saint Martinville, LA 70582 — For Sale $599,000",
+    "meta_description": "For Sale: 1006 Carla Dr, Saint Martinville, LA 70582. Single-Family — 3 bed, 2.5+ bath, 3,800 sq ft. Offered at $599,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty.",
+    "og_title": "1006 Carla Dr, Saint Martinville, LA 70582 — For Sale $599,000",
+    "og_description": "Single-Family — 3 bed / 2.5+ bath / 3,800 sq ft. Offered at $599,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty."
+  },
+  "copy": {
+    "overview_eyebrow": "The Home",
+    "details_eyebrow": "Property Details",
+    "details_heading": "The Details",
+    "features_eyebrow": "Features",
+    "features_heading": "Features & Highlights",
+    "gallery_eyebrow": "Gallery",
+    "gallery_heading": "Photo Gallery",
+    "video_eyebrow": "Tour",
+    "video_heading": "Video Walkthrough",
+    "location_eyebrow": "Location",
+    "location_heading": "The Setting",
+    "cta_eyebrow": "Contact",
+    "cta_heading": "Schedule a Showing",
+    "hero_tagline": "A gracious brick-and-white colonial on five wooded acres in the heart of Acadiana",
+    "overview_heading": "Columned Grace, Countryside Calm",
+    "overview_paragraphs": [
+      "Set well back from the road behind an expanse of manicured lawn, this two-story colonial announces itself with quiet confidence — a columned portico, gabled roof, and brick chimney rising against the white-and-red-brick facade. A concrete drive traces the approach beneath a canopy of mature trees, the wooded perimeter framing the residence on all sides.",
+      "Inside, vaulted ceilings and hardwood floors carry through generous living spaces anchored by a wood-manteled fireplace and white brick surround. Plantation shutters and glass doors temper the light; a chandeliered dining room opens through French doors to the grounds. The kitchen pairs granite countertops and a substantial dark island with stainless appliances, including a double oven, beneath pendant lighting.",
+      "Across 3,800 square feet, three bedrooms and two-and-a-half-plus baths include a master retreat with a soaking tub, separate glass-enclosed walk-in shower, and dual-sink vanity. Beyond the walls, five acres unfold into an outdoor realm of covered pavilions, an outdoor kitchen, a pergola-shaded patio, and a screened porch with a swing bed overlooking the trees."
+    ],
+    "pull_quote": "Five acres of open lawn and shade trees, ordered around a home built for gathering — indoors and out.",
+    "feature_groups": [
+      {
+        "title": "The Residence",
+        "items": [
+          "Vaulted-ceiling living spaces with wood-manteled fireplace and white brick surround",
+          "Hardwood floors, plantation shutters, and abundant natural light",
+          "Chandeliered dining room with French doors to the grounds",
+          "Granite kitchen with dark center island, stainless appliances, and double oven"
+        ]
+      },
+      {
+        "title": "Private Quarters",
+        "items": [
+          "Master suite with upholstered headboard, shuttered windows, and hardwood floors",
+          "Master bath with soaking tub and separate glass-enclosed walk-in shower",
+          "Dual-sink marble vanity beneath an oversized framed mirror",
+          "Walk-in closet with integrated shelving and lighting"
+        ]
+      },
+      {
+        "title": "The Grounds & Outbuildings",
+        "items": [
+          "Five acres of manicured lawn ringed by mature shade trees",
+          "Covered outdoor kitchen and multiple beamed pavilions",
+          "Pergola-shaded concrete patio and screened porch with swing bed",
+          "Carports, wood storage buildings, and a decorative garden pond feature"
+        ]
+      }
+    ],
+    "location_paragraphs": [
+      "1006 Carla Drive sits within St. Martin Parish in the heart of Louisiana's Acadiana region, where Saint Martinville's small-town character meets the open countryside. The five-acre parcel offers a rural setting with a wooded perimeter, yet remains within reach of the broader Lafayette area's shopping, dining, and services.",
+      "The grounds themselves define the address: expansive lawn, mature trees, and generous outdoor living structures create a private, self-contained retreat set back from the road along a landscaped concrete drive."
+    ],
+    "location_points": [
+      "Saint Martinville, St. Martin Parish, Louisiana (70582)",
+      "Situated in the Acadiana region of south Louisiana",
+      "Five-acre parcel with a wooded perimeter for privacy",
+      "Set back from the road along a landscaped concrete driveway",
+      "Within reach of the greater Lafayette area's amenities",
+      "Expansive open lawn shaded by mature trees",
+      "Multiple covered outdoor structures and outbuildings on site",
+      "Single-family colonial residence on a large rural lot"
+    ],
+    "hero_eyebrow": "For Sale",
+    "hero_address": "1006 Carla Drive · Saint Martinville, Louisiana 70582",
+    "footer_brand": "1006 Carla Drive",
+    "footer_brand_sub": "Saint Martinville · Louisiana · 70582",
+    "cta_sub": "1006 Carla Drive is available to tour by appointment. To see the home for yourself, contact Carrie Billeaud at eXp Realty — 337-258-5379."
+  },
+  "media": {
+    "hero_photo": "01.jpg",
+    "hero_alt": "Front facade of two-story white and red brick colonial home with columned portico, gabled roof, brick chimney, landscaped beds, and manicured lawn.",
+    "video": "/studio/packages/videos/1006-carla-dr-short.mp4",
+    "video_poster": "07.jpg",
+    "gallery_dir": "/assets/img/listings/gallery/1006-carla-dr/",
+    "photos": [
+      {
+        "file": "01.jpg",
+        "alt": "Front facade of two-story white and red brick colonial home with columned portico, gabled roof, brick chimney, landscaped beds, and manicured lawn."
+      },
+      {
+        "file": "02.jpg",
+        "alt": "Wide view of white and brick colonial home across expansive green lawn with driveway and wooded perimeter under blue sky."
+      },
+      {
+        "file": "03.jpg",
+        "alt": "Side view of home showing white main structure with tall columns, adjoining brick section, curved foundation plantings, and mature trees."
+      },
+      {
+        "file": "04.jpg",
+        "alt": "Rear exterior of home with wooden-column covered porch, white and brick construction, driveway, and surrounding mature trees."
+      },
+      {
+        "file": "05.jpg",
+        "alt": "Vaulted ceiling living space with wood-manteled fireplace, white subway-tile surround, ceiling fans, and glass doors with plantation shutters."
+      },
+      {
+        "file": "06.jpg",
+        "alt": "Furnished living room with fireplace, cream sofa, wooden side table, round mirror, wood coffee table on area rug, and windows."
+      },
+      {
+        "file": "07.jpg",
+        "alt": "Spacious living room with vaulted ceiling, fireplace with wood mantel and white brick, hardwood floors, cream furnishings, and side chairs."
+      },
+      {
+        "file": "08.jpg",
+        "alt": "Living room with vaulted ceiling, wood-manteled fireplace with white brick, wooden TV console, hardwood floors, and shuttered windows."
+      },
+      {
+        "file": "09.jpg",
+        "alt": "Unfurnished room with vaulted ceiling, wood-manteled fireplace with white brick surround, hardwood floors, ceiling fans, and windows."
+      },
+      {
+        "file": "10.jpg",
+        "alt": "Empty bedroom with white walls, plank-accent wall, wood-style flooring, window with shutters, ceiling light, and open doorway."
+      },
+      {
+        "file": "11.jpg",
+        "alt": "Dining room with wood table, six beige upholstered chairs, cream walls, chandelier, French doors leading outdoors, potted plants, window, landscape artwork, wood flooring, neutral area rug."
+      },
+      {
+        "file": "12.jpg",
+        "alt": "Entry foyer with wood staircase, white spindle railing, cream walls, hardwood and tile flooring, glass-paned door, and bright lighting throughout."
+      },
+      {
+        "file": "13.jpg",
+        "alt": "Kitchen with cream and beige cabinetry, large black island with wood accents, granite countertops, cream tile backsplash, stainless appliances, pendant light, window."
+      },
+      {
+        "file": "14.jpg",
+        "alt": "Kitchen view with light wood cabinetry, dark island with granite top, glass tile backsplash, stainless double oven, window, glass-paned door to patio."
+      },
+      {
+        "file": "15.jpg",
+        "alt": "Kitchen with cream and light wood cabinetry, dark island with granite countertop, decorative tile backsplash, stainless appliances, pendant lighting, window."
+      },
+      {
+        "file": "16.jpg",
+        "alt": "Large open room with tile flooring, glass-paned doors with windows, built-in white cabinetry with granite countertop, ceiling fan, bright natural lighting."
+      },
+      {
+        "file": "17.jpg",
+        "alt": "Master bedroom with wood bed frame, striped bedding, wood dresser, multiple closets with raised panel doors, window with blinds, recessed lighting."
+      },
+      {
+        "file": "18.jpg",
+        "alt": "Bathroom with dark wood vanity cabinet, marble countertop, framed mirror, white subway tile walls, patterned shower curtain, white toilet, tile flooring."
+      },
+      {
+        "file": "19.jpg",
+        "alt": "Bedroom with white ceiling fan with light fixture, single window with blinds, wood laminate flooring, white walls."
+      },
+      {
+        "file": "20.jpg",
+        "alt": "Bedroom with white ceiling fan with light fixture, single window with blinds, wood laminate flooring, white walls."
+      },
+      {
+        "file": "21.jpg",
+        "alt": "Master bedroom with beige upholstered headboard bed, white bedding, wood nightstands with table lamps, round mirror, window with shutters, ceiling fan, hardwood flooring, beige area rug, potted plant."
+      },
+      {
+        "file": "22.jpg",
+        "alt": "Empty walk-in closet with white walls and trim, upper wooden shelving with brass brackets and integrated lighting, hardwood flooring, electrical outlet."
+      },
+      {
+        "file": "23.jpg",
+        "alt": "Spacious bedroom with open double doors to closet area, hardwood floors, white walls and trim, two large windows with white shutters, ceiling fan."
+      },
+      {
+        "file": "24.jpg",
+        "alt": "Staged master bedroom with upholstered bed, white linens, wooden bench at foot of bed, wood nightstands with lamps, windows with shutters, framed artwork, potted plants, beige rug."
+      },
+      {
+        "file": "25.jpg",
+        "alt": "Master bathroom with soaking tub and separate walk-in shower with glass enclosure, geometric tile accent wall, travertine shower tiles, white walls, recessed lighting, chrome fixtures."
+      },
+      {
+        "file": "26.jpg",
+        "alt": "Bathroom vanity with black cabinet base, white marble countertop, dual chrome sinks, oversized gold-framed textured mirror, sconce lighting, white walls, hardwood flooring."
+      },
+      {
+        "file": "27.jpg",
+        "alt": "White metal-frame carport with corrugated metal roof on concrete pad, attached wooden storage building with metal roof and wood siding, green lawn and mature trees."
+      },
+      {
+        "file": "28.jpg",
+        "alt": "Half bathroom with white toilet, black cabinet vanity with white marble countertop, dual chrome fixtures, illuminated mirror, white walls, hardwood flooring."
+      },
+      {
+        "file": "29.jpg",
+        "alt": "Wooden pavilion structure with exposed beams and subflooring on concrete floor, open sides, ceiling fan, surrounded by open green lawn and dense trees."
+      },
+      {
+        "file": "30.jpg",
+        "alt": "Rustic wood-post carport with metal roof, attached wooden storage shed with board-and-batten siding and metal roof, surrounded by mature trees and green grass."
+      },
+      {
+        "file": "31.jpg",
+        "alt": "Open-air concrete patio under wooden beam pergola with yellow stucco wall, supporting posts, and French doors. Green lawn and trees visible beyond covered structure."
+      },
+      {
+        "file": "32.jpg",
+        "alt": "Covered outdoor kitchen with exposed wooden beam ceiling, wooden cabinet and shelving, metal bar seating, and concrete floor. Supporting posts frame green landscape beyond."
+      },
+      {
+        "file": "33.jpg",
+        "alt": "Large covered pavilion with exposed wood beam ceiling and posts, built-in wooden kitchen counter, concrete floor, and multiple window openings overlooking trees."
+      },
+      {
+        "file": "34.jpg",
+        "alt": "Screened porch with wooden shiplap walls, brick patio flooring, ceiling fan, and interior swing bed. Large screened windows overlook wooded area."
+      },
+      {
+        "file": "35.jpg",
+        "alt": "Metal decorative pond basin with water lilies and aquatic plants. Weathered wood fence visible in background. Garden feature in yard setting."
+      },
+      {
+        "file": "36.jpg",
+        "alt": "Expansive green lawn with mature shade trees. Brick structure with brick chimney visible on right. Clear sky with clouds. Large open property grounds."
+      },
+      {
+        "file": "37.jpg",
+        "alt": "Front property view featuring white brick main residence with covered porch structure. Mature trees provide canopy. Green lawn, concrete driveway, outbuilding visible."
+      },
+      {
+        "file": "38.jpg",
+        "alt": "Driveway approach with red brick building on right, covered carport with white columns on left. Mature trees, green lawn, concrete drive, landscaped beds."
+      },
+      {
+        "file": "39.jpg",
+        "alt": "Red brick structure with cream double doors and black awning. Mature trees flank both sides. Concrete walkway, green lawn, landscaped beds lining entry."
+      }
+    ]
+  },
+  "compliance": {
+    "broker_disclosure_html": "  <footer class=\"listing-disclosure\" role=\"contentinfo\" style=\"font-size:0.85rem;line-height:1.55;padding:1.5rem 1.25rem;border-top:1px solid #ccc;\">\n\n    <div class=\"disclosure-agent\">\n      Presented by <strong>Carrie Billeaud, REALTOR&reg;</strong>\n      &mdash; <span class=\"disclosure-brokerage\">eXp Realty</span>\n      &middot; <a href=\"tel:3372585379\">337-258-5379</a>\n    </div>\n\n    <div class=\"disclosure-broker\" style=\"margin-top:0.5rem;\">\n      Sponsoring / qualifying broker:\n      <strong><span data-broker=\"name\">to be confirmed at launch</span></strong>\n      &middot; Broker phone:\n      <strong><a data-broker=\"phone\" href=\"#\">to be confirmed at launch</a></strong>\n    </div>\n\n    <div class=\"disclosure-jurisdiction\" style=\"margin-top:0.5rem;\">\n      Licensed by the Louisiana Real Estate Commission.\n    </div>\n\n    <div class=\"disclosure-property\" style=\"margin-top:0.5rem;\">\n      1006 Carla Dr, Saint Martinville, LA 70582 &middot; <strong>For Sale</strong> &middot; <strong>$599,000</strong>. Information deemed reliable but not guaranteed; buyer to verify all details. Price and availability subject to change without notice.\n    </div>\n\n    <div class=\"disclosure-eho\" style=\"margin-top:0.75rem;display:flex;align-items:center;gap:0.5rem;\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity\" style=\"flex:0 0 auto;\" fill=\"currentColor\"><path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/></svg>\n      <span>Equal Housing Opportunity.</span>\n    </div>\n\n  </footer>",
+    "fair_housing_html": "    <aside class=\"fair-housing-notice\" role=\"note\" aria-label=\"Equal Housing Opportunity notice\" style=\"display:flex;align-items:flex-start;gap:0.6rem;font-size:0.85rem;line-height:1.55;padding:1rem 1.25rem;\">\n      <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity logo\" style=\"flex:0 0 auto;margin-top:0.1rem;\" fill=\"currentColor\">\n        <path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/>\n      </svg>\n      <p style=\"margin:0;\">\n        <strong>Equal Housing Opportunity.</strong>\n        This property is offered without regard to race, color, religion, sex,\n        handicap, familial status, or national origin, or any other class\n        protected by federal, state, or local fair housing law. We are pledged\n        to the letter and spirit of U.S. policy for the achievement of equal\n        housing opportunity throughout the nation.\n      </p>\n    </aside>"
+  }
+}

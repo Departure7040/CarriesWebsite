@@ -86,6 +86,15 @@
       <button class="copy-btn" data-task="market">Market report</button>
       <button class="copy-btn" data-task="all">Everything</button>
     </div>
+    <div style="margin-top:.8rem;padding-top:.7rem;border-top:1px solid var(--rule,#e3ded4)">
+      <strong style="font-size:.85rem">🏛️ Estate microsite</strong>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.4rem;align-items:center">
+        <input id="estate-address" type="text" placeholder="Listing address, e.g. 101 Rio Ridge Dr" aria-label="Listing address" style="flex:1;min-width:220px;padding:.4rem .6rem;border:1px solid var(--rule,#e3ded4);border-radius:6px;font:inherit">
+        <button class="copy-btn" data-task="estate">Build estate site</button>
+        <button class="copy-btn" data-task="estate-all">Build all listings</button>
+      </div>
+      <div style="font-size:.78rem;color:#5a6472;margin-top:.35rem">Pulls the listing + photos, writes copy &amp; captions (via local Claude Code), and builds a dedicated site under <code>/estates/</code>. A few minutes per home.</div>
+    </div>
     <div id="job-status" style="margin-top:.7rem;font-size:.85rem;color:var(--teal-dark);display:none;font-family:ui-monospace,Menlo,monospace"></div>
   </div>
 
@@ -326,7 +335,8 @@ function renderPackage(p, approved){
     btn.addEventListener('click', async () => {
       setBusy(true); status.style.display = 'block'; status.textContent = 'Starting ' + btn.dataset.task + '…';
       try{
-        const r = await fetch('/api/generate', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({task: btn.dataset.task})});
+        var addrEl = document.getElementById('estate-address');
+        const r = await fetch('/api/generate', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({task: btn.dataset.task, address: addrEl ? addrEl.value : ''})});
         if(!r.ok){ const e = await r.json().catch(()=>({})); status.textContent = '⚠ ' + (e.error || ('HTTP '+r.status)); setBusy(false); return; }
         polling = setInterval(poll, 2000); poll();
       }catch(e){ status.textContent = '⚠ ' + e; setBusy(false); }

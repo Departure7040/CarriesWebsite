@@ -1,0 +1,176 @@
+{
+  "slug": "110-marais-ave",
+  "wordmark": "110 Marais",
+  "wordmark_sub": "Youngsville · Louisiana",
+  "facts": {
+    "address": "110 Marais Ave",
+    "city": "Youngsville",
+    "state": "LA",
+    "zip": "70592",
+    "price": "$330,000",
+    "status": "For Sale",
+    "beds": 5,
+    "baths": "2.5",
+    "sqft": "2,625",
+    "lot": "0.2 acre",
+    "year_built": 2018,
+    "garage": "2 cars",
+    "type_short": "Single-Family",
+    "property_type": "Single-Family",
+    "mls": "",
+    "realtor_url": "https://www.realtor.com/realestateandhomes-detail/110-Marais-Ave_Youngsville_LA_70592_M74796-59854",
+    "lat": 30.09154,
+    "lon": -91.987769
+  },
+  "agent": {
+    "name_title": "Carrie Billeaud, REALTOR®",
+    "brokerage": "eXp Realty",
+    "phone": "337-258-5379",
+    "phone_tel": "3372585379",
+    "headshot": "/assets/img/carrie-headshot-gbp.webp",
+    "bio": "Offered by Carrie Billeaud, REALTOR® with eXp Realty. For private showings and further detail on 110 Marais Avenue, Carrie can be reached directly at 337-258-5379."
+  },
+  "seo": {
+    "title": "110 Marais Ave, Youngsville, LA 70592 — For Sale $330,000",
+    "meta_description": "For Sale: 110 Marais Ave, Youngsville, LA 70592. Single-Family — 5 bed, 2.5 bath, 2,625 sq ft. Offered at $330,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty.",
+    "og_title": "110 Marais Ave, Youngsville, LA 70592 — For Sale $330,000",
+    "og_description": "Single-Family — 5 bed / 2.5 bath / 2,625 sq ft. Offered at $330,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty."
+  },
+  "copy": {
+    "overview_eyebrow": "The Home",
+    "details_eyebrow": "Property Details",
+    "details_heading": "The Details",
+    "features_eyebrow": "Features",
+    "features_heading": "Features & Highlights",
+    "gallery_eyebrow": "Gallery",
+    "gallery_heading": "Photo Gallery",
+    "video_eyebrow": "Tour",
+    "video_heading": "Video Walkthrough",
+    "location_eyebrow": "Location",
+    "location_heading": "The Setting",
+    "cta_eyebrow": "Contact",
+    "cta_heading": "Schedule a Showing",
+    "hero_tagline": "A brick two-story that trades flash for ease, on a quiet Youngsville street.",
+    "overview_heading": "Considered Comfort at 110 Marais Avenue",
+    "overview_paragraphs": [
+      "Set behind a manicured lawn on a fenced 0.2-acre lot, this 2018-built brick residence reads as unhurried and sure of itself. A peaked roofline and attached two-car garage anchor the façade, while neighboring homes frame a settled, established street.",
+      "Inside, 2,625 square feet unfold in an open-concept plan where a dark exposed beam crosses the living room and a teal accent wall meets crisp white trim. The kitchen and dining area flow toward glass doors that open onto a fenced backyard patio — the natural center of the home.",
+      "With five bedrooms and two and a half baths across two levels, the layout leaves room to spread out: a lower-level family room, a dedicated laundry room, and gathering spaces that shift easily between quiet evenings and full houses."
+    ],
+    "pull_quote": "Restraint, not spectacle — a home built in 2018 and finished with an even hand.",
+    "feature_groups": [
+      {
+        "title": "Kitchen & Dining",
+        "items": [
+          "White cabinetry paired with a green island and speckled granite countertops",
+          "Dual black ranges and stainless steel appliances",
+          "White subway tile backsplash",
+          "Dark hardwood flooring with a window above the sink",
+          "Edison pendant lighting over the dining table",
+          "Sliding glass doors opening to the backyard patio"
+        ]
+      },
+      {
+        "title": "Living Spaces",
+        "items": [
+          "Open-concept living room with an exposed dark wood beam and ceiling fan",
+          "Teal and white shiplap accent walls",
+          "Wall-mounted television with floating shelves",
+          "Lower-level family room with dual sectionals and white storage cubbies",
+          "Bright entryway with dark wood flooring and a teal glass-panel door"
+        ]
+      },
+      {
+        "title": "Comfort & Structure",
+        "items": [
+          "Five bedrooms and two and a half baths across 2,625 square feet",
+          "Built in 2018 on a 0.2-acre lot",
+          "Brick two-story exterior with a peaked roof",
+          "Attached two-car garage",
+          "Dedicated laundry room with front-load washer and dryer",
+          "Fenced backyard with patio and lawn"
+        ]
+      }
+    ],
+    "location_paragraphs": [
+      "110 Marais Avenue sits in Youngsville, Louisiana, in the heart of the Acadiana region of the state's south. The setting is residential and established, with neighboring homes lining a tidy, fenced street.",
+      "The 0.2-acre parcel offers a manicured front lawn and a fully fenced backyard, giving the property a defined sense of place within its community."
+    ],
+    "location_points": [
+      "Located in Youngsville, Louisiana (ZIP 70592)",
+      "Positioned within the Acadiana region of south Louisiana",
+      "Set on a residential street among established neighboring homes",
+      "0.2-acre lot with a fenced backyard",
+      "Manicured front lawn with a grass strip and mailbox at the curb",
+      "Brick two-story construction completed in 2018",
+      "Attached two-car garage with adjacent driveway parking",
+      "Single-family home offered at $330,000"
+    ],
+    "hero_eyebrow": "For Sale",
+    "hero_address": "110 Marais Avenue · Youngsville, Louisiana 70592",
+    "footer_brand": "110 Marais Avenue",
+    "footer_brand_sub": "Youngsville · Louisiana · 70592",
+    "cta_sub": "110 Marais Avenue is available to tour by appointment. To see the home for yourself, contact Carrie Billeaud at eXp Realty — 337-258-5379."
+  },
+  "media": {
+    "hero_photo": "01.jpg",
+    "hero_alt": "Brick two-story home with peaked roof, attached two-car garage, manicured lawn, wooden fence, black mailbox on grass strip, neighboring homes visible.",
+    "video": "/studio/packages/videos/110-marais-ave-short.mp4",
+    "video_poster": "07.jpg",
+    "gallery_dir": "/assets/img/listings/gallery/110-marais-ave/",
+    "photos": [
+      {
+        "file": "01.jpg",
+        "alt": "Brick two-story home with peaked roof, attached two-car garage, manicured lawn, wooden fence, black mailbox on grass strip, neighboring homes visible."
+      },
+      {
+        "file": "02.jpg",
+        "alt": "Open-concept living room with teal accent wall, white trim, exposed dark wood beam, ceiling fan, gray sectional sofa, kitchen visible in background."
+      },
+      {
+        "file": "03.jpg",
+        "alt": "Living room with gray L-shaped sectional, white armchair, white shiplap accent wall, wall-mounted TV with floating shelves, wood-look decorative stove."
+      },
+      {
+        "file": "04.jpg",
+        "alt": "Basement family room with teal accent wall, two gray sectionals facing wall-mounted TV, white storage cubbies, wood trim details."
+      },
+      {
+        "file": "05.jpg",
+        "alt": "Kitchen with white cabinetry, green island with speckled granite countertop, dual black ranges, stainless steel appliances, white subway tile backsplash."
+      },
+      {
+        "file": "06.jpg",
+        "alt": "Galley kitchen with white cabinets, speckled granite counters, dual black ovens, white pantry door, dark hardwood flooring, window above sink."
+      },
+      {
+        "file": "07.jpg",
+        "alt": "Kitchen and dining area with white cabinetry, green island, dual black ranges, white subway backsplash, dark wood beams, glass doors to patio."
+      },
+      {
+        "file": "08.jpg",
+        "alt": "Laundry room with white wall cabinets, green accent wall, black front-load washer and dryer, decorative signage, upper shelving for storage."
+      },
+      {
+        "file": "09.jpg",
+        "alt": "Dining room with long wood table, dark wood X-back chairs, Edison pendant light, large sliding glass doors and windows overlooking fenced backyard patio."
+      },
+      {
+        "file": "10.jpg",
+        "alt": "Dining area with long wood table, dark wood X-back chairs, Edison pendant lights, large sliding glass doors to backyard patio with fencing and furniture."
+      },
+      {
+        "file": "11.jpg",
+        "alt": "Overhead view of residential stairwell with gray carpeted stairs, white walls and trim, black modern pendant light fixture, and wooden handrail. Window shows parked vehicle exterior."
+      },
+      {
+        "file": "12.jpg",
+        "alt": "Bright entryway with light gray walls, dark wood flooring, teal interior door with glass panels and wreath. Small decorative table with potted plants, wall hooks, stairs visible right."
+      }
+    ]
+  },
+  "compliance": {
+    "broker_disclosure_html": "  <footer class=\"listing-disclosure\" role=\"contentinfo\" style=\"font-size:0.85rem;line-height:1.55;padding:1.5rem 1.25rem;border-top:1px solid #ccc;\">\n\n    <div class=\"disclosure-agent\">\n      Presented by <strong>Carrie Billeaud, REALTOR&reg;</strong>\n      &mdash; <span class=\"disclosure-brokerage\">eXp Realty</span>\n      &middot; <a href=\"tel:3372585379\">337-258-5379</a>\n    </div>\n\n    <div class=\"disclosure-broker\" style=\"margin-top:0.5rem;\">\n      Sponsoring / qualifying broker:\n      <strong><span data-broker=\"name\">to be confirmed at launch</span></strong>\n      &middot; Broker phone:\n      <strong><a data-broker=\"phone\" href=\"#\">to be confirmed at launch</a></strong>\n    </div>\n\n    <div class=\"disclosure-jurisdiction\" style=\"margin-top:0.5rem;\">\n      Licensed by the Louisiana Real Estate Commission.\n    </div>\n\n    <div class=\"disclosure-property\" style=\"margin-top:0.5rem;\">\n      110 Marais Ave, Youngsville, LA 70592 &middot; <strong>For Sale</strong> &middot; <strong>$330,000</strong>. Information deemed reliable but not guaranteed; buyer to verify all details. Price and availability subject to change without notice.\n    </div>\n\n    <div class=\"disclosure-eho\" style=\"margin-top:0.75rem;display:flex;align-items:center;gap:0.5rem;\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity\" style=\"flex:0 0 auto;\" fill=\"currentColor\"><path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/></svg>\n      <span>Equal Housing Opportunity.</span>\n    </div>\n\n  </footer>",
+    "fair_housing_html": "    <aside class=\"fair-housing-notice\" role=\"note\" aria-label=\"Equal Housing Opportunity notice\" style=\"display:flex;align-items:flex-start;gap:0.6rem;font-size:0.85rem;line-height:1.55;padding:1rem 1.25rem;\">\n      <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity logo\" style=\"flex:0 0 auto;margin-top:0.1rem;\" fill=\"currentColor\">\n        <path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/>\n      </svg>\n      <p style=\"margin:0;\">\n        <strong>Equal Housing Opportunity.</strong>\n        This property is offered without regard to race, color, religion, sex,\n        handicap, familial status, or national origin, or any other class\n        protected by federal, state, or local fair housing law. We are pledged\n        to the letter and spirit of U.S. policy for the achievement of equal\n        housing opportunity throughout the nation.\n      </p>\n    </aside>"
+  }
+}

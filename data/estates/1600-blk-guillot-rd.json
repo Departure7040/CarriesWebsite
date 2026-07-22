@@ -1,0 +1,151 @@
+{
+  "slug": "1600-blk-guillot-rd",
+  "wordmark": "1600 Blk Guillot",
+  "wordmark_sub": "Youngsville · Louisiana",
+  "facts": {
+    "address": "1600 Blk Guillot Rd",
+    "city": "Youngsville",
+    "state": "LA",
+    "zip": "70592",
+    "price": "$600,000",
+    "status": "For Sale",
+    "beds": null,
+    "baths": "0",
+    "sqft": "",
+    "lot": "20 acres",
+    "year_built": null,
+    "garage": "",
+    "type_short": "Farm",
+    "property_type": "Farm",
+    "mls": "",
+    "realtor_url": "https://www.realtor.com/realestateandhomes-detail/1600-Blk-Guillot-Rd_Youngsville_LA_70592_M91207-11979",
+    "lat": 30.055738,
+    "lon": -91.994537
+  },
+  "agent": {
+    "name_title": "Carrie Billeaud, REALTOR®",
+    "brokerage": "eXp Realty",
+    "phone": "337-258-5379",
+    "phone_tel": "3372585379",
+    "headshot": "/assets/img/carrie-headshot-gbp.webp",
+    "bio": "Offered by Carrie Billeaud, REALTOR® with eXp Realty. For private showings and further detail on 1600 Blk Guillot Road, Carrie can be reached directly at 337-258-5379."
+  },
+  "seo": {
+    "title": "1600 Blk Guillot Rd, Youngsville, LA 70592 — For Sale $600,000",
+    "meta_description": "For Sale: 1600 Blk Guillot Rd, Youngsville, LA 70592. Farm. Offered at $600,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty.",
+    "og_title": "1600 Blk Guillot Rd, Youngsville, LA 70592 — For Sale $600,000",
+    "og_description": "Farm — None bed / 0 bath / ? sq ft. Offered at $600,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty."
+  },
+  "copy": {
+    "overview_eyebrow": "The Home",
+    "details_eyebrow": "Property Details",
+    "details_heading": "The Details",
+    "features_eyebrow": "Features",
+    "features_heading": "Features & Highlights",
+    "gallery_eyebrow": "Gallery",
+    "gallery_heading": "Photo Gallery",
+    "video_eyebrow": "Tour",
+    "video_heading": "Video Walkthrough",
+    "location_eyebrow": "Location",
+    "location_heading": "The Setting",
+    "cta_eyebrow": "Contact",
+    "cta_heading": "Schedule a Showing",
+    "hero_tagline": "Twenty acres of cleared Louisiana land, framed by mature trees and open sky.",
+    "overview_heading": "A Clean Canvas on Guillot Road",
+    "overview_paragraphs": [
+      "Set along Guillot Road in Youngsville, this twenty-acre parcel offers a rare expanse of cleared, level ground bordered by mature tree lines. The central acreage lies open and unencumbered, while the wooded perimeter lends privacy and a sense of enclosure to an otherwise unbroken horizon.",
+      "Surrounded by cultivated fields and the quiet rhythm of agricultural land, the property reads as both blank slate and settled countryside. Wire fencing and a black metal gate mark the entrance; a power line traces the edge, and the open sky stretches uninterrupted above the grass.",
+      "Whether envisioned as a private homestead, a working farm, or a long-held investment in land, the parcel arrives ready — cleared, defined, and waiting."
+    ],
+    "pull_quote": "Twenty acres, cleared and quiet, held within a border of mature trees.",
+    "feature_groups": [
+      {
+        "title": "The Land",
+        "items": [
+          "Twenty acres of cleared, level acreage",
+          "Open central ground with sparse grass",
+          "Mature tree lines defining the borders",
+          "Classified as farm property"
+        ]
+      },
+      {
+        "title": "Setting & Surrounds",
+        "items": [
+          "Frontage along Guillot Road in Youngsville",
+          "Bordered by cultivated agricultural fields",
+          "Rural landscape with open, uninterrupted sky",
+          "Near the Youngsville Sports Complex"
+        ]
+      },
+      {
+        "title": "Access & Utilities",
+        "items": [
+          "Wire fencing with a black metal gate at the entry",
+          "Power line running along the property edge",
+          "Cleared and ready for development or cultivation",
+          "Defined boundaries set among neighboring farmland"
+        ]
+      }
+    ],
+    "location_paragraphs": [
+      "Youngsville sits within Louisiana's Acadiana region, a landscape of working farmland, tree lines, and wide agricultural fields. Guillot Road runs through this quieter countryside, where cleared parcels and cultivated acreage define the character of the land.",
+      "The property lies within reach of the Youngsville Sports Complex and the everyday infrastructure of the surrounding community, balancing rural openness with practical access to nearby amenities."
+    ],
+    "location_points": [
+      "Located on Guillot Road, Youngsville, Louisiana 70592",
+      "Twenty-acre parcel of cleared farmland",
+      "Bordered by mature tree lines and cultivated fields",
+      "Near the Youngsville Sports Complex",
+      "Set within Louisiana's Acadiana agricultural region",
+      "Road frontage with gated, fenced access",
+      "Power line utility access along the property edge",
+      "Open, level ground ready for use"
+    ],
+    "hero_eyebrow": "For Sale",
+    "hero_address": "1600 Blk Guillot Road · Youngsville, Louisiana 70592",
+    "footer_brand": "1600 Blk Guillot Road",
+    "footer_brand_sub": "Youngsville · Louisiana · 70592",
+    "cta_sub": "1600 Blk Guillot Road is available to tour by appointment. To see the home for yourself, contact Carrie Billeaud at eXp Realty — 337-258-5379."
+  },
+  "media": {
+    "hero_photo": "01.jpg",
+    "hero_alt": "Aerial property view with yellow boundary lines marking cleared land among agricultural fields, trees, and nearby structures along Guillot Road.",
+    "video": "/studio/packages/videos/1600-blk-guillot-rd-short.mp4",
+    "video_poster": "07.jpg",
+    "gallery_dir": "/assets/img/listings/gallery/1600-blk-guillot-rd/",
+    "photos": [
+      {
+        "file": "01.jpg",
+        "alt": "Aerial property view with yellow boundary lines marking cleared land among agricultural fields, trees, and nearby structures along Guillot Road."
+      },
+      {
+        "file": "02.jpg",
+        "alt": "Aerial view of outlined property showing cleared central land, tree-lined borders, nearby residential structures, white agricultural building, and surrounding farmland."
+      },
+      {
+        "file": "03.jpg",
+        "alt": "Aerial map marking property location with red pin among agricultural landscape, tree lines, and nearby infrastructure including Youngsville Sports Complex reference."
+      },
+      {
+        "file": "04.jpg",
+        "alt": "Aerial view of cleared property land bordered by mature trees, with adjacent agricultural fields and neighboring structures visible."
+      },
+      {
+        "file": "05.jpg",
+        "alt": "Aerial view showing cleared acreage bordered by mature tree lines, adjacent cultivated fields, white building structure, and neighboring property."
+      },
+      {
+        "file": "06.jpg",
+        "alt": "Ground-level view of cleared field with sparse grass, mature trees in background and right border, power line, and open sky."
+      },
+      {
+        "file": "07.jpg",
+        "alt": "Ground-level landscape showing wire fencing with black metal gate, sparse cleared field, mature trees with fresh foliage in rural setting."
+      }
+    ]
+  },
+  "compliance": {
+    "broker_disclosure_html": "  <footer class=\"listing-disclosure\" role=\"contentinfo\" style=\"font-size:0.85rem;line-height:1.55;padding:1.5rem 1.25rem;border-top:1px solid #ccc;\">\n\n    <div class=\"disclosure-agent\">\n      Presented by <strong>Carrie Billeaud, REALTOR&reg;</strong>\n      &mdash; <span class=\"disclosure-brokerage\">eXp Realty</span>\n      &middot; <a href=\"tel:3372585379\">337-258-5379</a>\n    </div>\n\n    <div class=\"disclosure-broker\" style=\"margin-top:0.5rem;\">\n      Sponsoring / qualifying broker:\n      <strong><span data-broker=\"name\">to be confirmed at launch</span></strong>\n      &middot; Broker phone:\n      <strong><a data-broker=\"phone\" href=\"#\">to be confirmed at launch</a></strong>\n    </div>\n\n    <div class=\"disclosure-jurisdiction\" style=\"margin-top:0.5rem;\">\n      Licensed by the Louisiana Real Estate Commission.\n    </div>\n\n    <div class=\"disclosure-property\" style=\"margin-top:0.5rem;\">\n      1600 Blk Guillot Rd, Youngsville, LA 70592 &middot; <strong>For Sale</strong> &middot; <strong>$600,000</strong>. Information deemed reliable but not guaranteed; buyer to verify all details. Price and availability subject to change without notice.\n    </div>\n\n    <div class=\"disclosure-eho\" style=\"margin-top:0.75rem;display:flex;align-items:center;gap:0.5rem;\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity\" style=\"flex:0 0 auto;\" fill=\"currentColor\"><path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/></svg>\n      <span>Equal Housing Opportunity.</span>\n    </div>\n\n  </footer>",
+    "fair_housing_html": "    <aside class=\"fair-housing-notice\" role=\"note\" aria-label=\"Equal Housing Opportunity notice\" style=\"display:flex;align-items:flex-start;gap:0.6rem;font-size:0.85rem;line-height:1.55;padding:1rem 1.25rem;\">\n      <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity logo\" style=\"flex:0 0 auto;margin-top:0.1rem;\" fill=\"currentColor\">\n        <path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/>\n      </svg>\n      <p style=\"margin:0;\">\n        <strong>Equal Housing Opportunity.</strong>\n        This property is offered without regard to race, color, religion, sex,\n        handicap, familial status, or national origin, or any other class\n        protected by federal, state, or local fair housing law. We are pledged\n        to the letter and spirit of U.S. policy for the achievement of equal\n        housing opportunity throughout the nation.\n      </p>\n    </aside>"
+  }
+}

@@ -44,6 +44,25 @@ TASKS = {
 }
 TASKS["all"] = TASKS["content"] + TASKS["reviews"] + TASKS["market"] + TASKS["videos"]
 
+# Estate microsites are PARAMETERIZED (need an address / --all), so they're resolved
+# dynamically rather than living in the static TASKS map. Both rebuild the /estates/
+# directory index afterward.
+INDEX_CMD = [PY, "build/estates/build_estates_index.py"]
+
+
+def _resolve_commands(task, body):
+    """Return a list of commands for `task`, a str error message, or None if unknown."""
+    if task == "estate":
+        addr = (body.get("address") or "").strip()
+        if not addr or len(addr) > 120:
+            return "an address is required (e.g. 101 Rio Ridge Dr)"
+        return [[PY, "build/estates/new_estate.py", "--address", addr], INDEX_CMD]
+    if task == "estate-all":
+        return [[PY, "build/estates/new_estate.py", "--all", "--skip-existing"], INDEX_CMD]
+    if task in TASKS:
+        return TASKS[task]
+    return None
+
 ALLOWED_EXT = {".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".webp", ".svg",
                ".gif", ".ico", ".txt", ".xml", ".woff", ".woff2", ".pdf", ".json",
                ".mp4", ".webm", ".mov"}
@@ -129,11 +148,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         except Exception:
             body = {}
         task = body.get("task")
-        if task not in TASKS:
-            self._json(400, {"error": f"unknown task; choose {list(TASKS)}"}); return
+        commands = _resolve_commands(task, body)
+        if commands is None:
+            self._json(400, {"error": f"unknown task; choose {list(TASKS) + ['estate', 'estate-all']}"}); return
+        if isinstance(commands, str):        # validation error (e.g. missing address)
+            self._json(400, {"error": commands}); return
         if _job["status"] == "running":
             self._json(409, {"error": "a job is already running", "job": _job["id"]}); return
-        threading.Thread(target=_run_job, args=(task, TASKS[task]), daemon=True).start()
+        threading.Thread(target=_run_job, args=(task, commands), daemon=True).start()
         time.sleep(0.1)
         self._json(202, {"started": task, "job": _job["id"] + 1})
 

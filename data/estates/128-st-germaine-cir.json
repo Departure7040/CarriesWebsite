@@ -1,0 +1,218 @@
+{
+  "slug": "128-st-germaine-cir",
+  "wordmark": "128 St Germaine",
+  "wordmark_sub": "Lafayette · Louisiana",
+  "facts": {
+    "address": "128 St Germaine Cir",
+    "city": "Lafayette",
+    "state": "LA",
+    "zip": "70506",
+    "price": "$220,000",
+    "status": "For Sale",
+    "beds": 3,
+    "baths": "2.5",
+    "sqft": "1,557",
+    "lot": "0.05 acre",
+    "year_built": 2017,
+    "garage": "2 cars",
+    "type_short": "Townhomes",
+    "property_type": "Townhomes",
+    "mls": "",
+    "realtor_url": "https://www.realtor.com/realestateandhomes-detail/128-Saint-Germaine-St_Lafayette_LA_70506_M72711-66353",
+    "lat": 30.206748,
+    "lon": -92.06746
+  },
+  "agent": {
+    "name_title": "Carrie Billeaud, REALTOR®",
+    "brokerage": "eXp Realty",
+    "phone": "337-258-5379",
+    "phone_tel": "3372585379",
+    "headshot": "/assets/img/carrie-headshot-gbp.webp",
+    "bio": "Offered by Carrie Billeaud, REALTOR® with eXp Realty. For private showings and further detail on 128 St Germaine Circle, Carrie can be reached directly at 337-258-5379."
+  },
+  "seo": {
+    "title": "128 St Germaine Cir, Lafayette, LA 70506 — For Sale $220,000",
+    "meta_description": "For Sale: 128 St Germaine Cir, Lafayette, LA 70506. Townhomes — 3 bed, 2.5 bath, 1,557 sq ft. Offered at $220,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty.",
+    "og_title": "128 St Germaine Cir, Lafayette, LA 70506 — For Sale $220,000",
+    "og_description": "Townhomes — 3 bed / 2.5 bath / 1,557 sq ft. Offered at $220,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty."
+  },
+  "copy": {
+    "overview_eyebrow": "The Home",
+    "details_eyebrow": "Property Details",
+    "details_heading": "The Details",
+    "features_eyebrow": "Features",
+    "features_heading": "Features & Highlights",
+    "gallery_eyebrow": "Gallery",
+    "gallery_heading": "Photo Gallery",
+    "video_eyebrow": "Tour",
+    "video_heading": "Video Walkthrough",
+    "location_eyebrow": "Location",
+    "location_heading": "The Setting",
+    "cta_eyebrow": "Contact",
+    "cta_heading": "Schedule a Showing",
+    "hero_tagline": "A contemporary townhome in the heart of Acadiana",
+    "overview_heading": "Modern Comfort in Southwest Lafayette",
+    "overview_paragraphs": [
+      "Set within a crisp row of contemporary townhomes on St Germaine Circle, this three-bedroom residence pairs clean architectural lines with warm, livable interiors. Built in 2017, its multi-story façade of yellow, white, and blue siding is punctuated by white garage doors and slim metal balcony railings — an unmistakably current silhouette on a tidy, low-maintenance lot.",
+      "Inside, the mood is calm and considered. Wood-look and hardwood floors run underfoot beneath soft blue-gray walls and clean white trim, while pendant lighting draws the eye up the wood-tread stairwell. An open kitchen anchors the home with dark wood cabinetry, a mosaic tile backsplash, stainless steel appliances, and a generous island made for gathering.",
+      "Upstairs, the bedrooms are quiet retreats — one crowned by a vaulted ceiling, each fitted with a ceiling fan and generous closet space. Ensuite baths bring subway tile, dark wood vanities, and a glass-enclosed shower, while a den with a wet bar and a fenced, well-planted backyard round out a home built for easy, everyday living."
+    ],
+    "pull_quote": "Clean architectural lines outside, warm and considered rooms within — a townhome that feels effortlessly current.",
+    "feature_groups": [
+      {
+        "title": "Living & Kitchen",
+        "items": [
+          "Open kitchen with a large island and dark wood cabinetry",
+          "Mosaic tile backsplash and stainless steel appliances",
+          "Den with a wet bar and dark wood cabinetry",
+          "Hardwood and wood-look flooring throughout",
+          "Pendant-lit stairwell with wood treads and metal handrail"
+        ]
+      },
+      {
+        "title": "Bedrooms & Baths",
+        "items": [
+          "Master bedroom with vaulted ceiling and ensuite bath",
+          "Ensuite baths with subway tile and dark wood vanities",
+          "Glass-enclosed shower and bathtub",
+          "Walk-in closet with built-in shelving",
+          "Ceiling fans in each bedroom"
+        ]
+      },
+      {
+        "title": "Exterior & Everyday",
+        "items": [
+          "Attached two-car garage with concrete driveway",
+          "Fenced backyard with mature landscaping and a concrete patio",
+          "Metal-railed balcony detail on the contemporary façade",
+          "Dedicated laundry room with dark wood cabinetry",
+          "Built-in hallway shelving and attic access"
+        ]
+      }
+    ],
+    "location_paragraphs": [
+      "Positioned in southwest Lafayette's 70506 area, the home sits within easy reach of the city's dining, shopping, and cultural life. Lafayette is the cultural center of Acadiana, a region long celebrated for its Cajun and Creole heritage.",
+      "The surrounding city offers a lively mix of restaurants, live music, and year-round festivals, along with parks and green spaces and quick connections to the region's major routes for straightforward travel across Acadiana."
+    ],
+    "location_points": [
+      "Located in southwest Lafayette, ZIP 70506",
+      "In the cultural heart of Acadiana",
+      "Rich Cajun and Creole culinary scene",
+      "Live music and year-round festivals",
+      "Parks and green spaces nearby",
+      "Convenient access to major regional routes",
+      "Close to Lafayette's shopping and dining districts",
+      "Low-maintenance townhome lot in an established setting"
+    ],
+    "hero_eyebrow": "For Sale",
+    "hero_address": "128 St Germaine Circle · Lafayette, Louisiana 70506",
+    "footer_brand": "128 St Germaine Circle",
+    "footer_brand_sub": "Lafayette · Louisiana · 70506",
+    "cta_sub": "128 St Germaine Circle is available to tour by appointment. To see the home for yourself, contact Carrie Billeaud at eXp Realty — 337-258-5379."
+  },
+  "media": {
+    "hero_photo": "01.jpg",
+    "hero_alt": "Exterior street view of modern connected townhouses with yellow, white, and blue siding, multiple stories, white garage doors, symmetrical window placement, concrete driveway.",
+    "video": "/studio/packages/videos/128-st-germaine-cir-short.mp4",
+    "video_poster": "07.jpg",
+    "gallery_dir": "/assets/img/listings/gallery/128-st-germaine-cir/",
+    "photos": [
+      {
+        "file": "01.jpg",
+        "alt": "Exterior street view of modern connected townhouses with yellow, white, and blue siding, multiple stories, white garage doors, symmetrical window placement, concrete driveway."
+      },
+      {
+        "file": "02.jpg",
+        "alt": "Street-level exterior of townhouse row featuring multi-color siding in yellow, white, and blue, white garage doors, modern architectural design, grassy landscaping."
+      },
+      {
+        "file": "03.jpg",
+        "alt": "Exterior view of contemporary townhouse complex with mixed color siding, white garage doors, multi-story structure, metal railings on balconies, concrete walkway."
+      },
+      {
+        "file": "04.jpg",
+        "alt": "Narrow covered walkway between two houses with yellow and gray siding walls, white door with window at end, concrete floor, brick wall detail."
+      },
+      {
+        "file": "05.jpg",
+        "alt": "Interior hallway with blue-gray walls, white trim, open laundry room visible with dark wood cabinets, white washer and dryer, wood-look flooring."
+      },
+      {
+        "file": "06.jpg",
+        "alt": "Interior stairwell with blue-gray walls, wooden stair treads with metal handrail, pendant ceiling light, white trim, ascending to upper floor."
+      },
+      {
+        "file": "07.jpg",
+        "alt": "Bedroom with light blue walls, white ceiling fan, window overlooking patio area, wood-look flooring, white multi-panel closet doors on left wall."
+      },
+      {
+        "file": "08.jpg",
+        "alt": "Master bedroom with light blue walls, ceiling fan, exterior window with fenced patio view, wood flooring, multiple white closet and cabinet doors."
+      },
+      {
+        "file": "09.jpg",
+        "alt": "Bedroom with light blue walls, white trim, ceiling fan, single window, wood-look flooring, white multi-panel door on right side."
+      },
+      {
+        "file": "10.jpg",
+        "alt": "Bedroom with light blue walls, ceiling fan with light, wood-look flooring, multiple white multi-panel doors on right wall connecting to adjacent room."
+      },
+      {
+        "file": "11.jpg",
+        "alt": "Walk-in closet with white walls, wood-look flooring, and built-in white shelving with metal brackets and hanging rods."
+      },
+      {
+        "file": "12.jpg",
+        "alt": "Master bathroom with light blue walls, dark wood vanity, large mosaic-framed mirror, white subway tile shower surround, and bathtub."
+      },
+      {
+        "file": "13.jpg",
+        "alt": "Stairwell with light blue-gray walls, hardwood flooring, wood handrail, and contemporary pendant lighting."
+      },
+      {
+        "file": "14.jpg",
+        "alt": "Open kitchen with light blue walls, dark wood cabinetry, mosaic tile backsplash, stainless steel appliances, and large island."
+      },
+      {
+        "file": "15.jpg",
+        "alt": "Kitchen with light blue walls, dark wood cabinets, tile backsplash, stainless steel appliances, and wooden island."
+      },
+      {
+        "file": "16.jpg",
+        "alt": "Den with light blue walls, wet bar with dark wood cabinetry, hardwood flooring, ceiling fan, and exterior views."
+      },
+      {
+        "file": "17.jpg",
+        "alt": "Bedroom with light blue walls, ceiling fan, hardwood flooring, and open connection to kitchen area."
+      },
+      {
+        "file": "18.jpg",
+        "alt": "Bedroom with light blue walls, two windows with white trim, hardwood flooring, and pendant lighting."
+      },
+      {
+        "file": "19.jpg",
+        "alt": "Bedroom with light blue walls, hardwood flooring, white doors, and ensuite bathroom with wood vanity visible."
+      },
+      {
+        "file": "20.jpg",
+        "alt": "Master bedroom with light blue walls, white vaulted ceiling, hardwood flooring, and access to ensuite bathroom."
+      },
+      {
+        "file": "21.jpg",
+        "alt": "Master bathroom with light blue walls, dark wood vanity, white countertop, granite-framed mirror, white subway tile accents, recessed lighting, white trim, and glass-enclosed shower with tile surround."
+      },
+      {
+        "file": "22.jpg",
+        "alt": "Hallway with hardwood flooring, white walls, built-in white shelving unit, sloped ceiling with attic access hatch, and open doorway revealing bathroom with blue walls beyond."
+      },
+      {
+        "file": "23.jpg",
+        "alt": "Fenced backyard with mature landscaping, red flowering shrubs in foreground, green lawn, evergreen plants, wood fence enclosure, concrete patio, and partial house structure visible."
+      }
+    ]
+  },
+  "compliance": {
+    "broker_disclosure_html": "  <footer class=\"listing-disclosure\" role=\"contentinfo\" style=\"font-size:0.85rem;line-height:1.55;padding:1.5rem 1.25rem;border-top:1px solid #ccc;\">\n\n    <div class=\"disclosure-agent\">\n      Presented by <strong>Carrie Billeaud, REALTOR&reg;</strong>\n      &mdash; <span class=\"disclosure-brokerage\">eXp Realty</span>\n      &middot; <a href=\"tel:3372585379\">337-258-5379</a>\n    </div>\n\n    <div class=\"disclosure-broker\" style=\"margin-top:0.5rem;\">\n      Sponsoring / qualifying broker:\n      <strong><span data-broker=\"name\">to be confirmed at launch</span></strong>\n      &middot; Broker phone:\n      <strong><a data-broker=\"phone\" href=\"#\">to be confirmed at launch</a></strong>\n    </div>\n\n    <div class=\"disclosure-jurisdiction\" style=\"margin-top:0.5rem;\">\n      Licensed by the Louisiana Real Estate Commission.\n    </div>\n\n    <div class=\"disclosure-property\" style=\"margin-top:0.5rem;\">\n      128 St Germaine Cir, Lafayette, LA 70506 &middot; <strong>For Sale</strong> &middot; <strong>$220,000</strong>. Information deemed reliable but not guaranteed; buyer to verify all details. Price and availability subject to change without notice.\n    </div>\n\n    <div class=\"disclosure-eho\" style=\"margin-top:0.75rem;display:flex;align-items:center;gap:0.5rem;\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity\" style=\"flex:0 0 auto;\" fill=\"currentColor\"><path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/></svg>\n      <span>Equal Housing Opportunity.</span>\n    </div>\n\n  </footer>",
+    "fair_housing_html": "    <aside class=\"fair-housing-notice\" role=\"note\" aria-label=\"Equal Housing Opportunity notice\" style=\"display:flex;align-items:flex-start;gap:0.6rem;font-size:0.85rem;line-height:1.55;padding:1rem 1.25rem;\">\n      <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity logo\" style=\"flex:0 0 auto;margin-top:0.1rem;\" fill=\"currentColor\">\n        <path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/>\n      </svg>\n      <p style=\"margin:0;\">\n        <strong>Equal Housing Opportunity.</strong>\n        This property is offered without regard to race, color, religion, sex,\n        handicap, familial status, or national origin, or any other class\n        protected by federal, state, or local fair housing law. We are pledged\n        to the letter and spirit of U.S. policy for the achievement of equal\n        housing opportunity throughout the nation.\n      </p>\n    </aside>"
+  }
+}

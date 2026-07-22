@@ -1,0 +1,258 @@
+{
+  "slug": "205-queenstown-ave",
+  "wordmark": "205 Queenstown",
+  "wordmark_sub": "Youngsville · Louisiana",
+  "facts": {
+    "address": "205 Queenstown Ave",
+    "city": "Youngsville",
+    "state": "LA",
+    "zip": "70592",
+    "price": "$465,000",
+    "status": "For Sale",
+    "beds": 4,
+    "baths": "2",
+    "sqft": "2,202",
+    "lot": "0.17 acre",
+    "year_built": 2026,
+    "garage": "2 cars",
+    "type_short": "Single-Family",
+    "property_type": "Single-Family (new construction, 2026)",
+    "mls": "",
+    "realtor_url": "https://www.realtor.com/realestateandhomes-detail/205-Queenstown-Ave_Youngsville_LA_70592_M98507-88743",
+    "lat": 30.077524,
+    "lon": -91.991615
+  },
+  "agent": {
+    "name_title": "Carrie Billeaud, REALTOR®",
+    "brokerage": "eXp Realty",
+    "phone": "337-258-5379",
+    "phone_tel": "3372585379",
+    "headshot": "/assets/img/carrie-headshot-gbp.webp",
+    "bio": "Offered by Carrie Billeaud, REALTOR® with eXp Realty. For private showings and further detail on 205 Queenstown Avenue, Carrie can be reached directly at 337-258-5379."
+  },
+  "seo": {
+    "title": "205 Queenstown Ave, Youngsville, LA 70592 — For Sale $465,000",
+    "meta_description": "For Sale: 205 Queenstown Ave, Youngsville, LA 70592. Single-Family — 4 bed, 2 bath, 2,202 sq ft. Offered at $465,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty.",
+    "og_title": "205 Queenstown Ave, Youngsville, LA 70592 — For Sale $465,000",
+    "og_description": "Single-Family — 4 bed / 2 bath / 2,202 sq ft. Offered at $465,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty."
+  },
+  "copy": {
+    "overview_eyebrow": "The Home",
+    "details_eyebrow": "Property Details",
+    "details_heading": "The Details",
+    "features_eyebrow": "Features",
+    "features_heading": "Features & Highlights",
+    "gallery_eyebrow": "Gallery",
+    "gallery_heading": "Photo Gallery",
+    "video_eyebrow": "Tour",
+    "video_heading": "Video Walkthrough",
+    "location_eyebrow": "Location",
+    "location_heading": "The Setting",
+    "cta_eyebrow": "Contact",
+    "cta_heading": "Schedule a Showing",
+    "hero_tagline": "A modern farmhouse, newly built, where brick, beam, and brass meet in Youngsville.",
+    "overview_heading": "New Construction, Considered Down to the Fixtures",
+    "overview_paragraphs": [
+      "Completed in 2026, this four-bedroom single-family home spans 2,202 square feet behind a cream-sided, black-doored facade that reads as quietly current rather than loud. A gray pitched roof with dormers, white architectural trim, and a columned front porch framed by brick entry columns set the register before the door is even opened.",
+      "Inside, the plan opens around an exposed-brick fireplace with a wood mantel, hardwood floors running throughout, and crown molding overhead. The kitchen anchors the living space with a large island, white and gray cabinetry, stainless steel double ovens and a gas range, a subway-tile backsplash, and wood-beam ceiling detail lit by pendant fixtures and a crystal chandelier.",
+      "The primary suite carries the same restraint into its bath: a freestanding soaking tub, dual marble vanities, a frameless glass shower, brass fixtures, and a walk-in closet fitted with built-in shelving. Beyond the rear doors, a covered patio with a built-in gas grill, a brick fireplace, and ceiling fans opens to a fenced backyard on a 0.17-acre lot, two-car garage included."
+    ],
+    "pull_quote": "Brick and beam indoors, a fireplace and gas grill under the patio roof — the living space simply continues outside.",
+    "feature_groups": [
+      {
+        "title": "Kitchen & Living",
+        "items": [
+          "Open kitchen with a large island and white-and-gray cabinetry",
+          "Stainless steel double ovens and a gas range",
+          "Subway-tile backsplash with pendant lighting and a crystal chandelier",
+          "Wood-beam ceiling detail over hardwood floors",
+          "Exposed-brick fireplace with a wood mantel and crown molding"
+        ]
+      },
+      {
+        "title": "Primary Suite & Baths",
+        "items": [
+          "Primary bath with a freestanding soaking tub and dual marble vanities",
+          "Frameless glass shower with marble-veined tile and brass fixtures",
+          "Marble flooring and ribbed wainscoting detail",
+          "Walk-in closet with built-in white shelving",
+          "Bedrooms with wood-plank tray and vaulted ceilings, skylight, and French doors"
+        ]
+      },
+      {
+        "title": "Outdoor & Utility",
+        "items": [
+          "Covered patio with a built-in gas grill and brick surround",
+          "Second patio fireplace with wood-sheathed ceiling and ceiling fans",
+          "Fenced backyard with a metal privacy fence and mowed lawn",
+          "Laundry room and mudroom with built-in shelving and cabinetry",
+          "Two-car garage with black multi-panel doors and concrete driveway"
+        ]
+      }
+    ],
+    "location_paragraphs": [
+      "The home sits at 205 Queenstown Ave in Youngsville, Louisiana, within the 70592 postal area and the wider Lafayette metropolitan region of Acadiana. It occupies a 0.17-acre lot in a setting of manicured lawns and low landscape beds.",
+      "New construction on a modestly scaled parcel, the property offers the convenience of a maintained, level yard enclosed for privacy, with covered outdoor living oriented to the fenced rear grounds."
+    ],
+    "location_points": [
+      "Address: 205 Queenstown Ave, Youngsville, LA 70592",
+      "Located in Lafayette Parish, within the Acadiana region of south Louisiana",
+      "Part of the greater Lafayette metropolitan area",
+      "0.17-acre level lot with manicured landscaping",
+      "Fenced rear yard with a metal privacy fence",
+      "Concrete driveway serving an attached two-car garage",
+      "Covered patio living oriented to the backyard",
+      "New construction completed in 2026"
+    ],
+    "hero_eyebrow": "For Sale · New 2026 Construction",
+    "hero_address": "205 Queenstown Avenue · Youngsville, Louisiana 70592",
+    "footer_brand": "205 Queenstown Avenue",
+    "footer_brand_sub": "Youngsville · Louisiana · 70592",
+    "cta_sub": "205 Queenstown Avenue is available to tour by appointment. To see the home for yourself, contact Carrie Billeaud at eXp Realty — 337-258-5379."
+  },
+  "media": {
+    "hero_photo": "01.jpg",
+    "hero_alt": "Front exterior of modern farmhouse with cream-colored siding, black two-car garage doors, gray pitched roof with dormers, white trim, concrete driveway, and landscape beds with shrubs.",
+    "video": "/studio/packages/videos/205-queenstown-ave-short.mp4",
+    "video_poster": "07.jpg",
+    "gallery_dir": "/assets/img/listings/gallery/205-queenstown-ave/",
+    "photos": [
+      {
+        "file": "01.jpg",
+        "alt": "Front exterior of modern farmhouse with cream-colored siding, black two-car garage doors, gray pitched roof with dormers, white trim, concrete driveway, and landscape beds with shrubs."
+      },
+      {
+        "file": "02.jpg",
+        "alt": "Cream farmhouse exterior featuring black multi-panel garage doors, gray asphalt shingle roof, white architectural trim, columned front porch, concrete walkway, and manicured landscaping."
+      },
+      {
+        "file": "03.jpg",
+        "alt": "Empty living room with white crown molding, black ceiling fan, recessed lighting, exposed brick fireplace with dark firebox, wood mantel, hardwood floor, and white trim."
+      },
+      {
+        "file": "04.jpg",
+        "alt": "Furnished living room with cream sofa, wood-frame chairs, brick fireplace with black insert and artwork, green accent pillows, decorative plants, area rug, and hardwood flooring."
+      },
+      {
+        "file": "05.jpg",
+        "alt": "Open kitchen-living area with white cabinetry, large island, stainless steel appliances, exposed brick wall, hardwood floor, gold pendant lights, and wood ceiling beam."
+      },
+      {
+        "file": "06.jpg",
+        "alt": "Modern kitchen with white and gray cabinetry, stainless steel double ovens and gas range, white subway tile backsplash, gold pendant lighting, hardwood floor, ceiling beam detail."
+      },
+      {
+        "file": "07.jpg",
+        "alt": "Spacious kitchen with white cabinetry, stainless steel appliances, granite-style countertops, wood beam ceiling accent, gold pendant lights, hardwood floor, and patio views."
+      },
+      {
+        "file": "08.jpg",
+        "alt": "Luxury kitchen with white and gray cabinetry, gray island countertop, stainless steel appliances, glass pendant lights, crystal chandelier, wood beam ceiling, hardwood floor."
+      },
+      {
+        "file": "09.jpg",
+        "alt": "Open-concept kitchen and dining area with white cabinetry, gray island, stainless steel appliances, multiple pendant lights, crystal chandelier, wood beam ceiling, hardwood floor."
+      },
+      {
+        "file": "10.jpg",
+        "alt": "Transitional room with hardwood floor, beige walls, crystal chandelier, white trim and glass door, window framing brick fireplace view and exterior landscape."
+      },
+      {
+        "file": "11.jpg",
+        "alt": "Bright foyer with hardwood flooring, white painted doors, wood-framed entry door at end, white walls and trim, recessed ceiling fixture."
+      },
+      {
+        "file": "12.jpg",
+        "alt": "Empty bedroom with light gray walls, hardwood flooring, two large white-framed windows, ceiling fan, white baseboards and trim."
+      },
+      {
+        "file": "13.jpg",
+        "alt": "Empty bedroom with soft gray walls, hardwood flooring, single window with white trim, ceiling fan, white baseboards, outlet fixtures."
+      },
+      {
+        "file": "14.jpg",
+        "alt": "Master bedroom with beige bed and neutral linens, wood nightstands with lamps, landscape wall art, oval mirror, wood flooring, two windows, ceiling fan."
+      },
+      {
+        "file": "15.jpg",
+        "alt": "Hallway with white walls, hardwood flooring, multiple white-trimmed doorways, recessed ceiling lighting, tray ceiling detail, bright and open."
+      },
+      {
+        "file": "16.jpg",
+        "alt": "Master bathroom with dual white vanity, marble countertop and backsplash, brass fixtures, frameless glass shower enclosure with marble tiling, white walls."
+      },
+      {
+        "file": "17.jpg",
+        "alt": "Bathroom with white toilet, soaking tub with frameless glass enclosure, marble subway tile walls, brass hardware and showerhead, recessed lighting."
+      },
+      {
+        "file": "18.jpg",
+        "alt": "Empty secondary bedroom with gray walls, hardwood flooring, single window, ceiling fan, white trim and baseboards, clean modern finish."
+      },
+      {
+        "file": "19.jpg",
+        "alt": "Large open bedroom with wood plank tray ceiling featuring recessed lights, two windows, gray walls, hardwood flooring, French doors, ceiling fan."
+      },
+      {
+        "file": "20.jpg",
+        "alt": "Primary bedroom with upholstered bed, wood nightstands, leather bench, landscape art, wood plank ceiling, hardwood flooring, neutral tones, two windows."
+      },
+      {
+        "file": "21.jpg",
+        "alt": "Modern master bathroom with freestanding soaking tub, dual marble vanities, white cabinetry, beige walls with white wainscoting, and marble flooring."
+      },
+      {
+        "file": "22.jpg",
+        "alt": "Shower enclosure with frameless glass doors, marble-veined white tile walls, brass showerhead and valve handles."
+      },
+      {
+        "file": "23.jpg",
+        "alt": "Master bathroom with freestanding soaking tub, dual marble vanities, white cabinetry, wainscoting, vaulted ceiling detail, and walk-in closet access."
+      },
+      {
+        "file": "24.jpg",
+        "alt": "Walk-in closet interior with built-in white shelving units, multiple open shelves, wood flooring, brass hardware."
+      },
+      {
+        "file": "25.jpg",
+        "alt": "Master bathroom featuring freestanding soaking tub, white ribbed wainscoting, large window, marble flooring, brass fixtures."
+      },
+      {
+        "file": "26.jpg",
+        "alt": "Bedroom with vaulted ceiling featuring horizontal wood sheathing, black ceiling fans, skylight, hardwood flooring, recessed lighting."
+      },
+      {
+        "file": "27.jpg",
+        "alt": "Laundry room with white cabinetry, marble countertop, brown patterned tile flooring, white walls, and window with white trim."
+      },
+      {
+        "file": "28.jpg",
+        "alt": "Mudroom with cream walls, white six-panel doors, brown tile flooring, built-in shelving, white cabinetry with wood countertop."
+      },
+      {
+        "file": "29.jpg",
+        "alt": "Built-in closet with multiple white horizontal shelves, cream walls, brown patterned tile flooring, brass outlet."
+      },
+      {
+        "file": "30.jpg",
+        "alt": "Covered patio with horizontal wood sheathing ceiling, white shiplap walls, concrete flooring, built-in gas grill with red brick surround, ceiling fans."
+      },
+      {
+        "file": "31.jpg",
+        "alt": "Covered patio with wood grain ceiling and ceiling fan. Brick fireplace with dark metal insert. Concrete floor opens to fenced backyard with mowed grass and metal privacy fence."
+      },
+      {
+        "file": "32.jpg",
+        "alt": "Furnished patio with wood ceiling and brick fireplace featuring mounted TV and active fire. Lounge chairs arranged around center table with potted plants and lantern on mantle."
+      },
+      {
+        "file": "33.jpg",
+        "alt": "Modern home exterior with cream horizontal siding and dark gray roof. Brick entry columns frame covered porch. Wide manicured lawn in foreground."
+      }
+    ]
+  },
+  "compliance": {
+    "broker_disclosure_html": "  <footer class=\"listing-disclosure\" role=\"contentinfo\" style=\"font-size:0.85rem;line-height:1.55;padding:1.5rem 1.25rem;border-top:1px solid #ccc;\">\n\n    <div class=\"disclosure-agent\">\n      Presented by <strong>Carrie Billeaud, REALTOR&reg;</strong>\n      &mdash; <span class=\"disclosure-brokerage\">eXp Realty</span>\n      &middot; <a href=\"tel:3372585379\">337-258-5379</a>\n    </div>\n\n    <div class=\"disclosure-broker\" style=\"margin-top:0.5rem;\">\n      Sponsoring / qualifying broker:\n      <strong><span data-broker=\"name\">to be confirmed at launch</span></strong>\n      &middot; Broker phone:\n      <strong><a data-broker=\"phone\" href=\"#\">to be confirmed at launch</a></strong>\n    </div>\n\n    <div class=\"disclosure-jurisdiction\" style=\"margin-top:0.5rem;\">\n      Licensed by the Louisiana Real Estate Commission.\n    </div>\n\n    <div class=\"disclosure-property\" style=\"margin-top:0.5rem;\">\n      205 Queenstown Ave, Youngsville, LA 70592 &middot; <strong>For Sale</strong> &middot; <strong>$465,000</strong>. Information deemed reliable but not guaranteed; buyer to verify all details. Price and availability subject to change without notice.\n    </div>\n\n    <div class=\"disclosure-eho\" style=\"margin-top:0.75rem;display:flex;align-items:center;gap:0.5rem;\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity\" style=\"flex:0 0 auto;\" fill=\"currentColor\"><path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/></svg>\n      <span>Equal Housing Opportunity.</span>\n    </div>\n\n  </footer>",
+    "fair_housing_html": "    <aside class=\"fair-housing-notice\" role=\"note\" aria-label=\"Equal Housing Opportunity notice\" style=\"display:flex;align-items:flex-start;gap:0.6rem;font-size:0.85rem;line-height:1.55;padding:1rem 1.25rem;\">\n      <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity logo\" style=\"flex:0 0 auto;margin-top:0.1rem;\" fill=\"currentColor\">\n        <path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/>\n      </svg>\n      <p style=\"margin:0;\">\n        <strong>Equal Housing Opportunity.</strong>\n        This property is offered without regard to race, color, religion, sex,\n        handicap, familial status, or national origin, or any other class\n        protected by federal, state, or local fair housing law. We are pledged\n        to the letter and spirit of U.S. policy for the achievement of equal\n        housing opportunity throughout the nation.\n      </p>\n    </aside>"
+  }
+}

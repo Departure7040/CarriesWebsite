@@ -13,3 +13,9 @@ site/assets/img/listings/gallery/
 
 # Playwright MCP scratch output
 .playwright-mcp/
+
+# Saved third-party reference site (local design reference only)
+FancySites/
+
+# Templatizer backups
+*.prebak

@@ -1,0 +1,224 @@
+{
+  "slug": "107-cypress-lake-dr",
+  "wordmark": "107 Cypress Lake",
+  "wordmark_sub": "Youngsville · Louisiana",
+  "facts": {
+    "address": "107 Cypress Lake Dr",
+    "city": "Youngsville",
+    "state": "LA",
+    "zip": "70592",
+    "price": "$510,750",
+    "status": "For Sale",
+    "beds": 4,
+    "baths": "3",
+    "sqft": "2,250",
+    "lot": "0.17 acre",
+    "year_built": 2025,
+    "garage": "2 cars",
+    "type_short": "Single-Family",
+    "property_type": "Single-Family (new construction, 2025)",
+    "mls": "",
+    "realtor_url": "https://www.realtor.com/realestateandhomes-detail/107-Cypress-Lake-Dr_Youngsville_LA_70592_M99540-31916",
+    "lat": 30.092485,
+    "lon": -92.018952
+  },
+  "agent": {
+    "name_title": "Carrie Billeaud, REALTOR®",
+    "brokerage": "eXp Realty",
+    "phone": "337-258-5379",
+    "phone_tel": "3372585379",
+    "headshot": "/assets/img/carrie-headshot-gbp.webp",
+    "bio": "Offered by Carrie Billeaud, REALTOR® with eXp Realty. For private showings and further detail on 107 Cypress Lake Drive, Carrie can be reached directly at 337-258-5379."
+  },
+  "seo": {
+    "title": "107 Cypress Lake Dr, Youngsville, LA 70592 — For Sale $510,750",
+    "meta_description": "For Sale: 107 Cypress Lake Dr, Youngsville, LA 70592. Single-Family — 4 bed, 3 bath, 2,250 sq ft. Offered at $510,750. Presented by Carrie Billeaud, REALTOR®, eXp Realty.",
+    "og_title": "107 Cypress Lake Dr, Youngsville, LA 70592 — For Sale $510,750",
+    "og_description": "Single-Family — 4 bed / 3 bath / 2,250 sq ft. Offered at $510,750. Presented by Carrie Billeaud, REALTOR®, eXp Realty."
+  },
+  "copy": {
+    "overview_eyebrow": "The Home",
+    "details_eyebrow": "Property Details",
+    "details_heading": "The Details",
+    "features_eyebrow": "Features",
+    "features_heading": "Features & Highlights",
+    "gallery_eyebrow": "Gallery",
+    "gallery_heading": "Photo Gallery",
+    "video_eyebrow": "Tour",
+    "video_heading": "Video Walkthrough",
+    "location_eyebrow": "Location",
+    "location_heading": "The Setting",
+    "cta_eyebrow": "Contact",
+    "cta_heading": "Schedule a Showing",
+    "hero_tagline": "A 2025-built residence where geometry, light, and marble meet in Youngsville's Cypress Lake enclave.",
+    "overview_heading": "Clean Lines, Warm Materials",
+    "overview_paragraphs": [
+      "Completed in 2025, this four-bedroom, three-bath residence spans 2,250 square feet of single-level living behind a crisp white stucco and brick facade. Geometric massing, a gray tile roof, and black-trimmed glass doors set a restrained, architectural tone from the driveway to the covered porch.",
+      "Inside, the plan opens. Light wood cabinetry, wood flooring, and floor-to-ceiling windows draw the surrounding trees into an open-concept kitchen and living space, where a marble island with a waterfall edge anchors the room beneath a run of pendant lights. A living area fireplace, framed by a natural wood mantel, gives the gathering space its center.",
+      "Beyond the glass sliders, a covered patio under a wooden vaulted ceiling extends the living space outdoors, complete with a fireplace, an outdoor kitchen, and a lawn framed by mature trees and a quiet water view."
+    ],
+    "pull_quote": "Marble, light wood, and glass compose a home that feels both current and calm.",
+    "feature_groups": [
+      {
+        "title": "Kitchen & Living",
+        "items": [
+          "Open-concept kitchen and living area with wood flooring and floor-to-ceiling windows",
+          "Marble island with waterfall edge, light wood and white cabinetry, and a black range hood",
+          "White subway tile backsplash, farmhouse sink, and stainless steel appliances",
+          "Living room fireplace with a natural wood mantel"
+        ]
+      },
+      {
+        "title": "Primary Suite & Baths",
+        "items": [
+          "Spa-like primary bath with a freestanding oval soaking tub and dual marble vanities",
+          "Walk-in shower with rainfall showerhead, hand-held spray, and body jets",
+          "Marble tile walls and flooring with arched ceiling detail and chrome fixtures",
+          "Walk-in closets with white built-in shelving, a brass hanging rod, and an upholstered bench nook"
+        ]
+      },
+      {
+        "title": "Everyday & Outdoor",
+        "items": [
+          "Built-in home office nook with white desk, shelving, and a landscape view",
+          "Laundry room with white cabinetry, marble countertop, and integrated sink",
+          "Covered patio with wooden vaulted ceiling, fireplace, and triple-pane glass sliders",
+          "Outdoor kitchen with brick and wood cabinetry overlooking the lawn and water view",
+          "Two-car garage on a 0.17-acre lot"
+        ]
+      }
+    ],
+    "location_paragraphs": [
+      "The home sits along Cypress Lake Drive in Youngsville, Louisiana, a community in the Acadiana region south of Lafayette. The setting pairs a landscaped, low-maintenance lot with open views of mature trees and water from the covered patio.",
+      "Youngsville offers a network of parks, sports complexes, and local dining within the wider Lafayette metropolitan area, with regional roadways placing the shops and services of Lafayette a short drive away."
+    ],
+    "location_points": [
+      "Located on Cypress Lake Drive in Youngsville, Lafayette Parish, Louisiana",
+      "Positioned in the Acadiana region of south Louisiana",
+      "Short drive to the city of Lafayette and its shops and services",
+      "0.17-acre landscaped lot with concrete driveway",
+      "Covered patio with lawn, mature trees, and a water view",
+      "New construction completed in 2025",
+      "Single-family residence with an attached two-car garage",
+      "Convenient access to area parks and the greater Lafayette metropolitan area"
+    ],
+    "hero_eyebrow": "For Sale · New 2025 Construction",
+    "hero_address": "107 Cypress Lake Drive · Youngsville, Louisiana 70592",
+    "footer_brand": "107 Cypress Lake Drive",
+    "footer_brand_sub": "Youngsville · Louisiana · 70592",
+    "cta_sub": "107 Cypress Lake Drive is available to tour by appointment. To see the home for yourself, contact Carrie Billeaud at eXp Realty — 337-258-5379."
+  },
+  "media": {
+    "hero_photo": "01.jpg",
+    "hero_alt": "Modern white two-story home with two-car blue garage doors, gray tile roof, landscaped front lawn, concrete driveway, and clear blue sky. Geometric architecture with white stucco exterior.",
+    "video": "/studio/packages/videos/107-cypress-lake-dr-short.mp4",
+    "video_poster": "07.jpg",
+    "gallery_dir": "/assets/img/listings/gallery/107-cypress-lake-dr/",
+    "photos": [
+      {
+        "file": "01.jpg",
+        "alt": "Modern white two-story home with two-car blue garage doors, gray tile roof, landscaped front lawn, concrete driveway, and clear blue sky. Geometric architecture with white stucco exterior."
+      },
+      {
+        "file": "02.jpg",
+        "alt": "Open-concept kitchen-living area with light wood cabinetry, stainless steel appliances, wood flooring, pendant lights, and floor-to-ceiling windows overlooking trees."
+      },
+      {
+        "file": "03.jpg",
+        "alt": "Large kitchen-living space with light wood upper cabinets, island with wood base, black range hood, pendant lights, wood flooring, and expansive windows."
+      },
+      {
+        "file": "04.jpg",
+        "alt": "Luxury kitchen with natural wood cabinetry, white marble island countertop, pendant lights, stainless steel appliances, white subway tile backsplash, and wood flooring."
+      },
+      {
+        "file": "05.jpg",
+        "alt": "Modern kitchen with mixed wood and white cabinetry, marble island with waterfall edge, pendant lights, white walls, and stainless appliances."
+      },
+      {
+        "file": "06.jpg",
+        "alt": "Galley kitchen with light wood and white cabinetry, marble countertops, white farmhouse sink, pendant light, and wood flooring."
+      },
+      {
+        "file": "07.jpg",
+        "alt": "Sunlit room with large multi-pane windows and glass doors opening to landscape with trees, wood flooring, white walls, and ceiling fan."
+      },
+      {
+        "file": "08.jpg",
+        "alt": "Open living room with wood flooring, white walls, fireplace with natural wood mantel, ceiling fan, and multiple entry points."
+      },
+      {
+        "file": "09.jpg",
+        "alt": "Laundry room with white cabinetry, marble countertop, integrated sink, window with landscape view, and appliance connections on walls."
+      },
+      {
+        "file": "10.jpg",
+        "alt": "Bedroom with light wood flooring, white walls, ceiling fan with light, window viewing landscape, and built-in closet."
+      },
+      {
+        "file": "11.jpg",
+        "alt": "Modern bathroom with white vanity featuring marble countertop, toilet, and white subway tile shower wall. Marble tile surround, recessed shelving, and transom window above provide natural light in this minimalist all-white design."
+      },
+      {
+        "file": "12.jpg",
+        "alt": "Open bedroom or living space with light wood flooring, white walls and trim, and dual large windows overlooking open landscape. Ceiling fan with recessed lighting and white six-panel doors visible."
+      },
+      {
+        "file": "13.jpg",
+        "alt": "Luxurious master bath with marble tile walls and flooring, freestanding white oval soaking tub, dual marble vanities with mirrors, chrome fixtures, arched ceiling detail, and separate walk-in shower with glass enclosure."
+      },
+      {
+        "file": "14.jpg",
+        "alt": "Spa-like master bathroom with white marble floors and walls, large freestanding soaking tub, dual vanity areas with mirrors and chrome fixtures, pendant lighting, arched architectural details, and marble-lined shower enclosure."
+      },
+      {
+        "file": "15.jpg",
+        "alt": "Large tiled shower area with white marble walls featuring gray veining, rainfall showerhead, hand-held spray, body jets, and chrome fixtures throughout."
+      },
+      {
+        "file": "16.jpg",
+        "alt": "Walk-in closet with white built-in shelving system, brass hanging rod, wood plank flooring, recessed ceiling with integrated lighting, and white trim throughout."
+      },
+      {
+        "file": "17.jpg",
+        "alt": "Custom closet nook featuring white shiplap wall treatment, built-in white cabinetry with drawer storage, upholstered bench seat with white cushion, chrome hardware, and wood flooring."
+      },
+      {
+        "file": "18.jpg",
+        "alt": "Empty walk-in closet with extensive white built-in shelving system, overhead recessed lighting, varied shelf depths for storage, wood plank flooring, and clean white walls."
+      },
+      {
+        "file": "19.jpg",
+        "alt": "Home office nook with white desk and drawer storage, built-in white shelves above, window with rural landscape view, warm wood flooring, white trim, and minimalist design."
+      },
+      {
+        "file": "20.jpg",
+        "alt": "Empty bedroom with light wood flooring, white walls and trim, white double-door closet, single window showing landscape, ceiling fixture, and bright natural lighting."
+      },
+      {
+        "file": "21.jpg",
+        "alt": "Bright bedroom or living space with light wood flooring, white walls and trim, multiple white-framed windows with rural views, recessed lighting, and ceiling fan."
+      },
+      {
+        "file": "22.jpg",
+        "alt": "Covered patio with wooden ceiling, white columns, concrete flooring, built-in storage, glass doors opening to lawn and water view with mature trees."
+      },
+      {
+        "file": "23.jpg",
+        "alt": "Exterior patio area with concrete pad, covered structure, outdoor kitchen with brick elements and wooden cabinetry, viewing landscaped grounds and trees."
+      },
+      {
+        "file": "24.jpg",
+        "alt": "Covered patio interior with wooden vaulted ceiling, fireplace with black frame, triple-pane glass sliders, concrete floor, white walls, ceiling fan, lawn view."
+      },
+      {
+        "file": "25.jpg",
+        "alt": "Modern home exterior with white brick facade, covered porch featuring wooden ceiling detail, white columns, black-trimmed glass doors, metal roof overhang, green lawn."
+      }
+    ]
+  },
+  "compliance": {
+    "broker_disclosure_html": "  <footer class=\"listing-disclosure\" role=\"contentinfo\" style=\"font-size:0.85rem;line-height:1.55;padding:1.5rem 1.25rem;border-top:1px solid #ccc;\">\n\n    <div class=\"disclosure-agent\">\n      Presented by <strong>Carrie Billeaud, REALTOR&reg;</strong>\n      &mdash; <span class=\"disclosure-brokerage\">eXp Realty</span>\n      &middot; <a href=\"tel:3372585379\">337-258-5379</a>\n    </div>\n\n    <div class=\"disclosure-broker\" style=\"margin-top:0.5rem;\">\n      Sponsoring / qualifying broker:\n      <strong><span data-broker=\"name\">to be confirmed at launch</span></strong>\n      &middot; Broker phone:\n      <strong><a data-broker=\"phone\" href=\"#\">to be confirmed at launch</a></strong>\n    </div>\n\n    <div class=\"disclosure-jurisdiction\" style=\"margin-top:0.5rem;\">\n      Licensed by the Louisiana Real Estate Commission.\n    </div>\n\n    <div class=\"disclosure-property\" style=\"margin-top:0.5rem;\">\n      107 Cypress Lake Dr, Youngsville, LA 70592 &middot; <strong>For Sale</strong> &middot; <strong>$510,750</strong>. Information deemed reliable but not guaranteed; buyer to verify all details. Price and availability subject to change without notice.\n    </div>\n\n    <div class=\"disclosure-eho\" style=\"margin-top:0.75rem;display:flex;align-items:center;gap:0.5rem;\">\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity\" style=\"flex:0 0 auto;\" fill=\"currentColor\"><path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/></svg>\n      <span>Equal Housing Opportunity.</span>\n    </div>\n\n  </footer>",
+    "fair_housing_html": "    <aside class=\"fair-housing-notice\" role=\"note\" aria-label=\"Equal Housing Opportunity notice\" style=\"display:flex;align-items:flex-start;gap:0.6rem;font-size:0.85rem;line-height:1.55;padding:1rem 1.25rem;\">\n      <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity logo\" style=\"flex:0 0 auto;margin-top:0.1rem;\" fill=\"currentColor\">\n        <path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/>\n      </svg>\n      <p style=\"margin:0;\">\n        <strong>Equal Housing Opportunity.</strong>\n        This property is offered without regard to race, color, religion, sex,\n        handicap, familial status, or national origin, or any other class\n        protected by federal, state, or local fair housing law. We are pledged\n        to the letter and spirit of U.S. policy for the achievement of equal\n        housing opportunity throughout the nation.\n      </p>\n    </aside>"
+  }
+}

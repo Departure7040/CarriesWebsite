@@ -1,0 +1,346 @@
+{
+  "slug": "101-rio-ridge-dr",
+  "wordmark": "101 Rio Ridge",
+  "wordmark_sub": "Lafayette · Louisiana",
+  "facts": {
+    "address": "101 Rio Ridge Dr",
+    "city": "Lafayette",
+    "state": "LA",
+    "zip": "70508",
+    "price": "$3,400,000",
+    "status": "For Sale",
+    "beds": 5,
+    "baths": "5.5+",
+    "sqft": "6,800",
+    "lot": "0.56 acre",
+    "year_built": 2024,
+    "garage": "4 cars",
+    "type_short": "Single-Family",
+    "property_type": "Single-family (new construction, 2024)",
+    "mls": "2600005723",
+    "realtor_url": "https://www.realtor.com/realestateandhomes-detail/101-Rio-Ridge-Dr_Lafayette_LA_70508_M76949-15948",
+    "lat": 30.130234,
+    "lon": -92.047081
+  },
+  "agent": {
+    "name_title": "Carrie Billeaud, REALTOR®",
+    "brokerage": "eXp Realty",
+    "phone": "337-258-5379",
+    "phone_tel": "3372585379",
+    "headshot": "/assets/img/carrie-headshot-gbp.webp",
+    "bio": "Offered by Carrie Billeaud, REALTOR® with eXp Realty. For private showings and further detail on 101 Rio Ridge Drive, Carrie can be reached directly at 337-258-5379."
+  },
+  "seo": {
+    "title": "101 Rio Ridge Dr, Lafayette, LA 70508 — For Sale $3,400,000 | MLS 2600005723",
+    "meta_description": "For Sale: 101 Rio Ridge Dr, Lafayette, LA 70508. New-construction (2024) single-family home — 5 bed, 5.5+ bath, 6,800 sq ft on a 0.56-acre lot with a private pool, spillover spa, and outdoor kitchen. Offered at $3,400,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty. MLS 2600005723.",
+    "og_title": "101 Rio Ridge Dr, Lafayette, LA 70508 — For Sale $3,400,000",
+    "og_description": "New-construction (2024) estate — 5 bed / 5.5+ bath / 6,800 sq ft on 0.56 acre with a private pool and spa. Offered at $3,400,000. Presented by Carrie Billeaud, REALTOR®, eXp Realty. MLS 2600005723."
+  },
+  "copy": {
+    "hero_eyebrow": "For Sale · New 2024 Construction",
+    "hero_address": "101 Rio Ridge Drive · Lafayette, Louisiana 70508",
+    "hero_tagline": "A newly built 2024 estate at the quiet edge of Lafayette — wholly its own.",
+    "overview_eyebrow": "The Residence",
+    "overview_heading": "A Study in Composure",
+    "overview_paragraphs": [
+      "Set on just over half an acre in south Lafayette, 101 Rio Ridge Drive is a new-construction estate that trades spectacle for composure. Completed in 2024, its 6,800 square feet unfold without haste — rooms sized for gathering, thresholds that open to the pool and the covered loggia, light that moves through the day and settles by evening.",
+      "Five bedrooms and five-and-a-half-plus baths are arranged for both retreat and welcome. The living spaces reach outward to a private pool and spillover spa, an outdoor kitchen, and a covered living area warmed by a fireplace — where the boundary between house and landscape is drawn lightly and crossed often. A four-car garage anchors the practical side of a house built for a life lived fully.",
+      "This is a single property, offered once. What follows is not a list of amenities but an account of a place — private, newly made, and finished to the standard its address suggests."
+    ],
+    "pull_quote": "Some houses announce themselves. This one simply waits, and lets you arrive.",
+    "details_eyebrow": "Property Details",
+    "details_heading": "The Particulars",
+    "features_eyebrow": "Features & Amenities",
+    "features_heading": "Considered Throughout",
+    "feature_groups": [
+      {
+        "title": "The Grounds",
+        "items": [
+          "Just over half an acre (0.56-acre lot)",
+          "Private swimming pool with raised spillover spa",
+          "Outdoor kitchen",
+          "Covered outdoor living with a wood-burning fireplace",
+          "Four-car garage"
+        ]
+      },
+      {
+        "title": "The Residence",
+        "items": [
+          "New 2024 construction",
+          "6,800 square feet across a considered plan",
+          "5 bedrooms, 5.5+ baths",
+          "Chef's kitchen with center island",
+          "Open-concept living"
+        ]
+      },
+      {
+        "title": "Arrival & Everyday",
+        "items": [
+          "French-inspired brick architecture",
+          "Landscaped grounds and motor court",
+          "A quiet setting within Lafayette (70508)",
+          "Move-in ready, offered for sale"
+        ]
+      }
+    ],
+    "gallery_eyebrow": "Gallery",
+    "gallery_heading": "A Closer Look",
+    "video_eyebrow": "Cinematic Tour",
+    "video_heading": "The Estate in Motion",
+    "location_eyebrow": "Location",
+    "location_heading": "The Setting",
+    "location_paragraphs": [
+      "Set in south Lafayette's 70508 area, 101 Rio Ridge Drive sits in a residential setting that is also central to the city. Everyday conveniences are close at hand, while the surrounding countryside lies just beyond. The immediate streets are quiet and residential.",
+      "The location places daily life within a short drive of nearly everything Lafayette offers. Ambassador Caffery Parkway and Verot School Road anchor the area's shopping, dining, and services, while River Ranch and the greater Camellia Boulevard district provide a walkable mix of boutiques, cafes, and restaurants a few minutes away. Downtown Lafayette, the University of Louisiana at Lafayette, and the region's medical centers are all comfortably reachable, and connections to US-90 and the wider Acadiana road network make travel across the parish and beyond straightforward.",
+      "Beyond convenience, the address carries the distinctive character of Cajun and Creole Louisiana, a region known for its cuisine, live music, and celebrated festival calendar. Lakes, parks, and bayou-country recreation lie within easy reach, offering a genuine sense of place that pairs well with the refinement of the home itself."
+    ],
+    "location_points": [
+      "Minutes from the Ambassador Caffery Parkway shopping and dining corridor",
+      "Close to River Ranch and Camellia Boulevard boutiques, cafes, and restaurants",
+      "Convenient access to Verot School Road services and everyday conveniences",
+      "Short drive to downtown Lafayette and the cultural district",
+      "Near the University of Louisiana at Lafayette and regional medical centers",
+      "Quick connections to US-90 and the broader Acadiana road network",
+      "Lakes, parks, and bayou-country recreation within easy reach",
+      "Central to Acadiana's renowned cuisine, live music, and festival scene"
+    ],
+    "cta_eyebrow": "Inquire",
+    "cta_heading": "Arrange a Private Viewing",
+    "cta_sub": "101 Rio Ridge Drive is shown by appointment. To walk the grounds and see the home for yourself, contact Carrie Billeaud at eXp Realty — 337-258-5379.",
+    "footer_brand": "101 Rio Ridge Drive",
+    "footer_brand_sub": "Lafayette · Louisiana · 70508"
+  },
+  "media": {
+    "hero_photo": "01.jpg",
+    "hero_alt": "Angled front view of a two-story white brick French-style estate with a steep gray hipped roof, multiple dormers, copper cupolas, twin chimneys, an attached four-bay garage wing, and a wide concrete driveway framed by manicured lawn and landscaped flower beds under a clear blue sky.",
+    "video": "/studio/packages/videos/101-rio-ridge-dr-short.mp4",
+    "video_poster": "07.jpg",
+    "gallery_dir": "/assets/img/listings/gallery/101-rio-ridge-dr/",
+    "photos": [
+      {
+        "file": "01.jpg",
+        "alt": "Angled front exterior of a white French-style estate with steep gray hipped-and-mansard slate-look roofs, dormers, twin chimneys, a covered entry, and an attached four-bay garage set on a wide concrete drive with manicured lawn and fresh landscaping beds."
+      },
+      {
+        "file": "02.jpg",
+        "alt": "Straight-on view of the home's entry facade in white painted brick, with a two-story gabled center, tall multi-pane windows, a standing-seam metal entry canopy over black glass double doors flanked by lantern sconces, and an expansive concrete forecourt."
+      },
+      {
+        "file": "03.jpg",
+        "alt": "Full-width front exterior showing the estate's white brick elevation, gray hipped roofs and dormers, black shutters on the garage wing, a long concrete driveway, and rose and shrub plantings, with neighboring homes visible down the street."
+      },
+      {
+        "file": "04.jpg",
+        "alt": "Sitting room with a wood plank ceiling in a chevron inlay, woven and beaded pendant lights, a tan tufted leather Chesterfield sofa, two patterned swivel chairs, a gold coffee table on a dark cowhide rug, framed gamefish prints, and a gray built-in beverage bar."
+      },
+      {
+        "file": "05.jpg",
+        "alt": "Great room with a marble fireplace flanked by open wood shelves and navy cabinetry, a framed art-display TV above the mantel, brown velvet sofas and pillows, a ring chandelier, light wood floors, and a console table with stools in the foreground."
+      },
+      {
+        "file": "06.jpg",
+        "alt": "Two-story living room with an orb chandelier, crown molding, a framed cityscape over a gold console, a woven leather chair and gray sofa on a faded rug, an arched hallway, glass French doors to a screened porch, and a navy display cabinet with marble backsplash beverage bar."
+      },
+      {
+        "file": "07.jpg",
+        "alt": "Covered outdoor living patio with a warm wood plank ceiling, two large fans, a white brick wood-burning fireplace with reclaimed wood mantel and mounted TV, rope-hung porch swing bed and woven lounge chairs, an olive tree in a planter, and gray tile flooring."
+      },
+      {
+        "file": "08.jpg",
+        "alt": "Sunroom sitting area with a wood plank ceiling and woven pendants, a wall of white-trimmed French doors and transoms with woven Roman shades, a tan tufted leather sofa and leopard-print swivel chairs, overlooking a backyard pool, patio, and fenced lawn."
+      },
+      {
+        "file": "09.jpg",
+        "alt": "Powder or bath vanity with dark gray floor-to-ceiling cabinetry and drawers, a marble countertop and backsplash, a raised oval stone vessel sink, a brushed gold gooseneck faucet, a tall mirror, and a white toilet against pale gray walls."
+      },
+      {
+        "file": "10.jpg",
+        "alt": "Carpeted bedroom with a brown tufted leather upholstered bed and monogrammed pillows, a plaid throw, a geometric applied-molding accent wall, a ceiling fan, framed abstract prints, and a herringbone wood nightstand with brass lamp beside a shaded window."
+      },
+      {
+        "file": "11.jpg",
+        "alt": "Bathroom vanity with gray cabinetry, a tall linen tower, a marble countertop and backsplash, a round rope-framed mirror, a brushed nickel faucet and sconce, and a divided-light window with a Greek-key trimmed Roman shade overlooking the roofline."
+      },
+      {
+        "file": "12.jpg",
+        "alt": "Bathroom with a greige vanity and marble counter, a gold-framed mirror, gold faucet, a marble-tiled tub alcove with striped curtain, a tall paneled linen cabinet, and a framed pampas grass print on white walls with tile floor."
+      },
+      {
+        "file": "13.jpg",
+        "alt": "Bonus or media room with light wood floors, a wall-mounted TV over a dark wood-and-brass console, a gold ceiling fan, a gray sectional with faux-fur throw, a framed sailboat painting, open wood shelves with games, and a doorway to a built-in cabinet nook."
+      },
+      {
+        "file": "14.jpg",
+        "alt": "Bunk room with four built-in wood-framed bunks in two stacks, a center staircase to the upper berths, shiplap surrounds, a gray cabinetry kitchenette with microwave and beverage fridge, low gray lounge seating with leather ottoman, and light wood floors."
+      },
+      {
+        "file": "15.jpg",
+        "alt": "Bunk room viewed from the doorway showing built-in wood-trimmed bunk beds with X-rail guards, center steps, gray bedding, low gray lounge chairs and a leather ottoman, a framed sailboat painting, and light wood flooring under crown molding."
+      },
+      {
+        "file": "16.jpg",
+        "alt": "Double-sink bathroom with a gray vanity and marble countertop, two arched gold-framed mirrors, fluted gold pendant and sconce lighting, dual faucets, a patterned Roman shade over a divided-light window, hexagon marble floor tile, and gray built-in cabinetry."
+      },
+      {
+        "file": "17.jpg",
+        "alt": "Bedroom with a white upholstered daybed dressed in blush pink bedding, an intricate applied-molding paneled accent wall, a crystal-and-gold chandelier, tall windows with patterned pink drapery overlooking the street, and light wood floors."
+      },
+      {
+        "file": "18.jpg",
+        "alt": "Reading nook with a built-in white cushioned window seat and drawers between tall paneled cabinets and open bookshelves, floral Roman shades over divided-light windows, a beaded chandelier, a blush settee, and a floral area rug on wood floors."
+      },
+      {
+        "file": "19.jpg",
+        "alt": "Close view of a built-in window-seat bench with a sage cushion and blush pillows, white cabinetry with brass pulls, open shelves holding children's books and a gold bird figurine, floral Roman shades, and a patterned rug on light wood flooring."
+      },
+      {
+        "file": "20.jpg",
+        "alt": "Powder bath with cream cabinetry, marble vanity top, gold feather-framed mirror flanked by gold sconces, and metallic dragonfly wallpaper."
+      },
+      {
+        "file": "21.jpg",
+        "alt": "Tub-shower combination clad in glossy pink herringbone tile with a recessed niche, marble accent wall, brushed-gold showerhead and tub spout, and a floral fabric shower curtain."
+      },
+      {
+        "file": "22.jpg",
+        "alt": "Walk-in closet with floor-to-ceiling white built-in shelving, a marble-topped center island, gold chandelier, arched carved-wood doors, and inlaid marble-and-wood grid flooring; laundry visible beyond."
+      },
+      {
+        "file": "23.jpg",
+        "alt": "Dressing room with white open shelving and hanging rods on brushed-gold rails, marble-topped island, gold chandelier, and marble tile floor with wood inlay; front-load washer visible through the doorway."
+      },
+      {
+        "file": "24.jpg",
+        "alt": "Closet detail showing an arched niche of white built-in shelving framed by distressed wood arched doors with a full-length mirror, over inlaid marble-and-wood grid flooring."
+      },
+      {
+        "file": "25.jpg",
+        "alt": "Walk-in closet with white built-in cubbies and rods, a marble-topped island with gold-pulled drawers, gold chandelier, arched rustic-wood doors, and inlaid marble tile floor."
+      },
+      {
+        "file": "26.jpg",
+        "alt": "Expansive dressing room with white cabinetry, glass-front upper cubbies, a marble island with gold-hardware drawers and upholstered bench, a built-in Liberty safe, and a gold chandelier over patterned marble floors."
+      },
+      {
+        "file": "27.jpg",
+        "alt": "Primary bath with a marble-surround soaking tub beneath a shuttered window and reclaimed-wood beam, a separate glass shower with marble herringbone tile, gold fixtures, and grid-pattern marble-and-wood tile floor."
+      },
+      {
+        "file": "28.jpg",
+        "alt": "Primary bathroom with dual gray furniture-style vanities, marble tops, framed mirrors, a make-up desk with stool, gold sputnik chandelier, and grid-pattern tile floor; bedroom visible through the door."
+      },
+      {
+        "file": "29.jpg",
+        "alt": "Sitting area with gray velvet chairs, a gold drum side table, and floor-length drapes framing a window that overlooks a pool and patio; an adjoining bedroom is visible through an arched opening."
+      },
+      {
+        "file": "30.jpg",
+        "alt": "Bedroom with a white upholstered king bed against a paneled accent wall, gold chandelier, white-and-gold nightstands with table lamps, shuttered windows, and light hardwood floors with an area rug."
+      },
+      {
+        "file": "31.jpg",
+        "alt": "Powder room with navy herringbone wallpaper, a wood vanity with marble top and gold sconce, opening to a hallway with reclaimed-wood beams, a distressed carved-wood door, and a built-in bench with gray cabinetry."
+      },
+      {
+        "file": "32.jpg",
+        "alt": "Home office with a chevron-front wood desk, twin upholstered armchairs, built-in gray desk cabinetry flanking a window, framed art, and a woven fan pendant light over hardwood floors."
+      },
+      {
+        "file": "33.jpg",
+        "alt": "Butler's pantry with cream raised-panel cabinetry, marble counters, gold hardware, a stainless microwave and beverage fridge, and an antique distressed-wood door leading to the scullery."
+      },
+      {
+        "file": "34.jpg",
+        "alt": "Scullery pantry with marble counters, wood open shelving, wire pull-out baskets, floor-to-ceiling cabinetry, and antique glass-panel French doors under a woven drum pendant."
+      },
+      {
+        "file": "35.jpg",
+        "alt": "Laundry room with sage-green cabinetry, marble counters, farmhouse sink with gooseneck faucet, gold pendant light, shuttered window, and a stacked gray front-load washer and dryer on marble tile."
+      },
+      {
+        "file": "36.jpg",
+        "alt": "Kitchen island seating with four woven barstools facing a plaster range hood, gray cabinetry, marble herringbone backsplash, gas cooktop, double wall ovens, and paired woven drum pendants."
+      },
+      {
+        "file": "37.jpg",
+        "alt": "Dining room with a wood plank tray ceiling, floor-to-ceiling windows overlooking a pool, drapery, a wood trestle table with upholstered chairs, light-wood built-ins with a heron artwork, and a rug over hardwood."
+      },
+      {
+        "file": "38.jpg",
+        "alt": "Sitting nook with charcoal velvet sofa beneath a two-story arched window wall, brass and linen-shade chandelier, floor-length taupe drapery, geometric hide rug, and pale oak flooring; black steel-framed glass doors visible to the right."
+      },
+      {
+        "file": "39.jpg",
+        "alt": "Open chef's kitchen with cream raised-panel cabinetry, marble waterfall island in navy with chevron oak end panel, woven rattan drum pendants, herringbone tile backsplash, stainless double wall ovens and gas range, and wide-plank oak floors opening to a dining area."
+      },
+      {
+        "file": "40.jpg",
+        "alt": "Kitchen view showing paneled built-in refrigerator, stainless double ovens, six-burner gas range with pot filler, marble-topped navy island with woven counter stools, twin rattan drum pendants, and a window over the farmhouse sink flanked by dishwasher."
+      },
+      {
+        "file": "41.jpg",
+        "alt": "Kitchen island in charcoal with marble top and chevron oak panel, woven rattan pendants overhead, stainless built-in refrigerator, and an open sightline to the living room's marble fireplace and iron ring chandelier beyond."
+      },
+      {
+        "file": "42.jpg",
+        "alt": "Entry hall framed by wide oak columns, looking toward a living room with marble-surround fireplace, mounted TV, iron candle chandelier, and floor-to-ceiling glass doors opening to a covered patio; potted plant on a weathered console."
+      },
+      {
+        "file": "43.jpg",
+        "alt": "Two-story sitting area with charcoal sofa, tall gold candle chandelier, floor-length drapery over a soaring window wall, iron wall sconces, and a geometric gray hide rug; kitchen with rattan pendants visible through the doorway at left."
+      },
+      {
+        "file": "44.jpg",
+        "alt": "Great room with two taupe sofas and patterned swivel chairs around a low wood coffee table, brass ring chandelier, arched opening to the kitchen, and a wall of glass doors framing a covered outdoor living space."
+      },
+      {
+        "file": "45.jpg",
+        "alt": "Living room with two taupe sofas, marble fireplace flanked by recessed wood shelving, brass ring chandelier, gold drum table lamp, nesting side tables, and floor-length drapery over glass doors to a covered patio."
+      },
+      {
+        "file": "46.jpg",
+        "alt": "Great room from the kitchen side showing taupe seating, brass ring chandelier, tall framed mirrors, an oak-framed doorway with black steel glass door, and rattan pendants over the kitchen island; wide oak floors throughout."
+      },
+      {
+        "file": "47.jpg",
+        "alt": "Sitting area beside a two-story window wall with tiered brass chandelier, floor-length drapery, and a black steel-framed glass door leading to a brick-walled space; weathered demilune console with mirror at right, hide-patterned rug underfoot."
+      },
+      {
+        "file": "48.jpg",
+        "alt": "Narrow hallway framed by a pair of antique carved wood-and-mirror French doors with distressed finish, a woven pendant light, weathered console table, and pale oak flooring."
+      },
+      {
+        "file": "49.jpg",
+        "alt": "Detail view through pleated linen drapery toward a living space with mounted TV above a reclaimed-wood-mantel fireplace, wood-plank ceiling, ceiling fan, and woven outdoor seating; concrete-top dining table and nailhead chair in foreground."
+      },
+      {
+        "file": "50.jpg",
+        "alt": "Powder room vanity with marble waterfall counter, gray fluted cabinetry, gilded feather-textured mirror, dragonfly-pattern wallpaper, brass leaf wall sconce, and brushed-gold widespread faucet."
+      },
+      {
+        "file": "51.jpg",
+        "alt": "Covered outdoor living room with tongue-and-groove wood ceiling, dual ceiling fans, brick fireplace with reclaimed-wood mantel and mounted TV, woven wicker seating, and an arched opening framing the pool, spa, and French-style estate beyond."
+      },
+      {
+        "file": "52.jpg",
+        "alt": "Outdoor kitchen under a wood-plank ceiling with a large metal range hood, built-in stainless grill and beverage fridge, marble-top island with woven bar stools, rattan pendants, and an arched opening to a walled patio."
+      },
+      {
+        "file": "53.jpg",
+        "alt": "Rear exterior of the white-brick estate with steep gray hip roofs and dormers, showing the covered outdoor living and kitchen loggias, rectangular pool with raised spa, Adirondack chairs around a fire table, and manicured lawn."
+      },
+      {
+        "file": "54.jpg",
+        "alt": "Backyard pool and raised spa with sheer spillover, bordered by broad concrete decking, against the white-brick estate with gray tile roof, black-framed windows and doors, and a wood privacy fence enclosing the lawn."
+      },
+      {
+        "file": "55.jpg",
+        "alt": "Backyard pool and raised spa: a herringbone-tiled spillover spa beside a rectangular in-ground pool with a tanning ledge, wide poured-concrete decking, teak loungers by a covered patio, a wood privacy fence, and the home's white brick rear elevation with gray hipped roofs."
+      }
+    ]
+  },
+  "compliance": {
+    "broker_disclosure_html": "  <footer class=\"listing-disclosure\" role=\"contentinfo\" style=\"font-size:0.85rem;line-height:1.55;padding:1.5rem 1.25rem;border-top:1px solid #ccc;\">\n\n    <div class=\"disclosure-agent\">\n      Presented by <strong>Carrie Billeaud, REALTOR&reg;</strong>\n      &mdash; <span class=\"disclosure-brokerage\">eXp Realty</span>\n      &middot; <a href=\"tel:3372585379\">337-258-5379</a>\n    </div>\n\n    <div class=\"disclosure-broker\" style=\"margin-top:0.5rem;\">\n      Sponsoring / qualifying broker:\n      <strong><span data-broker=\"name\">to be confirmed at launch</span></strong>\n      &middot; Broker phone:\n      <strong><a data-broker=\"phone\" href=\"#\">to be confirmed at launch</a></strong>\n    </div>\n\n    <div class=\"disclosure-jurisdiction\" style=\"margin-top:0.5rem;\">\n      Licensed by the Louisiana Real Estate Commission.\n    </div>\n\n    <div class=\"disclosure-property\" style=\"margin-top:0.5rem;\">\n      101 Rio Ridge Dr, Lafayette, LA 70508 &middot; <strong>For Sale</strong>\n      &middot; <strong>$3,400,000</strong> &middot; MLS&nbsp;#2600005723.\n      Information deemed reliable but not guaranteed; buyer to verify all\n      details. Price and availability subject to change without notice.\n    </div>\n\n    <div class=\"disclosure-eho\" style=\"margin-top:0.75rem;display:flex;align-items:center;gap:0.5rem;\">\n      <!-- Equal Housing Opportunity mark (inline SVG, no external asset) -->\n      <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity\" style=\"flex:0 0 auto;\" fill=\"currentColor\">\n        <path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/>\n      </svg>\n      <span>Equal Housing Opportunity.</span>\n    </div>\n\n  </footer>",
+    "fair_housing_html": "    <aside class=\"fair-housing-notice\" role=\"note\" aria-label=\"Equal Housing Opportunity notice\" style=\"display:flex;align-items:flex-start;gap:0.6rem;font-size:0.85rem;line-height:1.55;padding:1rem 1.25rem;\">\n      <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" role=\"img\" aria-label=\"Equal Housing Opportunity logo\" style=\"flex:0 0 auto;margin-top:0.1rem;\" fill=\"currentColor\">\n        <path d=\"M12 3 2 10h2v9h5v-5h6v5h5v-9h2L12 3zm0 4.2 1.6 1.2H10.4L12 7.2z\"/>\n      </svg>\n      <p style=\"margin:0;\">\n        <strong>Equal Housing Opportunity.</strong>\n        This property is offered without regard to race, color, religion, sex,\n        handicap, familial status, or national origin, or any other class\n        protected by federal, state, or local fair housing law. We are pledged\n        to the letter and spirit of U.S. policy for the achievement of equal\n        housing opportunity throughout the nation.\n      </p>\n    </aside>"
+  }
+}
